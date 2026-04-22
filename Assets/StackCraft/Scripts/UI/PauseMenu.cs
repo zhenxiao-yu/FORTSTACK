@@ -35,7 +35,8 @@ namespace CryingSnow.StackCraft
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && !DayCycleManager.Instance.IsEndingCycle)
+            var input = InputManager.Instance;
+            if (input != null && input.WasPausePressedThisFrame() && !DayCycleManager.Instance.IsEndingCycle)
             {
                 ToggleActiveState();
             }

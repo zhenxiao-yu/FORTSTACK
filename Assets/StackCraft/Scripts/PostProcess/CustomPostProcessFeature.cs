@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.RenderGraphModule;
+using UnityEngine.Rendering.RenderGraphModule.Util;
 using UnityEngine.Rendering.Universal;
 
 namespace CryingSnow.StackCraft
@@ -18,42 +20,57 @@ namespace CryingSnow.StackCraft
 
         public override void Create()
         {
-            customPass = new CustomPass(settings.effectMaterial);
+            customPass = new CustomPass();
             customPass.renderPassEvent = settings.renderEvent;
         }
 
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
-            if (settings.effectMaterial == null) return;
+            if (settings.effectMaterial == null)
+                return;
+
+            customPass.Setup(settings.effectMaterial, settings.renderEvent);
             renderer.EnqueuePass(customPass);
         }
 
         class CustomPass : ScriptableRenderPass
         {
-            Material material;
-            RenderTargetIdentifier source;
+            private const string PassName = "StackCraft Custom Post Process";
 
-            public CustomPass(Material mat)
+            private Material material;
+
+            public void Setup(Material effectMaterial, RenderPassEvent passEvent)
             {
-                this.material = mat;
+                material = effectMaterial;
+                renderPassEvent = passEvent;
+
+                // The effect samples the current camera color, so URP must provide an intermediate texture.
+                requiresIntermediateTexture = true;
             }
 
-            public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
+            public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData)
             {
-                CommandBuffer cmd = CommandBufferPool.Get("Custom Post Process");
+                if (material == null)
+                    return;
 
-                source = renderingData.cameraData.renderer.cameraColorTargetHandle;
+                UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
 
-                int tempTextureId = Shader.PropertyToID("_TempTexture");
-                RenderTextureDescriptor desc = renderingData.cameraData.cameraTargetDescriptor;
+                if (resourceData.isActiveTargetBackBuffer)
+                    return;
 
-                cmd.GetTemporaryRT(tempTextureId, desc);
-                cmd.Blit(source, tempTextureId, material);
-                cmd.Blit(tempTextureId, source);
-                cmd.ReleaseTemporaryRT(tempTextureId);
+                TextureHandle source = resourceData.activeColorTexture;
+                if (!source.IsValid())
+                    return;
 
-                context.ExecuteCommandBuffer(cmd);
-                CommandBufferPool.Release(cmd);
+                TextureDesc destinationDesc = renderGraph.GetTextureDesc(source);
+                destinationDesc.name = "_StackCraftCustomPostProcessColor";
+                destinationDesc.clearBuffer = false;
+
+                TextureHandle destination = renderGraph.CreateTexture(destinationDesc);
+                RenderGraphUtils.BlitMaterialParameters blitParameters = new(source, destination, material, 0);
+
+                renderGraph.AddBlitPass(blitParameters, PassName);
+                resourceData.cameraColor = destination;
             }
         }
     }

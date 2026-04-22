@@ -18,7 +18,7 @@ namespace CryingSnow.StackCraft
                 return;
             }
 
-            GraphicsSettings.renderPipelineAsset = urpAsset;
+            GraphicsSettings.defaultRenderPipeline = urpAsset;
 
             for (int i = 0; i < QualitySettings.names.Length; i++)
             {
@@ -32,7 +32,7 @@ namespace CryingSnow.StackCraft
         [MenuItem("Tools/Crying Snow/Switch to Built-in")]
         public static void SwitchToBuiltIn()
         {
-            GraphicsSettings.renderPipelineAsset = null;
+            GraphicsSettings.defaultRenderPipeline = null;
 
             for (int i = 0; i < QualitySettings.names.Length; i++)
             {

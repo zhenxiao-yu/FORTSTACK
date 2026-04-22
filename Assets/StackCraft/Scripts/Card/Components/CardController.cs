@@ -249,7 +249,8 @@ namespace CryingSnow.StackCraft
 
         private Vector3 GetMouseWorldPosition()
         {
-            Ray ray = _mainCam.ScreenPointToRay(Input.mousePosition);
+            Vector2 pointerPosition = InputManager.Instance != null ? InputManager.Instance.GetPointerScreenPosition() : Vector2.zero;
+            Ray ray = _mainCam.ScreenPointToRay(pointerPosition);
             var ground = new Plane(Vector3.up, Vector3.zero);
             if (ground.Raycast(ray, out float dist))
                 return ray.GetPoint(dist);

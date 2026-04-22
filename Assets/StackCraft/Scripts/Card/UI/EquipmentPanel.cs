@@ -159,9 +159,10 @@ namespace CryingSnow.StackCraft
             // Only run this check if the panel is currently visible.
             if (!_isCardsVisible) return;
 
-            if (Input.GetMouseButtonDown(0))
+            var input = InputManager.Instance;
+            if (input != null && input.WasPrimaryPointerPressedThisFrame())
             {
-                Ray ray = _mainCam.ScreenPointToRay(Input.mousePosition);
+                Ray ray = _mainCam.ScreenPointToRay(input.GetPointerScreenPosition());
                 if (Physics.Raycast(ray, out RaycastHit hit, 100f))
                 {
                     if (hit.transform == transform) return;

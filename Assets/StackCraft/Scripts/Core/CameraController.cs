@@ -78,10 +78,11 @@ namespace CryingSnow.StackCraft
 
         private void Update()
         {
-            if (!InputManager.Instance.IsInputEnabled) return;
+            var input = InputManager.Instance;
+            if (input == null || !input.IsInputEnabled) return;
 
-            HandlePan();
-            HandleZoom();
+            HandlePan(input);
+            HandleZoom(input);
 
             transform.position = Vector3.SmoothDamp(
                 transform.position,
@@ -93,26 +94,27 @@ namespace CryingSnow.StackCraft
             );
         }
 
-        private void HandlePan()
+        private void HandlePan(InputManager input)
         {
-            if ((Input.GetMouseButtonDown(0) && !IsPointerBlocked()) || Input.GetMouseButtonDown(2))
+            if ((input.WasPrimaryPointerPressedThisFrame() && !IsPointerBlocked()) || input.WasMiddlePointerPressedThisFrame())
             {
-                dragOrigin = Input.mousePosition;
+                dragOrigin = input.GetPointerScreenPosition();
                 isDragging = true;
             }
 
-            if (Input.GetMouseButtonUp(0) || Input.GetMouseButtonUp(2))
+            if (input.WasPrimaryPointerReleasedThisFrame() || input.WasMiddlePointerReleasedThisFrame())
                 isDragging = false;
 
             if (isDragging)
             {
-                Vector3 delta = Input.mousePosition - dragOrigin;
+                Vector3 currentPointerPosition = input.GetPointerScreenPosition();
+                Vector3 delta = currentPointerPosition - dragOrigin;
                 Vector3 move = new Vector3(-delta.x, 0, -delta.y) * panSpeed * (transform.position.y / 10f);
 
                 targetPos += move;
                 ClampTargetPosition();
 
-                dragOrigin = Input.mousePosition;
+                dragOrigin = currentPointerPosition;
             }
         }
 
@@ -125,9 +127,9 @@ namespace CryingSnow.StackCraft
             targetPos.z = Mathf.Clamp(targetPos.z, clampMin.y, clampMax.y);
         }
 
-        private void HandleZoom()
+        private void HandleZoom(InputManager input)
         {
-            float scroll = Input.mouseScrollDelta.y;
+            float scroll = input.GetScrollDeltaY();
 
             if (Mathf.Abs(scroll) > 0.01f)
             {
@@ -158,7 +160,7 @@ namespace CryingSnow.StackCraft
         public IEnumerator MoveTo(Vector3 target, float duration = 0.5f)
         {
             isDragging = false;
-            dragOrigin = Input.mousePosition;
+            dragOrigin = InputManager.Instance != null ? InputManager.Instance.GetPointerScreenPosition() : Vector3.zero;
 
             float desiredDistance = Mathf.Lerp(maxDistance, minDistance, 0.8f);
             Vector3 offset = -cameraTransform.forward * desiredDistance;
