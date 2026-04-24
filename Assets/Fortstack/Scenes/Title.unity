@@ -467,6 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!114 &242642539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1667,6 +1669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!1 &842543403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!1 &1023164601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!114 &1573722793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3342,6 +3350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!1 &1889486920
 GameObject:
   m_ObjectHideFlags: 0
@@ -3686,6 +3696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!1 &1960366054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3790,6 +3802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!114 &2053956282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3940,6 +3954,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef98d84a856977b44bbf49a1bab2060a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  underlineOnHover: 1
+  playClickSound: 1
 --- !u!114 &2057193292
 MonoBehaviour:
   m_ObjectHideFlags: 0
