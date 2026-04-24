@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Markyu.FortStack
 {
-    public class TitleScreen : MonoBehaviour
+    public class TitleScreen : LocalizedUIBehaviour
     {
         [Header("Menu Buttons")]
         [SerializeField, Tooltip("The button that opens the Gameplay Preferences UI to start a new game.")]
@@ -30,34 +30,39 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Reference to the generic Modal Window used for confirmation prompts, like quitting the game.")]
         private ModalWindow modalWindow;
 
-        private void Start()
+        private void Awake()
         {
-            RefreshLocalizedText();
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
+            newGameButton.SetOnClick(OpenNewGameMenu);
+            loadGameButton.SetOnClick(OpenLoadGameMenu);
+            gameOptionsButton.SetOnClick(OpenOptionsMenu);
+            quitGameButton.SetOnClick(ShowQuitConfirmation);
+        }
 
-            newGameButton.SetOnClick(() => gameplayPrefsUI.Open());
-            loadGameButton.SetOnClick(() => savedGamesUI.Open());
-            gameOptionsButton.SetOnClick(() => gameOptionsUI.Open());
-            quitGameButton.SetOnClick(() =>
-                modalWindow.Show(
-                    GameLocalization.Get("title.quitConfirmTitle"),
-                    GameLocalization.Get("title.quitConfirmBody"),
-                    Application.Quit
-                )
+        private void OpenNewGameMenu()
+        {
+            gameplayPrefsUI.Open();
+        }
+
+        private void OpenLoadGameMenu()
+        {
+            savedGamesUI.Open();
+        }
+
+        private void OpenOptionsMenu()
+        {
+            gameOptionsUI.Open();
+        }
+
+        private void ShowQuitConfirmation()
+        {
+            modalWindow.Show(
+                GameLocalization.Get("title.quitConfirmTitle"),
+                GameLocalization.Get("title.quitConfirmBody"),
+                Application.Quit
             );
         }
 
-        private void OnDestroy()
-        {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
-        }
-
-        private void HandleLanguageChanged(GameLanguage _)
-        {
-            RefreshLocalizedText();
-        }
-
-        private void RefreshLocalizedText()
+        protected override void RefreshLocalizedText()
         {
             newGameButton.SetText(GameLocalization.Get("title.newGame"));
             loadGameButton.SetText(GameLocalization.Get("title.loadGame"));

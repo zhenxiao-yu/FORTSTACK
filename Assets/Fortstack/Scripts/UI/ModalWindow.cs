@@ -3,7 +3,7 @@ using TMPro;
 
 namespace Markyu.FortStack
 {
-    public class ModalWindow : MonoBehaviour
+    public class ModalWindow : LocalizedUIBehaviour
     {
         [SerializeField, Tooltip("UI text element used to display the modal window title.")]
         private TextMeshProUGUI titleText;
@@ -17,24 +17,47 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Button that confirms the action and triggers the assigned callback.")]
         private TextButton acceptButton;
 
+        private System.Action pendingAcceptAction;
+
         private void Awake()
         {
-            declineButton.SetOnClick(() => gameObject.SetActive(false));
+            declineButton.SetOnClick(Hide);
+            acceptButton.SetOnClick(Confirm);
         }
 
-        /// <summary>
-        /// Shows the modal window with the specified title and message, and assigns a callback to run when the Accept button is pressed.
-        /// </summary>
         public void Show(string title, string dialog, System.Action onAccept)
         {
-            gameObject.SetActive(true);
             titleText.text = title;
             dialogText.text = dialog;
-            acceptButton.SetOnClick(() =>
+            pendingAcceptAction = onAccept;
+
+            if (!gameObject.activeSelf)
             {
-                onAccept?.Invoke();
-                gameObject.SetActive(false);
-            });
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                RefreshLocalizedText();
+            }
+        }
+
+        public void Hide()
+        {
+            pendingAcceptAction = null;
+            gameObject.SetActive(false);
+        }
+
+        private void Confirm()
+        {
+            System.Action acceptAction = pendingAcceptAction;
+            Hide();
+            acceptAction?.Invoke();
+        }
+
+        protected override void RefreshLocalizedText()
+        {
+            acceptButton.SetText(GameLocalization.Get("common.confirmButton"));
+            declineButton.SetText(GameLocalization.Get("common.cancelButton"));
         }
     }
 }

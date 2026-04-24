@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
 namespace Markyu.FortStack
 {
-    public class GameplayPrefsUI : MonoBehaviour
+    public class GameplayPrefsUI : LocalizedUIBehaviour
     {
         [SerializeField, Tooltip("The TextMeshProUGUI component displaying the current value of the Day Duration slider.")]
         private TextMeshProUGUI durationLabel;
@@ -24,24 +25,59 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("The button used to confirm the settings and start a new game.")]
         private TextButton confirmButton;
 
+        private UnityAction<float> durationChangedHandler;
+        private UnityAction<bool> friendlyChangedHandler;
+
         private void Awake()
         {
-            durationSlider.onValueChanged.AddListener(value =>
-            {
-                UpdateDurationLabel((int)value);
-            });
+            durationChangedHandler = HandleDurationSliderChanged;
+            friendlyChangedHandler = HandleFriendlyToggleChanged;
 
-            isFriendlyToggle.onValueChanged.AddListener(isOn =>
-            {
-                UpdateFriendlyLabel(isOn);
-                AudioManager.Instance?.PlaySFX(AudioId.Click);
-            });
-
+            durationSlider.onValueChanged.AddListener(durationChangedHandler);
+            isFriendlyToggle.onValueChanged.AddListener(friendlyChangedHandler);
             cancelButton.SetOnClick(Close);
             confirmButton.SetOnClick(StartNewGame);
+        }
 
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
-            RefreshLocalizedText();
+        private void OnDestroy()
+        {
+            if (durationSlider != null && durationChangedHandler != null)
+            {
+                durationSlider.onValueChanged.RemoveListener(durationChangedHandler);
+            }
+
+            if (isFriendlyToggle != null && friendlyChangedHandler != null)
+            {
+                isFriendlyToggle.onValueChanged.RemoveListener(friendlyChangedHandler);
+            }
+        }
+
+        public void Open()
+        {
+            if (!gameObject.activeSelf)
+            {
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                RefreshLocalizedText();
+            }
+        }
+
+        private void Close()
+        {
+            gameObject.SetActive(false);
+        }
+
+        private void HandleDurationSliderChanged(float value)
+        {
+            UpdateDurationLabel(Mathf.RoundToInt(value));
+        }
+
+        private void HandleFriendlyToggleChanged(bool isOn)
+        {
+            UpdateFriendlyLabel(isOn);
+            AudioManager.Instance?.PlaySFX(AudioId.Click);
         }
 
         private void UpdateDurationLabel(int duration)
@@ -56,29 +92,22 @@ namespace Markyu.FortStack
                 : GameLocalization.Get("gameplay.friendlyOff");
         }
 
-        public void Open() => gameObject.SetActive(true);
-        private void Close() => gameObject.SetActive(false);
-
-        private void OnDestroy()
-        {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
-        }
-
         private void StartNewGame()
         {
-            int dayDuration = (int)durationSlider.value;
+            GameDirector gameDirector = GameDirector.Instance;
+            if (gameDirector == null)
+            {
+                return;
+            }
+
+            int dayDuration = Mathf.RoundToInt(durationSlider.value);
             bool isFriendlyMode = isFriendlyToggle.isOn;
             var prefs = new GameplayPrefs(dayDuration, isFriendlyMode);
-            GameDirector.Instance.NewGame(prefs);
+            gameDirector.NewGame(prefs);
             Close();
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
-        {
-            RefreshLocalizedText();
-        }
-
-        private void RefreshLocalizedText()
+        protected override void RefreshLocalizedText()
         {
             cancelButton.SetText(GameLocalization.Get("common.cancelButton"));
             confirmButton.SetText(GameLocalization.Get("common.confirmButton"));

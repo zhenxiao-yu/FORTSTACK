@@ -1,12 +1,15 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
 namespace Markyu.FortStack
 {
-    public class GameOptionsUI : MonoBehaviour
+    public class GameOptionsUI : LocalizedUIBehaviour
     {
         private TextButton languageButton;
+        private UnityAction<float> sfxSliderChangedHandler;
+        private UnityAction<float> bgmSliderChangedHandler;
 
         [Header("Graphics")]
         [SerializeField, Tooltip("The button used to cycle through available screen resolutions.")]
@@ -48,96 +51,44 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Reference to the generic Modal Window used for confirmation prompts, such as resetting settings.")]
         private ModalWindow modalWindow;
 
-        private void Start()
+        private void Awake()
         {
             EnsureLanguageButton();
-
-            resolutionButton.SetOnClick(() =>
-            {
-                GraphicsManager.Instance.CycleScreenResolution();
-                resolutionButton.SetText(GraphicsManager.Instance.GetResolutionLabel());
-            });
-
-            fullscreenButton.SetOnClick(() =>
-            {
-                GraphicsManager.Instance.CycleFullscreenMode();
-                fullscreenButton.SetText(GraphicsManager.Instance.GetFullscreenLabel());
-            });
-
-            vSyncButton.SetOnClick(() =>
-            {
-                GraphicsManager.Instance.CycleVSync();
-                vSyncButton.SetText(GraphicsManager.Instance.FormatVSyncLabel());
-            });
-
-            fpsButton.SetOnClick(() =>
-            {
-                GraphicsManager.Instance.CycleFrameRateCap();
-                fpsButton.SetText(GraphicsManager.Instance.FormatFpsLabel());
-            });
-
-            shadowButton.SetOnClick(() =>
-            {
-                GraphicsManager.Instance.CycleShadowPreset();
-                shadowButton.SetText(GraphicsManager.Instance.FormatShadowLabel());
-            });
-
-            sliderSFX.onValueChanged.AddListener(value =>
-            {
-                AudioManager.Instance?.SetSFXVolume(value);
-                UpdateSfxLabel(value);
-            });
-
-            sliderBGM.onValueChanged.AddListener(value =>
-            {
-                AudioManager.Instance?.SetBGMVolume(value);
-                UpdateBgmLabel(value);
-            });
-
-            InitVolumeSliders();
-
-            resetButton.SetOnClick(() =>
-                modalWindow.Show(
-                    GameLocalization.Get("options.resetTitle"),
-                    GameLocalization.Get("options.resetBody"),
-                    ResetAllSettings
-                )
-            );
-
-            closeButton.SetOnClick(Close);
-            languageButton?.SetOnClick(GameLocalization.CycleLanguage);
-
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
-            RefreshLocalizedText();
+            BindButtonEvents();
+            BindSliderEvents();
         }
 
-        private void InitButtonLabels()
+        protected override void OnEnable()
         {
-            resolutionButton.SetText(GraphicsManager.Instance.GetResolutionLabel());
-            fullscreenButton.SetText(GraphicsManager.Instance.GetFullscreenLabel());
-            vSyncButton.SetText(GraphicsManager.Instance.FormatVSyncLabel());
-            fpsButton.SetText(GraphicsManager.Instance.FormatFpsLabel());
-            shadowButton.SetText(GraphicsManager.Instance.FormatShadowLabel());
-        }
-
-        private void InitVolumeSliders()
-        {
-            sliderSFX.value = AudioManager.Instance.GetSavedSFXVolumeSlider();
-            sliderBGM.value = AudioManager.Instance.GetSavedBGMVolumeSlider();
-            UpdateSfxLabel(sliderSFX.value);
-            UpdateBgmLabel(sliderBGM.value);
+            base.OnEnable();
+            RefreshStateFromManagers();
         }
 
         private void OnDestroy()
         {
-            sliderSFX.onValueChanged.RemoveAllListeners();
-            sliderBGM.onValueChanged.RemoveAllListeners();
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
+            if (sliderSFX != null && sfxSliderChangedHandler != null)
+            {
+                sliderSFX.onValueChanged.RemoveListener(sfxSliderChangedHandler);
+            }
+
+            if (sliderBGM != null && bgmSliderChangedHandler != null)
+            {
+                sliderBGM.onValueChanged.RemoveListener(bgmSliderChangedHandler);
+            }
         }
 
         public void Open()
         {
-            gameObject.SetActive(true);
+            RefreshStateFromManagers();
+
+            if (!gameObject.activeSelf)
+            {
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                RefreshLocalizedText();
+            }
         }
 
         public void Close()
@@ -146,18 +97,125 @@ namespace Markyu.FortStack
             gameObject.SetActive(false);
         }
 
+        private void BindButtonEvents()
+        {
+            resolutionButton.SetOnClick(HandleResolutionButtonClicked);
+            fullscreenButton.SetOnClick(HandleFullscreenButtonClicked);
+            vSyncButton.SetOnClick(HandleVSyncButtonClicked);
+            fpsButton.SetOnClick(HandleFpsButtonClicked);
+            shadowButton.SetOnClick(HandleShadowButtonClicked);
+            resetButton.SetOnClick(ShowResetConfirmation);
+            closeButton.SetOnClick(Close);
+            languageButton?.SetOnClick(GameLocalization.CycleLanguage);
+        }
+
+        private void BindSliderEvents()
+        {
+            sfxSliderChangedHandler = HandleSfxSliderChanged;
+            bgmSliderChangedHandler = HandleBgmSliderChanged;
+
+            sliderSFX.onValueChanged.AddListener(sfxSliderChangedHandler);
+            sliderBGM.onValueChanged.AddListener(bgmSliderChangedHandler);
+        }
+
+        private void RefreshStateFromManagers()
+        {
+            RefreshGraphicsButtonLabels();
+            RefreshVolumeSliders();
+        }
+
+        private void RefreshGraphicsButtonLabels()
+        {
+            GraphicsManager graphicsManager = GraphicsManager.Instance;
+            if (graphicsManager == null)
+            {
+                return;
+            }
+
+            resolutionButton.SetText(graphicsManager.GetResolutionLabel());
+            fullscreenButton.SetText(graphicsManager.GetFullscreenLabel());
+            vSyncButton.SetText(graphicsManager.FormatVSyncLabel());
+            fpsButton.SetText(graphicsManager.FormatFpsLabel());
+            shadowButton.SetText(graphicsManager.FormatShadowLabel());
+        }
+
+        private void RefreshVolumeSliders()
+        {
+            AudioManager audioManager = AudioManager.Instance;
+            if (audioManager == null)
+            {
+                return;
+            }
+
+            sliderSFX.SetValueWithoutNotify(audioManager.GetSavedSFXVolumeSlider());
+            sliderBGM.SetValueWithoutNotify(audioManager.GetSavedBGMVolumeSlider());
+            UpdateSfxLabel(sliderSFX.value);
+            UpdateBgmLabel(sliderBGM.value);
+        }
+
+        private void HandleResolutionButtonClicked()
+        {
+            GraphicsManager.Instance?.CycleScreenResolution();
+            RefreshGraphicsButtonLabels();
+        }
+
+        private void HandleFullscreenButtonClicked()
+        {
+            GraphicsManager.Instance?.CycleFullscreenMode();
+            RefreshGraphicsButtonLabels();
+        }
+
+        private void HandleVSyncButtonClicked()
+        {
+            GraphicsManager.Instance?.CycleVSync();
+            RefreshGraphicsButtonLabels();
+        }
+
+        private void HandleFpsButtonClicked()
+        {
+            GraphicsManager.Instance?.CycleFrameRateCap();
+            RefreshGraphicsButtonLabels();
+        }
+
+        private void HandleShadowButtonClicked()
+        {
+            GraphicsManager.Instance?.CycleShadowPreset();
+            RefreshGraphicsButtonLabels();
+        }
+
+        private void HandleSfxSliderChanged(float value)
+        {
+            AudioManager.Instance?.SetSFXVolume(value);
+            UpdateSfxLabel(value);
+        }
+
+        private void HandleBgmSliderChanged(float value)
+        {
+            AudioManager.Instance?.SetBGMVolume(value);
+            UpdateBgmLabel(value);
+        }
+
+        private void ShowResetConfirmation()
+        {
+            modalWindow.Show(
+                GameLocalization.Get("options.resetTitle"),
+                GameLocalization.Get("options.resetBody"),
+                ResetAllSettings
+            );
+        }
+
         private void ResetAllSettings()
         {
             GameLanguage currentLanguage = GameLocalization.CurrentLanguage;
 
+            // Resetting PlayerPrefs would also wipe the language choice, so restore it immediately
+            // to keep the current UI language stable after the reset.
             PlayerPrefs.DeleteAll();
             GameLocalization.SetLanguage(currentLanguage, force: true);
 
             GraphicsManager.Instance?.InitGraphicsSettings();
-            InitButtonLabels();
-
             AudioManager.Instance?.InitAudioMixerVolumes();
-            InitVolumeSliders();
+            RefreshStateFromManagers();
             RefreshLocalizedText();
         }
 
@@ -186,14 +244,9 @@ namespace Markyu.FortStack
             labelBGM.text = GameLocalization.Format("options.bgm", Mathf.RoundToInt(value * 100f));
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
+        protected override void RefreshLocalizedText()
         {
-            RefreshLocalizedText();
-        }
-
-        private void RefreshLocalizedText()
-        {
-            InitButtonLabels();
+            RefreshGraphicsButtonLabels();
             UpdateSfxLabel(sliderSFX.value);
             UpdateBgmLabel(sliderBGM.value);
 

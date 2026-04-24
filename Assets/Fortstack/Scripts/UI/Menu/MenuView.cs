@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Markyu.FortStack
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public abstract class MenuView : MonoBehaviour
+    public abstract class MenuView : LocalizedUIBehaviour
     {
         [SerializeField, Tooltip("The parent transform for all list items.")]
         private RectTransform content;

@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Markyu.FortStack
 {
-    public class SavedGamesUI : MonoBehaviour
+    public class SavedGamesUI : LocalizedUIBehaviour
     {
         [SerializeField, Tooltip("Prefab used to create a saved-game slot entry in the list.")]
         private SavedGameSlot slotPrefab;
@@ -20,52 +21,103 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Modal confirmation window used for delete actions.")]
         private ModalWindow modalWindow;
 
-        private List<SavedGameSlot> slots = new();
+        private readonly List<SavedGameSlot> slots = new();
 
-        public void Open() => gameObject.SetActive(true);
-        public void Close() => gameObject.SetActive(false);
-
-        private void Start()
+        private void Awake()
         {
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
+            clearButton.SetOnClick(ShowClearConfirmation);
+            closeButton.SetOnClick(Close);
+        }
 
-            foreach (var savedGame in GameDirector.Instance.SavedGames.Values)
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            RebuildSlots();
+        }
+
+        public void Open()
+        {
+            if (!gameObject.activeSelf)
             {
-                var slot = Instantiate(slotPrefab, contentRect);
+                gameObject.SetActive(true);
+            }
+            else
+            {
+                RebuildSlots();
+                RefreshLocalizedText();
+            }
+        }
+
+        public void Close()
+        {
+            gameObject.SetActive(false);
+        }
+
+        internal void UnregisterSlot(SavedGameSlot slot)
+        {
+            slots.Remove(slot);
+        }
+
+        private void ShowClearConfirmation()
+        {
+            modalWindow.Show(
+                GameLocalization.Get("save.clearTitle"),
+                GameLocalization.Get("save.clearBody"),
+                ClearSavedGames
+            );
+        }
+
+        private void RebuildSlots()
+        {
+            ClearSlotObjects();
+
+            if (slotPrefab == null || contentRect == null)
+            {
+                return;
+            }
+
+            GameDirector gameDirector = GameDirector.Instance;
+            if (gameDirector == null)
+            {
+                return;
+            }
+
+            // Rebuild the slot list on open so the screen always reflects the current save state,
+            // even if saves were created or deleted while this panel was hidden.
+            foreach (GameData savedGame in gameDirector.SavedGames.Values.OrderBy(data => data.SlotNumber))
+            {
+                SavedGameSlot slot = Instantiate(slotPrefab, contentRect);
                 slot.Initialize(savedGame, modalWindow, this);
                 slots.Add(slot);
             }
-
-            clearButton.SetOnClick(() =>
-                modalWindow.Show(
-                    GameLocalization.Get("save.clearTitle"),
-                    GameLocalization.Get("save.clearBody"),
-                    ClearSavedGames
-                )
-            );
-
-            closeButton.SetOnClick(Close);
-            RefreshLocalizedText();
         }
 
-        private void OnDestroy()
+        private void ClearSlotObjects()
         {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
-        }
+            foreach (SavedGameSlot slot in slots)
+            {
+                if (slot != null)
+                {
+                    Destroy(slot.gameObject);
+                }
+            }
 
-        private void HandleLanguageChanged(GameLanguage _)
-        {
-            RefreshLocalizedText();
+            slots.Clear();
         }
 
         private void ClearSavedGames()
         {
-            slots.RemoveAll(slot => slot == null);
-            slots.ForEach(slot => slot.DeleteSavedGame());
+            List<SavedGameSlot> slotsToDelete = new(slots);
+
+            foreach (SavedGameSlot slot in slotsToDelete)
+            {
+                slot?.DeleteSavedGame();
+            }
+
             slots.Clear();
         }
 
-        private void RefreshLocalizedText()
+        protected override void RefreshLocalizedText()
         {
             clearButton.SetText(GameLocalization.Get("title.clearSaves"));
             closeButton.SetText(GameLocalization.Get("common.closeButton"));

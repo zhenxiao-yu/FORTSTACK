@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Markyu.FortStack
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public class PauseMenu : MonoBehaviour
+    public class PauseMenu : LocalizedUIBehaviour
     {
         [Header("Buttons")]
         [SerializeField, Tooltip("The button used to close the pause menu and resume the game.")]
@@ -25,46 +25,64 @@ namespace Markyu.FortStack
         private void Awake()
         {
             canvasGroup = GetComponent<CanvasGroup>();
-            canvasGroup.alpha = 0f;
-            canvasGroup.blocksRaycasts = false;
+            ApplyMenuVisibility(false, updatePauseState: false);
 
             continueButton.SetOnClick(ToggleActiveState);
-            optionsButton.SetOnClick(gameOptionsUI.Open);
-            titleButton.SetOnClick(GameDirector.Instance.BackToTitle);
-
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
-            RefreshLocalizedText();
+            optionsButton.SetOnClick(OpenOptionsMenu);
+            titleButton.SetOnClick(ReturnToTitle);
         }
 
         private void Update()
         {
-            var input = InputManager.Instance;
-            if (input != null && input.WasPausePressedThisFrame() && !DayCycleManager.Instance.IsEndingCycle)
+            InputManager inputManager = InputManager.Instance;
+            if (inputManager == null || !inputManager.WasPausePressedThisFrame())
             {
-                ToggleActiveState();
+                return;
             }
+
+            DayCycleManager dayCycleManager = DayCycleManager.Instance;
+            if (dayCycleManager != null && dayCycleManager.IsEndingCycle)
+            {
+                return;
+            }
+
+            ToggleActiveState();
+        }
+
+        protected override void OnDisable()
+        {
+            ApplyMenuVisibility(false, updatePauseState: true);
+            base.OnDisable();
         }
 
         private void ToggleActiveState()
         {
-            isActive = !isActive;
-            canvasGroup.alpha = isActive ? 1f : 0f;
-            canvasGroup.blocksRaycasts = isActive;
-
-            TimeManager.Instance.SetExternalPause(isActive);
+            ApplyMenuVisibility(!isActive, updatePauseState: true);
         }
 
-        private void OnDestroy()
+        private void ApplyMenuVisibility(bool visible, bool updatePauseState)
         {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
+            isActive = visible;
+            canvasGroup.alpha = visible ? 1f : 0f;
+            canvasGroup.blocksRaycasts = visible;
+
+            if (updatePauseState)
+            {
+                TimeManager.Instance?.SetExternalPause(visible);
+            }
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
+        private void OpenOptionsMenu()
         {
-            RefreshLocalizedText();
+            gameOptionsUI.Open();
         }
 
-        private void RefreshLocalizedText()
+        private void ReturnToTitle()
+        {
+            GameDirector.Instance?.BackToTitle();
+        }
+
+        protected override void RefreshLocalizedText()
         {
             continueButton.SetText(GameLocalization.Get("pause.resume"));
             optionsButton.SetText(GameLocalization.Get("options.header"));

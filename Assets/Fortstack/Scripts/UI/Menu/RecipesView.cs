@@ -19,8 +19,6 @@ namespace Markyu.FortStack
 
         private void Start()
         {
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
-
             if (CraftingManager.Instance != null)
                 CraftingManager.Instance.OnRecipeDiscovered += HandleRecipeDiscovered;
 
@@ -29,8 +27,6 @@ namespace Markyu.FortStack
 
         private void OnDestroy()
         {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
-
             if (CraftingManager.Instance != null)
                 CraftingManager.Instance.OnRecipeDiscovered -= HandleRecipeDiscovered;
         }
@@ -180,7 +176,7 @@ namespace Markyu.FortStack
             return null;
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
+        protected override void RefreshLocalizedText()
         {
             foreach (var kvp in categoryHeaderButtons)
             {

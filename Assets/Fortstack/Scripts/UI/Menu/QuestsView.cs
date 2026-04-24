@@ -231,6 +231,10 @@ namespace Markyu.FortStack
 
             return null;
         }
+
+        protected override void RefreshLocalizedText()
+        {
+        }
         #endregion
     }
 }

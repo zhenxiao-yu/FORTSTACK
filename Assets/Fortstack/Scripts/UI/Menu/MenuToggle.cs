@@ -33,7 +33,7 @@ namespace Markyu.FortStack
 
         private void OnDestroy()
         {
-            button?.onClick.RemoveAllListeners();
+            button?.onClick.RemoveListener(Toggle);
 
             if (TimeManager.Instance != null)
                 TimeManager.Instance.OnDayEnded -= HandleDayEnded;

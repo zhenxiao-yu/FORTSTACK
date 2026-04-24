@@ -6,7 +6,7 @@ using TMPro;
 namespace Markyu.FortStack
 {
     [RequireComponent(typeof(CanvasGroup))]
-    public class DayTimeUI : MonoBehaviour, IPointerClickHandler
+    public class DayTimeUI : LocalizedUIBehaviour, IPointerClickHandler
     {
         [SerializeField, Tooltip("The TextMeshPro label displaying the current day number.")]
         private TextMeshProUGUI dayText;
@@ -29,8 +29,6 @@ namespace Markyu.FortStack
 
         private void Start()
         {
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
-
             if (TimeManager.Instance != null)
             {
                 TimeManager.Instance.OnDayEnded += HandleDayEnded;
@@ -47,13 +45,14 @@ namespace Markyu.FortStack
                 TimeManager.Instance.OnDayEnded -= HandleDayEnded;
                 TimeManager.Instance.OnDayStarted -= HandleDayStarted;
             }
-
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
         }
 
         private void Update()
         {
-            timeProgress.fillAmount = TimeManager.Instance.NormalizedTime;
+            if (TimeManager.Instance != null)
+            {
+                timeProgress.fillAmount = TimeManager.Instance.NormalizedTime;
+            }
         }
 
         private void HandleDayEnded(int _)
@@ -75,13 +74,22 @@ namespace Markyu.FortStack
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            TimeManager.Instance.CycleTimePace(out int timePaceIndex);
-            paceImage.sprite = paceIcons[timePaceIndex];
+            TimeManager timeManager = TimeManager.Instance;
+            if (timeManager == null)
+            {
+                return;
+            }
+
+            timeManager.CycleTimePace(out int timePaceIndex);
+            if (timePaceIndex >= 0 && timePaceIndex < paceIcons.Length)
+            {
+                paceImage.sprite = paceIcons[timePaceIndex];
+            }
 
             AudioManager.Instance?.PlaySFX(AudioId.Click);
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
+        protected override void RefreshLocalizedText()
         {
             if (TimeManager.Instance != null)
             {

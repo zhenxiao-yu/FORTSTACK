@@ -4,7 +4,7 @@ using TMPro;
 
 namespace Markyu.FortStack
 {
-    public class SavedGameSlot : MonoBehaviour
+    public class SavedGameSlot : LocalizedUIBehaviour
     {
         [SerializeField, Tooltip("UI label displaying the slot number, scene name, progress, and last saved time.")]
         private TextMeshProUGUI labelText;
@@ -16,64 +16,78 @@ namespace Markyu.FortStack
         private TextButton deleteButton;
 
         private GameData data;
+        private ModalWindow modalWindow;
+        private SavedGamesUI parentUI;
 
         public void Initialize(GameData data, ModalWindow modalWindow, SavedGamesUI parentUI)
         {
             this.data = data;
-            GameLocalization.LanguageChanged += HandleLanguageChanged;
+            this.modalWindow = modalWindow;
+            this.parentUI = parentUI;
+
+            loadButton.SetOnClick(LoadSavedGame);
+            deleteButton.SetOnClick(ShowDeleteConfirmation);
             RefreshLocalizedText();
-
-            loadButton.SetOnClick(() =>
-            {
-                GameDirector.Instance.LoadGame(data);
-                parentUI.Close();
-            });
-
-            deleteButton.SetOnClick(() =>
-                modalWindow.Show(
-                    GameLocalization.Get("save.deleteTitle"),
-                    GameLocalization.Format("save.deleteBody", data.SlotNumber),
-                    DeleteSavedGame
-                )
-            );
         }
 
         public void DeleteSavedGame()
         {
+            parentUI?.UnregisterSlot(this);
             GameDirector.Instance?.DeleteGame(data);
             Destroy(gameObject);
         }
 
-        private void OnDestroy()
+        private void LoadSavedGame()
         {
-            GameLocalization.LanguageChanged -= HandleLanguageChanged;
+            if (data == null || GameDirector.Instance == null)
+            {
+                return;
+            }
+
+            GameDirector.Instance.LoadGame(data);
+            parentUI?.Close();
         }
 
-        private void HandleLanguageChanged(GameLanguage _)
-        {
-            RefreshLocalizedText();
-        }
-
-        private void RefreshLocalizedText()
+        private void ShowDeleteConfirmation()
         {
             if (data == null)
+            {
                 return;
+            }
 
+            modalWindow.Show(
+                GameLocalization.Get("save.deleteTitle"),
+                GameLocalization.Format("save.deleteBody", data.SlotNumber),
+                DeleteSavedGame
+            );
+        }
+
+        private string BuildSlotLabel()
+        {
             string progressSuffix = string.Empty;
             if (data.TryGetScene(out var sceneData))
             {
                 progressSuffix = GameLocalization.Format("save.progressSuffix", sceneData.QuestProgress);
             }
 
-            var sb = new StringBuilder();
-            sb.Append(GameLocalization.Format("save.slotLabel", data.SlotNumber, data.CurrentScene, progressSuffix));
-            sb.Append(GameLocalization.Format(
-                "save.lastSaved",
-                data.LastSaved.ToString("g", GameLocalization.CurrentCulture)));
+            var builder = new StringBuilder();
+            builder.Append(GameLocalization.Format("save.slotLabel", data.SlotNumber, data.CurrentScene, progressSuffix));
+            builder.Append(GameLocalization.Format("save.lastSaved", data.LastSaved.ToString("g", GameLocalization.CurrentCulture)));
+            return builder.ToString();
+        }
 
-            labelText.text = sb.ToString();
+        protected override void RefreshLocalizedText()
+        {
             loadButton.SetText(GameLocalization.Get("common.loadButton"));
             deleteButton.SetText(GameLocalization.Get("common.deleteButton"));
+
+            if (data == null)
+            {
+                labelText.text = string.Empty;
+                return;
+            }
+
+            labelText.text = BuildSlotLabel();
         }
     }
 }
