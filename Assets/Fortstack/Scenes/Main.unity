@@ -478,6 +478,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3e39fb537544b8e4abf784f6189d0130, type: 2}
   - {fileID: 11400000, guid: fbd0fa6b83e08254fa3768c26bbf0a97, type: 2}
   - {fileID: 11400000, guid: bffdff0edc33e564ab1a8ce5543a7f35, type: 2}
+  enableColonyExpansionVendor: 1
+  colonyExpansionBaseCost: 8
+  colonyExpansionCostStep: 4
   spacing: 1.1
   zoneScale: {x: 1.125, y: 1, z: 1.125}
   spawnOffset: {x: 0, y: 0, z: -1.4}
@@ -1426,5 +1429,4 @@ SceneRoots:
   - {fileID: 2056759083933773671}
   - {fileID: 1211518933}
   - {fileID: 2604837606948666750}
-
 

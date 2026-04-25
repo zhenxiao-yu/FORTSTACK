@@ -144,6 +144,12 @@ namespace Markyu.FortStack
             ["trade.buyerBody"] = new("把可出售的卡牌拖到这里，换取信用芯片。", "Drag sellable cards here to exchange them for credit chips."),
             ["trade.packUnlocked"] = new("新卡包已解锁", "New Pack Unlocked"),
             ["trade.sellStatic"] = new("出售", "Sell"),
+            ["trade.expansionTitle"] = new("扩建", "Expand"),
+            ["trade.expansionHeader"] = new("殖民地扩建终端", "Colony Expansion"),
+            ["trade.expansionBody"] = new("拖入信用芯片，为殖民地棋盘购买一行新的可用区域。还需：{0}。", "Drag credit chips here to buy a new colony board row. Remaining: {0}."),
+            ["trade.expansionProgress"] = new("扩建行：\n{0}/{1}", "Rows:\n{0}/{1}"),
+            ["trade.expansionComplete"] = new("<color=#FFD700>空间已满</color>", "<color=#FFD700>Fully Expanded</color>"),
+            ["trade.expansionCompleteBody"] = new("殖民地棋盘已经扩建到当前上限。", "The colony board has reached its current expansion limit."),
 
             ["quest.progress"] = new("进度：{0} / {1}", "Progress: {0} / {1}"),
 

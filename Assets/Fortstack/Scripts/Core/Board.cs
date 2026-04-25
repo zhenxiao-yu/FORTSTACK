@@ -11,6 +11,19 @@ namespace Markyu.FortStack
 
         public event System.Action<Bounds> OnBoundsUpdated;
 
+        [Header("Colony Expansion")]
+        [SerializeField, Tooltip("Allows this board to grow through purchased colony row upgrades.")]
+        private bool usePurchasedExpansionRows = false;
+
+        [SerializeField, Min(0), Tooltip("Maximum number of board row upgrades this board can buy.")]
+        private int maxPurchasedExpansionRows = 0;
+
+        [SerializeField, Min(0f), Tooltip("Blend shape weight added by each purchased row upgrade.")]
+        private float blendShapeWeightPerExpansionRow = 10f;
+
+        [SerializeField, Min(0), Tooltip("Rows already purchased for this board. Runtime save state keeps this updated.")]
+        private int purchasedExpansionRows = 0;
+
         [Header("Restricted Area")]
         [SerializeField, Tooltip("Space at the top (Z axis) where cards cannot be placed.")]
         private float topMargin = 1.5f;
@@ -41,11 +54,16 @@ namespace Markyu.FortStack
         public Bounds WorldBounds => currentBounds;
         public bool SnapCardsToGrid => snapCardsToGrid;
         public Vector2 GridCellSize => gridCellSize;
+        public bool UsesPurchasedExpansionRows => usePurchasedExpansionRows;
+        public int PurchasedExpansionRows => purchasedExpansionRows;
+        public int MaxPurchasedExpansionRows => usePurchasedExpansionRows ? maxPurchasedExpansionRows : 0;
+        public bool CanPurchaseExpansionRow => usePurchasedExpansionRows && purchasedExpansionRows < maxPurchasedExpansionRows;
 
         private SkinnedMeshRenderer skinnedMesh;
         private Mesh bakedMesh;
         private Bounds currentBounds;
-        private int totalBoost;
+        private int statBoost;
+        private int appliedBoost;
 
         private MeshFilter gridFilter;
         private MeshRenderer gridRenderer;
@@ -68,6 +86,12 @@ namespace Markyu.FortStack
 
             EnsureGridOverlay();
             UpdateCurrentBounds();
+
+            if (GameDirector.Instance != null)
+            {
+                GameDirector.Instance.OnSceneDataReady += HandleSceneDataReady;
+                GameDirector.Instance.OnBeforeSave += HandleBeforeSave;
+            }
         }
 
         private void Start()
@@ -91,6 +115,12 @@ namespace Markyu.FortStack
                 CardManager.Instance.OnStatsChanged -= HandleStatsChanged;
             }
 
+            if (GameDirector.Instance != null)
+            {
+                GameDirector.Instance.OnSceneDataReady -= HandleSceneDataReady;
+                GameDirector.Instance.OnBeforeSave -= HandleBeforeSave;
+            }
+
             if (bakedMesh != null)
             {
                 Destroy(bakedMesh);
@@ -109,26 +139,77 @@ namespace Markyu.FortStack
 
         private void HandleStatsChanged(StatsSnapshot stats)
         {
-            if (stats.TotalBoost != totalBoost)
+            int nextStatBoost = Mathf.Min(stats.TotalBoost, 100);
+            if (nextStatBoost == statBoost) return;
+
+            statBoost = nextStatBoost;
+            ApplyBoardBoost();
+        }
+
+        public bool TryPurchaseExpansionRow()
+        {
+            if (!CanPurchaseExpansionRow)
             {
-                bool isBoardShrinking = stats.TotalBoost < totalBoost;
+                return false;
+            }
 
-                totalBoost = Mathf.Min(stats.TotalBoost, 100);
-                skinnedMesh.SetBlendShapeWeight(0, totalBoost);
+            purchasedExpansionRows++;
+            ApplyBoardBoost();
+            return true;
+        }
 
-                UpdateCurrentBounds();
+        private void ApplyBoardBoost(bool resolveStacks = true)
+        {
+            int nextBoost = GetTargetBoost();
+            if (nextBoost == appliedBoost) return;
 
-                if (CardManager.Instance != null)
-                {
-                    if (snapCardsToGrid)
-                    {
-                        CardManager.Instance.ResolveOverlaps();
-                    }
-                    else if (isBoardShrinking)
-                    {
-                        CardManager.Instance.EnforceBoardLimits();
-                    }
-                }
+            bool isBoardShrinking = nextBoost < appliedBoost;
+            appliedBoost = nextBoost;
+
+            if (skinnedMesh == null)
+            {
+                skinnedMesh = GetComponent<SkinnedMeshRenderer>();
+            }
+
+            skinnedMesh.SetBlendShapeWeight(0, appliedBoost);
+            UpdateCurrentBounds();
+
+            if (!resolveStacks || CardManager.Instance == null)
+            {
+                return;
+            }
+
+            if (snapCardsToGrid)
+            {
+                CardManager.Instance.ResolveOverlaps();
+            }
+            else if (isBoardShrinking)
+            {
+                CardManager.Instance.EnforceBoardLimits();
+            }
+        }
+
+        private int GetTargetBoost()
+        {
+            float purchasedBoost = usePurchasedExpansionRows
+                ? purchasedExpansionRows * blendShapeWeightPerExpansionRow
+                : 0f;
+
+            return Mathf.Clamp(statBoost + Mathf.RoundToInt(purchasedBoost), 0, 100);
+        }
+
+        private void HandleSceneDataReady(SceneData sceneData, bool wasLoaded)
+        {
+            purchasedExpansionRows = wasLoaded ? sceneData.ColonyBoardPurchasedRows : 0;
+            ClampPurchasedExpansionRows();
+            ApplyBoardBoost(resolveStacks: false);
+        }
+
+        private void HandleBeforeSave(GameData gameData)
+        {
+            if (gameData.TryGetScene(out var sceneData))
+            {
+                sceneData.ColonyBoardPurchasedRows = purchasedExpansionRows;
             }
         }
 
@@ -736,6 +817,24 @@ namespace Markyu.FortStack
             triangles.Add(startIndex + 0);
             triangles.Add(startIndex + 2);
             triangles.Add(startIndex + 3);
+        }
+
+        private void ClampPurchasedExpansionRows()
+        {
+            if (!usePurchasedExpansionRows)
+            {
+                purchasedExpansionRows = 0;
+                return;
+            }
+
+            maxPurchasedExpansionRows = Mathf.Max(0, maxPurchasedExpansionRows);
+            purchasedExpansionRows = Mathf.Clamp(purchasedExpansionRows, 0, maxPurchasedExpansionRows);
+        }
+
+        private void OnValidate()
+        {
+            blendShapeWeightPerExpansionRow = Mathf.Max(0f, blendShapeWeightPerExpansionRow);
+            ClampPurchasedExpansionRows();
         }
 
 #if UNITY_EDITOR

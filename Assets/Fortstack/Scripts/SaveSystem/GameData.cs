@@ -62,6 +62,8 @@ namespace Markyu.FortStack
         public HashSet<string> CompletedEncounters = new();
         public TimeData SavedTime;
         public int QuestProgress;
+        public int ColonyBoardPurchasedRows;
+        public int ColonyBoardExpansionPaidAmount;
 
         public SceneData() { }
 

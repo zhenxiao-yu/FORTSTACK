@@ -34,7 +34,7 @@ namespace Markyu.FortStack
             InfoPanel.Instance?.UnregisterHover();
         }
 
-        private void OnDisable()
+        protected virtual void OnDisable()
         {
             InfoPanel.Instance?.UnregisterHover();
         }
@@ -54,6 +54,17 @@ namespace Markyu.FortStack
         public abstract bool CanTrade(CardStack droppedStack);
         protected abstract void ProcessTransaction(CardStack droppedStack);
 
+        public void CopyVisualEffectsFrom(TradeZone source)
+        {
+            if (source == null)
+            {
+                return;
+            }
+
+            puffParticle = source.puffParticle;
+            outlineMaterial = source.outlineMaterial;
+        }
+
         /// <summary>
         /// Controls the visual highlighting state of the zone.
         /// Creates the necessary <see cref="Highlight"/> component if it does not already exist.
@@ -61,16 +72,33 @@ namespace Markyu.FortStack
         /// <param name="value">If true, the zone is highlighted; otherwise, the highlight is hidden.</param>
         public void SetHighlighted(bool value)
         {
+            if (outlineMaterial == null)
+            {
+                return;
+            }
+
             if (highlight == null)
             {
-                var mesh = GetComponent<MeshFilter>().mesh;
+                var filter = GetComponent<MeshFilter>();
+                if (filter == null || filter.mesh == null)
+                {
+                    return;
+                }
+
+                var mesh = filter.mesh;
                 highlight = new Highlight(transform, mesh, outlineMaterial);
             }
-            else highlight.SetActive(value);
+
+            highlight.SetActive(value);
         }
 
         public void PlayPuffParticle()
         {
+            if (puffParticle == null)
+            {
+                return;
+            }
+
             Instantiate(puffParticle, transform.position, Quaternion.identity);
         }
 

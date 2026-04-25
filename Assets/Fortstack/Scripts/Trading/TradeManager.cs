@@ -28,6 +28,16 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("The list of card packs to offer. Each item creates one vendor.")]
         private List<PackDefinition> offeredPacks;
 
+        [Header("Colony Expansion")]
+        [SerializeField, Tooltip("Creates an isolated terminal that sells colony board row upgrades.")]
+        private bool enableColonyExpansionVendor = false;
+
+        [SerializeField, Min(1), Tooltip("Credit cost for the first purchased colony board row.")]
+        private int colonyExpansionBaseCost = 8;
+
+        [SerializeField, Min(0), Tooltip("Additional credit cost added after each purchased row.")]
+        private int colonyExpansionCostStep = 4;
+
         [Header("Layout")]
         [SerializeField, Tooltip("The horizontal distance between the centers of each trade zone.")]
         private float spacing = 1.1f;
@@ -47,6 +57,8 @@ namespace Markyu.FortStack
         private CameraController cameraController;
 
         private Dictionary<string, int> savedPaymentMap = new();
+        private BoardExpansionVendor expansionVendor;
+        private int savedExpansionPayment;
 
         private readonly Queue<PackVendor> activationQueue = new();
         private Coroutine activeSequenceCoroutine = null;
@@ -77,6 +89,7 @@ namespace Markyu.FortStack
                 vendors.Add(vendor);
             }
 
+            CreateExpansionVendor();
             UpdateZoneLayout();
 
             if (GameDirector.Instance != null)
@@ -102,6 +115,7 @@ namespace Markyu.FortStack
             }
 
             RestoreVendors();
+            RestoreExpansionVendor();
         }
 
         private void OnDestroy()
@@ -143,6 +157,9 @@ namespace Markyu.FortStack
             if (gameData.TryGetScene(out var sceneData))
             {
                 sceneData.SaveVendors(vendors);
+                sceneData.ColonyBoardExpansionPaidAmount = expansionVendor != null
+                    ? expansionVendor.PaidAmount
+                    : 0;
             }
         }
 
@@ -157,6 +174,8 @@ namespace Markyu.FortStack
                     savedPaymentMap[vData.PackId] = vData.PaidAmount;
                 }
             }
+
+            savedExpansionPayment = sceneData.ColonyBoardExpansionPaidAmount;
 
             // Vendor restoration is intentionally deferred.
             // OnSceneDataReady is triggered by SceneManager.onSceneLoaded (before Start),
@@ -176,6 +195,68 @@ namespace Markyu.FortStack
                 savedPaymentMap.TryGetValue(vendor.PackId, out int paid);
 
                 vendor.RestoreState(paid, currentQuestCount);
+            }
+        }
+
+        private void RestoreExpansionVendor()
+        {
+            if (expansionVendor == null)
+            {
+                return;
+            }
+
+            expansionVendor.Bind(Board.Instance);
+            expansionVendor.RestoreState(savedExpansionPayment);
+        }
+
+        private void CreateExpansionVendor()
+        {
+            if (!enableColonyExpansionVendor)
+            {
+                return;
+            }
+
+            var zoneObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            zoneObject.name = "BoardExpansionVendor";
+            zoneObject.transform.SetParent(transform, false);
+
+            CopyTradeZonePresentation(zoneObject);
+
+            expansionVendor = zoneObject.AddComponent<BoardExpansionVendor>();
+            expansionVendor.CopyVisualEffectsFrom(buyerPrefab);
+            expansionVendor.Initialize(spawnOffset, colonyExpansionBaseCost, colonyExpansionCostStep);
+            zones.Add(expansionVendor);
+        }
+
+        private void CopyTradeZonePresentation(GameObject zoneObject)
+        {
+            if (zoneObject == null || buyerPrefab == null)
+            {
+                return;
+            }
+
+            var targetFilter = zoneObject.GetComponent<MeshFilter>();
+            var targetRenderer = zoneObject.GetComponent<MeshRenderer>();
+            var targetCollider = zoneObject.GetComponent<BoxCollider>();
+
+            var sourceFilter = buyerPrefab.GetComponent<MeshFilter>();
+            var sourceRenderer = buyerPrefab.GetComponent<MeshRenderer>();
+            var sourceCollider = buyerPrefab.GetComponent<BoxCollider>();
+
+            if (targetFilter != null && sourceFilter != null && sourceFilter.sharedMesh != null)
+            {
+                targetFilter.sharedMesh = sourceFilter.sharedMesh;
+            }
+
+            if (targetRenderer != null && sourceRenderer != null)
+            {
+                targetRenderer.sharedMaterials = sourceRenderer.sharedMaterials;
+            }
+
+            if (targetCollider != null && sourceCollider != null)
+            {
+                targetCollider.size = sourceCollider.size;
+                targetCollider.center = sourceCollider.center;
             }
         }
 
@@ -270,6 +351,11 @@ namespace Markyu.FortStack
             Gizmos.matrix = transform.localToWorldMatrix;
 
             int totalZones = 1 + (offeredPacks != null ? offeredPacks.Count : 0);
+            if (enableColonyExpansionVendor)
+            {
+                totalZones++;
+            }
+
             if (totalZones <= 0) return;
 
             float totalWidth = (totalZones - 1) * spacing;
@@ -279,7 +365,11 @@ namespace Markyu.FortStack
 
             for (int i = 0; i < totalZones; i++)
             {
-                Gizmos.color = i == 0 ? Color.green : Color.cyan;
+                Gizmos.color = i == 0
+                    ? Color.green
+                    : enableColonyExpansionVendor && i == totalZones - 1
+                        ? Color.magenta
+                        : Color.cyan;
 
                 float newX = startX + (i * spacing);
                 Vector3 zoneLocalPos = new Vector3(newX, 0, 0);

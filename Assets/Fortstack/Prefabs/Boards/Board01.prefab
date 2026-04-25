@@ -100,4 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01de6a7d74dff974b81ad14f79fd2480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usePurchasedExpansionRows: 1
+  maxPurchasedExpansionRows: 4
+  blendShapeWeightPerExpansionRow: 10
+  purchasedExpansionRows: 0
   topMargin: 1.5
