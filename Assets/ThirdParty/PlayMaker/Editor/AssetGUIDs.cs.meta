@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 368
   packageName: Playmaker
   packageVersion: 1.9.9
-  assetPath: Assets/PlayMaker/Editor/AssetGUIDs.cs
+  assetPath: Assets/ThirdParty/PlayMaker/Editor/AssetGUIDs.cs
   uploadId: 736611

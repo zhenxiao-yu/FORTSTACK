@@ -1,0 +1,75 @@
+key,en,zh-Hans,zh-Hant,ja,ko,fr,de,es,notes
+ui.play,Deploy,部署,部署,展開,배치,Deployer,Einsetzen,Desplegar,Placeholder translation - needs native review
+ui.continue,Continue,继续,繼續,続行,계속,Continuer,Fortfahren,Continuar,Placeholder translation - needs native review
+ui.new_game,New Run,新一轮,新一輪,新規ラン,새 실행,Nouvelle partie,Neuer Lauf,Nueva partida,Placeholder translation - needs native review
+ui.settings,Settings,设置,設定,設定,설정,Parametres,Einstellungen,Ajustes,Placeholder translation - needs native review
+ui.quit,Quit,退出,退出,終了,종료,Quitter,Beenden,Salir,Placeholder translation - needs native review
+ui.back,Back,返回,返回,戻る,뒤로,Retour,Zurueck,Atras,Placeholder translation - needs native review
+ui.confirm,Confirm,确认,確認,確定,확인,Confirmer,Bestaetigen,Confirmar,Placeholder translation - needs native review
+ui.cancel,Cancel,取消,取消,キャンセル,취소,Annuler,Abbrechen,Cancelar,Placeholder translation - needs native review
+ui.apply,Apply,应用,套用,適用,적용,Appliquer,Anwenden,Aplicar,Placeholder translation - needs native review
+ui.language,Language,语言,語言,言語,언어,Langue,Sprache,Idioma,Placeholder translation - needs native review
+ui.audio,Audio,音频,音訊,オーディオ,오디오,Audio,Audio,Audio,Placeholder translation - needs native review
+ui.video,Video,视频,視訊,ビデオ,비디오,Video,Video,Video,Placeholder translation - needs native review
+ui.controls,Controls,控制,控制,操作,조작,Commandes,Steuerung,Controles,Placeholder translation - needs native review
+ui.credits,Credits,制作名单,製作名單,クレジット,크레딧,Credits,Credits,Creditos,Placeholder translation - needs native review
+menu.title,Last Kernel,Last Kernel,Last Kernel,Last Kernel,Last Kernel,Last Kernel,Last Kernel,Last Kernel,Brand title - verify casing before release
+menu.subtitle,Hold the bunker. Stack the future.,守住地堡，堆起未来。,守住地堡，堆起未來。,バンカーを守り、未来を積み上げろ。,벙커를 지키고 미래를 쌓아 올리세요.,Tenez le bunker. Empilez l avenir.,Haltet den Bunker. Stapelt die Zukunft.,Defiende el bunker. Apila el futuro.,Placeholder translation - needs native review
+menu.start_run,Start Run,开始行动,開始行動,ラン開始,실행 시작,Lancer une partie,Lauf starten,Iniciar partida,Placeholder translation - needs native review
+menu.load_run,Load Run,载入行动,載入行動,ランをロード,실행 불러오기,Charger une partie,Lauf laden,Cargar partida,Placeholder translation - needs native review
+menu.options,Options,选项,選項,オプション,옵션,Options,Optionen,Opciones,Placeholder translation - needs native review
+menu.exit,Exit,离开,離開,終了,나가기,Quitter,Verlassen,Salir,Placeholder translation - needs native review
+gameplay.day,Day,白昼,白晝,昼,낮,Jour,Tag,Dia,Placeholder translation - needs native review
+gameplay.night,Night,黑夜,黑夜,夜,밤,Nuit,Nacht,Noche,Placeholder translation - needs native review
+gameplay.wave,Wave,波次,波次,ウェーブ,공세,Vague,Welle,Oleada,Placeholder translation - needs native review
+gameplay.pause,Pause,暂停,暫停,一時停止,일시 정지,Pause,Pause,Pausa,Placeholder translation - needs native review
+gameplay.resume,Resume,继续,繼續,再開,재개,Reprendre,Fortsetzen,Reanudar,Placeholder translation - needs native review
+gameplay.speed_normal,Normal Speed,正常速度,正常速度,通常速度,보통 속도,Vitesse normale,Normales Tempo,Velocidad normal,Placeholder translation - needs native review
+gameplay.speed_fast,Fast Speed,快速,快速,高速,빠른 속도,Vitesse rapide,Schnelles Tempo,Velocidad rapida,Placeholder translation - needs native review
+gameplay.speed_pause,Paused,已暂停,已暫停,停止中,일시 정지됨,En pause,Pausiert,Pausado,Placeholder translation - needs native review
+gameplay.end_turn,End Turn,结束回合,結束回合,ターン終了,턴 종료,Fin du tour,Zug beenden,Terminar turno,Placeholder translation - needs native review
+gameplay.next_night,Next Night,进入黑夜,進入黑夜,次の夜へ,다음 밤,Nuit suivante,Naechste Nacht,Siguiente noche,Placeholder translation - needs native review
+card.worker,Worker,工人,工人,作業員,작업자,Ouvrier,Arbeiter,Trabajador,Placeholder translation - needs native review
+card.engineer,Engineer,工程师,工程師,エンジニア,기술자,Ingenieur,Ingenieur,Ingeniero,Placeholder translation - needs native review
+card.scrap,Scrap,废料,廢料,スクラップ,고철,Ferraille,Schrott,Chatarra,Terminology locked for Scrap
+card.circuit,Circuit,电路,電路,回路,회로,Circuit,Schaltkreis,Circuito,Placeholder translation - needs native review
+card.power_core,Power Core,能量核心,能量核心,パワーコア,전력 코어,Coeur d energie,Energiekern,Nucleo de energia,Terminology locked for Core
+card.food_ration,Food Ration,口粮,口糧,食料配給,식량 배급,Ration,Ration,Racion,Placeholder translation - needs native review
+card.shelter,Shelter,避难所,避難所,シェルター,대피소,Abri,Schutzraum,Refugio,Placeholder translation - needs native review
+card.turret,Turret,炮塔,砲塔,タレット,포탑,Tourelle,Geschuetz,Torreta,Placeholder translation - needs native review
+card.wall,Wall,墙体,牆體,壁,벽,Mur,Mauer,Muro,Placeholder translation - needs native review
+card.generator,Generator,发电机,發電機,発電機,발전기,Generateur,Generator,Generador,Placeholder translation - needs native review
+card.repair_drone,Repair Drone,维修无人机,維修無人機,修理ドローン,수리 드론,Drone de reparation,Reparaturdrohne,Dron de reparacion,Placeholder translation - needs native review
+card.signal_tower,Signal Tower,信号塔,訊號塔,信号塔,신호탑,Tour de signal,Signalturm,Torre de senal,Placeholder translation - needs native review
+resource.scrap,Scrap,废料,廢料,スクラップ,고철,Ferraille,Schrott,Chatarra,Terminology locked for Scrap
+resource.energy,Energy,能量,能量,エネルギー,에너지,Energie,Energie,Energia,Terminology locked for Energy
+resource.food,Food,食物,食物,食料,식량,Nourriture,Nahrung,Comida,Placeholder translation - needs native review
+resource.morale,Morale,士气,士氣,士気,사기,Moral,Moral,Moral,Terminology locked for Morale
+resource.data,Data,数据,資料,データ,데이터,Donnees,Daten,Datos,Placeholder translation - needs native review
+resource.cores,Cores,核心,核心,コア,코어,Coeurs,Kerne,Nucleos,Terminology locked for Core
+resource.population,Population,人口,人口,人口,인구,Population,Bevoelkerung,Poblacion,Placeholder translation - needs native review
+combat.incoming_wave,Wave inbound,敌潮来袭,敵潮來襲,ウェーブ接近,공세 접근 중,Vague en approche,Welle im Anflug,Oleada entrante,Placeholder translation - needs native review
+combat.enemy_breach,Breach detected,发现突破口,發現突破口,侵入を検知,침입 감지,Breche detectee,Durchbruch erkannt,Brecha detectada,Placeholder translation - needs native review
+combat.core_under_attack,Core under attack,核心遭到攻击,核心遭到攻擊,コア攻撃中,코어 공격받는 중,Coeur attaque,Kern unter Angriff,Nucleo bajo ataque,Terminology locked for Core
+combat.victory,Victory,胜利,勝利,勝利,승리,Victoire,Sieg,Victoria,Placeholder translation - needs native review
+combat.defeat,Defeat,失败,失敗,敗北,패배,Defaite,Niederlage,Derrota,Placeholder translation - needs native review
+combat.repair_phase,Repair Phase,维修阶段,維修階段,修理フェーズ,수리 단계,Phase de reparation,Reparaturphase,Fase de reparacion,Placeholder translation - needs native review
+event.blackout,Blackout,断电,斷電,停電,정전,Panne noire,Stromausfall,Apagon,Placeholder translation - needs native review
+event.system_glitch,System Glitch,系统故障,系統故障,システム異常,시스템 오류,Defaut systeme,Systemstoerung,Fallo del sistema,Placeholder translation - needs native review
+event.supply_drop,Supply Drop,补给投放,補給投放,補給投下,보급 투하,Largage de ravitaillement,Nachschubabwurf,Entrega de suministros,Placeholder translation - needs native review
+event.supply_cache,Supply Cache,补给藏匿点,補給藏匿點,補給庫,보급품 은닉처,Cache de ravitaillement,Nachschublager,Almacen de suministros,Placeholder translation - needs native review
+event.refugees_arrive,Refugees Arrive,难民抵达,難民抵達,避難民到着,피난민 도착,Refugies arrives,Fluechtlinge kommen an,Llegan refugiados,Placeholder translation - needs native review
+event.machine_whispers,Machine Whispers,机器低语,機器低語,機械のささやき,기계의 속삭임,Murmures de machine,Maschinenfluestern,Susurros de maquina,Placeholder translation - needs native review
+settings.language_changed,Language changed,语言已更改,語言已變更,言語を変更しました,언어 변경됨,Langue changee,Sprache geaendert,Idioma cambiado,Placeholder translation - needs native review
+settings.restart_required,Restart required,需要重启,需要重新啟動,再起動が必要,재시작 필요,Redemarrage requis,Neustart erforderlich,Reinicio requerido,Placeholder translation - needs native review
+settings.fullscreen,Fullscreen,全屏,全螢幕,全画面,전체 화면,Plein ecran,Vollbild,Pantalla completa,Placeholder translation - needs native review
+settings.resolution,Resolution,分辨率,解析度,解像度,해상도,Resolution,Aufloesung,Resolucion,Placeholder translation - needs native review
+settings.master_volume,Master Volume,主音量,主音量,マスター音量,마스터 볼륨,Volume principal,Gesamtlautstaerke,Volumen maestro,Placeholder translation - needs native review
+settings.music_volume,Music Volume,音乐音量,音樂音量,音楽音量,음악 볼륨,Volume musique,Musiklautstaerke,Volumen de musica,Placeholder translation - needs native review
+settings.sfx_volume,SFX Volume,音效音量,音效音量,効果音量,효과음 볼륨,Volume SFX,SFX Lautstaerke,Volumen SFX,Placeholder translation - needs native review
+tooltip.morale,Morale keeps the bunker moving.,士气让地堡继续运转。,士氣讓地堡繼續運轉。,士気はバンカーを動かし続けます。,사기는 벙커를 계속 움직입니다.,Le moral maintient le bunker.,Moral haelt den Bunker am Laufen.,La moral mantiene el bunker activo.,Terminology locked for Morale
+tooltip.energy,Energy powers machines and defenses.,能量驱动机器和防线。,能量驅動機器和防線。,エネルギーは機械と防衛を動かします。,에너지는 기계와 방어 시설을 가동합니다.,L energie alimente machines et defenses.,Energie versorgt Maschinen und Verteidigung.,La energia alimenta maquinas y defensas.,Terminology locked for Energy
+tooltip.scrap,Scrap builds almost everything.,废料几乎能建造一切。,廢料幾乎能建造一切。,スクラップはほぼ全ての材料です。,고철은 거의 모든 것을 만듭니다.,La ferraille sert presque partout.,Schrott baut fast alles.,La chatarra construye casi todo.,Terminology locked for Scrap
+tooltip.night_phase,Night brings pressure and hostile waves.,黑夜会带来压力和敌潮。,黑夜會帶來壓力和敵潮。,夜は圧力と敵の波を運びます。,밤에는 압박과 적 공세가 옵니다.,La nuit apporte pression et vagues hostiles.,Die Nacht bringt Druck und feindliche Wellen.,La noche trae presion y oleadas hostiles.,Placeholder translation - needs native review
+tooltip.stack_cards,Stack cards to combine workers resources and structures.,堆叠卡牌来组合工人、资源与结构。,堆疊卡牌來組合工人、資源與結構。,カードを重ねて作業員、資源、施設を組み合わせます。,카드를 쌓아 작업자와 자원 및 구조물을 결합하세요.,Empilez les cartes pour combiner ouvriers ressources et structures.,Stapelt Karten um Arbeiter Ressourcen und Bauten zu kombinieren.,Apila cartas para combinar trabajadores recursos y estructuras.,Placeholder translation - needs native review
+tooltip.defense_grid,Place defenses to hold the grid.,布置防御来守住网格。,佈置防禦來守住網格。,防衛を配置してグリッドを守ります。,방어를 배치해 격자를 지키세요.,Placez des defenses pour tenir la grille.,Platziert Verteidigung um das Raster zu halten.,Coloca defensas para sostener la cuadricula.,Placeholder translation - needs native review

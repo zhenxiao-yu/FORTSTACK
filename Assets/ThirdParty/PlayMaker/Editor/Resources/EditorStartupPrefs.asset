@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   welcomeScreenVersion: '1.9.9 '
   playmakerVersion: 
-  showWelcomeScreen: 0
+  showWelcomeScreen: 1
   showUpgradeGuide: 0
-  lastAutoUpdateSignature: 6000.4.3f1__H:/Game/FORTSTACK/Assets__0.0.0.0
+  lastAutoUpdateSignature: 6000.4.3f1__E:/FORTSTACK/Assets__0.0.0.0
   useLegacyNetworking: 0

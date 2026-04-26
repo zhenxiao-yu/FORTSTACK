@@ -15,5 +15,5 @@ AssetOrigin:
   productId: 368
   packageName: Playmaker
   packageVersion: 1.9.9
-  assetPath: Assets/PlayMaker/Editor/DefinesHelper.cs
+  assetPath: Assets/ThirdParty/PlayMaker/Editor/DefinesHelper.cs
   uploadId: 736611
