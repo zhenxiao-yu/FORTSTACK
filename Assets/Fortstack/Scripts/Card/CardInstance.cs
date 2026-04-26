@@ -64,6 +64,13 @@ namespace Markyu.FortStack
         #endregion
 
         #region Lifecycle & Initialization
+        private void OnEnable()
+        {
+            GameLocalization.Initialize();
+            GameLocalization.LanguageChanged += HandleLanguageChanged;
+            RefreshLocalizedPresentation();
+        }
+
         /// <summary>
         /// Fully initializes the card: setting definitions, generating stats, applying visuals,
         /// creating and registering its stack, and attempting to merge with any nearby compatible stack.
@@ -111,10 +118,7 @@ namespace Markyu.FortStack
             CurrentHealth = Stats.MaxHealth.Value;
             CurrentNutrition = definition.Nutrition;
 
-            if (titleText != null)
-            {
-                titleText.text = Definition.DisplayName;
-            }
+            RefreshLocalizedPresentation();
 
             UpdateStatDisplays();
 
@@ -152,6 +156,7 @@ namespace Markyu.FortStack
 
         private void OnDisable()
         {
+            GameLocalization.LanguageChanged -= HandleLanguageChanged;
             _isHovered = false;
             KillTweens();
 
@@ -597,7 +602,7 @@ namespace Markyu.FortStack
 
             Definition = newDefinition;
             Stats = Definition.CreateCombatStats();
-            if (titleText != null) titleText.text = Definition.DisplayName;
+            RefreshLocalizedPresentation();
             if (Definition.ArtTexture != null && _renderer != null)
                 _renderer.material.SetTexture("_OverlayTex", Definition.ArtTexture);
 
@@ -628,6 +633,29 @@ namespace Markyu.FortStack
         private bool CanStack(CardDefinition bottom, CardDefinition top)
         {
             return CardManager.Instance != null && CardManager.Instance.CanStack(bottom, top);
+        }
+
+        private void HandleLanguageChanged(GameLanguage _)
+        {
+            RefreshLocalizedPresentation();
+        }
+
+        private void RefreshLocalizedPresentation()
+        {
+            if (Definition == null)
+            {
+                return;
+            }
+
+            if (titleText != null)
+            {
+                titleText.text = Definition.DisplayName;
+            }
+
+            if (_isHovered)
+            {
+                InfoPanel.Instance?.RegisterHover(GetInfo());
+            }
         }
 
         /// <summary>

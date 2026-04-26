@@ -89,7 +89,7 @@ namespace Markyu.FortStack
                 isActive = true;
                 buyPrice = offeredPack.BuyPrice;
 
-                titleText.text = offeredPack.DisplayName;
+                UpdateTitleText();
                 UpdatePriceText();
                 UpdateCollectionTracker();
             }
@@ -105,6 +105,12 @@ namespace Markyu.FortStack
                 priceText.text = GameLocalization.Format("trade.price", buyPrice - paidAmount);
         }
 
+        private void UpdateTitleText()
+        {
+            if (titleText != null && offeredPack != null)
+                titleText.text = offeredPack.DisplayName;
+        }
+
         public bool TryActivate(int completedQuests)
         {
             if (isActive || offeredPack == null) return false;
@@ -113,7 +119,7 @@ namespace Markyu.FortStack
             isActive = true;
             buyPrice = offeredPack.BuyPrice;
 
-            titleText.text = offeredPack.DisplayName;
+            UpdateTitleText();
             UpdatePriceText();
             UpdateCollectionTracker();
 
@@ -287,6 +293,7 @@ namespace Markyu.FortStack
             if (!isActive)
                 return;
 
+            UpdateTitleText();
             UpdatePriceText();
             UpdateCollectionTracker();
         }

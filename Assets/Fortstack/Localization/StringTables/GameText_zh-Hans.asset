@@ -858,1865 +858,1807 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 7163621376
-    m_Localized: Survivor Intake Crate
+    m_Localized: "\u751F\u8FD8\u8005\u63A5\u6536\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 7163621377
-    m_Localized: A free intake drop for a cold district start. Expect one worker,
-      one food source, and barely enough salvage.
+    m_Localized: "\u51B7\u542F\u52A8\u8857\u533A\u7684\u514D\u8D39\u63A5\u6536\u7A7A\u6295\u3002\u9884\u8BA1\u80FD\u62FF\u5230\u4E00\u540D\u5DE5\u4EBA\u3001\u4E00\u4EFD\u98DF\u7269\u6765\u6E90\uFF0C\u4EE5\u53CA\u52C9\u5F3A\u591F\u7528\u7684\u56DE\u6536\u7269\u8D44\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 7511748608
-    m_Localized: District Utility Crate
+    m_Localized: "\u8857\u533A\u901A\u7528\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 7511748609
-    m_Localized: Broad early supplies for stabilizing the board. Good for Scrap,
-      Rations, basic nodes, and first recipes.
+    m_Localized: "\u7528\u4E8E\u7A33\u5B9A\u68CB\u76D8\u7684\u65E9\u671F\u901A\u7528\u8865\u7ED9\u3002\u9002\u5408\u83B7\u53D6\u5E9F\u6599\u3001\u53E3\u7CAE\u3001\u57FA\u7840\u8282\u70B9\u548C\u521D\u59CB\u84DD\u56FE\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 7809544192
-    m_Localized: Kernel Research Crate
+    m_Localized: "\u5185\u6838\u7814\u7A76\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 7813738496
-    m_Localized: Encrypted leads, archive fragments, and volatile access pieces.
-      Buy when the district can survive a bad draw.
+    m_Localized: "\u52A0\u5BC6\u7EBF\u7D22\u3001\u6863\u6848\u788E\u7247\u548C\u4E0D\u7A33\u5B9A\u7684\u6743\u9650\u90E8\u4EF6\u3002\u7B49\u8857\u533A\u625B\u5F97\u4F4F\u7CDF\u7CD5\u62BD\u53D6\u65F6\u518D\u8D2D\u4E70\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 7926984704
-    m_Localized: Hydroponics Crate
+    m_Localized: "\u6C34\u57F9\u8865\u7ED9\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 7926984705
-    m_Localized: Food loops, nutrient beds, and docile production units. Builds long-term
-      ration stability.
+    m_Localized: "\u98DF\u7269\u5FAA\u73AF\u3001\u8425\u517B\u5E8A\u548C\u6E29\u987A\u751F\u4EA7\u5355\u5143\u3002\u7528\u4E8E\u5EFA\u7ACB\u957F\u671F\u53E3\u7CAE\u7A33\u5B9A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8103145472
-    m_Localized: Recovery Crate
+    m_Localized: "\u6062\u590D\u8865\u7ED9\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8107339776
-    m_Localized: Prepared meals and recovery components for hungry crews. Turns survival
-      pressure into margin.
+    m_Localized: "\u4E3A\u9965\u997F\u961F\u4F0D\u51C6\u5907\u7684\u9910\u98DF\u548C\u6062\u590D\u90E8\u4EF6\u3002\u628A\u751F\u5B58\u538B\u529B\u8F6C\u5316\u4E3A\u4F59\u91CF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8338026496
-    m_Localized: Signal Crate
+    m_Localized: "\u4FE1\u53F7\u8865\u7ED9\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8338026497
-    m_Localized: Archive hardware, relay parts, and blueprint-heavy draws. Use it
-      to unlock smarter infrastructure.
+    m_Localized: "\u6863\u6848\u786C\u4EF6\u3001\u7EE7\u7535\u90E8\u4EF6\u548C\u5927\u91CF\u84DD\u56FE\u62BD\u53D6\u3002\u7528\u5B83\u89E3\u9501\u66F4\u806A\u660E\u7684\u57FA\u7840\u8BBE\u65BD\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8501604352
-    m_Localized: Armory Crate
+    m_Localized: "\u519B\u68B0\u8865\u7ED9\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8501604353
-    m_Localized: Fabrication stock, weapons, and hostile field tests. Good when defense
-      becomes cheaper than fear.
+    m_Localized: "\u5236\u9020\u5E93\u5B58\u3001\u6B66\u5668\u548C\u654C\u5BF9\u73B0\u573A\u6D4B\u8BD5\u3002\u5F53\u9632\u5FA1\u6BD4\u6050\u60E7\u66F4\u4FBF\u5B9C\u65F6\u5F88\u6709\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8631627776
-    m_Localized: Blackout Expedition Crate
+    m_Localized: "\u65AD\u7535\u8FDC\u5F81\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8631627777
-    m_Localized: Risk-heavy sector access with threats and area cards. Sends the
-      board into the dark for better salvage.
+    m_Localized: "\u9AD8\u98CE\u9669\u7684\u533A\u57DF\u5165\u53E3\uFF0C\u5305\u542B\u5A01\u80C1\u548C\u533A\u57DF\u5361\u3002\u628A\u68CB\u76D8\u9001\u8FDB\u9ED1\u6697\uFF0C\u6362\u53D6\u66F4\u597D\u7684\u56DE\u6536\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8660987904
-    m_Localized: Infrastructure Crate
+    m_Localized: "\u57FA\u7840\u8BBE\u65BD\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8660987905
-    m_Localized: High-cost construction support for expanded district logistics.
-      Heavy parts, generators, and storage lines.
+    m_Localized: "\u9AD8\u6210\u672C\u7684\u5EFA\u8BBE\u652F\u63F4\uFF0C\u7528\u4E8E\u6269\u5C55\u8857\u533A\u7269\u6D41\u3002\u5305\u542B\u91CD\u578B\u96F6\u4EF6\u3001\u53D1\u7535\u673A\u548C\u4ED3\u50A8\u7EBF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8698736640
-    m_Localized: Floodline Salvage Crate
+    m_Localized: "\u6D2A\u7EBF\u56DE\u6536\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8698736641
-    m_Localized: A remote-sector starter cache from the drowned edge of the city.
-      Coolant, black coral, and hard rubble.
+    m_Localized: "\u6765\u81EA\u57CE\u5E02\u6DF9\u6CA1\u8FB9\u7F18\u7684\u8FDC\u7AEF\u533A\u57DF\u8D77\u59CB\u7F13\u5B58\u3002\u5305\u542B\u51B7\u5374\u5242\u3001\u9ED1\u73CA\u745A\u548C\u575A\u786C\u788E\u77F3\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8715513856
-    m_Localized: Emergency Survival Crate
+    m_Localized: "\u7D27\u6025\u751F\u5B58\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 8715513857
-    m_Localized: Cheap stabilization for failing runs. Basic salvage, coolant, and
-      one reliable marker.
+    m_Localized: "\u7528\u4E8E\u633D\u6551\u5931\u8D25\u5C40\u9762\u7684\u5EC9\u4EF7\u7A33\u5B9A\u8865\u7ED9\u3002\u57FA\u7840\u56DE\u6536\u7269\u3001\u51B7\u5374\u5242\uFF0C\u4EE5\u53CA\u4E00\u4E2A\u53EF\u9760\u6807\u8BB0\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8740679680
-    m_Localized: Blackout Yard
+    m_Localized: "\u65AD\u7535\u5DE5\u5730"
     m_Metadata:
       m_Items: []
   - m_Id: 8740679681
-    m_Localized: An open work yard under dead billboards. Good salvage, poor cover.
+    m_Localized: "\u6B7B\u5BC2\u5E7F\u544A\u724C\u4E0B\u7684\u9732\u5929\u5DE5\u5730\u3002\u56DE\u6536\u7269\u4E0D\u9519\uFF0C\u63A9\u62A4\u5F88\u5DEE\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8744873984
-    m_Localized: Relay Graveyard
+    m_Localized: "\u4E2D\u7EE7\u5893\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8744873985
-    m_Localized: A maze of fallen masts and live wire. Signals still move through
-      it in bad shapes.
+    m_Localized: "\u5012\u584C\u6845\u6746\u548C\u901A\u7535\u7EBF\u7F06\u6784\u6210\u7684\u8FF7\u5BAB\u3002\u4FE1\u53F7\u4ECD\u4EE5\u7CDF\u7CD5\u7684\u5F62\u6001\u5728\u5176\u4E2D\u6D41\u52A8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456896
-    m_Localized: Memory Pit
+    m_Localized: "\u8BB0\u5FC6\u5751"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456897
-    m_Localized: A disposal trench for bodies, drives, and erased records. Some entries
-      keep answering.
+    m_Localized: "\u4E22\u5F03\u5C38\u4F53\u3001\u786C\u76D8\u548C\u62B9\u9664\u8BB0\u5F55\u7684\u58D5\u6C9F\u3002\u6709\u4E9B\u6761\u76EE\u4ECD\u4F1A\u56DE\u5E94\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456898
-    m_Localized: Dead Transit Line
+    m_Localized: "\u6B7B\u5BC2\u8F68\u9053\u7EBF"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456899
-    m_Localized: An elevated rail corridor above the district. Fast routes, exposed
-      fights.
+    m_Localized: "\u8857\u533A\u4E0A\u65B9\u7684\u9AD8\u67B6\u8F68\u9053\u8D70\u5ECA\u3002\u8DEF\u7EBF\u5F88\u5FEB\uFF0C\u6218\u6597\u4E5F\u5F88\u66B4\u9732\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456900
-    m_Localized: Ruins Sector
+    m_Localized: "\u5E9F\u589F\u533A"
     m_Metadata:
       m_Items: []
   - m_Id: 8757456901
-    m_Localized: Collapsed megastructure blocks around the Last Kernel. Valuable
-      systems are buried under hostile code.
+    m_Localized: "Last Kernel \u5468\u8FB9\u574D\u584C\u7684\u5DE8\u6784\u8857\u533A\u3002\u5B9D\u8D35\u7CFB\u7EDF\u88AB\u654C\u5BF9\u4EE3\u7801\u57CB\u5728\u4E0B\u9762\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651200
-    m_Localized: Blueprint Packet
+    m_Localized: "\u84DD\u56FE\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651201
-    m_Localized: A compressed build plan for district fabrication. Drag it into memory
-      before the next blackout.
+    m_Localized: "\u4E00\u4EFD\u538B\u7F29\u7684\u8857\u533A\u5236\u9020\u8BA1\u5212\u3002\u4E0B\u6B21\u65AD\u7535\u524D\uFF0C\u628A\u5B83\u62D6\u5165\u8BB0\u5FC6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651202
-    m_Localized: Dependent
+    m_Localized: "\u53D7\u629A\u517B\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651203
-    m_Localized: A district child under your protection. No output yet, but the future
-      has weight.
+    m_Localized: "\u53D7\u4F60\u4FDD\u62A4\u7684\u8857\u533A\u5B69\u5B50\u3002\u73B0\u5728\u8FD8\u6CA1\u6709\u4EA7\u51FA\uFF0C\u4F46\u672A\u6765\u672C\u8EAB\u6709\u91CD\u91CF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651204
-    m_Localized: Netrunner
+    m_Localized: "\u7F51\u7EDC\u5954\u884C\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651205
-    m_Localized: A field hacker who turns signal noise into weaponized breaches.
+    m_Localized: "\u4E00\u540D\u73B0\u573A\u9ED1\u5BA2\uFF0C\u80FD\u628A\u4FE1\u53F7\u566A\u58F0\u8F6C\u5316\u4E3A\u6B66\u5668\u5316\u5165\u4FB5\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651206
-    m_Localized: Scavenger
+    m_Localized: "\u6E05\u9053\u592B"
     m_Metadata:
       m_Items: []
   - m_Id: 8761651207
-    m_Localized: A sharp-eyed runner built for ranged work and salvage routes.
+    m_Localized: "\u76EE\u5149\u9510\u5229\u7684\u8DD1\u817F\u4EBA\uFF0C\u64C5\u957F\u8FDC\u7A0B\u4F5C\u4E1A\u548C\u56DE\u6536\u8DEF\u7EBF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845504
-    m_Localized: Recruit
+    m_Localized: "\u65B0\u52DF\u5458"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845505
-    m_Localized: A district civilian pressed into service. Cheap, fragile, and necessary.
+    m_Localized: "\u88AB\u5F81\u53EC\u670D\u52A1\u7684\u8857\u533A\u5E73\u6C11\u3002\u4FBF\u5B9C\u3001\u8106\u5F31\uFF0C\u800C\u4E14\u5FC5\u8981\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845506
-    m_Localized: Enforcer
+    m_Localized: "\u6267\u6CD5\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845507
-    m_Localized: A plated fighter for holding bad streets and breaking worse doors.
+    m_Localized: "\u62AB\u7532\u6218\u58EB\uFF0C\u7528\u6765\u5B88\u4F4F\u7CDF\u7CD5\u8857\u9053\u5E76\u7834\u5F00\u66F4\u7CDF\u7684\u95E8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845508
-    m_Localized: Volt Nut
+    m_Localized: "\u4F0F\u7279\u575A\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845509
-    m_Localized: A small energy seed from a cracked hydro rack. Better toasted than
-      raw.
+    m_Localized: "\u88C2\u5F00\u7684\u6C34\u57F9\u67B6\u4E0A\u7ED3\u51FA\u7684\u5C0F\u578B\u80FD\u91CF\u79CD\u5B50\u3002\u70E4\u8FC7\u6BD4\u751F\u5403\u597D\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845510
-    m_Localized: Synth Apple
+    m_Localized: "\u5408\u6210\u82F9\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8765845511
-    m_Localized: Clean fruit printed from old orchard templates. Small comfort, useful
-      calories.
+    m_Localized: "\u7531\u65E7\u679C\u56ED\u6A21\u677F\u6253\u5370\u51FA\u7684\u6D01\u51C0\u6C34\u679C\u3002\u5C0F\u5C0F\u6170\u85C9\uFF0C\u4E5F\u6709\u5B9E\u7528\u70ED\u91CF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428416
-    m_Localized: Heated Starch
+    m_Localized: "\u52A0\u70ED\u6DC0\u7C89\u5757"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428417
-    m_Localized: A hot block of dense carbohydrates. Not elegant, but it keeps workers
-      upright.
+    m_Localized: "\u4E00\u5757\u70ED\u817E\u817E\u7684\u9AD8\u5BC6\u5EA6\u78B3\u6C34\u3002\u8C08\u4E0D\u4E0A\u4F18\u96C5\uFF0C\u4F46\u80FD\u8BA9\u5DE5\u4EBA\u7AD9\u7A33\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428418
-    m_Localized: Ration Pack
+    m_Localized: "\u53E3\u7CAE\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428419
-    m_Localized: Sealed calories from a supply cache. Basic fuel for another shift.
+    m_Localized: "\u6765\u81EA\u8865\u7ED9\u7F13\u5B58\u7684\u5BC6\u5C01\u70ED\u91CF\u3002\u4E0B\u4E00\u73ED\u6240\u9700\u7684\u57FA\u7840\u71C3\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428420
-    m_Localized: Coolant Pod
+    m_Localized: "\u51B7\u5374\u5242\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428421
-    m_Localized: A sealed fluid pod from flooded utility bays. Drinkable after filtering.
+    m_Localized: "\u6765\u81EA\u88AB\u6DF9\u516C\u7528\u8231\u7684\u5BC6\u5C01\u6D41\u4F53\u8231\u3002\u8FC7\u6EE4\u540E\u53EF\u4EE5\u996E\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428422
-    m_Localized: Protein Pod
+    m_Localized: "\u86CB\u767D\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428423
-    m_Localized: Lab-grown protein in a brittle membrane. Stable enough for cooking.
+    m_Localized: "\u5305\u5728\u8106\u819C\u91CC\u7684\u5B9E\u9A8C\u5BA4\u57F9\u517B\u86CB\u767D\u3002\u7A33\u5B9A\u5230\u8DB3\u591F\u7528\u4E8E\u70F9\u996A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428424
-    m_Localized: Mixed Rations
+    m_Localized: "\u6DF7\u5408\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428425
-    m_Localized: A compact meal assembled from clean produce. Efficient and easy
-      to stack.
+    m_Localized: "\u7531\u6D01\u51C0\u519C\u4EA7\u54C1\u7EC4\u88C5\u6210\u7684\u7D27\u51D1\u9910\u98DF\u3002\u9AD8\u6548\uFF0C\u4E5F\u5BB9\u6613\u5806\u53E0\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428426
-    m_Localized: Nutrient Milk
+    m_Localized: "\u8425\u517B\u4E73"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428427
-    m_Localized: Cultured feedstock with enough minerals to blunt hunger.
+    m_Localized: "\u542B\u6709\u8DB3\u591F\u77FF\u7269\u8D28\u7684\u57F9\u517B\u6599\u6DB2\uFF0C\u80FD\u7F13\u89E3\u9965\u997F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428428
-    m_Localized: Med Gel
+    m_Localized: "\u533B\u7597\u51DD\u80F6"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428429
-    m_Localized: A cold recovery slurry for shock, burns, and empty stomachs.
+    m_Localized: "\u51B0\u51B7\u7684\u6062\u590D\u6D46\u6DB2\uFF0C\u7528\u4E8E\u4F11\u514B\u3001\u70E7\u4F24\u548C\u7A7A\u8179\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8778428430
-    m_Localized: Protein Fold
+    m_Localized: "\u86CB\u767D\u5377"
     m_Metadata:
       m_Items: []
   - m_Id: 8782622720
-    m_Localized: Cooked protein with just enough texture to feel like food.
+    m_Localized: "\u7ECF\u8FC7\u70F9\u8C03\u7684\u86CB\u767D\uFF0C\u53E3\u611F\u521A\u597D\u8DB3\u4EE5\u8BA9\u5B83\u50CF\u98DF\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8782622721
-    m_Localized: Starch Root
+    m_Localized: "\u6DC0\u7C89\u6839"
     m_Metadata:
       m_Items: []
   - m_Id: 8782622722
-    m_Localized: A hardy hydroponic tuber grown in dirty nutrient trays.
+    m_Localized: "\u751F\u957F\u5728\u80AE\u810F\u8425\u517B\u6258\u76D8\u91CC\u7684\u8010\u5BD2\u6C34\u57F9\u5757\u830E\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8782622723
-    m_Localized: Printed Protein
+    m_Localized: "\u6253\u5370\u86CB\u767D"
     m_Metadata:
       m_Items: []
   - m_Id: 8782622724
-    m_Localized: Fresh tissue from a cheap vat printer. Cook before morale notices.
+    m_Localized: "\u5EC9\u4EF7\u57F9\u517B\u6253\u5370\u673A\u5410\u51FA\u7684\u65B0\u9C9C\u7EC4\u7EC7\u3002\u8D81\u58EB\u6C14\u5BDF\u89C9\u524D\u5148\u716E\u719F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8791011328
-    m_Localized: Toasted Volt Nut
+    m_Localized: "\u70E4\u4F0F\u7279\u575A\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8791011329
-    m_Localized: A toasted energy seed with a sharp chemical bite.
+    m_Localized: "\u70E4\u8FC7\u7684\u80FD\u91CF\u79CD\u5B50\uFF0C\u5E26\u7740\u523A\u9F3B\u7684\u5316\u5B66\u54AC\u52B2\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8795205632
-    m_Localized: District Broth
+    m_Localized: "\u8857\u533A\u6D53\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 8795205633
-    m_Localized: Hot water, protein scraps, and discipline. Enough to keep a crew
-      moving.
+    m_Localized: "\u70ED\u6C34\u3001\u86CB\u767D\u788E\u6599\u548C\u7EAA\u5F8B\u3002\u8DB3\u591F\u8BA9\u4E00\u652F\u961F\u4F0D\u7EE7\u7EED\u884C\u52A8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399936
-    m_Localized: Searpack
+    m_Localized: "\u714E\u70E4\u86CB\u767D\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399937
-    m_Localized: Pressed protein flash-seared on a hot plate. Good morale per gram.
+    m_Localized: "\u5728\u70ED\u677F\u4E0A\u5FEB\u901F\u714E\u5C01\u7684\u538B\u5236\u86CB\u767D\u3002\u6BCF\u514B\u90FD\u5F88\u63D0\u58EB\u6C14\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399938
-    m_Localized: Reactor Stew
+    m_Localized: "\u53CD\u5E94\u5806\u7096\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399939
-    m_Localized: Dense communal food cooked beside waste heat. Slow, heavy, sustaining.
+    m_Localized: "\u5229\u7528\u5E9F\u70ED\u6162\u716E\u7684\u5BC6\u5B9E\u516C\u5171\u9910\u3002\u7F13\u6162\u3001\u6C89\u91CD\u3001\u9876\u997F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399940
-    m_Localized: Root Ration
+    m_Localized: "\u6839\u830E\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399941
-    m_Localized: A mineral-rich root crop from low-power hydroponics.
+    m_Localized: "\u4F4E\u529F\u8017\u6C34\u57F9\u7CFB\u7EDF\u91CC\u957F\u51FA\u7684\u5BCC\u77FF\u7269\u6839\u4F5C\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399942
-    m_Localized: Credits
+    m_Localized: "\u4FE1\u7528\u70B9"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399943
-    m_Localized: Hard local credit accepted by vendors that still trust the district
-      ledger.
+    m_Localized: "\u672C\u5730\u786C\u901A\u8D27\uFF0C\u4ECD\u88AB\u4FE1\u4EFB\u8857\u533A\u8D26\u672C\u7684\u5546\u8D29\u63A5\u53D7\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399944
-    m_Localized: Black Coral
+    m_Localized: "\u9ED1\u73CA\u745A"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399945
-    m_Localized: A bioelectric trade crystal pulled from flooded conduit. Rare and
-      negotiable.
+    m_Localized: "\u4ECE\u88AB\u6DF9\u5BFC\u7BA1\u4E2D\u53D6\u51FA\u7684\u751F\u7269\u7535\u8D38\u6613\u6676\u4F53\u3002\u7A00\u6709\uFF0C\u800C\u4E14\u53EF\u8BAE\u4EF7\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399946
-    m_Localized: Coilbow
+    m_Localized: "\u7EBF\u5708\u5F13"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399947
-    m_Localized: A quiet ranged weapon that stores tension in scavenged magnetic
-      limbs.
+    m_Localized: "\u5B89\u9759\u7684\u8FDC\u7A0B\u6B66\u5668\uFF0C\u7528\u56DE\u6536\u6765\u7684\u78C1\u6027\u5F13\u81C2\u50A8\u5B58\u5F20\u529B\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399948
-    m_Localized: Signal Cane
+    m_Localized: "\u4FE1\u53F7\u624B\u6756"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399949
-    m_Localized: A walking aid packed with breach tools and conductor wire.
+    m_Localized: "\u585E\u6EE1\u5165\u4FB5\u5DE5\u5177\u548C\u5BFC\u7EBF\u7684\u884C\u8D70\u8F85\u52A9\u5668\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399950
-    m_Localized: Plate Mesh
+    m_Localized: "\u677F\u7532\u7F51"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399951
-    m_Localized: Linked alloy mesh for surviving blades, teeth, and shrapnel.
+    m_Localized: "\u8FDE\u63A5\u5F0F\u5408\u91D1\u7F51\uFF0C\u7528\u6765\u625B\u8FC7\u5200\u5203\u3001\u5229\u9F7F\u548C\u5F39\u7247\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399952
-    m_Localized: Kevlar Wrap
+    m_Localized: "\u51EF\u592B\u62C9\u88F9\u7532"
     m_Metadata:
       m_Items: []
   - m_Id: 8799399953
-    m_Localized: Layered street armor cut from old riot gear.
+    m_Localized: "\u4ECE\u65E7\u9632\u66B4\u88C5\u5907\u88C1\u4E0B\u6765\u7684\u5C42\u53E0\u8857\u5934\u62A4\u7532\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8807788544
-    m_Localized: Ammo Rig
+    m_Localized: "\u5F39\u836F\u6302\u67B6"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982848
-    m_Localized: A wearable rack for bolts, charges, and whatever still fires.
+    m_Localized: "\u53EF\u7A7F\u6234\u7684\u6302\u67B6\uFF0C\u7528\u6765\u88C5\u5F29\u6813\u3001\u5145\u80FD\u5F39\uFF0C\u4EE5\u53CA\u4EFB\u4F55\u8FD8\u80FD\u53D1\u5C04\u7684\u4E1C\u897F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982849
-    m_Localized: Gel Hood
+    m_Localized: "\u51DD\u80F6\u5934\u7F69"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982850
-    m_Localized: Reactive gel padding that eats impact before your skull does.
+    m_Localized: "\u53CD\u5E94\u5F0F\u51DD\u80F6\u886C\u57AB\uFF0C\u4F1A\u5148\u4E8E\u4F60\u7684\u5934\u9AA8\u5403\u4E0B\u51B2\u51FB\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982851
-    m_Localized: Rail Sling
+    m_Localized: "\u8F68\u9053\u5F39\u5F13"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982852
-    m_Localized: A compact launcher that throws scrap bearings at painful speed.
+    m_Localized: "\u7D27\u51D1\u53D1\u5C04\u5668\uFF0C\u80FD\u4EE5\u75BC\u75DB\u7684\u901F\u5EA6\u629B\u51FA\u5E9F\u6599\u8F74\u627F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982853
-    m_Localized: Signal Staff
+    m_Localized: "\u4FE1\u53F7\u957F\u6756"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982854
-    m_Localized: A conductor pole tuned for directed arcs and hostile signals.
+    m_Localized: "\u8C03\u8C10\u8FC7\u7684\u5BFC\u4F53\u957F\u6746\uFF0C\u7528\u4E8E\u5B9A\u5411\u7535\u5F27\u548C\u654C\u5BF9\u4FE1\u53F7\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982855
-    m_Localized: Alloy Cutter
+    m_Localized: "\u5408\u91D1\u5207\u5203"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982856
-    m_Localized: A heavy cutting blade for close work in narrow streets.
+    m_Localized: "\u4E00\u628A\u6C89\u91CD\u7684\u5207\u5272\u5200\uFF0C\u9002\u5408\u72ED\u7A84\u8857\u9053\u91CC\u7684\u8FD1\u8DDD\u79BB\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982857
-    m_Localized: Patchcoat
+    m_Localized: "\u8865\u4E01\u5916\u5957"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982858
-    m_Localized: A reinforced coat stitched from tarps, mesh, and stubbornness.
+    m_Localized: "\u7528\u7BF7\u5E03\u3001\u7F51\u6599\u548C\u5014\u5F3A\u7F1D\u6210\u7684\u52A0\u56FA\u5916\u5957\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982859
-    m_Localized: Med Loop
+    m_Localized: "\u533B\u7597\u56DE\u8DEF"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982860
-    m_Localized: A wearable biofeedback loop that keeps wounds from becoming final.
+    m_Localized: "\u53EF\u7A7F\u6234\u7684\u751F\u7269\u53CD\u9988\u56DE\u8DEF\uFF0C\u8BA9\u4F24\u53E3\u4E0D\u81F3\u4E8E\u6210\u4E3A\u7EC8\u70B9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982861
-    m_Localized: Shock Baton
+    m_Localized: "\u7535\u51FB\u8B66\u68CD"
     m_Metadata:
       m_Items: []
   - m_Id: 8811982862
-    m_Localized: A crude baton wired to a failing cell. Simple problems meet simple
-      current.
+    m_Localized: "\u63A5\u7740\u6FD2\u6B7B\u7535\u6C60\u7684\u7C97\u5236\u8B66\u68CD\u3002\u7B80\u5355\u95EE\u9898\u9047\u4E0A\u7B80\u5355\u7535\u6D41\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177152
-    m_Localized: Kernel Fragment
+    m_Localized: "\u5185\u6838\u788E\u7247"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177153
-    m_Localized: A shard of core architecture from the old network. Rare, unstable,
-      and worth guarding.
+    m_Localized: "\u65E7\u7F51\u7EDC\u6838\u5FC3\u67B6\u6784\u7684\u4E00\u5757\u788E\u7247\u3002\u7A00\u6709\u3001\u4E0D\u7A33\u5B9A\uFF0C\u503C\u5F97\u4E25\u52A0\u770B\u5B88\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177154
-    m_Localized: Heat Brick
+    m_Localized: "\u70ED\u7816"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177155
-    m_Localized: Compressed ceramic block for heat, walls, and hard repairs.
+    m_Localized: "\u538B\u7F29\u9676\u74F7\u5757\uFF0C\u53EF\u7528\u4E8E\u4F9B\u70ED\u3001\u5899\u4F53\u548C\u786C\u4FEE\u590D\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177156
-    m_Localized: Ceramic Slurry
+    m_Localized: "\u9676\u74F7\u6D46\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177157
-    m_Localized: Ceramic slurry from broken pipes and filter tanks. It hardens into
-      useful casing.
+    m_Localized: "\u6765\u81EA\u7834\u88C2\u7BA1\u9053\u548C\u8FC7\u6EE4\u7F50\u7684\u9676\u74F7\u6D46\u6599\u3002\u4F1A\u786C\u5316\u6210\u6709\u7528\u7684\u5916\u58F3\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177158
-    m_Localized: Biometric Shell
+    m_Localized: "\u751F\u7269\u8BC6\u522B\u58F3"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177159
-    m_Localized: A dead body or ruined clone chassis. Grim salvage for systems that
-      still demand flesh.
+    m_Localized: "\u5C38\u4F53\u6216\u6BC1\u574F\u7684\u514B\u9686\u5E95\u76D8\u3002\u5BF9\u4ECD\u7D22\u8981\u8840\u8089\u7684\u7CFB\u7EDF\u6765\u8BF4\uFF0C\u662F\u9634\u51B7\u7684\u56DE\u6536\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177160
-    m_Localized: Cable Fiber
+    m_Localized: "\u7EBF\u7F06\u7EA4\u7EF4"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177161
-    m_Localized: Stripped insulation and braided synth thread. Flexible, light, always
-      needed.
+    m_Localized: "\u5265\u4E0B\u7684\u7EDD\u7F18\u5C42\u548C\u7F16\u7EC7\u5408\u6210\u7EBF\u3002\u67D4\u97E7\u3001\u8F7B\u4FBF\uFF0C\u6C38\u8FDC\u9700\u8981\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177162
-    m_Localized: Power Cell
+    m_Localized: "\u7535\u6C60\u82AF"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177163
-    m_Localized: A cracked but live cell from emergency hardware. Small, volatile,
-      and always useful.
+    m_Localized: "\u6765\u81EA\u5E94\u6025\u786C\u4EF6\u7684\u88C2\u635F\u4F46\u4ECD\u5E26\u7535\u7684\u7535\u82AF\u3002\u5C0F\u3001\u4E0D\u7A33\u5B9A\uFF0C\u800C\u4E14\u603B\u6709\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177164
-    m_Localized: Data Shard
+    m_Localized: "\u6570\u636E\u788E\u7247"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177165
-    m_Localized: A glittering memory wafer with corrupted local data still inside.
+    m_Localized: "\u95EA\u5149\u7684\u8BB0\u5FC6\u6676\u7247\uFF0C\u91CC\u9762\u4ECD\u6709\u635F\u574F\u7684\u672C\u5730\u6570\u636E\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177166
-    m_Localized: Alloy Ingot
+    m_Localized: "\u5408\u91D1\u952D"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177167
-    m_Localized: Refined metal ready for fabrication and armor work.
+    m_Localized: "\u7CBE\u70BC\u540E\u7684\u91D1\u5C5E\uFF0C\u53EF\u7528\u4E8E\u5236\u9020\u548C\u62A4\u7532\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177168
-    m_Localized: Raw Alloy
+    m_Localized: "\u7C97\u5408\u91D1"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177169
-    m_Localized: Dirty metal feedstock chipped from reinforced ruins.
+    m_Localized: "\u4ECE\u52A0\u56FA\u5E9F\u589F\u4E2D\u51FF\u51FA\u7684\u80AE\u810F\u91D1\u5C5E\u539F\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177170
-    m_Localized: Alloy Plate
+    m_Localized: "\u5408\u91D1\u677F"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177171
-    m_Localized: Flat fabricated plating for floors, hulls, and barricades.
+    m_Localized: "\u7528\u4E8E\u5730\u677F\u3001\u5916\u58F3\u548C\u8DEF\u969C\u7684\u5E73\u6574\u5236\u9020\u677F\u6750\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177172
-    m_Localized: Fiber Cable
+    m_Localized: "\u7EA4\u7EF4\u7F06"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177173
-    m_Localized: Braided cable for binding, hauling, and improvised rigging.
+    m_Localized: "\u7528\u4E8E\u6346\u624E\u3001\u62D6\u62FD\u548C\u4E34\u65F6\u540A\u88C5\u7684\u7F16\u7EC7\u7EBF\u7F06\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177174
-    m_Localized: Circuit Parts
+    m_Localized: "\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177175
-    m_Localized: Reusable boards, contacts, and ceramic sockets from dead devices.
+    m_Localized: "\u4ECE\u62A5\u5E9F\u8BBE\u5907\u91CC\u62C6\u51FA\u7684\u53EF\u590D\u7528\u677F\u4EF6\u3001\u89E6\u70B9\u548C\u9676\u74F7\u63D2\u5EA7\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177176
-    m_Localized: Reinforced Scrap
+    m_Localized: "\u52A0\u56FA\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177177
-    m_Localized: Sorted beams and frame stock strong enough for construction.
+    m_Localized: "\u5206\u62E3\u51FA\u7684\u6881\u6750\u548C\u6846\u67B6\u6599\uFF0C\u5F3A\u5EA6\u8DB3\u591F\u7528\u4E8E\u5EFA\u9020\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177178
-    m_Localized: Scrap
+    m_Localized: "\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 8816177179
-    m_Localized: Dead panels, stripped housings, and bent brackets. The district
-      survives on what it can recover.
+    m_Localized: "\u62A5\u5E9F\u9762\u677F\u3001\u62C6\u7A7A\u5916\u58F3\u548C\u5F2F\u66F2\u652F\u67B6\u3002\u8857\u533A\u9760\u80FD\u56DE\u6536\u7684\u4E00\u5207\u6D3B\u4E0B\u53BB\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371456
-    m_Localized: Signal Rod
+    m_Localized: "\u4FE1\u53F7\u6746"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371457
-    m_Localized: A straight conductor used for relays, tools, and rough weapons.
+    m_Localized: "\u7B14\u76F4\u5BFC\u4F53\uFF0C\u53EF\u7528\u4E8E\u4E2D\u7EE7\u3001\u5DE5\u5177\u548C\u7C97\u5236\u6B66\u5668\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371458
-    m_Localized: Protein Drone
+    m_Localized: "\u86CB\u767D\u65E0\u4EBA\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371459
-    m_Localized: A docile food unit with more firmware than instinct. It lays protein
-      pods if kept alive.
+    m_Localized: "\u6E29\u987A\u7684\u98DF\u7269\u5355\u5143\uFF0C\u56FA\u4EF6\u6BD4\u672C\u80FD\u66F4\u591A\u3002\u53EA\u8981\u6D3B\u7740\uFF0C\u5C31\u4F1A\u4EA7\u51FA\u86CB\u767D\u8231\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371460
-    m_Localized: Nutrient Synth
+    m_Localized: "\u8425\u517B\u5408\u6210\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8820371461
-    m_Localized: A bulky nutrient machine dressed in animal logic. Useful until it
-      wanders.
+    m_Localized: "\u62AB\u7740\u52A8\u7269\u903B\u8F91\u7684\u7B28\u91CD\u8425\u517B\u673A\u5668\u3002\u76F4\u5230\u5B83\u4E71\u8DD1\u524D\u90FD\u5F88\u6709\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148672
-    m_Localized: Warden Drone
+    m_Localized: "\u770B\u5B88\u65E0\u4EBA\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148673
-    m_Localized: A low chassis patrol unit with cutting claws and old orders.
+    m_Localized: "\u4F4E\u77EE\u5E95\u76D8\u7684\u5DE1\u903B\u5355\u5143\uFF0C\u5E26\u7740\u5207\u5272\u722A\u548C\u65E7\u547D\u4EE4\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148674
-    m_Localized: Blackout Cultist
+    m_Localized: "\u65AD\u7535\u6559\u5F92"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148675
-    m_Localized: A human zealot wired into broken doctrine. It wants the Kernel silent.
+    m_Localized: "\u63A5\u5165\u7834\u788E\u6559\u6761\u7684\u4EBA\u7C7B\u72C2\u4FE1\u8005\u3002\u5B83\u60F3\u8BA9\u5185\u6838\u5F7B\u5E95\u6C89\u9ED8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148676
-    m_Localized: Kernel Sovereign
+    m_Localized: "\u5185\u6838\u4E3B\u5BB0"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148677
-    m_Localized: A rogue command intelligence wearing a combat shell. The district
-      calls it the end process.
+    m_Localized: "\u7A7F\u7740\u6218\u6597\u5916\u58F3\u7684\u5931\u63A7\u6307\u6325\u667A\u80FD\u3002\u8857\u533A\u79F0\u5B83\u4E3A\u7EC8\u6B62\u8FDB\u7A0B\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148678
-    m_Localized: Glitched Raider
+    m_Localized: "\u6545\u969C\u63A0\u593A\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148679
-    m_Localized: A scavenger corrupted by bad implants and worse hunger.
+    m_Localized: "\u88AB\u52A3\u8D28\u690D\u5165\u4F53\u548C\u66F4\u7CDF\u9965\u997F\u8150\u5316\u7684\u62FE\u8352\u8005\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148680
-    m_Localized: Reclaimer
+    m_Localized: "\u56DE\u6536\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148681
-    m_Localized: A horned salvage brute that strips living districts for parts.
+    m_Localized: "\u957F\u89D2\u7684\u56DE\u6536\u86EE\u5175\uFF0C\u4F1A\u628A\u4ECD\u5728\u8FD0\u8F6C\u7684\u8857\u533A\u62C6\u6210\u96F6\u4EF6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148682
-    m_Localized: Null Anomaly
+    m_Localized: "\u7A7A\u503C\u5F02\u5E38\u4F53"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148683
-    m_Localized: A crawling mass of nanite failure. It dissolves clean edges into
-      static.
+    m_Localized: "\u4E00\u56E2\u722C\u884C\u7684\u7EB3\u7C73\u6545\u969C\uFF0C\u4F1A\u628A\u6E05\u6670\u8FB9\u7F18\u6EB6\u6210\u9759\u566A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148684
-    m_Localized: Scrap Hound
+    m_Localized: "\u5E9F\u6599\u730E\u72AC"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148685
-    m_Localized: A twitching scavenger animal packed with bad chrome and sharper
-      teeth.
+    m_Localized: "\u62BD\u6410\u7684\u62FE\u8352\u52A8\u7269\uFF0C\u585E\u6EE1\u52A3\u8D28\u9540\u94EC\u548C\u66F4\u950B\u5229\u7684\u7259\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148686
-    m_Localized: Process Echo
+    m_Localized: "\u8FDB\u7A0B\u56DE\u54CD"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148687
-    m_Localized: A corrupted operator pattern repeating rituals it no longer understands.
+    m_Localized: "\u88AB\u8150\u5316\u7684\u64CD\u4F5C\u5458\u6A21\u5F0F\uFF0C\u91CD\u590D\u7740\u81EA\u5DF1\u5DF2\u4E0D\u7406\u89E3\u7684\u4EEA\u5F0F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148688
-    m_Localized: Hydro Orchard
+    m_Localized: "\u6C34\u57F9\u679C\u56ED"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148689
-    m_Localized: A compact grow rack for synth fruit. Fragile, valuable, bright under
-      bad lights.
+    m_Localized: "\u7528\u4E8E\u5408\u6210\u6C34\u679C\u7684\u7D27\u51D1\u683D\u57F9\u67B6\u3002\u8106\u5F31\u3001\u73CD\u8D35\uFF0C\u5728\u574F\u706F\u5149\u4E0B\u5F88\u4EAE\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8837148690
-    m_Localized: Server Spine
+    m_Localized: "\u670D\u52A1\u5668\u810A\u67F1"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342976
-    m_Localized: A column of dead server stone and ceramic buslines. Break it open
-      for circuit salvage.
+    m_Localized: "\u7531\u62A5\u5E9F\u670D\u52A1\u5668\u77F3\u6750\u548C\u9676\u74F7\u603B\u7EBF\u6784\u6210\u7684\u7ACB\u67F1\u3002\u6572\u5F00\u5B83\uFF0C\u56DE\u6536\u7535\u8DEF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342977
-    m_Localized: Supply Cache
+    m_Localized: "\u8865\u7ED9\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342978
-    m_Localized: A forgotten emergency bin tucked under street growth. Still good
-      if the seals held.
+    m_Localized: "\u85CF\u5728\u8857\u9053\u690D\u7269\u4E0B\u7684\u9057\u5FD8\u5E94\u6025\u7BB1\u3002\u53EA\u8981\u5BC6\u5C01\u5B8C\u597D\uFF0C\u5C31\u8FD8\u80FD\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342979
-    m_Localized: Slurry Sump
+    m_Localized: "\u6D46\u6599\u6C61\u6C60"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342980
-    m_Localized: A flooded service pit thick with ceramic binder and old runoff.
+    m_Localized: "\u88AB\u6DF9\u7684\u7EF4\u4FEE\u5751\uFF0C\u91CC\u9762\u6EE1\u662F\u9676\u74F7\u9ECF\u7ED3\u5242\u548C\u65E7\u5F84\u6D41\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342981
-    m_Localized: Fiber Tangle
+    m_Localized: "\u7EA4\u7EF4\u7F20\u7ED3"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342982
-    m_Localized: A mat of cable grass and synthetic roots. Cut it for flexible material.
+    m_Localized: "\u4E00\u56E2\u7EBF\u7F06\u8349\u548C\u5408\u6210\u6839\u987B\u3002\u5207\u5F00\u53EF\u5F97\u67D4\u6027\u6750\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342983
-    m_Localized: Alloy Deposit
+    m_Localized: "\u5408\u91D1\u77FF\u8109"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342984
-    m_Localized: A reinforced vein inside collapsed city bones. Drill it for raw
-      alloy.
+    m_Localized: "\u584C\u9677\u57CE\u5E02\u9AA8\u67B6\u91CC\u7684\u52A0\u56FA\u77FF\u8109\u3002\u94BB\u5F00\u53EF\u5F97\u7C97\u5408\u91D1\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8841342985
-    m_Localized: Power Cabinet
+    m_Localized: "\u7535\u529B\u67DC"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537280
-    m_Localized: A utility cabinet still holding charged cells and coolant pods.
+    m_Localized: "\u4ECD\u5B58\u6709\u5E26\u7535\u7535\u82AF\u548C\u51B7\u5374\u5242\u8231\u7684\u516C\u7528\u8BBE\u5907\u67DC\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537281
-    m_Localized: Rubble Slab
+    m_Localized: "\u788E\u77F3\u677F"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537282
-    m_Localized: Broken concrete, device shells, and rebar. Slow work, dependable
-      parts.
+    m_Localized: "\u7834\u788E\u6DF7\u51DD\u571F\u3001\u8BBE\u5907\u5916\u58F3\u548C\u94A2\u7B4B\u3002\u8FDB\u5C55\u6162\uFF0C\u4F46\u96F6\u4EF6\u53EF\u9760\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537283
-    m_Localized: Nutrient Bed
+    m_Localized: "\u8425\u517B\u5E8A"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537284
-    m_Localized: A tray of filtered growth medium for low-power food systems.
+    m_Localized: "\u7528\u4E8E\u4F4E\u529F\u8017\u98DF\u7269\u7CFB\u7EDF\u7684\u4E00\u76D8\u8FC7\u6EE4\u751F\u957F\u4ECB\u8D28\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537285
-    m_Localized: Scrap Heap
+    m_Localized: "\u5E9F\u6599\u5806"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537286
-    m_Localized: Dead panels, twisted plating, stripped housings. Recover what the
-      city forgot.
+    m_Localized: "\u62A5\u5E9F\u9762\u677F\u3001\u626D\u66F2\u677F\u6750\u3001\u62C6\u7A7A\u5916\u58F3\u3002\u56DE\u6536\u57CE\u5E02\u5FD8\u6389\u7684\u4E1C\u897F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8845537287
-    m_Localized: Cargo Depot
+    m_Localized: "\u8D27\u8FD0\u4ED3\u5E93"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731584
-    m_Localized: A storage hub that expands board capacity. More space means more
-      mistakes you can survive.
+    m_Localized: "\u6269\u5927\u68CB\u76D8\u5BB9\u91CF\u7684\u5B58\u50A8\u67A2\u7EBD\u3002\u66F4\u591A\u7A7A\u95F4\u610F\u5473\u7740\u4F60\u80FD\u6D3B\u8FC7\u66F4\u591A\u9519\u8BEF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731585
-    m_Localized: Logistics Yard
+    m_Localized: "\u7269\u6D41\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731586
-    m_Localized: A cleared sorting yard for bulky salvage. Gives the district room
-      to breathe.
+    m_Localized: "\u7528\u4E8E\u5927\u4EF6\u56DE\u6536\u7269\u7684\u6E05\u7406\u5206\u62E3\u573A\u3002\u7ED9\u8857\u533A\u4E00\u70B9\u5598\u606F\u7A7A\u95F4\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731587
-    m_Localized: Encrypted Cache
+    m_Localized: "\u52A0\u5BC6\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731588
-    m_Localized: A sealed crate from before the blackout. Useful if you can open
-      it.
+    m_Localized: "\u65AD\u7535\u524D\u7559\u4E0B\u7684\u5BC6\u5C01\u7BB1\u3002\u53EA\u8981\u80FD\u6253\u5F00\uFF0C\u5C31\u5F88\u6709\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731589
-    m_Localized: Drone Cage
+    m_Localized: "\u65E0\u4EBA\u673A\u7B3C"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731590
-    m_Localized: A tight containment frame for damaged drones and hostile small units.
+    m_Localized: "\u7528\u4E8E\u53D7\u635F\u65E0\u4EBA\u673A\u548C\u654C\u5BF9\u5C0F\u578B\u5355\u5143\u7684\u72ED\u7A84\u6536\u5BB9\u6846\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731591
-    m_Localized: Containment Pen
+    m_Localized: "\u6536\u5BB9\u680F"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731592
-    m_Localized: A fenced holding zone for dangerous finds. It keeps problems measurable.
+    m_Localized: "\u7528\u4E8E\u5371\u9669\u53D1\u73B0\u7269\u7684\u56F4\u680F\u5F0F\u6682\u5B58\u533A\u3002\u5B83\u8BA9\u95EE\u9898\u53D8\u5F97\u53EF\u8BA1\u91CF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8849731593
-    m_Localized: Hydroponic Farm
+    m_Localized: "\u6C34\u57F9\u519C\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925888
-    m_Localized: A scaled food system for steady ration production. Power hungry,
-      worth it.
+    m_Localized: "\u7528\u4E8E\u7A33\u5B9A\u53E3\u7CAE\u751F\u4EA7\u7684\u6269\u5C55\u98DF\u7269\u7CFB\u7EDF\u3002\u8017\u7535\uFF0C\u4F46\u503C\u5F97\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925889
-    m_Localized: Nutrient Tray
+    m_Localized: "\u8425\u517B\u6258\u76D8"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925890
-    m_Localized: A small clean tray for controlled growth. Simple, stackable, reliable.
+    m_Localized: "\u7528\u4E8E\u53D7\u63A7\u751F\u957F\u7684\u5C0F\u578B\u6D01\u51C0\u6258\u76D8\u3002\u7B80\u5355\u3001\u53EF\u5806\u53E0\u3001\u53EF\u9760\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925891
-    m_Localized: Kernel Archive
+    m_Localized: "\u5185\u6838\u6863\u6848\u5E93"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925892
-    m_Localized: A secured archive node for new blueprints. Knowledge survives when
-      power does.
+    m_Localized: "\u7528\u4E8E\u65B0\u84DD\u56FE\u7684\u5B89\u5168\u6863\u6848\u8282\u70B9\u3002\u77E5\u8BC6\u4F1A\u50CF\u7535\u529B\u4E00\u6837\u5EF6\u7EED\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925893
-    m_Localized: Fabricator Bench
+    m_Localized: "\u5236\u9020\u5DE5\u4F5C\u53F0"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925894
-    m_Localized: A heavy bench for weapons, plates, and field repairs.
+    m_Localized: "\u7528\u4E8E\u6B66\u5668\u3001\u677F\u7532\u548C\u73B0\u573A\u4FEE\u590D\u7684\u91CD\u578B\u5DE5\u4F5C\u53F0\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925895
-    m_Localized: Heat Coil
+    m_Localized: "\u70ED\u80FD\u7EBF\u5708"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925896
-    m_Localized: A hot utility coil for cooking and emergency warmth.
+    m_Localized: "\u7528\u4E8E\u70F9\u996A\u548C\u5E94\u6025\u53D6\u6696\u7684\u9AD8\u6E29\u516C\u7528\u7EBF\u5708\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925897
-    m_Localized: Slurry Pump
+    m_Localized: "\u6D46\u6599\u6CF5"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925898
-    m_Localized: A crude pump that pulls ceramic slurry from flooded lower levels.
+    m_Localized: "\u7C97\u5236\u6C34\u6CF5\uFF0C\u4ECE\u88AB\u6DF9\u7684\u4E0B\u5C42\u62BD\u53D6\u9676\u74F7\u6D46\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925899
-    m_Localized: Smelter Core
+    m_Localized: "\u7194\u70BC\u6838\u5FC3"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925900
-    m_Localized: A controlled furnace for turning raw alloy into usable ingots.
+    m_Localized: "\u53D7\u63A7\u7194\u7089\uFF0C\u53EF\u628A\u7C97\u5408\u91D1\u53D8\u6210\u53EF\u7528\u5408\u91D1\u952D\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925901
-    m_Localized: Transit Gate
+    m_Localized: "\u8FD0\u8F93\u95E8"
     m_Metadata:
       m_Items: []
   - m_Id: 8853925902
-    m_Localized: A patched access gate to distant city sectors. Every trip comes
-      back changed.
+    m_Localized: "\u901A\u5411\u8FDC\u65B9\u57CE\u5E02\u533A\u57DF\u7684\u4FEE\u8865\u5165\u53E3\u3002\u6BCF\u6B21\u5F80\u8FD4\u90FD\u4F1A\u5E26\u6765\u6539\u53D8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508800
-    m_Localized: Memory Casket
+    m_Localized: "\u8BB0\u5FC6\u68FA"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508801
-    m_Localized: A sealed casket for bodies and backup drives. Closure is a system
-      need.
+    m_Localized: "\u7528\u4E8E\u5C38\u4F53\u548C\u5907\u4EFD\u786C\u76D8\u7684\u5BC6\u5C01\u68FA\u3002\u544A\u522B\u4E5F\u662F\u7CFB\u7EDF\u9700\u6C42\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508802
-    m_Localized: Generator
+    m_Localized: "\u53D1\u7535\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508803
-    m_Localized: A low-power generator that keeps the hab lights honest.
+    m_Localized: "\u4F4E\u529F\u8017\u53D1\u7535\u673A\uFF0C\u8BA9\u5C45\u4F4F\u8231\u7684\u706F\u8FD8\u7B97\u8BDA\u5B9E\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508804
-    m_Localized: Hab Pod
+    m_Localized: "\u5C45\u4F4F\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508805
-    m_Localized: A shelter pod for district civilians. Small, warm, defensible.
+    m_Localized: "\u8857\u533A\u5E73\u6C11\u7684\u5E87\u62A4\u8231\u3002\u5C0F\u3001\u6E29\u6696\u3001\u6613\u9632\u5B88\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508806
-    m_Localized: Alloy Drill
+    m_Localized: "\u5408\u91D1\u94BB\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508807
-    m_Localized: A drilling rig for reinforced deposits. Loud enough to attract trouble.
+    m_Localized: "\u7528\u4E8E\u52A0\u56FA\u77FF\u8109\u7684\u94BB\u63A2\u88C5\u7F6E\u3002\u54CD\u5230\u8DB3\u4EE5\u62DB\u6765\u9EBB\u70E6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8866508808
-    m_Localized: Ceramic Kiln
+    m_Localized: "\u9676\u74F7\u7A91"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703104
-    m_Localized: A hot box for curing slurry into hard construction blocks.
+    m_Localized: "\u628A\u6D46\u6599\u70E7\u7ED3\u6210\u575A\u786C\u5EFA\u6750\u7684\u70ED\u7BB1\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703105
-    m_Localized: Recycler Yard
+    m_Localized: "\u56DE\u6536\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703106
-    m_Localized: A work yard for stripping scrap into usable stock.
+    m_Localized: "\u628A\u5E9F\u6599\u62C6\u89E3\u6210\u53EF\u7528\u5E93\u5B58\u7684\u4F5C\u4E1A\u573A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703107
-    m_Localized: Cutter Frame
+    m_Localized: "\u5207\u5272\u6846\u67B6"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703108
-    m_Localized: A cutting rig for turning scrap stock into clean plates.
+    m_Localized: "\u628A\u5E9F\u6599\u5E93\u5B58\u5207\u6210\u6574\u6D01\u677F\u6750\u7684\u5207\u5272\u88C5\u7F6E\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703109
-    m_Localized: Relay Sign
+    m_Localized: "\u4E2D\u7EE7\u6807\u724C"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703110
-    m_Localized: A lit marker and local signal post. It tells crews where home still
-      is.
+    m_Localized: "\u53D1\u5149\u6807\u8BB0\u517C\u672C\u5730\u4FE1\u53F7\u67F1\u3002\u5B83\u544A\u8BC9\u961F\u4F0D\uFF0C\u54EA\u91CC\u4ECD\u662F\u5BB6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703111
-    m_Localized: Rubble Extractor
+    m_Localized: "\u788E\u77F3\u63D0\u53D6\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703112
-    m_Localized: A crusher that turns city rubble into circuit-grade salvage.
+    m_Localized: "\u628A\u57CE\u5E02\u788E\u77F3\u538B\u788E\u6210\u7535\u8DEF\u7EA7\u56DE\u6536\u7269\u7684\u7834\u788E\u673A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703113
-    m_Localized: Bloodchrome Vessel
+    m_Localized: "\u8840\u94EC\u5BB9\u5668"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703114
-    m_Localized: A blacksite vessel keyed to bioelectric sacrifice. Do not leave
-      it unattended.
+    m_Localized: "\u4EE5\u751F\u7269\u7535\u732E\u796D\u4E3A\u5BC6\u94A5\u7684\u9ED1\u7AD9\u5BB9\u5668\u3002\u4E0D\u8981\u8BA9\u5B83\u65E0\u4EBA\u770B\u7BA1\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703115
-    m_Localized: Root Keycard
+    m_Localized: "Root \u5BC6\u94A5\u5361"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703116
-    m_Localized: A privileged access card for sealed systems and old authority.
+    m_Localized: "\u7528\u4E8E\u5BC6\u5C01\u7CFB\u7EDF\u548C\u65E7\u6743\u5A01\u7684\u7279\u6743\u8BBF\u95EE\u5361\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703117
-    m_Localized: Blacksite Conduit
+    m_Localized: "\u9ED1\u7AD9\u5BFC\u7BA1"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703118
-    m_Localized: A forbidden relay that trades flesh, data, and power for access.
+    m_Localized: "\u7981\u5FCC\u4E2D\u7EE7\uFF0C\u7528\u8840\u8089\u3001\u6570\u636E\u548C\u7535\u529B\u4EA4\u6362\u8BBF\u95EE\u6743\u9650\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703119
-    m_Localized: Encrypted Cache
+    m_Localized: "\u52A0\u5BC6\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 8870703120
-    m_Localized: A sealed crate from before the blackout. Useful if you can open
-      it.
+    m_Localized: "\u65AD\u7535\u524D\u7559\u4E0B\u7684\u5BC6\u5C01\u7BB1\u3002\u53EA\u8981\u80FD\u6253\u5F00\uFF0C\u5C31\u5F88\u6709\u7528\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 8900063232
-    m_Localized: Sweep Blackout Yard
+    m_Localized: "\u6E05\u626B\u65AD\u7535\u5DE5\u5730"
     m_Metadata:
       m_Items: []
   - m_Id: 8900063233
-    m_Localized: Sweep Relay Graveyard
+    m_Localized: "\u6E05\u626B\u4E2D\u7EE7\u5893\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8904257536
-    m_Localized: Sweep Memory Pit
+    m_Localized: "\u6E05\u626B\u8BB0\u5FC6\u5751"
     m_Metadata:
       m_Items: []
   - m_Id: 8904257537
-    m_Localized: Sweep Dead Transit Line
+    m_Localized: "\u6E05\u626B\u6B7B\u5BC2\u8F68\u9053\u7EBF"
     m_Metadata:
       m_Items: []
   - m_Id: 8908451840
-    m_Localized: Sweep Ruins Sector
+    m_Localized: "\u6E05\u626B\u5E9F\u589F\u533A"
     m_Metadata:
       m_Items: []
   - m_Id: 8916840448
-    m_Localized: Grow Ration Culture
+    m_Localized: "\u57F9\u80B2\u53E3\u7CAE\u83CC\u682A"
     m_Metadata:
       m_Items: []
   - m_Id: 8916840449
-    m_Localized: Grow Starch Root
+    m_Localized: "\u57F9\u80B2\u6DC0\u7C89\u6839"
     m_Metadata:
       m_Items: []
   - m_Id: 8921034752
-    m_Localized: Grow Root Ration
+    m_Localized: "\u57F9\u80B2\u6839\u830E\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 8921034753
-    m_Localized: Farm Ration Culture
+    m_Localized: "\u519C\u573A\u57F9\u80B2\u53E3\u7CAE\u83CC\u682A"
     m_Metadata:
       m_Items: []
   - m_Id: 8929423360
-    m_Localized: Farm Starch Root
+    m_Localized: "\u519C\u573A\u57F9\u80B2\u6DC0\u7C89\u6839"
     m_Metadata:
       m_Items: []
   - m_Id: 8929423361
-    m_Localized: Farm Root Ration
+    m_Localized: "\u519C\u573A\u57F9\u80B2\u6839\u830E\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 8929423362
-    m_Localized: Build Fabricator Bench
+    m_Localized: "\u5EFA\u9020\u5236\u9020\u5DE5\u4F5C\u53F0"
     m_Metadata:
       m_Items: []
   - m_Id: 8933617664
-    m_Localized: Print Synth Apple
+    m_Localized: "\u6253\u5370\u5408\u6210\u82F9\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8933617665
-    m_Localized: Assemble Hydro Orchard
+    m_Localized: "\u7EC4\u88C5\u6C34\u57F9\u679C\u56ED"
     m_Metadata:
       m_Items: []
   - m_Id: 8933617666
-    m_Localized: Register Dependent
+    m_Localized: "\u767B\u8BB0\u53D7\u629A\u517B\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 8937811968
-    m_Localized: Heat Starch Block
+    m_Localized: "\u52A0\u70ED\u6DC0\u7C89\u5757"
     m_Metadata:
       m_Items: []
   - m_Id: 8942006272
-    m_Localized: Heat Starch Block
+    m_Localized: "\u52A0\u70ED\u6DC0\u7C89\u5757"
     m_Metadata:
       m_Items: []
   - m_Id: 8942006273
-    m_Localized: Recover Ration Pack
+    m_Localized: "\u56DE\u6536\u53E3\u7CAE\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8942006274
-    m_Localized: Seed Supply Cache
+    m_Localized: "\u64AD\u79CD\u8865\u7ED9\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 8942006275
-    m_Localized: Build Heat Coil
+    m_Localized: "\u5EFA\u9020\u70ED\u80FD\u7EBF\u5708"
     m_Metadata:
       m_Items: []
   - m_Id: 8942006276
-    m_Localized: Assemble Coilbow
+    m_Localized: "\u7EC4\u88C5\u7EBF\u5708\u5F13"
     m_Metadata:
       m_Items: []
   - m_Id: 8946200576
-    m_Localized: Cure Heat Brick
+    m_Localized: "\u70E7\u7ED3\u70ED\u7816"
     m_Metadata:
       m_Items: []
   - m_Id: 8950394880
-    m_Localized: Cure Heat Brick
+    m_Localized: "\u70E7\u7ED3\u70ED\u7816"
     m_Metadata:
       m_Items: []
   - m_Id: 8950394881
-    m_Localized: Assemble Signal Cane
+    m_Localized: "\u7EC4\u88C5\u4FE1\u53F7\u624B\u6756"
     m_Metadata:
       m_Items: []
   - m_Id: 8950394882
-    m_Localized: Weave Plate Mesh
+    m_Localized: "\u7F16\u7EC7\u677F\u7532\u7F51"
     m_Metadata:
       m_Items: []
   - m_Id: 8954589184
-    m_Localized: Reboot Protein Drone
+    m_Localized: "\u91CD\u542F\u86CB\u767D\u65E0\u4EBA\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8958783488
-    m_Localized: Pump Ceramic Slurry
+    m_Localized: "\u62BD\u53D6\u9676\u74F7\u6D46\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 8958783489
-    m_Localized: Pump Ceramic Slurry
+    m_Localized: "\u62BD\u53D6\u9676\u74F7\u6D46\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 8958783490
-    m_Localized: Build Slurry Pump
+    m_Localized: "\u5EFA\u9020\u6D46\u6599\u6CF5"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977792
-    m_Localized: Filter Coolant Pod
+    m_Localized: "\u8FC7\u6EE4\u51B7\u5374\u5242\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977793
-    m_Localized: Mint Credits
+    m_Localized: "\u94F8\u9020\u4FE1\u7528\u70B9"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977794
-    m_Localized: Build Drone Cage
+    m_Localized: "\u5EFA\u9020\u65E0\u4EBA\u673A\u7B3C"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977795
-    m_Localized: Build Containment Pen
+    m_Localized: "\u5EFA\u9020\u6536\u5BB9\u680F"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977796
-    m_Localized: Wake Kernel Sovereign
+    m_Localized: "\u5524\u9192\u5185\u6838\u4E3B\u5BB0"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977797
-    m_Localized: Build Hydroponic Farm
+    m_Localized: "\u5EFA\u9020\u6C34\u57F9\u519C\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8962977798
-    m_Localized: Strip Cable Fiber
+    m_Localized: "\u5265\u53D6\u7EBF\u7F06\u7EA4\u7EF4"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172096
-    m_Localized: Recover Power Cell
+    m_Localized: "\u56DE\u6536\u7535\u6C60\u82AF"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172097
-    m_Localized: Mix Rations
+    m_Localized: "\u8C03\u914D\u6DF7\u5408\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172098
-    m_Localized: Build Smelter Core
+    m_Localized: "\u5EFA\u9020\u7194\u70BC\u6838\u5FC3"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172099
-    m_Localized: Build Transit Gate
+    m_Localized: "\u5EFA\u9020\u8FD0\u8F93\u95E8"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172100
-    m_Localized: Build Memory Casket
+    m_Localized: "\u5EFA\u9020\u8BB0\u5FC6\u68FA"
     m_Metadata:
       m_Items: []
   - m_Id: 8967172101
-    m_Localized: Route to Memory Pit
+    m_Localized: "\u5F00\u8F9F\u901A\u5F80\u8BB0\u5FC6\u5751\u7684\u8DEF\u7EBF"
     m_Metadata:
       m_Items: []
   - m_Id: 8971366400
-    m_Localized: Build Generator
+    m_Localized: "\u5EFA\u9020\u53D1\u7535\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8971366401
-    m_Localized: Build Hab Pod
+    m_Localized: "\u5EFA\u9020\u5C45\u4F4F\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 8971366402
-    m_Localized: Smelt Alloy Ingot
+    m_Localized: "\u7194\u70BC\u5408\u91D1\u952D"
     m_Metadata:
       m_Items: []
   - m_Id: 8971366403
-    m_Localized: Build Alloy Drill
+    m_Localized: "\u5EFA\u9020\u5408\u91D1\u94BB\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 8971366404
-    m_Localized: Extract Raw Alloy
+    m_Localized: "\u63D0\u53D6\u7C97\u5408\u91D1"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560704
-    m_Localized: Extract Raw Alloy
+    m_Localized: "\u63D0\u53D6\u7C97\u5408\u91D1"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560705
-    m_Localized: Build Ceramic Kiln
+    m_Localized: "\u5EFA\u9020\u9676\u74F7\u7A91"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560706
-    m_Localized: Build Kernel Archive
+    m_Localized: "\u5EFA\u9020\u5185\u6838\u6863\u6848\u5E93"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560707
-    m_Localized: Build Recycler Yard
+    m_Localized: "\u5EFA\u9020\u56DE\u6536\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560708
-    m_Localized: Mix Med Gel
+    m_Localized: "\u8C03\u914D\u533B\u7597\u51DD\u80F6"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560709
-    m_Localized: Cook Protein Fold
+    m_Localized: "\u70F9\u5236\u86CB\u767D\u5377"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560710
-    m_Localized: Cook Protein Fold
+    m_Localized: "\u70F9\u5236\u86CB\u767D\u5377"
     m_Metadata:
       m_Items: []
   - m_Id: 8975560711
-    m_Localized: Press Alloy Plate
+    m_Localized: "\u538B\u5236\u5408\u91D1\u677F"
     m_Metadata:
       m_Items: []
   - m_Id: 8979755008
-    m_Localized: Press Alloy Plate
+    m_Localized: "\u538B\u5236\u5408\u91D1\u677F"
     m_Metadata:
       m_Items: []
   - m_Id: 8979755009
-    m_Localized: Build Nutrient Tray
+    m_Localized: "\u5EFA\u9020\u8425\u517B\u6258\u76D8"
     m_Metadata:
       m_Items: []
   - m_Id: 8979755010
-    m_Localized: Toast Volt Nut
+    m_Localized: "\u70E4\u4F0F\u7279\u575A\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8983949312
-    m_Localized: Toast Volt Nut
+    m_Localized: "\u70E4\u4F0F\u7279\u575A\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 8983949313
-    m_Localized: Braid Fiber Cable
+    m_Localized: "\u7F16\u7EC7\u7EA4\u7EF4\u7F06"
     m_Metadata:
       m_Items: []
   - m_Id: 8983949314
-    m_Localized: Build Blacksite Conduit
+    m_Localized: "\u5EFA\u9020\u9ED1\u7AD9\u5BFC\u7BA1"
     m_Metadata:
       m_Items: []
   - m_Id: 8983949315
-    m_Localized: Build Cutter Frame
+    m_Localized: "\u5EFA\u9020\u5207\u5272\u6846\u67B6"
     m_Metadata:
       m_Items: []
   - m_Id: 8983949316
-    m_Localized: Assemble Rail Sling
+    m_Localized: "\u7EC4\u88C5\u8F68\u9053\u5F39\u5F13"
     m_Metadata:
       m_Items: []
   - m_Id: 8988143616
-    m_Localized: Filter Nutrient Bed
+    m_Localized: "\u8FC7\u6EE4\u8425\u517B\u5E8A"
     m_Metadata:
       m_Items: []
   - m_Id: 8992337920
-    m_Localized: Cook District Broth
+    m_Localized: "\u70F9\u5236\u8857\u533A\u6D53\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 8992337921
-    m_Localized: Cook District Broth
+    m_Localized: "\u70F9\u5236\u8857\u533A\u6D53\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 8992337922
-    m_Localized: Assemble Signal Staff
+    m_Localized: "\u7EC4\u88C5\u4FE1\u53F7\u957F\u6756"
     m_Metadata:
       m_Items: []
   - m_Id: 8992337923
-    m_Localized: Sear Protein Pack
+    m_Localized: "\u714E\u70E4\u86CB\u767D\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8996532224
-    m_Localized: Sear Protein Pack
+    m_Localized: "\u714E\u70E4\u86CB\u767D\u5305"
     m_Metadata:
       m_Items: []
   - m_Id: 8996532225
-    m_Localized: Cook Reactor Stew
+    m_Localized: "\u70F9\u5236\u53CD\u5E94\u5806\u7096\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 8996532226
-    m_Localized: Strip Circuit Parts
+    m_Localized: "\u62C6\u53D6\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 9000726528
-    m_Localized: Strip Circuit Parts
+    m_Localized: "\u62C6\u53D6\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 9000726529
-    m_Localized: Strip Circuit Parts
+    m_Localized: "\u62C6\u53D6\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 9000726530
-    m_Localized: Build Rubble Extractor
+    m_Localized: "\u5EFA\u9020\u788E\u77F3\u63D0\u53D6\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 9000726531
-    m_Localized: Forge Alloy Cutter
+    m_Localized: "\u953B\u9020\u5408\u91D1\u5207\u5203"
     m_Metadata:
       m_Items: []
   - m_Id: 9000726532
-    m_Localized: Brace Reinforced Scrap
+    m_Localized: "\u52A0\u56FA\u5E9F\u6599\u6881"
     m_Metadata:
       m_Items: []
   - m_Id: 9004920832
-    m_Localized: Scavenge Scrap Heap
+    m_Localized: "\u641C\u522E\u5E9F\u6599\u5806"
     m_Metadata:
       m_Items: []
   - m_Id: 9004920833
-    m_Localized: Train Recruit
+    m_Localized: "\u8BAD\u7EC3\u65B0\u52DF\u5458"
     m_Metadata:
       m_Items: []
   - m_Id: 9004920834
-    m_Localized: Build Cargo Depot
+    m_Localized: "\u5EFA\u9020\u8D27\u8FD0\u4ED3\u5E93"
     m_Metadata:
       m_Items: []
   - m_Id: 9009115136
-    m_Localized: Sort Scrap
+    m_Localized: "\u5206\u62E3\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9009115137
-    m_Localized: Sort Scrap
+    m_Localized: "\u5206\u62E3\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9009115138
-    m_Localized: Sort Scrap
+    m_Localized: "\u5206\u62E3\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9013309440
-    m_Localized: Sort Scrap
+    m_Localized: "\u5206\u62E3\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9013309441
-    m_Localized: Assemble Encrypted Cache
+    m_Localized: "\u7EC4\u88C5\u52A0\u5BC6\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 9013309442
-    m_Localized: Assemble Encrypted Cache
+    m_Localized: "\u7EC4\u88C5\u52A0\u5BC6\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 9013309443
-    m_Localized: Wire Shock Baton
+    m_Localized: "\u63A5\u7EBF\u7535\u51FB\u8B66\u68CD"
     m_Metadata:
       m_Items: []
   - m_Id: 9017503744
-    m_Localized: Shape Signal Rod
+    m_Localized: "\u6574\u5F62\u4FE1\u53F7\u6746"
     m_Metadata:
       m_Items: []
   - m_Id: 9017503745
-    m_Localized: Build Logistics Yard
+    m_Localized: "\u5EFA\u9020\u7269\u6D41\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 9025892352
-    m_Localized: Search Kernel Archive
+    m_Localized: "\u641C\u7D22\u5185\u6838\u6863\u6848\u5E93"
     m_Metadata:
       m_Items: []
   - m_Id: 9030086656
-    m_Localized: Route to Floodline Sector
+    m_Localized: "\u5F00\u8F9F\u901A\u5F80\u6D2A\u7EBF\u533A\u57DF\u7684\u8DEF\u7EBF"
     m_Metadata:
       m_Items: []
   - m_Id: 9151721472
-    m_Localized: Open Survivor Intake
+    m_Localized: "\u6253\u5F00\u751F\u8FD8\u8005\u63A5\u6536"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915776
-    m_Localized: Open the free intake crate. The district starts with whatever survived
-      the drop.
+    m_Localized: "\u6253\u5F00\u514D\u8D39\u7684\u63A5\u6536\u7BB1\u3002\u8857\u533A\u4ECE\u7A7A\u6295\u4E2D\u5E78\u5B58\u4E0B\u6765\u7684\u4E1C\u897F\u5F00\u59CB\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915777
-    m_Localized: Recover Rations
+    m_Localized: "\u56DE\u6536\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915778
-    m_Localized: Stack a Recruit on the Supply Cache to pull a usable Ration Pack.
+    m_Localized: "\u628A\u65B0\u52DF\u5458\u53E0\u5230\u8865\u7ED9\u7F13\u5B58\u4E0A\uFF0C\u53D6\u51FA\u53EF\u7528\u7684\u53E3\u7CAE\u5305\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915779
-    m_Localized: Strip Circuit Parts
+    m_Localized: "\u62C6\u53D6\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915780
-    m_Localized: Work the Rubble Slab until you recover Circuit Parts.
+    m_Localized: "\u4F5C\u4E1A\u788E\u77F3\u677F\uFF0C\u76F4\u5230\u56DE\u6536\u5230\u7535\u8DEF\u96F6\u4EF6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915781
-    m_Localized: Sell Salvage
+    m_Localized: "\u51FA\u552E\u56DE\u6536\u7269"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915782
-    m_Localized: Drag any spare card into the recycler terminal and take Credits.
+    m_Localized: "\u628A\u4EFB\u610F\u591A\u4F59\u5361\u724C\u62D6\u5165\u56DE\u6536\u7EC8\u7AEF\uFF0C\u6362\u53D6\u4FE1\u7528\u70B9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915783
-    m_Localized: Buy Utility
+    m_Localized: "\u8D2D\u4E70\u901A\u7528\u8865\u7ED9"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915784
-    m_Localized: Spend Credits on a District Utility Crate to widen your options.
+    m_Localized: "\u82B1\u8D39\u4FE1\u7528\u70B9\u8D2D\u4E70\u8857\u533A\u901A\u7528\u7BB1\uFF0C\u62D3\u5BBD\u4F60\u7684\u9009\u62E9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915785
-    m_Localized: Scavenge Scrap
+    m_Localized: "\u641C\u522E\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915786
-    m_Localized: Send a Recruit into the Scrap Heap and recover basic Scrap.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u8FDB\u5165\u5E9F\u6599\u5806\uFF0C\u56DE\u6536\u57FA\u7840\u5E9F\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915787
-    m_Localized: Brace Scrap Stock
+    m_Localized: "\u52A0\u56FA\u5E9F\u6599\u5E93\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915788
-    m_Localized: Process Scrap into Reinforced Scrap for stronger builds.
+    m_Localized: "\u628A\u5E9F\u6599\u52A0\u5DE5\u6210\u52A0\u56FA\u5E9F\u6599\uFF0C\u7528\u4E8E\u66F4\u575A\u56FA\u7684\u5EFA\u9020\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915789
-    m_Localized: Shape a Signal Rod
+    m_Localized: "\u6574\u5F62\u4FE1\u53F7\u6746"
     m_Metadata:
       m_Items: []
   - m_Id: 9155915790
-    m_Localized: Turn Reinforced Scrap into a Signal Rod for relay work.
+    m_Localized: "\u628A\u52A0\u56FA\u5E9F\u6599\u52A0\u5DE5\u6210\u4FE1\u53F7\u6746\uFF0C\u7528\u4E8E\u4E2D\u7EE7\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110080
-    m_Localized: Freeze the Clock
+    m_Localized: "\u51BB\u7ED3\u65F6\u949F"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110081
-    m_Localized: Click the time control twice to pause the district before it runs
-      ahead of you.
+    m_Localized: "\u70B9\u51FB\u65F6\u95F4\u63A7\u5236\u4E24\u6B21\uFF0C\u5728\u8857\u533A\u8DD1\u5230\u4F60\u524D\u9762\u4E4B\u524D\u5C06\u5176\u6682\u505C\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110082
-    m_Localized: Seed a Supply Cache
+    m_Localized: "\u64AD\u79CD\u8865\u7ED9\u7F13\u5B58"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110083
-    m_Localized: Stack a Ration Pack on a Nutrient Bed to prepare another Supply
-      Cache.
+    m_Localized: "\u628A\u53E3\u7CAE\u5305\u53E0\u5230\u8425\u517B\u5E8A\u4E0A\uFF0C\u51C6\u5907\u53E6\u4E00\u4E2A\u8865\u7ED9\u7F13\u5B58\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110084
-    m_Localized: Hold Four Rations
+    m_Localized: "\u6301\u6709\u56DB\u4EFD\u53E3\u7CAE"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110085
-    m_Localized: Keep four Ration Packs on the board before the next hunger cycle.
+    m_Localized: "\u5728\u4E0B\u4E00\u8F6E\u9965\u997F\u5FAA\u73AF\u524D\uFF0C\u8BA9\u68CB\u76D8\u4E0A\u4FDD\u7559\u56DB\u4E2A\u53E3\u7CAE\u5305\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110086
-    m_Localized: Build a Hab Pod
+    m_Localized: "\u5EFA\u9020\u5C45\u4F4F\u8231"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110087
-    m_Localized: Construct a Hab Pod so civilians can survive inside the fortress
-      line.
+    m_Localized: "\u5EFA\u9020\u5C45\u4F4F\u8231\uFF0C\u8BA9\u5E73\u6C11\u80FD\u5728\u5821\u5792\u9632\u7EBF\u5185\u751F\u5B58\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110088
-    m_Localized: Expand the Crew
+    m_Localized: "\u6269\u5145\u961F\u4F0D"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110089
-    m_Localized: Maintain at least two Recruits. One pair of hands is not a district.
+    m_Localized: "\u7EF4\u6301\u81F3\u5C11\u4E24\u540D\u65B0\u52DF\u5458\u3002\u4E00\u53CC\u624B\u6491\u4E0D\u8D77\u4E00\u4E2A\u8857\u533A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110090
-    m_Localized: Protect a Dependent
+    m_Localized: "\u4FDD\u62A4\u53D7\u629A\u517B\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110091
-    m_Localized: Place two Recruits in a Hab Pod and register a Dependent.
+    m_Localized: "\u628A\u4E24\u540D\u65B0\u52DF\u5458\u653E\u5165\u5C45\u4F4F\u8231\uFF0C\u767B\u8BB0\u4E00\u540D\u53D7\u629A\u517B\u8005\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110092
-    m_Localized: Raise a Recruit
+    m_Localized: "\u57F9\u517B\u65B0\u52DF\u5458"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110093
-    m_Localized: Keep the Dependent in a Hab Pod long enough to become a Recruit.
+    m_Localized: "\u8BA9\u53D7\u629A\u517B\u8005\u5F85\u5728\u5C45\u4F4F\u8231\u4E2D\u8DB3\u591F\u4E45\uFF0C\u6210\u957F\u4E3A\u65B0\u52DF\u5458\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110094
-    m_Localized: Staff the District
+    m_Localized: "\u914D\u9F50\u8857\u533A\u4EBA\u624B"
     m_Metadata:
       m_Items: []
   - m_Id: 9160110095
-    m_Localized: Maintain three Recruits. The Kernel needs a real crew, not a rumor.
+    m_Localized: "\u7EF4\u6301\u4E09\u540D\u65B0\u52DF\u5458\u3002\u5185\u6838\u9700\u8981\u771F\u6B63\u7684\u961F\u4F0D\uFF0C\u800C\u4E0D\u662F\u4F20\u95FB\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692992
-    m_Localized: First Contact
+    m_Localized: "\u9996\u6B21\u63A5\u89E6"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692993
-    m_Localized: Defeat a Null Anomaly before it spreads through the board.
+    m_Localized: "\u5728\u7A7A\u503C\u5F02\u5E38\u4F53\u8513\u5EF6\u5230\u68CB\u76D8\u524D\u51FB\u8D25\u5B83\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692994
-    m_Localized: Open the Memory Pit
+    m_Localized: "\u5F00\u542F\u8BB0\u5FC6\u5751"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692995
-    m_Localized: Construct access to the Memory Pit for bodies, drives, and old debts.
+    m_Localized: "\u5EFA\u9020\u901A\u5F80\u8BB0\u5FC6\u5751\u7684\u5165\u53E3\uFF0C\u7528\u4E8E\u5C38\u4F53\u3001\u786C\u76D8\u548C\u65E7\u503A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692996
-    m_Localized: Claim the Vessel
+    m_Localized: "\u593A\u53D6\u5BB9\u5668"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692997
-    m_Localized: Bring down a Blackout Cultist and recover its forbidden hardware.
+    m_Localized: "\u51FB\u5012\u65AD\u7535\u6559\u5F92\uFF0C\u56DE\u6536\u5B83\u7684\u7981\u5FCC\u786C\u4EF6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692998
-    m_Localized: Build the Conduit
+    m_Localized: "\u5EFA\u9020\u5BFC\u7BA1"
     m_Metadata:
       m_Items: []
   - m_Id: 9172692999
-    m_Localized: Construct the Blacksite Conduit. It is dangerous, but it reaches
-      systems nobody else can.
+    m_Localized: "\u5EFA\u9020\u9ED1\u7AD9\u5BFC\u7BA1\u3002\u5B83\u5F88\u5371\u9669\uFF0C\u4F46\u80FD\u63A5\u89E6\u5230\u5176\u4ED6\u4EBA\u65E0\u6CD5\u89E6\u8FBE\u7684\u7CFB\u7EDF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693000
-    m_Localized: Start the Root Rite
+    m_Localized: "\u542F\u52A8 Root \u4EEA\u5F0F"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693001
-    m_Localized: Place the Bloodchrome Vessel on the Blacksite Conduit and force
-      a response.
+    m_Localized: "\u628A\u8840\u94EC\u5BB9\u5668\u653E\u5230\u9ED1\u7AD9\u5BFC\u7BA1\u4E0A\uFF0C\u5F3A\u8FEB\u7CFB\u7EDF\u56DE\u5E94\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693002
-    m_Localized: Kill the Sovereign
+    m_Localized: "\u51FB\u6740\u4E3B\u5BB0"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693003
-    m_Localized: End the rogue command shell before it owns the district.
+    m_Localized: "\u5728\u5931\u63A7\u7684\u6307\u6325\u5916\u58F3\u5360\u6709\u8857\u533A\u524D\u7ED3\u675F\u5B83\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693004
-    m_Localized: Reopen Transit
+    m_Localized: "\u91CD\u65B0\u5F00\u542F\u8FD0\u8F93"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693005
-    m_Localized: Use recovered core remains to build a Transit Gate.
+    m_Localized: "\u7528\u56DE\u6536\u7684\u6838\u5FC3\u6B8B\u9AB8\u5EFA\u9020\u8FD0\u8F93\u95E8\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693006
-    m_Localized: Train an Enforcer
+    m_Localized: "\u8BAD\u7EC3\u6267\u6CD5\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693007
-    m_Localized: Equip a Recruit with a Shock Baton and make someone ready for the
-      street.
+    m_Localized: "\u7ED9\u65B0\u52DF\u5458\u88C5\u5907\u7535\u51FB\u8B66\u68CD\uFF0C\u8BA9\u67D0\u4E2A\u4EBA\u51C6\u5907\u597D\u8D70\u4E0A\u8857\u5934\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693008
-    m_Localized: Contain a Null Anomaly
+    m_Localized: "\u6536\u5BB9\u7A7A\u503C\u5F02\u5E38\u4F53"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693009
-    m_Localized: Send any fighter to destroy a Null Anomaly.
+    m_Localized: "\u6D3E\u4EFB\u610F\u6218\u6597\u4EBA\u5458\u6467\u6BC1\u4E00\u4E2A\u7A7A\u503C\u5F02\u5E38\u4F53\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9172693010
-    m_Localized: Stop a Glitched Raider
+    m_Localized: "\u963B\u6B62\u6545\u969C\u63A0\u593A\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887296
-    m_Localized: Defeat a Glitched Raider before it strips the district.
+    m_Localized: "\u5728\u6545\u969C\u63A0\u593A\u8005\u62C6\u7A7A\u8857\u533A\u524D\u51FB\u8D25\u5B83\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887297
-    m_Localized: Patch Armor
+    m_Localized: "\u4FEE\u8865\u62A4\u7532"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887298
-    m_Localized: Give a Recruit a Gel Hood. Cheap protection still counts.
+    m_Localized: "\u7ED9\u65B0\u52DF\u5458\u4E00\u4EF6\u51DD\u80F6\u5934\u7F69\u3002\u4FBF\u5B9C\u7684\u9632\u62A4\u4E5F\u7B97\u6570\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887299
-    m_Localized: Train a Scavenger
+    m_Localized: "\u8BAD\u7EC3\u6E05\u9053\u592B"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887300
-    m_Localized: Equip a Recruit with a Rail Sling and open ranged work.
+    m_Localized: "\u7ED9\u65B0\u52DF\u5458\u88C5\u5907\u8F68\u9053\u5F39\u5F13\uFF0C\u5F00\u542F\u8FDC\u7A0B\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887301
-    m_Localized: Build Fabrication
+    m_Localized: "\u5EFA\u9020\u5236\u9020\u8BBE\u65BD"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887302
-    m_Localized: Construct a Fabricator Bench for serious gear.
+    m_Localized: "\u5EFA\u9020\u5236\u9020\u5DE5\u4F5C\u53F0\uFF0C\u7528\u4E8E\u771F\u6B63\u7684\u88C5\u5907\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887303
-    m_Localized: Fit Plate Mesh
+    m_Localized: "\u88C5\u914D\u677F\u7532\u7F51"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887304
-    m_Localized: Put Plate Mesh on any fighter and harden the line.
+    m_Localized: "\u7ED9\u4EFB\u610F\u6218\u6597\u4EBA\u5458\u7A7F\u4E0A\u677F\u7532\u7F51\uFF0C\u5F3A\u5316\u9632\u7EBF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887305
-    m_Localized: Train a Netrunner
+    m_Localized: "\u8BAD\u7EC3\u7F51\u7EDC\u5954\u884C\u8005"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887306
-    m_Localized: Give a Recruit a Signal Cane and teach the board to listen.
+    m_Localized: "\u7ED9\u65B0\u52DF\u5458\u4E00\u6839\u4FE1\u53F7\u624B\u6756\uFF0C\u6559\u4F1A\u68CB\u76D8\u8046\u542C\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887307
-    m_Localized: Arm the Scavenger
+    m_Localized: "\u6B66\u88C5\u6E05\u9053\u592B"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887308
-    m_Localized: Equip the Scavenger with an Ammo Rig.
+    m_Localized: "\u7ED9\u6E05\u9053\u592B\u88C5\u5907\u5F39\u836F\u6302\u67B6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887309
-    m_Localized: Power the Heat Coil
+    m_Localized: "\u4E3A\u70ED\u80FD\u7EBF\u5708\u4F9B\u80FD"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887310
-    m_Localized: Secure a Heat Coil for cooking, warmth, and emergency work.
+    m_Localized: "\u786E\u4FDD\u70ED\u80FD\u7EBF\u5708\uFF0C\u7528\u4E8E\u70F9\u996A\u3001\u53D6\u6696\u548C\u5E94\u6025\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887311
-    m_Localized: Cook Protein Fold
+    m_Localized: "\u70F9\u5236\u86CB\u767D\u5377"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887312
-    m_Localized: Combine a Protein Pod with the Heat Coil.
+    m_Localized: "\u628A\u86CB\u767D\u8231\u4E0E\u70ED\u80FD\u7EBF\u5708\u7EC4\u5408\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887313
-    m_Localized: Sear Printed Protein
+    m_Localized: "\u714E\u70E4\u6253\u5370\u86CB\u767D"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887314
-    m_Localized: Cook Printed Protein on the Heat Coil before it spoils morale.
+    m_Localized: "\u5728\u6253\u5370\u86CB\u767D\u7834\u574F\u58EB\u6C14\u524D\uFF0C\u7528\u70ED\u80FD\u7EBF\u5708\u628A\u5B83\u716E\u719F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9176887315
-    m_Localized: Make District Broth
+    m_Localized: "\u5236\u4F5C\u8857\u533A\u6D53\u6C64"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081600
-    m_Localized: Boil a Root Ration into District Broth. Hot food buys time.
+    m_Localized: "\u628A\u6839\u830E\u53E3\u7CAE\u716E\u6210\u8857\u533A\u6D53\u6C64\u3002\u70ED\u98DF\u80FD\u4E89\u53D6\u65F6\u95F4\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081601
-    m_Localized: Toast Volt Nut
+    m_Localized: "\u70E4\u4F0F\u7279\u575A\u679C"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081602
-    m_Localized: Toast a Volt Nut on the Heat Coil for a compact snack.
+    m_Localized: "\u5728\u70ED\u80FD\u7EBF\u5708\u4E0A\u70E4\u4E00\u4E2A\u4F0F\u7279\u575A\u679C\uFF0C\u505A\u6210\u7D27\u51D1\u70B9\u5FC3\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081603
-    m_Localized: Survey Relay Graveyard
+    m_Localized: "\u52D8\u5BDF\u4E2D\u7EE7\u5893\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081604
-    m_Localized: Send a Recruit through the fallen masts and recover what still transmits.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u7A7F\u8FC7\u5012\u584C\u6845\u6746\uFF0C\u56DE\u6536\u4ECD\u5728\u53D1\u4FE1\u7684\u4E1C\u897F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081605
-    m_Localized: Sweep Blackout Yard
+    m_Localized: "\u6E05\u626B\u65AD\u7535\u5DE5\u5730"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081606
-    m_Localized: Send a Recruit into the yard and mark the safe lanes.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u8FDB\u5165\u5DE5\u5730\uFF0C\u6807\u8BB0\u5B89\u5168\u901A\u9053\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081607
-    m_Localized: Scout Dead Transit
+    m_Localized: "\u4FA6\u5BDF\u6B7B\u5BC2\u8F68\u9053"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081608
-    m_Localized: Send a Recruit onto the elevated transit line.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u767B\u4E0A\u9AD8\u67B6\u8F68\u9053\u7EBF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081609
-    m_Localized: Enter Ruins Sector
+    m_Localized: "\u8FDB\u5165\u5E9F\u589F\u533A"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081610
-    m_Localized: Send a Recruit into the broken megastructure for high-value salvage.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u8FDB\u5165\u7834\u788E\u5DE8\u6784\uFF0C\u5BFB\u627E\u9AD8\u4EF7\u503C\u56DE\u6536\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081611
-    m_Localized: Search Memory Pit
+    m_Localized: "\u641C\u7D22\u8BB0\u5FC6\u5751"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081612
-    m_Localized: Send a Recruit into the pit and bring back whatever still has a
-      name.
+    m_Localized: "\u6D3E\u4E00\u540D\u65B0\u52DF\u5458\u8FDB\u5165\u5751\u4E2D\uFF0C\u628A\u4ECD\u6709\u540D\u5B57\u7684\u4E1C\u897F\u5E26\u56DE\u6765\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081613
-    m_Localized: Stockpile Scrap
+    m_Localized: "\u56E4\u79EF\u5E9F\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081614
-    m_Localized: Hold at least 10 Scrap for repairs and emergency builds.
+    m_Localized: "\u6301\u6709\u81F3\u5C11 10 \u4EFD\u5E9F\u6599\uFF0C\u7528\u4E8E\u4FEE\u590D\u548C\u5E94\u6025\u5EFA\u9020\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081615
-    m_Localized: Stockpile Circuit Parts
+    m_Localized: "\u56E4\u79EF\u7535\u8DEF\u96F6\u4EF6"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081616
-    m_Localized: Hold at least 10 Circuit Parts before the next infrastructure push.
+    m_Localized: "\u5728\u4E0B\u4E00\u8F6E\u57FA\u7840\u8BBE\u65BD\u63A8\u8FDB\u524D\uFF0C\u6301\u6709\u81F3\u5C11
+      10 \u4EFD\u7535\u8DEF\u96F6\u4EF6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081617
-    m_Localized: Stockpile Slurry
+    m_Localized: "\u56E4\u79EF\u6D46\u6599"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081618
-    m_Localized: Hold at least 10 Ceramic Slurry for casing, blocks, and patchwork.
+    m_Localized: "\u6301\u6709\u81F3\u5C11 10 \u4EFD\u9676\u74F7\u6D46\u6599\uFF0C\u7528\u4E8E\u5916\u58F3\u3001\u780C\u5757\u548C\u8865\u4E01\u4F5C\u4E1A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081619
-    m_Localized: Ration Audit I
+    m_Localized: "\u53E3\u7CAE\u5BA1\u8BA1 I"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081620
-    m_Localized: Hold consumables worth at least 10 total nutrition.
+    m_Localized: "\u6301\u6709\u603B\u8425\u517B\u503C\u81F3\u5C11 10 \u7684\u53EF\u98DF\u7528\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081621
-    m_Localized: Ration Audit II
+    m_Localized: "\u53E3\u7CAE\u5BA1\u8BA1 II"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081622
-    m_Localized: Hold consumables worth at least 20 total nutrition.
+    m_Localized: "\u6301\u6709\u603B\u8425\u517B\u503C\u81F3\u5C11 20 \u7684\u53EF\u98DF\u7528\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081623
-    m_Localized: Ration Audit III
+    m_Localized: "\u53E3\u7CAE\u5BA1\u8BA1 III"
     m_Metadata:
       m_Items: []
   - m_Id: 9181081624
-    m_Localized: Hold consumables worth at least 50 total nutrition.
+    m_Localized: "\u6301\u6709\u603B\u8425\u517B\u503C\u81F3\u5C11 50 \u7684\u53EF\u98DF\u7528\u7269\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275904
-    m_Localized: Credit Reserve I
+    m_Localized: "\u4FE1\u7528\u50A8\u5907 I"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275905
-    m_Localized: Hold at least 30 Credits in the district ledger.
+    m_Localized: "\u5728\u8857\u533A\u8D26\u672C\u4E2D\u6301\u6709\u81F3\u5C11 30
+      \u4FE1\u7528\u70B9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275906
-    m_Localized: Credit Reserve II
+    m_Localized: "\u4FE1\u7528\u50A8\u5907 II"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275907
-    m_Localized: Hold at least 50 Credits in the district ledger.
+    m_Localized: "\u5728\u8857\u533A\u8D26\u672C\u4E2D\u6301\u6709\u81F3\u5C11 50
+      \u4FE1\u7528\u70B9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275908
-    m_Localized: Credit Reserve III
+    m_Localized: "\u4FE1\u7528\u50A8\u5907 III"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275909
-    m_Localized: Hold at least 100 Credits in the district ledger.
+    m_Localized: "\u5728\u8857\u533A\u8D26\u672C\u4E2D\u6301\u6709\u81F3\u5C11 100
+      \u4FE1\u7528\u70B9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275910
-    m_Localized: Storage Buffer I
+    m_Localized: "\u5B58\u50A8\u7F13\u51B2 I"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275911
-    m_Localized: Raise card capacity to 30 or more.
+    m_Localized: "\u628A\u5361\u724C\u5BB9\u91CF\u63D0\u5347\u5230 30 \u6216\u66F4\u591A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275912
-    m_Localized: Storage Buffer II
+    m_Localized: "\u5B58\u50A8\u7F13\u51B2 II"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275913
-    m_Localized: Raise card capacity to 45 or more.
+    m_Localized: "\u628A\u5361\u724C\u5BB9\u91CF\u63D0\u5347\u5230 45 \u6216\u66F4\u591A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275914
-    m_Localized: Storage Buffer III
+    m_Localized: "\u5B58\u50A8\u7F13\u51B2 III"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275915
-    m_Localized: Raise card capacity to 60 or more.
+    m_Localized: "\u628A\u5361\u724C\u5BB9\u91CF\u63D0\u5347\u5230 60 \u6216\u66F4\u591A\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275916
-    m_Localized: Build Logistics Yard
+    m_Localized: "\u5EFA\u9020\u7269\u6D41\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275917
-    m_Localized: Clear a Logistics Yard so the district can hold more.
+    m_Localized: "\u6E05\u51FA\u4E00\u5EA7\u7269\u6D41\u573A\uFF0C\u8BA9\u8857\u533A\u80FD\u5BB9\u7EB3\u66F4\u591A\u4E1C\u897F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275918
-    m_Localized: Build Recycler Yard
+    m_Localized: "\u5EFA\u9020\u56DE\u6536\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275919
-    m_Localized: Build a Recycler Yard and turn scrap work into a system.
+    m_Localized: "\u5EFA\u9020\u56DE\u6536\u573A\uFF0C\u628A\u5E9F\u6599\u4F5C\u4E1A\u53D8\u6210\u7CFB\u7EDF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275920
-    m_Localized: Build Rubble Extractor
+    m_Localized: "\u5EFA\u9020\u788E\u77F3\u63D0\u53D6\u673A"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275921
-    m_Localized: Build a Rubble Extractor for steady circuit salvage.
+    m_Localized: "\u5EFA\u9020\u788E\u77F3\u63D0\u53D6\u673A\uFF0C\u7A33\u5B9A\u56DE\u6536\u7535\u8DEF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275922
-    m_Localized: Build Slurry Pump
+    m_Localized: "\u5EFA\u9020\u6D46\u6599\u6CF5"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275923
-    m_Localized: Build a Slurry Pump to feed ceramic production.
+    m_Localized: "\u5EFA\u9020\u6D46\u6599\u6CF5\uFF0C\u4E3A\u9676\u74F7\u751F\u4EA7\u4F9B\u6599\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275924
-    m_Localized: Build Hydroponic Farm
+    m_Localized: "\u5EFA\u9020\u6C34\u57F9\u519C\u573A"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275925
-    m_Localized: Build a Hydroponic Farm and stabilize ration growth.
+    m_Localized: "\u5EFA\u9020\u6C34\u57F9\u519C\u573A\uFF0C\u7A33\u5B9A\u53E3\u7CAE\u589E\u957F\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9185275926
-    m_Localized: Hold Until Day 8
+    m_Localized: "\u575A\u6301\u5230\u7B2C 8 \u5929"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470208
-    m_Localized: Keep the district alive through the first full blackout cycle.
+    m_Localized: "\u8BA9\u8857\u533A\u6D3B\u8FC7\u7B2C\u4E00\u4E2A\u5B8C\u6574\u65AD\u7535\u5FAA\u73AF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470209
-    m_Localized: Hold Until Day 16
+    m_Localized: "\u575A\u6301\u5230\u7B2C 16 \u5929"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470210
-    m_Localized: Survive long enough for shortages to become systems.
+    m_Localized: "\u6D3B\u5F97\u8DB3\u591F\u4E45\uFF0C\u8BA9\u77ED\u7F3A\u53D8\u6210\u7CFB\u7EDF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470211
-    m_Localized: Hold Until Day 32
+    m_Localized: "\u575A\u6301\u5230\u7B2C 32 \u5929"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470212
-    m_Localized: Keep the Last Kernel district running past the long failure curve.
+    m_Localized: "\u8BA9 Last Kernel \u8857\u533A\u6491\u8FC7\u6F2B\u957F\u5931\u6548\u66F2\u7EBF\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470213
-    m_Localized: Hold Until Day 64
+    m_Localized: "\u575A\u6301\u5230\u7B2C 64 \u5929"
     m_Metadata:
       m_Items: []
   - m_Id: 9189470214
-    m_Localized: Outlast the city long enough to prove the district is not temporary.
+    m_Localized: "\u6BD4\u8FD9\u5EA7\u57CE\u5E02\u575A\u6301\u5F97\u66F4\u4E45\uFF0C\u8BC1\u660E\u8FD9\u4E2A\u8857\u533A\u4E0D\u662F\u4E34\u65F6\u65B9\u6848\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9197858816
-    m_Localized: Open Floodline Crate
+    m_Localized: "\u6253\u5F00\u6D2A\u7EBF\u7BB1"
     m_Metadata:
       m_Items: []
   - m_Id: 9202053120
-    m_Localized: Open the Floodline Salvage Crate and inspect the drowned-sector
-      supplies.
+    m_Localized: "\u6253\u5F00\u6D2A\u7EBF\u56DE\u6536\u7BB1\uFF0C\u68C0\u67E5\u6DF9\u6CA1\u533A\u57DF\u7684\u8865\u7ED9\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9202053121
-    m_Localized: Secure Coolant
+    m_Localized: "\u786E\u4FDD\u51B7\u5374\u5242"
     m_Metadata:
       m_Items: []
   - m_Id: 9202053122
-    m_Localized: Hold one Coolant Pod from a Power Cabinet or floodline cache.
+    m_Localized: "\u4ECE\u7535\u529B\u67DC\u6216\u6D2A\u7EBF\u7F13\u5B58\u4E2D\u6301\u6709\u4E00\u4E2A\u51B7\u5374\u5242\u8231\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9202053123
-    m_Localized: Mine Server Spine
+    m_Localized: "\u5F00\u91C7\u670D\u52A1\u5668\u810A\u67F1"
     m_Metadata:
       m_Items: []
   - m_Id: 9202053124
-    m_Localized: Work the Server Spine and recover Circuit Parts.
+    m_Localized: "\u4F5C\u4E1A\u670D\u52A1\u5668\u810A\u67F1\uFF0C\u56DE\u6536\u7535\u8DEF\u96F6\u4EF6\u3002"
     m_Metadata:
       m_Items: []
   - m_Id: 9227218944

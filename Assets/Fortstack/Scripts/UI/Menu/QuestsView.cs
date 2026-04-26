@@ -78,7 +78,7 @@ namespace Markyu.FortStack
                 groupToggleState.TryAdd(group, true); // Default to expanded
 
                 TextButton groupBtn = CreateItemButton(
-                    $"{group.GroupName} {SYMBOL_EXPANDED}",
+                    GetGroupHeaderLabel(group, true),
                     group,
                     35f
                 );
@@ -128,25 +128,7 @@ namespace Markyu.FortStack
         {
             if (allQuestButtons.TryGetValue(quest, out var questBtn))
             {
-                string currentText = questBtn.GetText();
-
-                bool isNew = currentText.Contains(INDICATOR_NEW);
-                if (isNew)
-                {
-                    currentText = currentText.Replace(INDICATOR_NEW, string.Empty);
-                }
-
-                if (!currentText.EndsWith(SYMBOL_COMPLETED))
-                {
-                    currentText += $" {SYMBOL_COMPLETED}";
-                }
-
-                if (isNew)
-                {
-                    currentText += INDICATOR_NEW;
-                }
-
-                questBtn.SetText(currentText);
+                questBtn.SetText(PreserveNewIndicator(questBtn.GetText(), GetQuestButtonLabel(quest)));
             }
         }
         #endregion
@@ -159,9 +141,7 @@ namespace Markyu.FortStack
                 return null;
             }
 
-            string suffix = quest.IsComplete() ? $" {SYMBOL_COMPLETED}" : "";
-            string questTitle = $"{SYMBOL_BULLET} {quest.QuestData.Title}{suffix}";
-            TextButton questBtn = CreateItemButton(questTitle, quest, 30f);
+            TextButton questBtn = CreateItemButton(GetQuestButtonLabel(quest), quest, 30f);
             allQuestButtons.Add(quest, questBtn);
 
             // Find its group and place it under the header
@@ -191,7 +171,7 @@ namespace Markyu.FortStack
             groupToggleState[group] = newState;
 
             // Update header text (e.g., add indicator)
-            groupHeaderButtons[group].SetText($"{group.GroupName} {(newState ? SYMBOL_EXPANDED : SYMBOL_COLLAPSED)}");
+            groupHeaderButtons[group].SetText(GetGroupHeaderLabel(group, newState));
 
             // Toggle visibility of all member quests
             foreach (var (questInstance, questBtn) in allQuestButtons)
@@ -234,6 +214,28 @@ namespace Markyu.FortStack
 
         protected override void RefreshLocalizedText()
         {
+            foreach (var kvp in groupHeaderButtons)
+            {
+                kvp.Value.SetText(GetGroupHeaderLabel(kvp.Key, groupToggleState[kvp.Key]));
+            }
+
+            foreach (var kvp in allQuestButtons)
+            {
+                kvp.Value.SetText(PreserveNewIndicator(kvp.Value.GetText(), GetQuestButtonLabel(kvp.Key)));
+            }
+        }
+
+        private static string GetQuestButtonLabel(QuestInstance quest)
+        {
+            string suffix = quest.IsComplete() ? $" {SYMBOL_COMPLETED}" : "";
+            return $"{SYMBOL_BULLET} {quest.QuestData.Title}{suffix}";
+        }
+
+        private static string GetGroupHeaderLabel(QuestGroup group, bool isExpanded)
+        {
+            string groupName = group != null ? group.GroupName : string.Empty;
+            string key = $"quest.group.{LocalizationKeyBuilder.ToKeySegment(groupName)}";
+            return $"{GameLocalization.GetOptional(key, groupName)} {(isExpanded ? SYMBOL_EXPANDED : SYMBOL_COLLAPSED)}";
         }
         #endregion
     }

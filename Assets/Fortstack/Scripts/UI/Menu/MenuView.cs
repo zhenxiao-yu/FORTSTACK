@@ -108,6 +108,13 @@ namespace Markyu.FortStack
             return itemBtn;
         }
 
+        protected static string PreserveNewIndicator(string currentText, string localizedText)
+        {
+            return !string.IsNullOrEmpty(currentText) && currentText.Contains(INDICATOR_NEW)
+                ? localizedText + INDICATOR_NEW
+                : localizedText;
+        }
+
         /// <summary>
         /// When implemented in a derived class, gets the formatted header and body text
         /// for a specific item to be displayed in the info panel.

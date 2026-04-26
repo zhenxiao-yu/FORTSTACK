@@ -99,8 +99,7 @@ namespace Markyu.FortStack
         {
             if (recipe.ResultingCard == null) return null;
 
-            string resultName = $"{SYMBOL_BULLET} {recipe.ResultingCard.DisplayName}";
-            return CreateItemButton(resultName, recipe, 30f);
+            return CreateItemButton(GetRecipeButtonLabel(recipe), recipe, 30f);
         }
 
         private void HandleRecipeDiscovered(string recipeId)
@@ -182,6 +181,19 @@ namespace Markyu.FortStack
             {
                 kvp.Value.SetText(GetCategoryHeaderLabel(kvp.Key, categoryToggleState[kvp.Key]));
             }
+
+            foreach (var kvp in recipeButtons)
+            {
+                if (!recipeDefs.TryGetValue(kvp.Key, out RecipeDefinition recipe))
+                    continue;
+
+                kvp.Value.SetText(PreserveNewIndicator(kvp.Value.GetText(), GetRecipeButtonLabel(recipe)));
+            }
+        }
+
+        private static string GetRecipeButtonLabel(RecipeDefinition recipe)
+        {
+            return $"{SYMBOL_BULLET} {recipe.ResultingCard.DisplayName}";
         }
 
         private static string GetCategoryHeaderLabel(RecipeCategory category, bool isExpanded)
