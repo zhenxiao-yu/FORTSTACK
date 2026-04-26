@@ -1,3 +1,22 @@
+// CraftingManager — Drives all card-stacking crafting and exploration tasks.
+//
+// Responsible for:
+//   • Evaluating CardStacks for recipe matches (via RecipeMatcher)
+//   • Starting, ticking, pausing, stopping, and completing CraftingTasks
+//   • Displaying a ProgressUI above each active crafting stack
+//   • Tracking discovered recipes across sessions (for quest + codex unlock)
+//   • Restoring in-progress tasks after a save/load
+//
+// Key dependencies:
+//   RecipeMatcher        — pure matching logic (also used by edit-mode tests)
+//   RecipeDefinition     — Execute() performs the actual card transformation
+//   CardManager          — stats notification after craft completion
+//   WorldCanvas          — parent for spawned ProgressUI instances
+//   GameDirector         — OnBeforeSave hook for discovered recipes
+//
+// NOTE: All card creation/destruction side effects live on RecipeDefinition.Execute,
+//       not here. CraftingManager only manages task lifecycle and timing.
+
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -26,6 +45,9 @@ namespace Markyu.LastKernel
         private readonly List<CraftingTask> activeCraftingTasks = new();
         private readonly Dictionary<CraftingTask, ProgressUI> activeCraftingUIs = new();
         private readonly Dictionary<string, RecipeDefinition> recipesById = new();
+
+        // Guards against flooding the console when progressUIPrefab is intentionally
+        // absent (e.g., in test scenes). The warning fires once, then goes silent.
         private bool warnedMissingProgressUI;
 
         #region Unity Lifecycle
@@ -62,6 +84,8 @@ namespace Markyu.LastKernel
 
         void Update()
         {
+            // Reverse iteration: tasks that complete or cancel are removed inside the loop.
+            // Going backwards avoids index shifting and the off-by-one errors that come with it.
             for (int i = activeCraftingTasks.Count - 1; i >= 0; i--)
             {
                 var task = activeCraftingTasks[i];
@@ -273,31 +297,34 @@ namespace Markyu.LastKernel
             stack.SetCraftingState(false);
             CardManager.Instance?.NotifyStatsChanged();
 
-            // 1. Stop if we created a Living Being (prevents infinite breeding)
+            // Living-being results (characters, mobs) always stop the chain.
+            // Auto-repeating a character recipe would allow unlimited free breeding,
+            // which breaks resource pressure as a core game mechanic.
             bool resultIsLiving = recipe.ResultingCard != null &&
                 (recipe.ResultingCard.Category == CardCategory.Character ||
                  recipe.ResultingCard.Category == CardCategory.Mob);
 
             if (resultIsLiving) return;
 
-            // Determine if the recipe should keep running after one completion.
+            // Determine whether the recipe should re-trigger automatically.
             bool shouldRepeat = false;
 
             if (recipe.IsContinuous)
             {
-                // Explicit continuous producers, such as Recycler Yard routes.
+                // Explicit continuous producers (e.g. Recycler Yard) loop indefinitely
+                // regardless of ingredient count.
                 shouldRepeat = true;
             }
             else if (recipe.HasConsumableIngredients() && stack.Cards.Count > 0)
             {
-                // Batch processors may still have enough ingredients left.
-                // If there are cards left, we should check if we can craft again.
+                // Batch processors consumed some inputs but cards remain.
+                // Re-check the stack — there may be enough left for another cycle.
                 shouldRepeat = true;
             }
             else if (DoesStackMatchRecipe(stack, recipe))
             {
-                // All-Keep harvesting recipes (e.g. Recruit + Stone Deposit → Stone):
-                // no ingredients were consumed, but the stack is still valid — keep working.
+                // All-keep harvesting recipes (e.g. Recruit + Stone Deposit → Stone):
+                // no ingredients were consumed, the stack is still valid, keep working.
                 shouldRepeat = true;
             }
 

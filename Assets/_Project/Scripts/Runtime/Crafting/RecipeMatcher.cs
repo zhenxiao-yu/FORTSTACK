@@ -5,8 +5,17 @@ using UnityEngine;
 namespace Markyu.LastKernel
 {
     /// <summary>
-    /// Pure recipe-selection rules shared by runtime crafting and edit-mode tests.
+    /// Pure, stateless recipe-matching logic shared between runtime crafting and edit-mode tests.
     /// </summary>
+    /// <remarks>
+    /// Intentionally has no Unity or manager dependencies so it can be called from
+    /// edit-mode tests without entering play mode. All state lives in the caller.
+    ///
+    /// Matching rules summary:
+    ///   • AllowExcessIngredients recipes (workstations): stack must meet minimums; extra cards OK.
+    ///   • Resource-category cards always allow excess count regardless of recipe flag.
+    ///   • Strict recipes: card counts must exactly equal requirements; no extra card types allowed.
+    /// </remarks>
     public static class RecipeMatcher
     {
         public static List<RecipeDefinition> FindMatchingRecipes(
@@ -53,6 +62,9 @@ namespace Markyu.LastKernel
                     return false;
                 }
 
+                // Resource-category cards (Wood, Stone, Food…) are generic accumulating inputs.
+                // They are always allowed to exceed the required count so a player's stockpile
+                // doesn't block a recipe that only needs a portion of what's in the stack.
                 bool allowsExtraCount = recipe.AllowExcessIngredients || card.Category == CardCategory.Resource;
                 if (allowsExtraCount)
                 {
@@ -72,9 +84,14 @@ namespace Markyu.LastKernel
                 return true;
             }
 
+            // Strict mode: every card type in the stack must be a declared ingredient.
+            // Prevents accidental recipe triggers when an unrelated card is dropped
+            // onto a stack that would otherwise satisfy a recipe's ingredient list.
             return stackComposition.Keys.All(card => requiredCounts.ContainsKey(card));
         }
 
+        // Deterministic overload — caller supplies the pre-rolled value.
+        // Used in tests and replay scenarios where a controlled seed is required.
         public static RecipeDefinition PickWeightedRecipe(IReadOnlyList<RecipeDefinition> recipes, float roll)
         {
             if (recipes == null || recipes.Count == 0)
@@ -107,6 +124,8 @@ namespace Markyu.LastKernel
             return recipes.LastOrDefault(recipe => recipe != null);
         }
 
+        // Convenience overload for the typical runtime call-site in CraftingManager.
+        // Rolls Unity's random internally; prefer the deterministic overload in tests.
         public static RecipeDefinition PickRandomWeightedRecipe(IReadOnlyList<RecipeDefinition> recipes)
         {
             if (recipes == null || recipes.Count == 0)

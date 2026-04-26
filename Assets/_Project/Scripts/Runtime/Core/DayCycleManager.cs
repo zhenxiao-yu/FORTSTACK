@@ -1,3 +1,26 @@
+// DayCycleManager — Orchestrates the end-of-day phase sequence.
+//
+// Drives a linear coroutine pipeline that runs when TimeManager fires OnDayEnded:
+//
+//   Phase 1 — Notification  : "Day N ended" modal, player dismisses to continue
+//   Phase 2 — Feeding       : CardManager.FeedCharacters(); game over if no survivors
+//   Phase 3 — Selling       : Player sells excess cards; event-driven, not a coroutine
+//   Phase 4 — Night Combat  : NightPhaseManager runs deployment + combat simulation
+//   Phase 5 — New Day       : Dawn modal; unlocks input; advances TimeManager day count
+//
+// Key dependencies:
+//   CardManager          — FeedCharacters, GetStatsSnapshot, OnStatsChanged
+//   TimeManager          — OnDayEnded subscription, StartNewDay
+//   InputManager         — board lock/unlock around each phase
+//   NightPhaseManager    — full night combat pipeline
+//   RunStateManager      — tracks current game phase (Day/Dusk/Night/Dawn)
+//   InfoPanel            — modal dialog display for each phase message
+//   GameDirector         — SaveGame on new-day confirmation
+//
+// IMPORTANT: IsEndingCycle must remain true for the entire duration of the pipeline.
+//            GameDirector.OnApplicationQuit reads it to skip the autosave mid-cycle,
+//            preventing a corrupt save with half-resolved feeding or combat state.
+
 using System.Collections;
 using System.Linq;
 using UnityEngine;
@@ -10,6 +33,10 @@ namespace Markyu.LastKernel
 
         public bool IsEndingCycle { get; private set; }
 
+        // Stable reference-type tokens used as identifiers with InfoPanel and InputManager.
+        // Passing an object reference (rather than a string literal) avoids allocation on
+        // repeated calls and guarantees uniqueness — no other system can accidentally hold
+        // the same token and clear our lock or info panel entry.
         private readonly object dayCycleRequester = "DayCycleRequester";
         private readonly object dayCycleInputLock = "DayCycleInputLock";
 
@@ -90,16 +117,18 @@ namespace Markyu.LastKernel
         }
 
         // --- PHASE 3: SELLING ---
+        // The selling phase is event-driven rather than a polling coroutine: we subscribe to
+        // OnStatsChanged and react the instant the player sells or discards a card. This keeps
+        // the modal prompt in sync without a per-frame conditional check in Update.
         private void StartSellingPhase()
         {
-            // 1. The player MUST be able to interact to sell cards.
+            // Unlock board interaction so the player can drag and sell cards.
             InputManager.Instance.RemoveLock(dayCycleInputLock);
 
-            // 2. Subscribe to the event. We will now react ONLY when cards change.
             CardManager.Instance.OnStatsChanged += OnStatsChangedDuringSelling;
 
-            // 3. Manually trigger the check once immediately.
-            //    This handles the case where we might already have 0 excess cards.
+            // Trigger immediately in case the player is already under the card limit
+            // (e.g., characters died during feeding and the count already dropped).
             CheckSellingCondition(CardManager.Instance.GetStatsSnapshot());
         }
 

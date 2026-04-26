@@ -1,3 +1,19 @@
+// GameDirector — Persistent session authority and scene transition controller.
+//
+// Survives scene loads (DontDestroyOnLoad). Responsible for:
+//   • Starting new games and loading/deleting save slots
+//   • Scene transitions: fade out → async load → fade in (TravelSequence)
+//   • Preserving "traveler" cards across scene boundaries as serialised CardData
+//   • Triggering auto-save on application quit and before every travel
+//   • Broadcasting OnSceneDataReady so systems can init without coupling to this class
+//
+// Key dependencies:
+//   SaveSystem      — disk read/write
+//   ScreenFader     — visual transition during scene load
+//   TimeManager     — paused during the load window
+//   RunStateManager — binds to GameData for run-phase persistence
+//   CardManager     — spawns incoming traveler cards after scene load
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,7 +37,8 @@ namespace Markyu.LastKernel
         public Dictionary<string, GameData> SavedGames { get; private set; }
         public GameData GameData { get; private set; }
 
-        [System.NonSerialized]
+        // Cards carried between scenes. Populated by TravelSequence and consumed once
+        // by SpawnTravelers on the first frame after the new scene loads.
         private List<CardData> incomingTravelers = new List<CardData>();
 
         #region Unity Lifecycle
@@ -277,6 +294,9 @@ namespace Markyu.LastKernel
             incomingTravelers.Clear();
         }
 
+        // Maps shorthand and legacy scene names to their current build-settings names.
+        // TravelRecipe ScriptableObjects created before the rename still reference "Title"
+        // and "Main"; this keeps them functional without requiring a data migration.
         private string ResolveSceneName(string sceneName)
         {
             return sceneName switch

@@ -1,3 +1,24 @@
+// CardManager — Central card registry, factory, and board state manager.
+//
+// Single authority for all card instances on the board. Responsible for:
+//   • Spawning, tracking, and destroying CardInstances and PackInstances
+//   • Maintaining the list of all active CardStacks and their positions
+//   • Enforcing stacking rules via StackingRulesMatrix
+//   • Triggering physics overlap resolution when the board changes
+//   • Tracking which card definitions the player has ever encountered
+//   • Orchestrating the end-of-day feeding coroutine
+//
+// Key dependencies:
+//   CraftingManager  — recipe card label generation
+//   CombatManager    — AllCards includes cards in active combat
+//   Board            — placement bounds enforcement
+//   CardPhysicsSolver — overlap resolution algorithm
+//   GameDirector     — save/load event hooks
+//   GameLocalization — runtime recipe card display names
+//
+// NOTE: This class is a refactor candidate. Card factory logic, feeding logic,
+//       and discovery tracking could each live in dedicated subsystems.
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,8 +79,15 @@ namespace Markyu.LastKernel
         #endregion
 
         private readonly List<CardStack> stacks = new();
+
+        // Recipe card definitions are created at runtime and cannot be stored in the
+        // asset database. This prefix makes their IDs distinct from asset-based definitions
+        // so GetDefinitionById can reconstruct them on demand (e.g. after a save/load).
         private const string RecipeDefinitionIdPrefix = "Recipe:";
 
+        // Cards engaged in active combat are temporarily removed from their stacks
+        // and owned by CombatManager. Including them here ensures every consumer of
+        // AllCards — feeding, stats, quest checks — accounts for every living card.
         public IEnumerable<CardInstance> AllCards
         {
             get
@@ -79,10 +107,16 @@ namespace Markyu.LastKernel
         private Dictionary<CardCategory, CardInstance> prefabLookup;
         private CardDefinitionCatalog definitionCatalog;
 
+        // Cards currently showing the "stackable" highlight so they can all be
+        // cleared in a single pass without iterating every card on the board.
         private List<CardInstance> highlightedCards = new();
 
+        // Most recent snapshot cached by NotifyStatsChanged. Kept so HUD and
+        // quest listeners can read the last value without triggering a recalculation.
         private StatsSnapshot currentStats;
 
+        // Persistent across the run. Recipe-category cards are intentionally excluded
+        // because they are ephemeral runtime objects, not player-discoverable content.
         private readonly HashSet<CardDefinition> discoveredCards = new();
 
         #region Unity Lifecycle

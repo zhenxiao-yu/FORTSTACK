@@ -1,3 +1,18 @@
+// CardStack — Runtime container for one or more stacked CardInstances.
+//
+// A plain C# class (not a MonoBehaviour) that groups cards physically stacked
+// together on the board. Manages ordered membership, target position propagation,
+// merge/split operations, and registration with CardManager.
+//
+// TERMINOLOGY — Cards[0] is "TopCard": the leading card during a drag gesture
+// and the original anchor of the stack. Cards[Count-1] is "BottomCard": the
+// most recently joined card, which trails behind during drag and anchors to the
+// TargetPosition at rest. The names reflect drag priority, not vertical height.
+//
+// NOTE: CardStack.RefuseAll is a sentinel passed to CreateCardInstance to signal
+//       that the newly spawned card should NOT attempt to auto-merge into any
+//       nearby stack on its first frame.
+
 using System.Collections.Generic;
 using UnityEngine;
 
