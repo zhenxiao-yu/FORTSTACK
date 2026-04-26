@@ -10,4 +10,5 @@
   <Project Path="VFolders.csproj" />
   <Project Path="SingularityGroup.HotReload.Runtime.Public.csproj" />
   <Project Path="Lofelt.NiceVibrations.Editor.csproj" />
+  <Project Path="TGS_PackageImporter.csproj" />
 </Solution>
