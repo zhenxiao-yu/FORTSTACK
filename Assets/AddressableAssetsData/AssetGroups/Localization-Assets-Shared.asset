@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: 9b12ba4c7211eb841a8cf191e69d14ba
   m_SerializeEntries:
   - m_GUID: 6b43f054f58c1be41b686e718370b8c1
-    m_Address: Assets/Fortstack/Localization/StringTables/GameText Shared Data.asset
+    m_Address: Assets/_Project/Localization/StringTables/GameText Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

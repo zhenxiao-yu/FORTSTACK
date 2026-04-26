@@ -16,7 +16,7 @@ namespace Markyu.LastKernel
         private string titleScene = "MainMenu";
 
         [SerializeField, Tooltip("The name of the default gameplay scene to load when starting a new game.")]
-        private string defaultScene = "Main";
+        private string defaultScene = "Game";
 
         public Dictionary<string, GameData> SavedGames { get; private set; }
         public GameData GameData { get; private set; }
@@ -210,8 +210,14 @@ namespace Markyu.LastKernel
                 return;
             }
 
-            string currentScene = SceneManager.GetActiveScene().name;
-            int currentIndex = targetScenes.IndexOf(currentScene);
+            string currentScene = ResolveSceneName(SceneManager.GetActiveScene().name);
+            List<string> resolvedTargetScenes = new List<string>(targetScenes.Count);
+            foreach (string targetSceneName in targetScenes)
+            {
+                resolvedTargetScenes.Add(ResolveSceneName(targetSceneName));
+            }
+
+            int currentIndex = resolvedTargetScenes.IndexOf(currentScene);
 
             if (currentIndex < 0)
             {
@@ -221,7 +227,7 @@ namespace Markyu.LastKernel
 
             SaveGame();
 
-            string targetScene = targetScenes[(currentIndex + 1) % targetScenes.Count];
+            string targetScene = resolvedTargetScenes[(currentIndex + 1) % resolvedTargetScenes.Count];
 
             List<CardData> travelersData = new List<CardData>();
             if (travelers != null)
@@ -245,7 +251,7 @@ namespace Markyu.LastKernel
             if (travelers != null)
                 incomingTravelers = new List<CardData>(travelers);
 
-            yield return SceneManager.LoadSceneAsync(sceneName);
+            yield return SceneManager.LoadSceneAsync(ResolveSceneName(sceneName));
 
             if (TimeManager.Instance != null)
                 TimeManager.Instance.SetExternalPause(false);
@@ -269,6 +275,16 @@ namespace Markyu.LastKernel
             }
 
             incomingTravelers.Clear();
+        }
+
+        private string ResolveSceneName(string sceneName)
+        {
+            return sceneName switch
+            {
+                "Title" => "MainMenu",
+                "Main" => "Game",
+                _ => sceneName
+            };
         }
         #endregion
     }

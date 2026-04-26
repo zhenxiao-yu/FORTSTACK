@@ -24,7 +24,7 @@
 ## 1. Folder Structure
 
 ```
-Assets/Fortstack/
+Assets/_Project/
 ├── Docs/                    ← Architecture docs (you are here)
 ├── Fonts/                   ← TMP font assets (NotoSans, SmileySans)
 ├── Localization/
@@ -174,7 +174,7 @@ CardManager.CreateCardInstance(definition, position)
 
 ### Adding a New Card
 1. Create `CardDefinition` asset: **Right-click > Last Kernel > Card Definition** (or subtype).
-2. Place it in `Assets/Fortstack/Resources/Cards/{Category}/`.
+2. Place it in `Assets/_Project/Data/Resources/Cards/{Category}/`.
 3. Set a unique `id` (auto-generated on first save via `OnValidate`).
 4. Assign an art texture and configure stats.
 5. Ensure a card prefab for the category exists in `Prefabs/Cards/`.
@@ -236,7 +236,7 @@ See `Docs/PixelPerfectSetup.md` for full setup guidance.
 **Supported languages:** Simplified Chinese, Traditional Chinese, English, Japanese, Korean, French, German, Spanish.
 
 ### Adding a Localized String
-1. Add a row to `Assets/Fortstack/Localization/Docs/GameText_Localization_Source.csv`.
+1. Add a row to `Assets/_Project/Localization/Docs/GameText_Localization_Source.csv`.
 2. Run **Localization > Rebuild GameText Tables** in Unity to regenerate the `.asset` string tables.
 3. Add the key to `GameLocalization.TextEntries` dictionary (for runtime fast-path lookup).
 4. Use `GameLocalization.Get("your.key")` in code, or `GameLocalization.Format("your.key", args)` for parameterized strings.

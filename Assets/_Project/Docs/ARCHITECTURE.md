@@ -7,14 +7,14 @@ This document is a lightweight map for active development. It records current ow
 - Runtime code: `Assets/_Project/Scripts/Runtime/Cards/`
 - Card definitions describe authoring data.
 - Card instances and managers own runtime state, movement, stacking, equipment, feel presentation, and card UI helpers.
-- Card data assets should live under `Assets/_Project/Data/Cards/` or the existing project Resources layout until a deliberate data migration is planned.
+- Runtime-loaded card data assets currently live under `Assets/_Project/Data/Resources/Cards/` so existing `Resources.LoadAll("Cards")` calls continue to work.
 
 ## Recipe System
 
 - Runtime code: `Assets/_Project/Scripts/Runtime/Crafting/`
 - Recipe definitions describe combinations and results.
 - `RecipeMatcher` handles matching logic; managers/tasks coordinate gameplay use.
-- Recipe assets should live under `Assets/_Project/Data/Recipes/` or the existing Resources layout until migrated safely.
+- Runtime-loaded recipe assets currently live under `Assets/_Project/Data/Resources/Recipes/` so existing `Resources.LoadAll("Recipes")` calls continue to work.
 
 ## Colony System
 
@@ -27,7 +27,7 @@ This document is a lightweight map for active development. It records current ow
 - Runtime code: `Assets/_Project/Scripts/Runtime/Night/` and `Assets/_Project/Scripts/Runtime/Combat/`
 - Night phase code owns deployment, lanes, units, waves, and night-combat results.
 - General combat rules, stats, hit results, and combat UI helpers live under Combat.
-- Enemy data should live under `Assets/_Project/Data/Enemies/` when new data is organized.
+- Enemy and wave data should live under `Assets/_Project/Data/Resources/Waves/` or `Assets/_Project/Data/Enemies/` depending on whether it is still loaded through `Resources`.
 
 ## UI Layer
 
@@ -39,11 +39,11 @@ This document is a lightweight map for active development. It records current ow
 
 - Runtime home: `Assets/_Project/Scripts/Runtime/Input/`
 - The project uses Unity's Input System package.
-- Shared input orchestration currently includes `InputManager` under Core; future input-specific code should move into the Input folder during a deliberate refactor.
+- Shared input orchestration lives in `Assets/_Project/Scripts/Runtime/Input/InputManager.cs`.
 
 ## Localization Layer
 
-- Runtime code: `Assets/_Project/Scripts/Runtime/Localization/` and related Core bridge classes.
+- Runtime code: `Assets/_Project/Scripts/Runtime/Localization/`.
 - Editor tooling: `Assets/_Project/Scripts/Editor/Localization/`
 - Localization assets: `Assets/_Project/Localization/`
 - Visible strings should go through localization keys instead of hardcoded UI text.
@@ -51,5 +51,5 @@ This document is a lightweight map for active development. It records current ow
 ## Audio Layer
 
 - Runtime home: `Assets/_Project/Scripts/Runtime/Audio/`
-- Shared audio orchestration currently includes `AudioManager` under Core; future audio-specific features should use the Audio folder.
+- Shared audio orchestration lives in `Assets/_Project/Scripts/Runtime/Audio/AudioManager.cs`.
 - Audio assets belong under `Assets/_Project/Audio/Music/`, `Assets/_Project/Audio/SFX/`, and `Assets/_Project/Audio/Mixers/`.

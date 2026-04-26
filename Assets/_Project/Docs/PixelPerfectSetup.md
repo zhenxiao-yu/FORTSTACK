@@ -32,7 +32,7 @@ Default resolution is `1920 × 1080 (Windowed)`.
 
 ## 2. URP Configuration
 
-**Assets:** `Assets/Fortstack/Settings/URP/`
+**Assets:** `Assets/_Project/Settings/URP/`
 
 | Asset | Purpose |
 |-------|---------|
@@ -80,7 +80,7 @@ A `CameraSettings` ScriptableObject acts as the documentation/design record for 
 **To create it:**
 1. Right-click in the Project window
 2. Select **Last Kernel > Camera Settings**
-3. Save as `Assets/Fortstack/Settings/Default_Camera_Settings.asset`
+3. Save as `Assets/_Project/Settings/Default_Camera_Settings.asset`
 4. Fill in the reference values to match the CameraController prefab
 
 The CameraSettings asset is standalone documentation. CameraController does not read from it by default — values are set directly on the prefab component.

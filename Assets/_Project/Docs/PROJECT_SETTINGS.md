@@ -18,14 +18,14 @@
 
 - Input package: `com.unity.inputsystem` `1.19.0`
 - Active input handling: Input System package
-- Main actions asset: `Assets/InputSystem_Actions.inputactions`
+- Main actions asset: `Assets/_Project/Settings/Input/InputSystem_Actions.inputactions`
 
 ## Localization
 
 - Localization package: `com.unity.localization` `1.5.11`
 - Localization settings are registered in `ProjectSettings/EditorBuildSettings.asset`.
 - Project localization assets live under `Assets/_Project/Localization/`.
-- Runtime bridge code lives under `Assets/_Project/Scripts/Runtime/Localization/` and `Assets/_Project/Scripts/Runtime/Core/`.
+- Runtime bridge code lives under `Assets/_Project/Scripts/Runtime/Localization/`.
 
 ## Target Platforms
 
@@ -40,8 +40,9 @@ Production Build Settings:
 0. `Assets/_Project/Scenes/Boot.unity`
 1. `Assets/_Project/Scenes/MainMenu.unity`
 2. `Assets/_Project/Scenes/Game.unity`
+3. `Assets/_Project/Scenes/Island.unity`
 
-Test and prototype scenes are intentionally excluded from production Build Settings.
+`Island.unity` remains in Build Settings because `Recipe_Travel_Island.asset` currently references it as live gameplay content. `Main.unity` and `Title.unity` are legacy duplicates retained under `Scenes/Test/` and excluded from production Build Settings.
 
 ## Pixel-Perfect And Crispness Setup
 
@@ -55,4 +56,5 @@ Test and prototype scenes are intentionally excluded from production Build Setti
 - Keep imported assets under `Assets/ThirdParty/`.
 - Keep project-owned gameplay code under `Assets/_Project/Scripts/Runtime/`.
 - Keep editor tools under `Assets/_Project/Scripts/Editor/`.
+- Keep runtime-loaded authored content under `Assets/_Project/Data/Resources/` until the project migrates away from `Resources.LoadAll`.
 - Preserve `.meta` files when moving assets so Unity GUID references remain stable.

@@ -20,30 +20,30 @@ namespace Markyu.LastKernel.Tests
         {
             var failures = new List<string>();
 
-            foreach ((string path, CardDefinition card) in LoadAssets<CardDefinition>("Assets/Fortstack/Resources/Cards"))
+            foreach ((string path, CardDefinition card) in LoadAssets<CardDefinition>("Assets/_Project/Data/Resources/Cards"))
             {
                 CheckText(failures, path, "displayName", card.DisplayName);
                 CheckText(failures, path, "description", card.Description);
             }
 
-            foreach ((string path, PackDefinition pack) in LoadAssets<PackDefinition>("Assets/Fortstack/Resources/Packs"))
+            foreach ((string path, PackDefinition pack) in LoadAssets<PackDefinition>("Assets/_Project/Data/Resources/Packs"))
             {
                 CheckText(failures, path, "displayName", pack.DisplayName);
                 CheckText(failures, path, "description", pack.Description);
             }
 
-            foreach ((string path, RecipeDefinition recipe) in LoadAssets<RecipeDefinition>("Assets/Fortstack/Resources/Recipes"))
+            foreach ((string path, RecipeDefinition recipe) in LoadAssets<RecipeDefinition>("Assets/_Project/Data/Resources/Recipes"))
             {
                 CheckText(failures, path, "displayName", recipe.DisplayName);
             }
 
-            foreach ((string path, Quest quest) in LoadAssets<Quest>("Assets/Fortstack/Resources/Quests"))
+            foreach ((string path, Quest quest) in LoadAssets<Quest>("Assets/_Project/Data/Resources/Quests"))
             {
                 CheckText(failures, path, "title", quest.Title);
                 CheckText(failures, path, "description", quest.Description);
             }
 
-            foreach ((string path, EncounterDefinition encounter) in LoadAssets<EncounterDefinition>("Assets/Fortstack/Resources/Encounters"))
+            foreach ((string path, EncounterDefinition encounter) in LoadAssets<EncounterDefinition>("Assets/_Project/Data/Resources/Encounters"))
             {
                 CheckText(failures, path, "notificationMessage", encounter.NotificationMessage);
             }

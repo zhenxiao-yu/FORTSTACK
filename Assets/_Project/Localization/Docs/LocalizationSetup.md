@@ -6,7 +6,7 @@ Unity Localization is now the main localization system for Fortstack/Last Kernel
 
 - Package: `com.unity.localization` `1.5.11`.
 - Resolved package cache: `Library/PackageCache/com.unity.localization@2baf2a27280b`.
-- Active settings asset path: `Assets/Fortstack/Localization/Localization Settings.asset`.
+- Active settings asset path: `Assets/_Project/Localization/Localization Settings.asset`.
 - Default string table: `GameText`.
 - Project locale and fallback locale: English (`en`).
 
@@ -26,11 +26,11 @@ Supported locales:
 Localization assets belong under:
 
 ```text
-Assets/Fortstack/Localization/
-Assets/Fortstack/Localization/Locales/
-Assets/Fortstack/Localization/StringTables/
-Assets/Fortstack/Localization/AssetTables/
-Assets/Fortstack/Localization/Docs/
+Assets/_Project/Localization/
+Assets/_Project/Localization/Locales/
+Assets/_Project/Localization/StringTables/
+Assets/_Project/Localization/AssetTables/
+Assets/_Project/Localization/Docs/
 ```
 
 The `AssetTables` folder is reserved for future localized sprites, audio, and font assets. Current work uses the `GameText` String Table Collection.
@@ -67,7 +67,7 @@ Only run one Unity instance for the project while rebuilding. Batch mode cannot 
 Source file:
 
 ```text
-Assets/Fortstack/Localization/Docs/GameText_Localization_Source.csv
+Assets/_Project/Localization/Docs/GameText_Localization_Source.csv
 ```
 
 Columns:
@@ -143,15 +143,15 @@ Do not delete these yet:
 The project already includes `TMP_NotoSansSC_Fallback` in TextMesh Pro settings, backed by:
 
 ```text
-Assets/Fortstack/Fonts/NatoSans/Source/NotoSansSC-Regular.ttf
+Assets/_Project/Art/Fonts/NatoSans/Source/NotoSansSC-Regular.ttf
 ```
 
 This is a useful Simplified Chinese fallback, but it should not be treated as final coverage for Traditional Chinese, Japanese, or Korean.
 
 If approved CJK fonts are added later:
 
-1. Place source font files under `Assets/Fortstack/Fonts/<FontName>/Source/`.
-2. Create TMP font assets under `Assets/Fortstack/Fonts/<FontName>/TMP/`.
+1. Place source font files under `Assets/_Project/Art/Fonts/<FontName>/Source/`.
+2. Create TMP font assets under `Assets/_Project/Art/Fonts/<FontName>/TMP/`.
 3. Add those TMP font assets to `Project Settings > TextMesh Pro > Settings > Fallback Font Assets`.
 4. Also add them to the default UI font asset fallback list if that font is used directly by UI prefabs.
 5. Test all CJK locales in title, options, HUD, card tooltip, quest, and combat UI.

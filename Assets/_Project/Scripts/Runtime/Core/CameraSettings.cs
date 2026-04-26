@@ -8,7 +8,7 @@
 //
 // HOW TO USE:
 //   1. Create the asset: Right-click > Last Kernel > Camera Settings
-//   2. Save it to Assets/Fortstack/Settings/Default_Camera_Settings.asset
+//   2. Save it to Assets/_Project/Settings/Default_Camera_Settings.asset
 //   3. Assign it to CameraController._settings in the prefab if you want
 //      CameraController to read from it instead of its own [SerializeField] fields
 //      (optional — the controller works standalone without this asset).

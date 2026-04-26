@@ -4310,2265 +4310,2265 @@ MonoBehaviour:
     - rid: 8800497158023282922
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/00_Pack_Starter.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/00_Pack_Starter.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282923
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/00_Pack_Starter.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/00_Pack_Starter.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282924
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/01_Pack_Beginning.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/01_Pack_Beginning.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282925
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/01_Pack_Beginning.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/01_Pack_Beginning.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282926
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/02_Pack_Revelations.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/02_Pack_Revelations.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282927
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/02_Pack_Revelations.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/02_Pack_Revelations.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282928
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/03_Pack_Farmstead.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/03_Pack_Farmstead.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282929
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/03_Pack_Farmstead.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/03_Pack_Farmstead.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282930
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/04_Pack_HeartyMeals.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/04_Pack_HeartyMeals.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282931
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/04_Pack_HeartyMeals.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/04_Pack_HeartyMeals.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282932
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/05_Pack_Knowledge.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/05_Pack_Knowledge.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282933
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/05_Pack_Knowledge.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/05_Pack_Knowledge.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282934
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/06_Pack_Blacksmith.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/06_Pack_Blacksmith.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282935
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/06_Pack_Blacksmith.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/06_Pack_Blacksmith.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282936
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/07_Pack_Adventure.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/07_Pack_Adventure.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282937
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/07_Pack_Adventure.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/07_Pack_Adventure.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282938
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/08_Pack_Construction.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/08_Pack_Construction.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282939
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/08_Pack_Construction.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/08_Pack_Construction.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282940
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/10_Pack_Island.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/10_Pack_Island.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282941
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/10_Pack_Island.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/10_Pack_Island.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282942
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/11_Pack_Survival.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/11_Pack_Survival.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282943
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Packs/11_Pack_Survival.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Packs/11_Pack_Survival.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282944
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Fields.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Fields.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282945
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Fields.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Fields.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282946
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Forest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Forest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282947
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Forest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Forest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282948
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Graveyard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Graveyard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282949
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Graveyard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Graveyard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282950
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Highlands.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Highlands.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282951
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Highlands.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Highlands.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282952
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Ruins.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Ruins.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282953
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Areas/Card_Ruins.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Areas/Card_Ruins.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282954
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Card_Recipe.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Card_Recipe.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282955
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Card_Recipe.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Card_Recipe.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282956
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Baby.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Baby.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282957
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Baby.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Baby.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282958
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Mage.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Mage.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282959
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Mage.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Mage.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282960
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Ranger.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Ranger.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282961
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Ranger.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Ranger.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282962
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Villager.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Villager.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282963
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Villager.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Villager.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282964
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Warrior.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Warrior.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282965
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Characters/Card_Warrior.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Characters/Card_Warrior.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282966
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Acorn.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Acorn.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282967
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Acorn.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Acorn.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282968
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Apple.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Apple.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282969
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Apple.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Apple.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282970
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_BakedPotato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_BakedPotato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282971
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_BakedPotato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_BakedPotato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282972
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Berry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Berry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282973
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Berry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Berry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282974
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Coconut.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Coconut.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282975
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Coconut.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Coconut.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282976
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Egg.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Egg.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282977
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Egg.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Egg.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282978
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_FruitSalad.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_FruitSalad.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282979
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_FruitSalad.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_FruitSalad.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282980
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Milk.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Milk.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282981
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Milk.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Milk.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282982
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Milkshake.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Milkshake.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282983
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Milkshake.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Milkshake.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282984
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Omelette.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Omelette.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282985
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Omelette.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Omelette.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282986
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Potato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Potato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282987
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Potato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Potato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282988
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_RawMeat.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_RawMeat.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282989
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_RawMeat.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_RawMeat.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282990
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_RoastedAcorn.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_RoastedAcorn.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282991
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_RoastedAcorn.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_RoastedAcorn.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282992
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Soup.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Soup.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282993
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Soup.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Soup.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282994
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Steak.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Steak.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282995
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Steak.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Steak.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282996
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Stew.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Stew.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282997
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Stew.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Stew.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282998
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Turnip.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Turnip.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023282999
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Consumables/Card_Turnip.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Consumables/Card_Turnip.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283000
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Currencies/Card_Coin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Currencies/Card_Coin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283001
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Currencies/Card_Coin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Currencies/Card_Coin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283002
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Currencies/Card_Coral.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Currencies/Card_Coral.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283003
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Currencies/Card_Coral.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Currencies/Card_Coral.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283004
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Bow.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Bow.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283005
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Bow.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Bow.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283006
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Cane.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Cane.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283007
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Cane.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Cane.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283008
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Chainmail.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Chainmail.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283009
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Chainmail.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Chainmail.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283010
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_LeatherArmor.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_LeatherArmor.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283011
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_LeatherArmor.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_LeatherArmor.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283012
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Quiver.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Quiver.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283013
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Quiver.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Quiver.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283014
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_SlimeHat.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_SlimeHat.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283015
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_SlimeHat.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_SlimeHat.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283016
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Slingshot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Slingshot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283017
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Slingshot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Slingshot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283018
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Staff.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Staff.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283019
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Staff.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Staff.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283020
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Sword.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Sword.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283021
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Sword.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Sword.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283022
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Tunic.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Tunic.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283023
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_Tunic.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_Tunic.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283024
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_VitalityAmulet.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_VitalityAmulet.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283025
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_VitalityAmulet.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_VitalityAmulet.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283026
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_WoodenClub.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_WoodenClub.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283027
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Equipments/Card_WoodenClub.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Equipments/Card_WoodenClub.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283028
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_AbyssalCore.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_AbyssalCore.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283029
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_AbyssalCore.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_AbyssalCore.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283030
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Brick.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Brick.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283031
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Brick.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Brick.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283032
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Clay.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Clay.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283033
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Clay.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Clay.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283034
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Corpse.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Corpse.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283035
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Corpse.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Corpse.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283036
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Fiber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Fiber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283037
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Fiber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Fiber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283038
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Flint.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Flint.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283039
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Flint.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Flint.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283040
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_GlowingDust.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_GlowingDust.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283041
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_GlowingDust.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_GlowingDust.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283042
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_IronIngot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_IronIngot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283043
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_IronIngot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_IronIngot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283044
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_IronOre.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_IronOre.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283045
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_IronOre.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_IronOre.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283046
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Plank.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Plank.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283047
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Plank.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Plank.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283048
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Rope.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Rope.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283049
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Rope.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Rope.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283050
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Stone.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Stone.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283051
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Stone.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Stone.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283052
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Timber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Timber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283053
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Timber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Timber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283054
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Wood.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Wood.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283055
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_Wood.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_Wood.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283056
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_WoodenStick.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_WoodenStick.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283057
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Materials/Card_WoodenStick.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Materials/Card_WoodenStick.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283058
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Chicken.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Chicken.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283059
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Chicken.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Chicken.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283060
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Cow.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Cow.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283061
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Cow.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Cow.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283062
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Crab.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Crab.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283063
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Crab.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Crab.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283064
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_CrimsonAcolyte.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_CrimsonAcolyte.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283065
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_CrimsonAcolyte.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_CrimsonAcolyte.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283066
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_DemonLord.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_DemonLord.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283067
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_DemonLord.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_DemonLord.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283068
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Goblin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Goblin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283069
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Goblin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Goblin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283070
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Satyr.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Satyr.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283071
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Satyr.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Satyr.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283072
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Slime.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Slime.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283073
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Slime.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Slime.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283074
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Squirrel.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Squirrel.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283075
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_Squirrel.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_Squirrel.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283076
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_TrollShaman.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_TrollShaman.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283077
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Mobs/Card_TrollShaman.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Mobs/Card_TrollShaman.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283078
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_AppleTree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_AppleTree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283079
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_AppleTree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_AppleTree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283080
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_BasaltColumns.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_BasaltColumns.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283081
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_BasaltColumns.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_BasaltColumns.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283082
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_BerryBush.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_BerryBush.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283083
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_BerryBush.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_BerryBush.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283084
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_ClayPit.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_ClayPit.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283085
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_ClayPit.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_ClayPit.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283086
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Grass.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Grass.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283087
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Grass.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Grass.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283088
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_IronDeposit.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_IronDeposit.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283089
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_IronDeposit.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_IronDeposit.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283090
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_PalmTree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_PalmTree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283091
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_PalmTree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_PalmTree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283092
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Rock.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Rock.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283093
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Rock.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Rock.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283094
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Soil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Soil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283095
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Soil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Soil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283096
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Tree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Tree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283097
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Resources/Card_Tree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Resources/Card_Tree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283098
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Booster/Card_Booster_Warehouse.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Booster/Card_Booster_Warehouse.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283099
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Booster/Card_Booster_Warehouse.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Booster/Card_Booster_Warehouse.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283100
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Booster/Card_Booster_Yard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Booster/Card_Booster_Yard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283101
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Booster/Card_Booster_Yard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Booster/Card_Booster_Yard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283102
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Chest/Card_Chest_WoodenChest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Chest/Card_Chest_WoodenChest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283103
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Chest/Card_Chest_WoodenChest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Chest/Card_Chest_WoodenChest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283104
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreatureCage.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreatureCage.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283105
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreatureCage.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreatureCage.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283106
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreaturePen.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreaturePen.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283107
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreaturePen.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Enclosure/Card_Enclosure_CreaturePen.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283108
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Grower/Card_Grower_Farm.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Grower/Card_Grower_Farm.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283109
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Grower/Card_Grower_Farm.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Grower/Card_Grower_Farm.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283110
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Grower/Card_Grower_PlanterBox.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Grower/Card_Grower_PlanterBox.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283111
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Grower/Card_Grower_PlanterBox.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Grower/Card_Grower_PlanterBox.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283112
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Research/Card_Research_Library.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Research/Card_Research_Library.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283113
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Specials/Research/Card_Research_Library.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Specials/Research/Card_Research_Library.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283114
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Anvil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Anvil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283115
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Anvil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Anvil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283116
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Bonfire.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Bonfire.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283117
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Bonfire.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Bonfire.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283118
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_ClayQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_ClayQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283119
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_ClayQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_ClayQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283120
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Furnace.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Furnace.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283121
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Furnace.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Furnace.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283122
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_GrandPortal.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_GrandPortal.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283123
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_GrandPortal.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_GrandPortal.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283124
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Grave.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Grave.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283125
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Grave.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Grave.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283126
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Hearth.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Hearth.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283127
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Hearth.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Hearth.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283128
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_House.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_House.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283129
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_House.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_House.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283130
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_IronMine.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_IronMine.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283131
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_IronMine.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_IronMine.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283132
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Kiln.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Kiln.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283133
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Kiln.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Kiln.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283134
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_LoggingCamp.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_LoggingCamp.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283135
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_LoggingCamp.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_LoggingCamp.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283136
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Sawmill.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Sawmill.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283137
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Sawmill.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Sawmill.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283138
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Sign.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Sign.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283139
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_Sign.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_Sign.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283140
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_StoneQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_StoneQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283141
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Structures/Card_StoneQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Structures/Card_StoneQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283142
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_BloodChalice.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_BloodChalice.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283143
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_BloodChalice.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_BloodChalice.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283144
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_GoldenKey.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_GoldenKey.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283145
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_GoldenKey.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_GoldenKey.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283146
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_SacrificialAltar.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_SacrificialAltar.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283147
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_SacrificialAltar.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_SacrificialAltar.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283148
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_TreasureChest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_TreasureChest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283149
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Cards/Valuables/Card_TreasureChest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Cards/Valuables/Card_TreasureChest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283150
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Exploration/Recipe_Exploration_Fields.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Exploration/Recipe_Exploration_Fields.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283151
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Exploration/Recipe_Exploration_Forest.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Exploration/Recipe_Exploration_Forest.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283152
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Exploration/Recipe_Exploration_Graveyard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Exploration/Recipe_Exploration_Graveyard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283153
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Exploration/Recipe_Exploration_Highlands.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Exploration/Recipe_Exploration_Highlands.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283154
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Exploration/Recipe_Exploration_Ruins.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Exploration/Recipe_Exploration_Ruins.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283155
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Box_Berry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Box_Berry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283156
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Box_Potato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Box_Potato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283157
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Box_Turnip.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Box_Turnip.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283158
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Farm_Berry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Farm_Berry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283159
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Farm_Potato.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Farm_Potato.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283160
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Growth/Recipe_Growth_Farm_Turnip.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Growth/Recipe_Growth_Farm_Turnip.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283161
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Anvil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Anvil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283162
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Apple.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Apple.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283163
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_AppleTree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_AppleTree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283164
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Baby.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Baby.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283165
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_BakedPotato_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_BakedPotato_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283166
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_BakedPotato_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_BakedPotato_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283167
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Berry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Berry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283168
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_BerryBush.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_BerryBush.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283169
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Bonfire.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Bonfire.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283170
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Bow.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Bow.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283171
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Brick_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Brick_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283172
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Brick_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Brick_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283173
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Cane.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Cane.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283174
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Chainmail.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Chainmail.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283175
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Chicken.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Chicken.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283176
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Clay_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Clay_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283177
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Clay_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Clay_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283178
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_ClayQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_ClayQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283179
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Coconut.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Coconut.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283180
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Coin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Coin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283181
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_CreatureCage.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_CreatureCage.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283182
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_CreaturePen.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_CreaturePen.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283183
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_DemonLord.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_DemonLord.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283184
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Farm.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Farm.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283185
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Fiber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Fiber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283186
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Flint.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Flint.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283187
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_FruitSalad.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_FruitSalad.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283188
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Furnace.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Furnace.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283189
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_GrandPortal.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_GrandPortal.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283190
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Grave.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Grave.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283191
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Graveyard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Graveyard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283192
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Hearth.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Hearth.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283193
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_House.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_House.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283194
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_IronIngot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_IronIngot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283195
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_IronMine.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_IronMine.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283196
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_IronOre_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_IronOre_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283197
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_IronOre_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_IronOre_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283198
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Kiln.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Kiln.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283199
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Library.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Library.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283200
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_LoggingCamp.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_LoggingCamp.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283201
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Milkshake.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Milkshake.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283202
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Omelette_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Omelette_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283203
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Omelette_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Omelette_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283204
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Plank_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Plank_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283205
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Plank_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Plank_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283206
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_PlanterBox.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_PlanterBox.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283207
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_RoastedAcorn_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_RoastedAcorn_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283208
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_RoastedAcorn_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_RoastedAcorn_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283209
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Rope.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Rope.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283210
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_SacrificialAltar.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_SacrificialAltar.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283211
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Sawmill.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Sawmill.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283212
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Slingshot.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Slingshot.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283213
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Soil.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Soil.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283214
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Soup_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Soup_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283215
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Soup_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Soup_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283216
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Staff.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Staff.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283217
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Steak_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Steak_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283218
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Steak_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Steak_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283219
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Stew.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Stew.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283220
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Stone_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Stone_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283221
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Stone_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Stone_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283222
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Stone_3.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Stone_3.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283223
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_StoneQuarry.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_StoneQuarry.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283224
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Sword.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Sword.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283225
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Timber.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Timber.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283226
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Tree.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Tree.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283227
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Villager.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Villager.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283228
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Warehouse.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Warehouse.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283229
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Wood_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Wood_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283230
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Wood_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Wood_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283231
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Wood_3.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Wood_3.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283232
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Wood_4.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Wood_4.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283233
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_WoodenChest_1.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_WoodenChest_1.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283234
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_WoodenChest_2.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_WoodenChest_2.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283235
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_WoodenClub.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_WoodenClub.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283236
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_WoodenStick.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_WoodenStick.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283237
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Recipe_Yard.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Recipe_Yard.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283238
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Research/Recipe_Research_Library.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Research/Recipe_Research_Library.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283239
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Recipes/Travel/Recipe_Travel_Island.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Recipes/Travel/Recipe_Travel_Island.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283240
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283241
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283242
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283243
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283244
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283245
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283246
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283247
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283248
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283249
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283250
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283251
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283252
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283253
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283254
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283255
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283256
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_09.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_09.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283257
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_09.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_09.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283258
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_10.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_10.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283259
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_10.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_10.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283260
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_11.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_11.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283261
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_11.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_11.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283262
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_12.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_12.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283263
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_12.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_12.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283264
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_13.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_13.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283265
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_13.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_13.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283266
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_14.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_14.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283267
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_14.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_14.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283268
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_15.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_15.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283269
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/01_Introduction/introduction_15.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/01_Introduction/introduction_15.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283270
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283271
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283272
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283273
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283274
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283275
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283276
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283277
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283278
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283279
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283280
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283281
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283282
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283283
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283284
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283285
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/02_Ascension/ascension_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/02_Ascension/ascension_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283286
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283287
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283288
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283289
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283290
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283291
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/03_Training/training_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/03_Training/training_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283292
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283293
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283294
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283295
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283296
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283297
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283298
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283299
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283300
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283301
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283302
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283303
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/04_Advancement/advancement_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/04_Advancement/advancement_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283304
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283305
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283306
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283307
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283308
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283309
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283310
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283311
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283312
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283313
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/05_Cooking/cooking_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/05_Cooking/cooking_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283314
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283315
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283316
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283317
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283318
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283319
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283320
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283321
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283322
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283323
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/06_Exploration/exploration_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/06_Exploration/exploration_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283324
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283325
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283326
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283327
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283328
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283329
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283330
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283331
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283332
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283333
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283334
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283335
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_06.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_06.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283336
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283337
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_07.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_07.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283338
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283339
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_08.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_08.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283340
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_09.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_09.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283341
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_09.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_09.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283342
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_10.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_10.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283343
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_10.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_10.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283344
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_11.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_11.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283345
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_11.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_11.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283346
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_12.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_12.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283347
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/07_Hoarder/hoarder_12.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/07_Hoarder/hoarder_12.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283348
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283349
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283350
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283351
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283352
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283353
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283354
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283355
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283356
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283357
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/08_Construction/construction_05.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/08_Construction/construction_05.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283358
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283359
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283360
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283361
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283362
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283363
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283364
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283365
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/10_Survive/survive_04.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/10_Survive/survive_04.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283366
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283367
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_01.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_01.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283368
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283369
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_02.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_02.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283370
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283371
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Quests/11_TheBasics/the_basics_03.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Quests/11_TheBasics/the_basics_03.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283372
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Encounters/Encounter_Villager.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Encounters/Encounter_Villager.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283373
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Encounters/Encounter_Weekly_Goblin.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Encounters/Encounter_Weekly_Goblin.asset.
           Non-English values are placeholders until reviewed.
     - rid: 8800497158023283374
       type: {class: Comment, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_CommentText: Source English from Assets/Fortstack/Resources/Encounters/Encounter_Weekly_Slime.asset.
+        m_CommentText: Source English from Assets/_Project/Data/Resources/Encounters/Encounter_Weekly_Slime.asset.
           Non-English values are placeholders until reviewed.

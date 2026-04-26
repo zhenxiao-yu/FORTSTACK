@@ -16,14 +16,14 @@ namespace Markyu.LastKernel.Localization.EditorTools
 {
     public static class LocalizationAssetBuilder
     {
-        private const string LocalizationRoot = "Assets/Fortstack/Localization";
+        private const string LocalizationRoot = "Assets/_Project/Localization";
         private const string LocalesFolder = LocalizationRoot + "/Locales";
         private const string StringTablesFolder = LocalizationRoot + "/StringTables";
         private const string AssetTablesFolder = LocalizationRoot + "/AssetTables";
         private const string DocsFolder = LocalizationRoot + "/Docs";
         private const string SettingsAssetPath = LocalizationRoot + "/Localization Settings.asset";
         private const string SourceCsvPath = DocsFolder + "/GameText_Localization_Source.csv";
-        private const string ResourcesRoot = "Assets/Fortstack/Resources";
+        private const string ResourcesRoot = "Assets/_Project/Data/Resources";
 
         private static readonly LocaleSpec[] LocaleSpecs =
         {

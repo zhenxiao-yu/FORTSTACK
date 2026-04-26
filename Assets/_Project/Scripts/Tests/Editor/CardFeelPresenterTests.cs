@@ -29,7 +29,7 @@ namespace Markyu.LastKernel.Tests
         {
             string[] prefabGuids = AssetDatabase.FindAssets(
                 "t:Prefab",
-                new[] { "Assets/Fortstack/Prefabs/Cards", "Assets/Fortstack/Prefabs" });
+                new[] { "Assets/_Project/Prefabs/Cards", "Assets/_Project/Prefabs" });
 
             Assert.IsNotEmpty(prefabGuids);
 
