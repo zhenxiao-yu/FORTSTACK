@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -42,8 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
-  m_GIWorkflowMode: 1
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -157,6 +154,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -178,9 +180,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &37186790
 MeshFilter:
@@ -330,15 +334,14 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533170872}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 13
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize2D: {x: 10, y: 10}
   m_Shadows:
     m_Type: 1
     m_Resolution: -1
@@ -382,8 +385,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
+  m_ForceVisible: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &533170874
 Transform:
   m_ObjectHideFlags: 0
@@ -411,17 +418,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &866460966
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questGroups:
-  - GroupName: 新手引导
+  - GroupName: "\u65B0\u624B\u5F15\u5BFC"
     Quests:
     - {fileID: 11400000, guid: be7223b64bf56cc4fac2142d6fa8e920, type: 2}
     - {fileID: 11400000, guid: 0295f117315d33841ab675934823d1f9, type: 2}
@@ -736,7 +749,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6bf0b187999e31447b061e037ea6db6d, type: 2}
     - {fileID: 11400000, guid: ebde28f181cf0014db7bd96dfaacf1c2, type: 2}
     - {fileID: 11400000, guid: 022720e5c652cef4f93a0a1908524f15, type: 2}
-  - GroupName: 异界升格
+  - GroupName: "\u5F02\u754C\u5347\u683C"
     Quests:
     - {fileID: 11400000, guid: 8ab80445d25e0e7439e78094e4fe0d98, type: 2}
     - {fileID: 11400000, guid: 7c856db6610ae4048bd1d3bbfa7f2324, type: 2}
@@ -746,12 +759,12 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e7c45776e6e362246864c301c2329861, type: 2}
     - {fileID: 11400000, guid: 42ad39efa4529ab4298197c2fccb35b1, type: 2}
     - {fileID: 11400000, guid: 7dc58e74440138440834f7be8e86a49b, type: 2}
-  - GroupName: 战斗训练
+  - GroupName: "\u6218\u6597\u8BAD\u7EC3"
     Quests:
     - {fileID: 11400000, guid: fd389a5ba424cca4ca1e0660a286ced5, type: 2}
     - {fileID: 11400000, guid: bf803dd51c75e874cadee2653ddd9b34, type: 2}
     - {fileID: 11400000, guid: 7772df7e179e60b41b4cb37bccdd0303, type: 2}
-  - GroupName: 殖民进阶
+  - GroupName: "\u6B96\u6C11\u8FDB\u9636"
     Quests:
     - {fileID: 11400000, guid: d85c15ae205110c4398377d54c592dd9, type: 2}
     - {fileID: 11400000, guid: d93d0e7bc51188f4187b5fe2af49be99, type: 2}
@@ -759,21 +772,21 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5c750781fa2368945a4cb61f45c886f6, type: 2}
     - {fileID: 11400000, guid: 4f8bc3fbeab15924eb23dce964444c0e, type: 2}
     - {fileID: 11400000, guid: 41b1e490b08e7cd4684fc6f77db7c4a3, type: 2}
-  - GroupName: 后勤炊事
+  - GroupName: "\u540E\u52E4\u708A\u4E8B"
     Quests:
     - {fileID: 11400000, guid: 39352155b026ccd41a9ec12cacd9bb95, type: 2}
     - {fileID: 11400000, guid: 380935d97a8a375479c45f62583575c7, type: 2}
     - {fileID: 11400000, guid: 3243bf1898c794a4fb8b87c595253116, type: 2}
     - {fileID: 11400000, guid: ac9c10ca01941214c99c26b316beff4b, type: 2}
     - {fileID: 11400000, guid: 8db8b881a67d3bf4d90e1e311bcd5bc2, type: 2}
-  - GroupName: 区域探索
+  - GroupName: "\u533A\u57DF\u63A2\u7D22"
     Quests:
     - {fileID: 11400000, guid: 88853149afe2d1d45a987fa1048d3460, type: 2}
     - {fileID: 11400000, guid: e3c74cebc1ffb334e918be46117d1714, type: 2}
     - {fileID: 11400000, guid: e4f5169ef331d7b4caaac5fe7a6a2625, type: 2}
     - {fileID: 11400000, guid: 4527fcf1b0471d04690a59806c7114e0, type: 2}
     - {fileID: 11400000, guid: d7db95a423dbba9428bc1b36b4e225f2, type: 2}
-  - GroupName: 囤积者
+  - GroupName: "\u56E4\u79EF\u8005"
     Quests:
     - {fileID: 11400000, guid: f3888a306bcf63547b39c3e5006da2c2, type: 2}
     - {fileID: 11400000, guid: 275557e6dac4ab54dbe9b3f56d67eded, type: 2}
@@ -787,14 +800,14 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9b817196f21f15441be26f70086d919c, type: 2}
     - {fileID: 11400000, guid: 0c82a0db655b96a41a214a1722fef6fd, type: 2}
     - {fileID: 11400000, guid: efd44b0cf1af8bf4ba89fdc79f7b3fd2, type: 2}
-  - GroupName: 基础建设
+  - GroupName: "\u57FA\u7840\u5EFA\u8BBE"
     Quests:
     - {fileID: 11400000, guid: 881f594802178af46948717c2793d3ab, type: 2}
     - {fileID: 11400000, guid: d2cc936c81521804e8fbdb98d7056016, type: 2}
     - {fileID: 11400000, guid: 3d5d98ddc04847745b2d70c319a7e028, type: 2}
     - {fileID: 11400000, guid: b081908b146a5ea4a89190b24f8fd15b, type: 2}
     - {fileID: 11400000, guid: 24db2966d5de02345b6ef5602200d876, type: 2}
-  - GroupName: 生存挑战
+  - GroupName: "\u751F\u5B58\u6311\u6218"
     Quests:
     - {fileID: 11400000, guid: dec073a3b9a41bf419381b25a440aeea, type: 2}
     - {fileID: 11400000, guid: e20bd9d9b3a1da245aa99ced5b0892d3, type: 2}
@@ -955,6 +968,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Board01
       objectReference: {fileID: 0}
+    - target: {fileID: 3359683232350720257, guid: 520b1b5bfc70f3046b560ac3246705d7, type: 3}
+      propertyPath: showGridOverlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359683232350720257, guid: 520b1b5bfc70f3046b560ac3246705d7, type: 3}
+      propertyPath: usePurchasedExpansionRows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -968,6 +989,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 126332826288063102, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 497838615681961426, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -987,6 +1012,14 @@ PrefabInstance:
     - target: {fileID: 497838615681961426, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 772407643911709904, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294964715
+      objectReference: {fileID: 0}
+    - target: {fileID: 772407643911709904, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 781982774812489406, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1056,6 +1089,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2862811064305477297, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294964715
+      objectReference: {fileID: 0}
+    - target: {fileID: 2862811064305477297, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 3146471292030992670, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1115,6 +1156,22 @@ PrefabInstance:
     - target: {fileID: 3223160864447104388, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005045766268785954, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007366959917971264, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294964715
+      objectReference: {fileID: 0}
+    - target: {fileID: 5007366959917971264, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068247915782025656, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 5516243882949190484, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1296,6 +1353,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6875133755084796725, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065629263779914298, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294115133
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065629263779914298, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 7122068687751250303, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1315,6 +1384,10 @@ PrefabInstance:
     - target: {fileID: 7122068687751250303, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205413113314942516, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 7695541527449671153, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1343,6 +1416,18 @@ PrefabInstance:
     - target: {fileID: 8320187493270481984, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8705923784954186171, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747386254997639262, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4294964715
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747386254997639262, guid: 5e2985d7789c5254b831d166e6931134, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1429,4 +1514,3 @@ SceneRoots:
   - {fileID: 2056759083933773671}
   - {fileID: 1211518933}
   - {fileID: 2604837606948666750}
-

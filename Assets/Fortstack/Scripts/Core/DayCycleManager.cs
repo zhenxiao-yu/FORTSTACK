@@ -140,26 +140,56 @@ namespace Markyu.FortStack
         private IEnumerator EncounterPhase()
         {
             RunStateManager.Instance?.SetPhase(GamePhase.Night);
+
+            // Lock board interaction for the entire dusk-to-dawn sequence.
+            // InputManager only blocks camera pan/zoom and card drag (Update-driven).
+            // UI EventSystem is unaffected, so the deployment panel buttons work normally.
             InputManager.Instance.AddLock(dayCycleInputLock);
+
+            // Clear any lingering day-cycle InfoPanel message before the deployment UI opens.
+            InfoPanel.Instance?.ClearInfoRequest(dayCycleRequester);
 
             if (NightPhaseManager.Instance != null)
             {
-                // Build deployment plan from all living character cards
-                var colonyCards = CardManager.Instance.AllCards
-                    .Where(c => c != null)
+                // Collect living Character cards — these are the only eligible defenders.
+                var eligibleDefenders = CardManager.Instance.AllCards
+                    .Where(c => c != null
+                             && c.Definition != null
+                             && c.Definition.Category == CardCategory.Character
+                             && c.CurrentHealth > 0)
+                    .OrderBy(c => c.GetInstanceID())   // stable order for list presentation
                     .ToList();
 
-                var plan = NightDeploymentPlan.BuildAutomatic(colonyCards);
+                // --- PLAYER DEPLOYMENT ---
+                // Let the player choose which defenders to commit and in what lane order.
+                // Falls back to auto-deploy if NightDeploymentController is not in the scene.
+                NightDeploymentPlan plan;
 
-                // Run night combat (blocks until combat + aftermath are fully done)
+                if (NightDeploymentController.Instance != null)
+                {
+                    yield return NightDeploymentController.Instance.RunDeploymentPhase(eligibleDefenders);
+
+                    // ConfirmedPlan is always non-null after RunDeploymentPhase completes.
+                    plan = NightDeploymentController.Instance.ConfirmedPlan
+                        ?? NightDeploymentPlan.BuildAutomatic(eligibleDefenders);
+                }
+                else
+                {
+                    Debug.LogWarning("DayCycleManager: NightDeploymentController not found. " +
+                                     "Auto-deploying all eligible defenders.");
+                    plan = NightDeploymentPlan.BuildAutomatic(eligibleDefenders);
+                }
+
+                // --- NIGHT COMBAT ---
+                // Run night combat (blocks until combat simulation + aftermath are fully done).
                 yield return NightPhaseManager.Instance.RunNight(plan);
 
-                // Apply run-state consequences from the combat result
+                // Apply run-state consequences from the combat result.
                 RunStateManager.Instance?.ApplyNightCombatResult(NightPhaseManager.Instance.LastResult);
             }
             else
             {
-                // Fallback: legacy encounter path if NightPhaseManager is not in the scene
+                // Fallback: legacy encounter path if NightPhaseManager is not in the scene.
                 Debug.LogWarning("DayCycleManager: NightPhaseManager not found. Running legacy encounter fallback.");
 
                 int currentDay = TimeManager.Instance.CurrentDay;

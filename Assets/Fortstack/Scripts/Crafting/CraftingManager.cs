@@ -78,12 +78,8 @@ namespace Markyu.FortStack
 
                 if (task.IsCanceled || task.IsComplete) // Remove on cancel or complete
                 {
-                    if (task.IsComplete)
-                    {
-                        PerformCraftingAction(task);
-                    }
-
-                    // Clean up the UI (if any still exists)
+                    // Remove from tracking BEFORE PerformCraftingAction so that
+                    // StartCraftingTask's GetCraftingTask guard doesn't block the repeat.
                     if (activeCraftingUIs.ContainsKey(task))
                     {
                         Destroy(activeCraftingUIs[task].gameObject);
@@ -91,6 +87,11 @@ namespace Markyu.FortStack
                     }
 
                     activeCraftingTasks.RemoveAt(i);
+
+                    if (task.IsComplete)
+                    {
+                        PerformCraftingAction(task);
+                    }
                 }
             }
         }
@@ -291,6 +292,12 @@ namespace Markyu.FortStack
             {
                 // Batch processors may still have enough ingredients left.
                 // If there are cards left, we should check if we can craft again.
+                shouldRepeat = true;
+            }
+            else if (DoesStackMatchRecipe(stack, recipe))
+            {
+                // All-Keep harvesting recipes (e.g. Recruit + Stone Deposit → Stone):
+                // no ingredients were consumed, but the stack is still valid — keep working.
                 shouldRepeat = true;
             }
 
