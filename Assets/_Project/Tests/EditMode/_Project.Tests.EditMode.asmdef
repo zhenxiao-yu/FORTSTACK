@@ -1,0 +1,24 @@
+{
+  "name": "_Project.Tests.EditMode",
+  "rootNamespace": "Markyu.LastKernel.Tests",
+  "references": [
+    "_Project.Runtime",
+    "_Project.Editor",
+    "Unity.Localization",
+    "Unity.Localization.Editor"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

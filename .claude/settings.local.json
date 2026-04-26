@@ -3,6 +3,18 @@
     "allow": [
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)"
+    ],
+    "deny": [
+      "Read(Library/**)",
+      "Read(Temp/**)",
+      "Read(Logs/**)",
+      "Read(Obj/**)",
+      "Read(Build/**)",
+      "Read(Builds/**)",
+      "Read(UserSettings/**)",
+      "Read(MemoryCaptures/**)",
+      "Read(*.csproj)",
+      "Read(*.sln)"
     ]
   }
 }

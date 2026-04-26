@@ -14,8 +14,10 @@
   <Project Path="Lofelt.NiceVibrations.Editor.csproj" />
   <Project Path="Febucci.TextAnimatorForUnity.Input.Runtime.csproj" />
   <Project Path="VFolders.csproj" />
+  <Project Path="_Project.Tests.PlayMode.csproj" />
   <Project Path="Febucci.Attributes.Runtime.csproj" />
   <Project Path="SingularityGroup.HotReload.Runtime.Public.csproj" />
   <Project Path="Febucci.TextAnimatorForUnity.UITk.Runtime.csproj" />
   <Project Path="TGS_PackageImporter.csproj" />
+  <Project Path="_Project.Tests.EditMode.csproj" />
 </Solution>
