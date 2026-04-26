@@ -45,6 +45,19 @@ Unity 6000.4.3f1 pixel-art card survival / auto-battler.
 - `Assets/_Project/Docs/ARCHITECTURE.md`
 - `Assets/_Project/Docs/CONTENT_ORGANIZATION.md`
 - `Assets/_Project/Docs/DEVELOPMENT_TOOLS.md`
+- `Assets/_Project/Docs/ART_DIRECTION.md` ← **source of truth for all UI/visual decisions**
+
+## UI design rules
+
+Before writing any UI code or prefab, read `Assets/_Project/Docs/ART_DIRECTION.md`.
+
+- Style: dark cyberpunk pixel-art terminal — functional, not decorative.
+- Palette: navy/charcoal background, cyan accent, muted magenta secondary, off-white text, amber/red-orange for warnings only.
+- Resolution: 320×180 base composition, 1920×1080 display, integer scaling, point-sampled sprites only.
+- Fonts: pixel-style, both English and Chinese legible, no hardcoded text, allow 30–40% text expansion in layouts.
+- Cards: dark terminal frame, category border, name → art → description layout.
+- Animations: short and snappy, no bouncing, no cartoon feel, respect pixel crispness.
+- Mobile: 44 px minimum touch targets, safe-area insets, collapse secondary panels.
 
 ## Editing rules
 
