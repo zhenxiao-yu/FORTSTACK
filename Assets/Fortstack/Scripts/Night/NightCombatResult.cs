@@ -48,15 +48,15 @@ namespace Markyu.FortStack
         {
             if (PlayerWon)
             {
-                return $"Wave repelled. {EnemiesKilled}/{TotalEnemies} enemies destroyed.\n"
+                return GameLocalization.Format("night.summaryWaveRepelled", EnemiesKilled, TotalEnemies) + "\n"
                      + (DeadDefenders.Count > 0
-                         ? $"{DeadDefenders.Count} defender(s) lost."
-                         : "No casualties.");
+                         ? GameLocalization.Format("night.summaryDefendersLost", DeadDefenders.Count)
+                         : GameLocalization.Get("night.summaryNoCasualties"));
             }
             else
             {
-                return $"Defenses breached. {DeadDefenders.Count}/{TotalDefenders} defender(s) lost.\n"
-                     + $"{EnemiesKilled}/{TotalEnemies} enemies destroyed before breach.";
+                return GameLocalization.Format("night.summaryDefensesBreached", DeadDefenders.Count, TotalDefenders) + "\n"
+                     + GameLocalization.Format("night.summaryEnemiesDestroyedBeforeBreach", EnemiesKilled, TotalEnemies);
             }
         }
     }

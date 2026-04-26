@@ -206,12 +206,12 @@ namespace Markyu.FortStack
 
         private void ResetAllSettings()
         {
-            GameLanguage currentLanguage = GameLocalization.CurrentLanguage;
+            string currentLocaleCode = UnityLocalizationBridge.CurrentLocaleCode;
 
-            // Resetting PlayerPrefs would also wipe the language choice, so restore it immediately
+            // Resetting PlayerPrefs would also wipe the locale choice, so restore it immediately
             // to keep the current UI language stable after the reset.
             PlayerPrefs.DeleteAll();
-            GameLocalization.SetLanguage(currentLanguage, force: true);
+            GameLocalization.SetLanguageByCode(currentLocaleCode, force: true);
 
             GraphicsManager.Instance?.InitGraphicsSettings();
             AudioManager.Instance?.InitAudioMixerVolumes();

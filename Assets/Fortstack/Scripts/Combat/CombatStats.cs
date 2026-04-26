@@ -33,14 +33,14 @@ namespace Markyu.FortStack
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
 
-            sb.Append($"Max Health ({MaxHealth.Value.ToString()})\n");
-            sb.Append($"Attack ({Attack.Value.ToString()})\n");
-            sb.Append($"Defense ({Defense.Value.ToString()})\n");
-            sb.Append($"Attack Speed ({AttackSpeed.Value.ToString()})\n");
-            sb.Append($"Accuracy ({Accuracy.Value.ToString()})\n");
-            sb.Append($"Dodge ({Dodge.Value.ToString()})\n");
-            sb.Append($"Crit. Chance ({CriticalChance.Value.ToString()})\n");
-            sb.Append($"Crit. Multiplier ({CriticalMultiplier.Value.ToString()})");
+            sb.Append($"{GameLocalization.Get("stat.maxHealth")} ({MaxHealth.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.attack")} ({Attack.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.defense")} ({Defense.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.attackSpeed")} ({AttackSpeed.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.accuracy")} ({Accuracy.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.dodge")} ({Dodge.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.criticalChance")} ({CriticalChance.Value.ToString(GameLocalization.CurrentCulture)})\n");
+            sb.Append($"{GameLocalization.Get("stat.criticalMultiplier")} ({CriticalMultiplier.Value.ToString(GameLocalization.CurrentCulture)})");
 
             return sb.ToString();
         }

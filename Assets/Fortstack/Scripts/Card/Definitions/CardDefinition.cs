@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -104,8 +105,8 @@ namespace Markyu.FortStack
         private CardDefinition classChangeResult;
 
         public string Id => id;
-        public string DisplayName => displayName;
-        public string Description => description;
+        public string DisplayName => GetLocalizedDisplayName();
+        public string Description => GetLocalizedDescription();
         public Texture2D ArtTexture => artTexture;
 
         public CardCategory Category => category;
@@ -159,7 +160,7 @@ namespace Markyu.FortStack
 
             if (totalWeight <= 0) return null;
 
-            int randomPoint = Random.Range(0, totalWeight);
+            int randomPoint = UnityEngine.Random.Range(0, totalWeight);
 
             foreach (var entry in loot)
             {
@@ -189,6 +190,37 @@ namespace Markyu.FortStack
         public void SetDescription(string description)
         {
             this.description = description;
+        }
+
+        private string GetLocalizedDisplayName()
+        {
+            if (!ShouldUseAssetLocalization())
+                return displayName;
+
+            return GameLocalization.GetOptional(
+                LocalizationKeyBuilder.ForAsset(this, GetLocalizationCategory(), "name"),
+                displayName);
+        }
+
+        private string GetLocalizedDescription()
+        {
+            if (!ShouldUseAssetLocalization())
+                return description;
+
+            return GameLocalization.GetOptional(
+                LocalizationKeyBuilder.ForAsset(this, GetLocalizationCategory(), "description"),
+                description);
+        }
+
+        private string GetLocalizationCategory()
+        {
+            return this is PackDefinition ? "pack" : "card";
+        }
+
+        private bool ShouldUseAssetLocalization()
+        {
+            return !string.IsNullOrWhiteSpace(id) &&
+                !id.StartsWith("Recipe:", StringComparison.OrdinalIgnoreCase);
         }
     }
 

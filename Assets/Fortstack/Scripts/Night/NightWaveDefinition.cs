@@ -26,8 +26,13 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Salvage earned per enemy killed.")]
         private int salvagePerKill = 1;
 
-        public string WaveName => waveName;
-        public string FlavorText => flavorText;
+        public string WaveName => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "night.wave", "name"),
+            waveName);
+
+        public string FlavorText => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "night.wave", "flavor"),
+            flavorText);
         public IReadOnlyList<EnemyEntry> Enemies => enemies;
         public int VictoryMoraleDelta => victoryMoraleDelta;
         public int DefeatMoraleDelta => defeatMoraleDelta;

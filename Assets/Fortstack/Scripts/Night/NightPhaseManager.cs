@@ -91,9 +91,9 @@ namespace Markyu.FortStack
 
             // 4. Announce night start
             yield return ShowModal(
-                "Night Incursion",
-                $"{wave.WaveName}\n\n{wave.FlavorText}\n\n{defenderUnits.Count} defender(s) deployed against {enemyUnits.Count} enemy unit(s).",
-                "Deploy"
+                GameLocalization.Get("night.incursionTitle"),
+                GameLocalization.Format("night.startBody", wave.WaveName, wave.FlavorText, defenderUnits.Count, enemyUnits.Count),
+                GameLocalization.Get("ui.play")
             );
 
             // 5. Run simulation
@@ -120,9 +120,9 @@ namespace Markyu.FortStack
 
             // 7. Announce result
             yield return ShowModal(
-                LastResult.PlayerWon ? "Wave Repelled" : "Defenses Breached",
+                GameLocalization.Get(LastResult.PlayerWon ? "night.resultVictory" : "night.resultDefeat"),
                 LastResult.GetSummaryText(),
-                "Continue"
+                GameLocalization.Get("ui.continue")
             );
 
             // 8. Hide view
@@ -190,9 +190,9 @@ namespace Markyu.FortStack
         private IEnumerator HandleUndefendedNight(NightWaveDefinition wave)
         {
             yield return ShowModal(
-                "Undefended",
-                "No defenders were available. The incursion struck unchallenged.",
-                "Continue"
+                GameLocalization.Get("night.undefendedTitle"),
+                GameLocalization.Get("night.undefendedBody"),
+                GameLocalization.Get("ui.continue")
             );
 
             LastResult = new NightCombatResult(

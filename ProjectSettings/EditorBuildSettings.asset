@@ -12,4 +12,6 @@ EditorBuildSettings:
     path: Assets/Fortstack/Scenes/Main.unity
     guid: 3492845a4d05fed40914416aa1b99374
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 3b53b1bba81ec6146bc045fb5adc6065, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: ccbeed28c743825468643c582eaf7b82, type: 2}

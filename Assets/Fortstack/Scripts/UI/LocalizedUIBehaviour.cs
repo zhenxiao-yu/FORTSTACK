@@ -10,6 +10,7 @@ namespace Markyu.FortStack
     {
         protected virtual void OnEnable()
         {
+            UnityLocalizationBridge.Initialize();
             GameLocalization.Initialize();
             GameLocalization.LanguageChanged += HandleLanguageChanged;
             RefreshLocalizedText();

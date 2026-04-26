@@ -53,7 +53,9 @@ namespace Markyu.FortStack
         private int maxCardsOnBoardLimit = 100;
 
         public string Id => id;
-        public string NotificationMessage => notificationMessage;
+        public string NotificationMessage => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "encounter", "notification"),
+            notificationMessage);
 
         public CardDefinition CardToSpawn => cardToSpawn;
         public int Count => count;

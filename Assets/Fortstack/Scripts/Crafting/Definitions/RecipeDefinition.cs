@@ -44,7 +44,9 @@ namespace Markyu.FortStack
 
         public string Id => id;
         public RecipeCategory Category => category;
-        public string DisplayName => displayName;
+        public string DisplayName => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "recipe", "name"),
+            displayName);
         public List<Ingredient> RequiredIngredients => requiredIngredients;
         public CardDefinition ResultingCard => resultingCard;
         public bool IsContinuous => isContinuous;

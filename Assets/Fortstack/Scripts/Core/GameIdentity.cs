@@ -14,6 +14,7 @@ namespace Markyu.FortStack
         public const string CurrentRootNamespace = "Markyu.LastKernel";
         public const string LegacyRuntimeNamespace = "Markyu.FortStack";
 
+        public const string LocaleCodePlayerPrefsKey = ProductNameNoSpaces + ".LocaleCode";
         public const string LanguagePlayerPrefsKey = ProductNameNoSpaces + ".Language";
         public const string LegacyLanguagePlayerPrefsKey = LegacyDisplayName + ".Language";
     }

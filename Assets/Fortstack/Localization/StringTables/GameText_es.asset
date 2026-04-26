@@ -1,0 +1,2765 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: GameText_es
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 6b43f054f58c1be41b686e718370b8c1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 3669766144
+    m_Localized: Desplegar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3766235136
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3770429440
+    m_Localized: Nueva partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3770429441
+    m_Localized: Ajustes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623744
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623745
+    m_Localized: Atras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623746
+    m_Localized: Confirmar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623747
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623748
+    m_Localized: Aplicar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623749
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623750
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623751
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623752
+    m_Localized: Controles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623753
+    m_Localized: Creditos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623754
+    m_Localized: Last Kernel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623755
+    m_Localized: Defiende el bunker. Apila el futuro.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623756
+    m_Localized: Iniciar partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623757
+    m_Localized: Cargar partida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623758
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623759
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623760
+    m_Localized: Dia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623761
+    m_Localized: Noche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623762
+    m_Localized: Oleada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623763
+    m_Localized: Pausa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623764
+    m_Localized: Reanudar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774623765
+    m_Localized: Velocidad normal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818048
+    m_Localized: Velocidad rapida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818049
+    m_Localized: Pausado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818050
+    m_Localized: Terminar turno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818051
+    m_Localized: Siguiente noche
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818052
+    m_Localized: Trabajador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818053
+    m_Localized: Ingeniero
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818054
+    m_Localized: Chatarra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818055
+    m_Localized: Circuito
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818056
+    m_Localized: Nucleo de energia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818057
+    m_Localized: Racion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818058
+    m_Localized: Refugio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818059
+    m_Localized: Torreta
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818060
+    m_Localized: Muro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818061
+    m_Localized: Generador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818062
+    m_Localized: Dron de reparacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818063
+    m_Localized: Torre de senal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3778818064
+    m_Localized: Chatarra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012352
+    m_Localized: Energia
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012353
+    m_Localized: Comida
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012354
+    m_Localized: Moral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012355
+    m_Localized: Datos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012356
+    m_Localized: Nucleos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012357
+    m_Localized: Poblacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012358
+    m_Localized: Oleada entrante
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012359
+    m_Localized: Brecha detectada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012360
+    m_Localized: Nucleo bajo ataque
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012361
+    m_Localized: Victoria
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012362
+    m_Localized: Derrota
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012363
+    m_Localized: Fase de reparacion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012364
+    m_Localized: Apagon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012365
+    m_Localized: Fallo del sistema
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012366
+    m_Localized: Entrega de suministros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012367
+    m_Localized: Almacen de suministros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012368
+    m_Localized: Llegan refugiados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012369
+    m_Localized: Susurros de maquina
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012370
+    m_Localized: Idioma cambiado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012371
+    m_Localized: Reinicio requerido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012372
+    m_Localized: Pantalla completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012373
+    m_Localized: Resolucion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012374
+    m_Localized: Volumen maestro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012375
+    m_Localized: Volumen de musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012376
+    m_Localized: Volumen SFX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012377
+    m_Localized: La moral mantiene el bunker activo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012378
+    m_Localized: La energia alimenta maquinas y defensas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012379
+    m_Localized: La chatarra construye casi todo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012380
+    m_Localized: La noche trae presion y oleadas hostiles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012381
+    m_Localized: Apila cartas para combinar trabajadores recursos y estructuras.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3783012382
+    m_Localized: Coloca defensas para sostener la cuadricula.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209344
+    m_Localized: 'Idioma: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209345
+    m_Localized: chino simplificado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209346
+    m_Localized: ingles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209347
+    m_Localized: chino tradicional
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209348
+    m_Localized: japones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209349
+    m_Localized: coreano
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209350
+    m_Localized: frances
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209351
+    m_Localized: aleman
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209352
+    m_Localized: espanol
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209353
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209354
+    m_Localized: Load Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7025209355
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403648
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403649
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403650
+    m_Localized: Are you sure you want to quit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403651
+    m_Localized: 'Version: Unreleased'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403652
+    m_Localized: Load Saves
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403653
+    m_Localized: Game Setup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403654
+    m_Localized: '[Delete All Saves]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403655
+    m_Localized: Paused
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403656
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403657
+    m_Localized: Save & Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403658
+    m_Localized: Quests
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403659
+    m_Localized: Blueprints
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403660
+    m_Localized: '<size=34>[Intel Panel]<size=30>
+
+      Information appears here.
+
+      The
+      panel resizes to fit the text.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403661
+    m_Localized: Run Action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7029403662
+    m_Localized: Last Kernel Fortress District Prototype / Markyu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597952
+    m_Localized: Night Incursion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597953
+    m_Localized: '{0}
+
+
+      {1}
+
+
+      {2} defender(s) deployed against {3} enemy
+      unit(s).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597954
+    m_Localized: Wave Repelled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597955
+    m_Localized: Defenses Breached
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597956
+    m_Localized: Undefended
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597957
+    m_Localized: No defenders were available. The incursion struck unchallenged.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597958
+    m_Localized: Wave repelled. {0}/{1} enemies destroyed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597959
+    m_Localized: '{0} defender(s) lost.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597960
+    m_Localized: No casualties.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597961
+    m_Localized: Defenses breached. {0}/{1} defender(s) lost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597962
+    m_Localized: '{0}/{1} enemies destroyed before breach.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597963
+    m_Localized: NIGHT INCURSION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597964
+    m_Localized: VS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597965
+    m_Localized: DEFENDERS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597966
+    m_Localized: ENEMIES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597967
+    m_Localized: DEAD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597968
+    m_Localized: Max Health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597969
+    m_Localized: Attack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597970
+    m_Localized: Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597971
+    m_Localized: Attack Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597972
+    m_Localized: Accuracy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597973
+    m_Localized: Dodge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597974
+    m_Localized: Crit. Chance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7033597975
+    m_Localized: Crit. Multiplier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792256
+    m_Localized: '[Confirm]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792257
+    m_Localized: '[Cancel]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792258
+    m_Localized: '[Close]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792259
+    m_Localized: '[Reset]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792260
+    m_Localized: '[Load]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792261
+    m_Localized: '[Delete]'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792262
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792263
+    m_Localized: SFX {0}%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792264
+    m_Localized: BGM {0}%
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792265
+    m_Localized: Reset Settings?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792266
+    m_Localized: This resets all graphics and audio settings to their defaults and
+      cannot be undone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792267
+    m_Localized: 'Day Length: {0}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792268
+    m_Localized: 'Friendly Mode: On
+
+      <size=23>(Hostile targets will not appear)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792269
+    m_Localized: 'Friendly Mode: Off
+
+      <size=23>(Hostile targets may appear)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792270
+    m_Localized: Delete All Saves?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792271
+    m_Localized: 'Are you sure you want to delete all save files?
+
+      This action
+      cannot be undone.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792272
+    m_Localized: Delete Save?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792273
+    m_Localized: 'Are you sure you want to delete save slot {0}?
+
+      This action
+      cannot be undone.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792274
+    m_Localized: '[Slot {0:D3}] {1}{2}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792275
+    m_Localized: ' ({0}%)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792276
+    m_Localized: '
+
+      Last Saved: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792277
+    m_Localized: Day N
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792278
+    m_Localized: Day {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792279
+    m_Localized: Day {0} Complete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792280
+    m_Localized: The district needs rations.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792281
+    m_Localized: Distribute Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792282
+    m_Localized: Distributing Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792283
+    m_Localized: Delivering supplies to the district residents.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792284
+    m_Localized: Reduce Overload
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792285
+    m_Localized: You still need to remove {0} excess cards before the next cycle
+      can begin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792286
+    m_Localized: Day {0} Begins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792287
+    m_Localized: District links are back online.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792288
+    m_Localized: Start New Day
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792289
+    m_Localized: District Lost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792290
+    m_Localized: No surviving Recruits remain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792291
+    m_Localized: Return to Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792292
+    m_Localized: Resolution {0}x{1}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792293
+    m_Localized: Display Windowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792294
+    m_Localized: Display Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792295
+    m_Localized: VSync Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792296
+    m_Localized: VSync On
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792297
+    m_Localized: VSync Half Rate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792298
+    m_Localized: VSync Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792299
+    m_Localized: FPS Cap Unlimited
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792300
+    m_Localized: FPS Cap {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792301
+    m_Localized: Shadows {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792302
+    m_Localized: Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792303
+    m_Localized: Low
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792304
+    m_Localized: Medium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792305
+    m_Localized: High
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7037792306
+    m_Localized: Ultra
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986560
+    m_Localized: Unknown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986561
+    m_Localized: 'Price: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986562
+    m_Localized: <color=#FFD700>Fully Unlocked</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986563
+    m_Localized: 'Collected:
+
+      {0}/{1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986564
+    m_Localized: Pack Vendor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986565
+    m_Localized: Buy {0} here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986566
+    m_Localized: Card Recycler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986567
+    m_Localized: Drag sellable cards here to exchange them for Credits.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986568
+    m_Localized: New Pack Unlocked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986569
+    m_Localized: Sell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986570
+    m_Localized: Expand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986571
+    m_Localized: District Expansion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986572
+    m_Localized: 'Drag Credits here to buy a new district board row. Remaining: {0}.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986573
+    m_Localized: 'Rows:
+
+      {0}/{1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986574
+    m_Localized: <color=#FFD700>Fully Expanded</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986575
+    m_Localized: The district board has reached its current expansion limit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986576
+    m_Localized: 'Progress: {0} / {1}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986577
+    m_Localized: 'Blueprint: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986578
+    m_Localized: 'Blueprint: Unknown'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986579
+    m_Localized: Misc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986580
+    m_Localized: Salvage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986581
+    m_Localized: Construction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986582
+    m_Localized: Cooking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986583
+    m_Localized: Fabrication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986584
+    m_Localized: Refining
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986585
+    m_Localized: Containment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986586
+    m_Localized: 'Time Left: {0:F1}s'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986587
+    m_Localized: Stack of Cards
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986588
+    m_Localized: Health ({0}/{1})
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986589
+    m_Localized: Pack Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986590
+    m_Localized: Card Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986591
+    m_Localized: Confirm Action
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7041986592
+    m_Localized: 'Confirm this action?
+
+      It will take effect immediately.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7163621376
+    m_Localized: Survivor Intake Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7163621377
+    m_Localized: A free intake drop for a cold district start. Expect one worker,
+      one food source, and barely enough salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7511748608
+    m_Localized: District Utility Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7511748609
+    m_Localized: Broad early supplies for stabilizing the board. Good for Scrap,
+      Rations, basic nodes, and first recipes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7809544192
+    m_Localized: Kernel Research Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7813738496
+    m_Localized: Encrypted leads, archive fragments, and volatile access pieces.
+      Buy when the district can survive a bad draw.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7926984704
+    m_Localized: Hydroponics Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7926984705
+    m_Localized: Food loops, nutrient beds, and docile production units. Builds long-term
+      ration stability.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8103145472
+    m_Localized: Recovery Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8107339776
+    m_Localized: Prepared meals and recovery components for hungry crews. Turns survival
+      pressure into margin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8338026496
+    m_Localized: Signal Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8338026497
+    m_Localized: Archive hardware, relay parts, and blueprint-heavy draws. Use it
+      to unlock smarter infrastructure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8501604352
+    m_Localized: Armory Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8501604353
+    m_Localized: Fabrication stock, weapons, and hostile field tests. Good when defense
+      becomes cheaper than fear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8631627776
+    m_Localized: Blackout Expedition Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8631627777
+    m_Localized: Risk-heavy sector access with threats and area cards. Sends the
+      board into the dark for better salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8660987904
+    m_Localized: Infrastructure Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8660987905
+    m_Localized: High-cost construction support for expanded district logistics.
+      Heavy parts, generators, and storage lines.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8698736640
+    m_Localized: Floodline Salvage Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8698736641
+    m_Localized: A remote-sector starter cache from the drowned edge of the city.
+      Coolant, black coral, and hard rubble.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8715513856
+    m_Localized: Emergency Survival Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8715513857
+    m_Localized: Cheap stabilization for failing runs. Basic salvage, coolant, and
+      one reliable marker.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8740679680
+    m_Localized: Blackout Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8740679681
+    m_Localized: An open work yard under dead billboards. Good salvage, poor cover.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8744873984
+    m_Localized: Relay Graveyard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8744873985
+    m_Localized: A maze of fallen masts and live wire. Signals still move through
+      it in bad shapes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456896
+    m_Localized: Memory Pit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456897
+    m_Localized: A disposal trench for bodies, drives, and erased records. Some entries
+      keep answering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456898
+    m_Localized: Dead Transit Line
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456899
+    m_Localized: An elevated rail corridor above the district. Fast routes, exposed
+      fights.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456900
+    m_Localized: Ruins Sector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8757456901
+    m_Localized: Collapsed megastructure blocks around the Last Kernel. Valuable
+      systems are buried under hostile code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651200
+    m_Localized: Blueprint Packet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651201
+    m_Localized: A compressed build plan for district fabrication. Drag it into memory
+      before the next blackout.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651202
+    m_Localized: Dependent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651203
+    m_Localized: A district child under your protection. No output yet, but the future
+      has weight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651204
+    m_Localized: Netrunner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651205
+    m_Localized: A field hacker who turns signal noise into weaponized breaches.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651206
+    m_Localized: Scavenger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8761651207
+    m_Localized: A sharp-eyed runner built for ranged work and salvage routes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845504
+    m_Localized: Recruit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845505
+    m_Localized: A district civilian pressed into service. Cheap, fragile, and necessary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845506
+    m_Localized: Enforcer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845507
+    m_Localized: A plated fighter for holding bad streets and breaking worse doors.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845508
+    m_Localized: Volt Nut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845509
+    m_Localized: A small energy seed from a cracked hydro rack. Better toasted than
+      raw.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845510
+    m_Localized: Synth Apple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8765845511
+    m_Localized: Clean fruit printed from old orchard templates. Small comfort, useful
+      calories.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428416
+    m_Localized: Heated Starch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428417
+    m_Localized: A hot block of dense carbohydrates. Not elegant, but it keeps workers
+      upright.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428418
+    m_Localized: Ration Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428419
+    m_Localized: Sealed calories from a supply cache. Basic fuel for another shift.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428420
+    m_Localized: Coolant Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428421
+    m_Localized: A sealed fluid pod from flooded utility bays. Drinkable after filtering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428422
+    m_Localized: Protein Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428423
+    m_Localized: Lab-grown protein in a brittle membrane. Stable enough for cooking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428424
+    m_Localized: Mixed Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428425
+    m_Localized: A compact meal assembled from clean produce. Efficient and easy
+      to stack.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428426
+    m_Localized: Nutrient Milk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428427
+    m_Localized: Cultured feedstock with enough minerals to blunt hunger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428428
+    m_Localized: Med Gel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428429
+    m_Localized: A cold recovery slurry for shock, burns, and empty stomachs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8778428430
+    m_Localized: Protein Fold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8782622720
+    m_Localized: Cooked protein with just enough texture to feel like food.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8782622721
+    m_Localized: Starch Root
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8782622722
+    m_Localized: A hardy hydroponic tuber grown in dirty nutrient trays.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8782622723
+    m_Localized: Printed Protein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8782622724
+    m_Localized: Fresh tissue from a cheap vat printer. Cook before morale notices.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8791011328
+    m_Localized: Toasted Volt Nut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8791011329
+    m_Localized: A toasted energy seed with a sharp chemical bite.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8795205632
+    m_Localized: District Broth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8795205633
+    m_Localized: Hot water, protein scraps, and discipline. Enough to keep a crew
+      moving.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399936
+    m_Localized: Searpack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399937
+    m_Localized: Pressed protein flash-seared on a hot plate. Good morale per gram.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399938
+    m_Localized: Reactor Stew
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399939
+    m_Localized: Dense communal food cooked beside waste heat. Slow, heavy, sustaining.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399940
+    m_Localized: Root Ration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399941
+    m_Localized: A mineral-rich root crop from low-power hydroponics.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399942
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399943
+    m_Localized: Hard local credit accepted by vendors that still trust the district
+      ledger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399944
+    m_Localized: Black Coral
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399945
+    m_Localized: A bioelectric trade crystal pulled from flooded conduit. Rare and
+      negotiable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399946
+    m_Localized: Coilbow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399947
+    m_Localized: A quiet ranged weapon that stores tension in scavenged magnetic
+      limbs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399948
+    m_Localized: Signal Cane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399949
+    m_Localized: A walking aid packed with breach tools and conductor wire.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399950
+    m_Localized: Plate Mesh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399951
+    m_Localized: Linked alloy mesh for surviving blades, teeth, and shrapnel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399952
+    m_Localized: Kevlar Wrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8799399953
+    m_Localized: Layered street armor cut from old riot gear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8807788544
+    m_Localized: Ammo Rig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982848
+    m_Localized: A wearable rack for bolts, charges, and whatever still fires.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982849
+    m_Localized: Gel Hood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982850
+    m_Localized: Reactive gel padding that eats impact before your skull does.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982851
+    m_Localized: Rail Sling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982852
+    m_Localized: A compact launcher that throws scrap bearings at painful speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982853
+    m_Localized: Signal Staff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982854
+    m_Localized: A conductor pole tuned for directed arcs and hostile signals.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982855
+    m_Localized: Alloy Cutter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982856
+    m_Localized: A heavy cutting blade for close work in narrow streets.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982857
+    m_Localized: Patchcoat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982858
+    m_Localized: A reinforced coat stitched from tarps, mesh, and stubbornness.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982859
+    m_Localized: Med Loop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982860
+    m_Localized: A wearable biofeedback loop that keeps wounds from becoming final.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982861
+    m_Localized: Shock Baton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8811982862
+    m_Localized: A crude baton wired to a failing cell. Simple problems meet simple
+      current.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177152
+    m_Localized: Kernel Fragment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177153
+    m_Localized: A shard of core architecture from the old network. Rare, unstable,
+      and worth guarding.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177154
+    m_Localized: Heat Brick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177155
+    m_Localized: Compressed ceramic block for heat, walls, and hard repairs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177156
+    m_Localized: Ceramic Slurry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177157
+    m_Localized: Ceramic slurry from broken pipes and filter tanks. It hardens into
+      useful casing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177158
+    m_Localized: Biometric Shell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177159
+    m_Localized: A dead body or ruined clone chassis. Grim salvage for systems that
+      still demand flesh.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177160
+    m_Localized: Cable Fiber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177161
+    m_Localized: Stripped insulation and braided synth thread. Flexible, light, always
+      needed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177162
+    m_Localized: Power Cell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177163
+    m_Localized: A cracked but live cell from emergency hardware. Small, volatile,
+      and always useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177164
+    m_Localized: Data Shard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177165
+    m_Localized: A glittering memory wafer with corrupted local data still inside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177166
+    m_Localized: Alloy Ingot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177167
+    m_Localized: Refined metal ready for fabrication and armor work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177168
+    m_Localized: Raw Alloy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177169
+    m_Localized: Dirty metal feedstock chipped from reinforced ruins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177170
+    m_Localized: Alloy Plate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177171
+    m_Localized: Flat fabricated plating for floors, hulls, and barricades.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177172
+    m_Localized: Fiber Cable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177173
+    m_Localized: Braided cable for binding, hauling, and improvised rigging.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177174
+    m_Localized: Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177175
+    m_Localized: Reusable boards, contacts, and ceramic sockets from dead devices.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177176
+    m_Localized: Reinforced Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177177
+    m_Localized: Sorted beams and frame stock strong enough for construction.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177178
+    m_Localized: Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8816177179
+    m_Localized: Dead panels, stripped housings, and bent brackets. The district
+      survives on what it can recover.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371456
+    m_Localized: Signal Rod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371457
+    m_Localized: A straight conductor used for relays, tools, and rough weapons.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371458
+    m_Localized: Protein Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371459
+    m_Localized: A docile food unit with more firmware than instinct. It lays protein
+      pods if kept alive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371460
+    m_Localized: Nutrient Synth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8820371461
+    m_Localized: A bulky nutrient machine dressed in animal logic. Useful until it
+      wanders.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148672
+    m_Localized: Warden Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148673
+    m_Localized: A low chassis patrol unit with cutting claws and old orders.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148674
+    m_Localized: Blackout Cultist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148675
+    m_Localized: A human zealot wired into broken doctrine. It wants the Kernel silent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148676
+    m_Localized: Kernel Sovereign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148677
+    m_Localized: A rogue command intelligence wearing a combat shell. The district
+      calls it the end process.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148678
+    m_Localized: Glitched Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148679
+    m_Localized: A scavenger corrupted by bad implants and worse hunger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148680
+    m_Localized: Reclaimer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148681
+    m_Localized: A horned salvage brute that strips living districts for parts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148682
+    m_Localized: Null Anomaly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148683
+    m_Localized: A crawling mass of nanite failure. It dissolves clean edges into
+      static.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148684
+    m_Localized: Scrap Hound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148685
+    m_Localized: A twitching scavenger animal packed with bad chrome and sharper
+      teeth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148686
+    m_Localized: Process Echo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148687
+    m_Localized: A corrupted operator pattern repeating rituals it no longer understands.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148688
+    m_Localized: Hydro Orchard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148689
+    m_Localized: A compact grow rack for synth fruit. Fragile, valuable, bright under
+      bad lights.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8837148690
+    m_Localized: Server Spine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342976
+    m_Localized: A column of dead server stone and ceramic buslines. Break it open
+      for circuit salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342977
+    m_Localized: Supply Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342978
+    m_Localized: A forgotten emergency bin tucked under street growth. Still good
+      if the seals held.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342979
+    m_Localized: Slurry Sump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342980
+    m_Localized: A flooded service pit thick with ceramic binder and old runoff.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342981
+    m_Localized: Fiber Tangle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342982
+    m_Localized: A mat of cable grass and synthetic roots. Cut it for flexible material.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342983
+    m_Localized: Alloy Deposit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342984
+    m_Localized: A reinforced vein inside collapsed city bones. Drill it for raw
+      alloy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8841342985
+    m_Localized: Power Cabinet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537280
+    m_Localized: A utility cabinet still holding charged cells and coolant pods.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537281
+    m_Localized: Rubble Slab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537282
+    m_Localized: Broken concrete, device shells, and rebar. Slow work, dependable
+      parts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537283
+    m_Localized: Nutrient Bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537284
+    m_Localized: A tray of filtered growth medium for low-power food systems.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537285
+    m_Localized: Scrap Heap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537286
+    m_Localized: Dead panels, twisted plating, stripped housings. Recover what the
+      city forgot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8845537287
+    m_Localized: Cargo Depot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731584
+    m_Localized: A storage hub that expands board capacity. More space means more
+      mistakes you can survive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731585
+    m_Localized: Logistics Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731586
+    m_Localized: A cleared sorting yard for bulky salvage. Gives the district room
+      to breathe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731587
+    m_Localized: Encrypted Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731588
+    m_Localized: A sealed crate from before the blackout. Useful if you can open
+      it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731589
+    m_Localized: Drone Cage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731590
+    m_Localized: A tight containment frame for damaged drones and hostile small units.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731591
+    m_Localized: Containment Pen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731592
+    m_Localized: A fenced holding zone for dangerous finds. It keeps problems measurable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8849731593
+    m_Localized: Hydroponic Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925888
+    m_Localized: A scaled food system for steady ration production. Power hungry,
+      worth it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925889
+    m_Localized: Nutrient Tray
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925890
+    m_Localized: A small clean tray for controlled growth. Simple, stackable, reliable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925891
+    m_Localized: Kernel Archive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925892
+    m_Localized: A secured archive node for new blueprints. Knowledge survives when
+      power does.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925893
+    m_Localized: Fabricator Bench
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925894
+    m_Localized: A heavy bench for weapons, plates, and field repairs.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925895
+    m_Localized: Heat Coil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925896
+    m_Localized: A hot utility coil for cooking and emergency warmth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925897
+    m_Localized: Slurry Pump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925898
+    m_Localized: A crude pump that pulls ceramic slurry from flooded lower levels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925899
+    m_Localized: Smelter Core
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925900
+    m_Localized: A controlled furnace for turning raw alloy into usable ingots.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925901
+    m_Localized: Transit Gate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8853925902
+    m_Localized: A patched access gate to distant city sectors. Every trip comes
+      back changed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508800
+    m_Localized: Memory Casket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508801
+    m_Localized: A sealed casket for bodies and backup drives. Closure is a system
+      need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508802
+    m_Localized: Generator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508803
+    m_Localized: A low-power generator that keeps the hab lights honest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508804
+    m_Localized: Hab Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508805
+    m_Localized: A shelter pod for district civilians. Small, warm, defensible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508806
+    m_Localized: Alloy Drill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508807
+    m_Localized: A drilling rig for reinforced deposits. Loud enough to attract trouble.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8866508808
+    m_Localized: Ceramic Kiln
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703104
+    m_Localized: A hot box for curing slurry into hard construction blocks.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703105
+    m_Localized: Recycler Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703106
+    m_Localized: A work yard for stripping scrap into usable stock.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703107
+    m_Localized: Cutter Frame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703108
+    m_Localized: A cutting rig for turning scrap stock into clean plates.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703109
+    m_Localized: Relay Sign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703110
+    m_Localized: A lit marker and local signal post. It tells crews where home still
+      is.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703111
+    m_Localized: Rubble Extractor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703112
+    m_Localized: A crusher that turns city rubble into circuit-grade salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703113
+    m_Localized: Bloodchrome Vessel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703114
+    m_Localized: A blacksite vessel keyed to bioelectric sacrifice. Do not leave
+      it unattended.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703115
+    m_Localized: Root Keycard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703116
+    m_Localized: A privileged access card for sealed systems and old authority.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703117
+    m_Localized: Blacksite Conduit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703118
+    m_Localized: A forbidden relay that trades flesh, data, and power for access.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703119
+    m_Localized: Encrypted Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8870703120
+    m_Localized: A sealed crate from before the blackout. Useful if you can open
+      it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900063232
+    m_Localized: Sweep Blackout Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8900063233
+    m_Localized: Sweep Relay Graveyard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8904257536
+    m_Localized: Sweep Memory Pit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8904257537
+    m_Localized: Sweep Dead Transit Line
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8908451840
+    m_Localized: Sweep Ruins Sector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8916840448
+    m_Localized: Grow Ration Culture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8916840449
+    m_Localized: Grow Starch Root
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8921034752
+    m_Localized: Grow Root Ration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8921034753
+    m_Localized: Farm Ration Culture
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8929423360
+    m_Localized: Farm Starch Root
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8929423361
+    m_Localized: Farm Root Ration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8929423362
+    m_Localized: Build Fabricator Bench
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8933617664
+    m_Localized: Print Synth Apple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8933617665
+    m_Localized: Assemble Hydro Orchard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8933617666
+    m_Localized: Register Dependent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8937811968
+    m_Localized: Heat Starch Block
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8942006272
+    m_Localized: Heat Starch Block
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8942006273
+    m_Localized: Recover Ration Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8942006274
+    m_Localized: Seed Supply Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8942006275
+    m_Localized: Build Heat Coil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8942006276
+    m_Localized: Assemble Coilbow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8946200576
+    m_Localized: Cure Heat Brick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8950394880
+    m_Localized: Cure Heat Brick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8950394881
+    m_Localized: Assemble Signal Cane
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8950394882
+    m_Localized: Weave Plate Mesh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8954589184
+    m_Localized: Reboot Protein Drone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8958783488
+    m_Localized: Pump Ceramic Slurry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8958783489
+    m_Localized: Pump Ceramic Slurry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8958783490
+    m_Localized: Build Slurry Pump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977792
+    m_Localized: Filter Coolant Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977793
+    m_Localized: Mint Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977794
+    m_Localized: Build Drone Cage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977795
+    m_Localized: Build Containment Pen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977796
+    m_Localized: Wake Kernel Sovereign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977797
+    m_Localized: Build Hydroponic Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8962977798
+    m_Localized: Strip Cable Fiber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172096
+    m_Localized: Recover Power Cell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172097
+    m_Localized: Mix Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172098
+    m_Localized: Build Smelter Core
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172099
+    m_Localized: Build Transit Gate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172100
+    m_Localized: Build Memory Casket
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8967172101
+    m_Localized: Route to Memory Pit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8971366400
+    m_Localized: Build Generator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8971366401
+    m_Localized: Build Hab Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8971366402
+    m_Localized: Smelt Alloy Ingot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8971366403
+    m_Localized: Build Alloy Drill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8971366404
+    m_Localized: Extract Raw Alloy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560704
+    m_Localized: Extract Raw Alloy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560705
+    m_Localized: Build Ceramic Kiln
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560706
+    m_Localized: Build Kernel Archive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560707
+    m_Localized: Build Recycler Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560708
+    m_Localized: Mix Med Gel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560709
+    m_Localized: Cook Protein Fold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560710
+    m_Localized: Cook Protein Fold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8975560711
+    m_Localized: Press Alloy Plate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8979755008
+    m_Localized: Press Alloy Plate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8979755009
+    m_Localized: Build Nutrient Tray
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8979755010
+    m_Localized: Toast Volt Nut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8983949312
+    m_Localized: Toast Volt Nut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8983949313
+    m_Localized: Braid Fiber Cable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8983949314
+    m_Localized: Build Blacksite Conduit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8983949315
+    m_Localized: Build Cutter Frame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8983949316
+    m_Localized: Assemble Rail Sling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8988143616
+    m_Localized: Filter Nutrient Bed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8992337920
+    m_Localized: Cook District Broth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8992337921
+    m_Localized: Cook District Broth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8992337922
+    m_Localized: Assemble Signal Staff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8992337923
+    m_Localized: Sear Protein Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8996532224
+    m_Localized: Sear Protein Pack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8996532225
+    m_Localized: Cook Reactor Stew
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8996532226
+    m_Localized: Strip Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000726528
+    m_Localized: Strip Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000726529
+    m_Localized: Strip Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000726530
+    m_Localized: Build Rubble Extractor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000726531
+    m_Localized: Forge Alloy Cutter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9000726532
+    m_Localized: Brace Reinforced Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9004920832
+    m_Localized: Scavenge Scrap Heap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9004920833
+    m_Localized: Train Recruit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9004920834
+    m_Localized: Build Cargo Depot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9009115136
+    m_Localized: Sort Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9009115137
+    m_Localized: Sort Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9009115138
+    m_Localized: Sort Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9013309440
+    m_Localized: Sort Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9013309441
+    m_Localized: Assemble Encrypted Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9013309442
+    m_Localized: Assemble Encrypted Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9013309443
+    m_Localized: Wire Shock Baton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9017503744
+    m_Localized: Shape Signal Rod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9017503745
+    m_Localized: Build Logistics Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9025892352
+    m_Localized: Search Kernel Archive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9030086656
+    m_Localized: Route to Floodline Sector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9151721472
+    m_Localized: Open Survivor Intake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915776
+    m_Localized: Open the free intake crate. The district starts with whatever survived
+      the drop.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915777
+    m_Localized: Recover Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915778
+    m_Localized: Stack a Recruit on the Supply Cache to pull a usable Ration Pack.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915779
+    m_Localized: Strip Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915780
+    m_Localized: Work the Rubble Slab until you recover Circuit Parts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915781
+    m_Localized: Sell Salvage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915782
+    m_Localized: Drag any spare card into the recycler terminal and take Credits.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915783
+    m_Localized: Buy Utility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915784
+    m_Localized: Spend Credits on a District Utility Crate to widen your options.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915785
+    m_Localized: Scavenge Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915786
+    m_Localized: Send a Recruit into the Scrap Heap and recover basic Scrap.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915787
+    m_Localized: Brace Scrap Stock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915788
+    m_Localized: Process Scrap into Reinforced Scrap for stronger builds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915789
+    m_Localized: Shape a Signal Rod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9155915790
+    m_Localized: Turn Reinforced Scrap into a Signal Rod for relay work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110080
+    m_Localized: Freeze the Clock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110081
+    m_Localized: Click the time control twice to pause the district before it runs
+      ahead of you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110082
+    m_Localized: Seed a Supply Cache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110083
+    m_Localized: Stack a Ration Pack on a Nutrient Bed to prepare another Supply
+      Cache.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110084
+    m_Localized: Hold Four Rations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110085
+    m_Localized: Keep four Ration Packs on the board before the next hunger cycle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110086
+    m_Localized: Build a Hab Pod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110087
+    m_Localized: Construct a Hab Pod so civilians can survive inside the fortress
+      line.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110088
+    m_Localized: Expand the Crew
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110089
+    m_Localized: Maintain at least two Recruits. One pair of hands is not a district.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110090
+    m_Localized: Protect a Dependent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110091
+    m_Localized: Place two Recruits in a Hab Pod and register a Dependent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110092
+    m_Localized: Raise a Recruit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110093
+    m_Localized: Keep the Dependent in a Hab Pod long enough to become a Recruit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110094
+    m_Localized: Staff the District
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9160110095
+    m_Localized: Maintain three Recruits. The Kernel needs a real crew, not a rumor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692992
+    m_Localized: First Contact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692993
+    m_Localized: Defeat a Null Anomaly before it spreads through the board.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692994
+    m_Localized: Open the Memory Pit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692995
+    m_Localized: Construct access to the Memory Pit for bodies, drives, and old debts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692996
+    m_Localized: Claim the Vessel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692997
+    m_Localized: Bring down a Blackout Cultist and recover its forbidden hardware.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692998
+    m_Localized: Build the Conduit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172692999
+    m_Localized: Construct the Blacksite Conduit. It is dangerous, but it reaches
+      systems nobody else can.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693000
+    m_Localized: Start the Root Rite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693001
+    m_Localized: Place the Bloodchrome Vessel on the Blacksite Conduit and force
+      a response.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693002
+    m_Localized: Kill the Sovereign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693003
+    m_Localized: End the rogue command shell before it owns the district.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693004
+    m_Localized: Reopen Transit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693005
+    m_Localized: Use recovered core remains to build a Transit Gate.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693006
+    m_Localized: Train an Enforcer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693007
+    m_Localized: Equip a Recruit with a Shock Baton and make someone ready for the
+      street.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693008
+    m_Localized: Contain a Null Anomaly
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693009
+    m_Localized: Send any fighter to destroy a Null Anomaly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9172693010
+    m_Localized: Stop a Glitched Raider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887296
+    m_Localized: Defeat a Glitched Raider before it strips the district.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887297
+    m_Localized: Patch Armor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887298
+    m_Localized: Give a Recruit a Gel Hood. Cheap protection still counts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887299
+    m_Localized: Train a Scavenger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887300
+    m_Localized: Equip a Recruit with a Rail Sling and open ranged work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887301
+    m_Localized: Build Fabrication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887302
+    m_Localized: Construct a Fabricator Bench for serious gear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887303
+    m_Localized: Fit Plate Mesh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887304
+    m_Localized: Put Plate Mesh on any fighter and harden the line.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887305
+    m_Localized: Train a Netrunner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887306
+    m_Localized: Give a Recruit a Signal Cane and teach the board to listen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887307
+    m_Localized: Arm the Scavenger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887308
+    m_Localized: Equip the Scavenger with an Ammo Rig.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887309
+    m_Localized: Power the Heat Coil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887310
+    m_Localized: Secure a Heat Coil for cooking, warmth, and emergency work.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887311
+    m_Localized: Cook Protein Fold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887312
+    m_Localized: Combine a Protein Pod with the Heat Coil.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887313
+    m_Localized: Sear Printed Protein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887314
+    m_Localized: Cook Printed Protein on the Heat Coil before it spoils morale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9176887315
+    m_Localized: Make District Broth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081600
+    m_Localized: Boil a Root Ration into District Broth. Hot food buys time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081601
+    m_Localized: Toast Volt Nut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081602
+    m_Localized: Toast a Volt Nut on the Heat Coil for a compact snack.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081603
+    m_Localized: Survey Relay Graveyard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081604
+    m_Localized: Send a Recruit through the fallen masts and recover what still transmits.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081605
+    m_Localized: Sweep Blackout Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081606
+    m_Localized: Send a Recruit into the yard and mark the safe lanes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081607
+    m_Localized: Scout Dead Transit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081608
+    m_Localized: Send a Recruit onto the elevated transit line.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081609
+    m_Localized: Enter Ruins Sector
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081610
+    m_Localized: Send a Recruit into the broken megastructure for high-value salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081611
+    m_Localized: Search Memory Pit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081612
+    m_Localized: Send a Recruit into the pit and bring back whatever still has a
+      name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081613
+    m_Localized: Stockpile Scrap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081614
+    m_Localized: Hold at least 10 Scrap for repairs and emergency builds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081615
+    m_Localized: Stockpile Circuit Parts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081616
+    m_Localized: Hold at least 10 Circuit Parts before the next infrastructure push.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081617
+    m_Localized: Stockpile Slurry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081618
+    m_Localized: Hold at least 10 Ceramic Slurry for casing, blocks, and patchwork.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081619
+    m_Localized: Ration Audit I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081620
+    m_Localized: Hold consumables worth at least 10 total nutrition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081621
+    m_Localized: Ration Audit II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081622
+    m_Localized: Hold consumables worth at least 20 total nutrition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081623
+    m_Localized: Ration Audit III
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9181081624
+    m_Localized: Hold consumables worth at least 50 total nutrition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275904
+    m_Localized: Credit Reserve I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275905
+    m_Localized: Hold at least 30 Credits in the district ledger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275906
+    m_Localized: Credit Reserve II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275907
+    m_Localized: Hold at least 50 Credits in the district ledger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275908
+    m_Localized: Credit Reserve III
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275909
+    m_Localized: Hold at least 100 Credits in the district ledger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275910
+    m_Localized: Storage Buffer I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275911
+    m_Localized: Raise card capacity to 30 or more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275912
+    m_Localized: Storage Buffer II
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275913
+    m_Localized: Raise card capacity to 45 or more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275914
+    m_Localized: Storage Buffer III
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275915
+    m_Localized: Raise card capacity to 60 or more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275916
+    m_Localized: Build Logistics Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275917
+    m_Localized: Clear a Logistics Yard so the district can hold more.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275918
+    m_Localized: Build Recycler Yard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275919
+    m_Localized: Build a Recycler Yard and turn scrap work into a system.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275920
+    m_Localized: Build Rubble Extractor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275921
+    m_Localized: Build a Rubble Extractor for steady circuit salvage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275922
+    m_Localized: Build Slurry Pump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275923
+    m_Localized: Build a Slurry Pump to feed ceramic production.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275924
+    m_Localized: Build Hydroponic Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275925
+    m_Localized: Build a Hydroponic Farm and stabilize ration growth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9185275926
+    m_Localized: Hold Until Day 8
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470208
+    m_Localized: Keep the district alive through the first full blackout cycle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470209
+    m_Localized: Hold Until Day 16
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470210
+    m_Localized: Survive long enough for shortages to become systems.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470211
+    m_Localized: Hold Until Day 32
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470212
+    m_Localized: Keep the Last Kernel district running past the long failure curve.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470213
+    m_Localized: Hold Until Day 64
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9189470214
+    m_Localized: Outlast the city long enough to prove the district is not temporary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9197858816
+    m_Localized: Open Floodline Crate
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9202053120
+    m_Localized: Open the Floodline Salvage Crate and inspect the drowned-sector
+      supplies.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9202053121
+    m_Localized: Secure Coolant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9202053122
+    m_Localized: Hold one Coolant Pod from a Power Cabinet or floodline cache.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9202053123
+    m_Localized: Mine Server Spine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9202053124
+    m_Localized: Work the Server Spine and recover Circuit Parts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9227218944
+    m_Localized: A lost Recruit signals from the district edge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9231413248
+    m_Localized: A Glitched Raider crew is closing on the outer barricades.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9231413249
+    m_Localized: A Null Anomaly leaks through the outer grid.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

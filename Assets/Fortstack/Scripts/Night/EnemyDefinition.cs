@@ -17,7 +17,9 @@ namespace Markyu.FortStack
         [SerializeField, Range(100f, 300f)] private float critMultiplier = 150f;
         [SerializeField] private Texture2D artTexture;
 
-        public string DisplayName => displayName;
+        public string DisplayName => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "night.enemy", "name"),
+            displayName);
         public int MaxHP => maxHP;
         public int Attack => attack;
         public int Defense => defense;

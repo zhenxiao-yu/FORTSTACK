@@ -104,21 +104,21 @@ namespace Markyu.FortStack
                 new Vector2(0f, 0f), new Vector2(1f, 1f), BgColor);
 
             // Header
-            var header = CreateTMP(_root, "Header", "NIGHT INCURSION",
+            var header = CreateTMP(_root, "Header", GameLocalization.Get("night.laneHeader"),
                 new Vector2(0f, 0.88f), new Vector2(1f, 1f), 28, HeaderColor, TextAlignmentOptions.Center);
             header.fontStyle = FontStyles.Bold;
 
             // VS divider
-            var vs = CreateTMP(_root, "VS", "VS",
+            var vs = CreateTMP(_root, "VS", GameLocalization.Get("night.laneVersus"),
                 new Vector2(0.45f, 0.1f), new Vector2(0.55f, 0.9f), 22, VsColor, TextAlignmentOptions.Center);
             vs.fontStyle = FontStyles.Bold;
 
             // Defender column header
-            CreateTMP(_root, "DefHeader", "DEFENDERS",
+            CreateTMP(_root, "DefHeader", GameLocalization.Get("night.laneDefenders"),
                 new Vector2(0f, 0.82f), new Vector2(0.45f, 0.88f), 18, DefenderColor, TextAlignmentOptions.Center);
 
             // Enemy column header
-            CreateTMP(_root, "EnemyHeader", "ENEMIES",
+            CreateTMP(_root, "EnemyHeader", GameLocalization.Get("night.laneEnemies"),
                 new Vector2(0.55f, 0.82f), new Vector2(1f, 0.88f), 18, EnemyColor, TextAlignmentOptions.Center);
 
             // Unit rows
@@ -203,7 +203,7 @@ namespace Markyu.FortStack
                 if (d.Background != null) d.Background.color = new Color(0.08f, 0.08f, 0.1f, 1f);
                 if (d.NameLabel  != null) d.NameLabel.color  = DeadColor;
                 if (d.HpFill     != null) d.HpFill.color     = DeadColor;
-                if (d.HpLabel    != null) d.HpLabel.text      = "DEAD";
+                if (d.HpLabel    != null) d.HpLabel.text      = GameLocalization.Get("night.laneDead");
             }
             else
             {

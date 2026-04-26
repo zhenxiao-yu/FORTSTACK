@@ -70,9 +70,10 @@ namespace Markyu.FortStack
 
     public static class GameLocalization
     {
-        private const GameLanguage DefaultLanguage = GameLanguage.SimplifiedChinese;
+        private const GameLanguage DefaultLanguage = GameLanguage.English;
 
         private static bool isInitialized;
+        private static bool isSubscribedToUnityLocalization;
 
         private static readonly GameLanguage[] LanguageCycle =
         {
@@ -208,6 +209,32 @@ namespace Markyu.FortStack
             ["combat.victory"] = L("Victory", "胜利", "勝利", "勝利", "승리", "Victoire", "Sieg", "Victoria"),
             ["combat.defeat"] = L("Defeat", "失败", "失敗", "敗北", "패배", "Defaite", "Niederlage", "Derrota"),
             ["combat.repair_phase"] = L("Repair Phase", "维修阶段", "維修階段", "修理フェーズ", "수리 단계", "Phase de reparation", "Reparaturphase", "Fase de reparacion"),
+
+            ["night.incursionTitle"] = new("夜间入侵", "Night Incursion"),
+            ["night.startBody"] = new("{0}\n\n{1}\n\n部署了 {2} 名防守者，对抗 {3} 名敌人。", "{0}\n\n{1}\n\n{2} defender(s) deployed against {3} enemy unit(s)."),
+            ["night.resultVictory"] = new("敌潮已击退", "Wave Repelled"),
+            ["night.resultDefeat"] = new("防线被突破", "Defenses Breached"),
+            ["night.undefendedTitle"] = new("无人防守", "Undefended"),
+            ["night.undefendedBody"] = new("没有可用防守者。入侵未受阻拦地袭来。", "No defenders were available. The incursion struck unchallenged."),
+            ["night.summaryWaveRepelled"] = new("敌潮已击退。已摧毁 {0}/{1} 名敌人。", "Wave repelled. {0}/{1} enemies destroyed."),
+            ["night.summaryDefendersLost"] = new("损失 {0} 名防守者。", "{0} defender(s) lost."),
+            ["night.summaryNoCasualties"] = new("无伤亡。", "No casualties."),
+            ["night.summaryDefensesBreached"] = new("防线被突破。损失 {0}/{1} 名防守者。", "Defenses breached. {0}/{1} defender(s) lost."),
+            ["night.summaryEnemiesDestroyedBeforeBreach"] = new("突破前摧毁了 {0}/{1} 名敌人。", "{0}/{1} enemies destroyed before breach."),
+            ["night.laneHeader"] = new("夜间入侵", "NIGHT INCURSION"),
+            ["night.laneVersus"] = new("对抗", "VS"),
+            ["night.laneDefenders"] = new("防守者", "DEFENDERS"),
+            ["night.laneEnemies"] = new("敌人", "ENEMIES"),
+            ["night.laneDead"] = new("倒下", "DEAD"),
+
+            ["stat.maxHealth"] = new("最大生命值", "Max Health"),
+            ["stat.attack"] = new("攻击", "Attack"),
+            ["stat.defense"] = new("防御", "Defense"),
+            ["stat.attackSpeed"] = new("攻击速度", "Attack Speed"),
+            ["stat.accuracy"] = new("命中率", "Accuracy"),
+            ["stat.dodge"] = new("闪避", "Dodge"),
+            ["stat.criticalChance"] = new("暴击率", "Crit. Chance"),
+            ["stat.criticalMultiplier"] = new("暴击倍率", "Crit. Multiplier"),
 
             ["event.blackout"] = L("Blackout", "断电", "斷電", "停電", "정전", "Panne noire", "Stromausfall", "Apagon"),
             ["event.system_glitch"] = L("System Glitch", "系统故障", "系統故障", "システム異常", "시스템 오류", "Defaut systeme", "Systemstoerung", "Fallo del sistema"),
@@ -377,12 +404,19 @@ namespace Markyu.FortStack
 
         public static IReadOnlyList<GameLanguage> AvailableLanguages => LanguageCycle;
 
+        public static IReadOnlyCollection<string> LegacyKeys => TextEntries.Keys;
+
         public static GameLanguage CurrentLanguage { get; private set; } = DefaultLanguage;
 
         public static CultureInfo CurrentCulture
         {
             get
             {
+                if (UnityLocalizationBridge.Initialize())
+                {
+                    return UnityLocalizationBridge.CurrentCulture;
+                }
+
                 return CurrentLanguage switch
                 {
                     GameLanguage.English => CultureInfo.GetCultureInfo("en-US"),
@@ -410,6 +444,13 @@ namespace Markyu.FortStack
                 return;
 
             isInitialized = true;
+            SubscribeToUnityLocalization();
+
+            if (UnityLocalizationBridge.Initialize())
+            {
+                SyncCurrentLanguageFromUnity(savePreference: true, notify: false);
+                return;
+            }
 
             int savedValue = LoadLanguagePreference();
             if (!Enum.IsDefined(typeof(GameLanguage), savedValue))
@@ -427,6 +468,18 @@ namespace Markyu.FortStack
             if (!force && CurrentLanguage == language)
                 return;
 
+            if (UnityLocalizationBridge.SetLocaleByCode(GetLocaleCode(language), force))
+            {
+                if (CurrentLanguage != language)
+                {
+                    CurrentLanguage = language;
+                    SaveLanguagePreference(language);
+                    LanguageChanged?.Invoke(language);
+                }
+
+                return;
+            }
+
             CurrentLanguage = language;
             SaveLanguagePreference(language);
             LanguageChanged?.Invoke(language);
@@ -434,6 +487,14 @@ namespace Markyu.FortStack
 
         public static void CycleLanguage()
         {
+            Initialize();
+
+            if (UnityLocalizationBridge.Initialize())
+            {
+                UnityLocalizationBridge.CycleLocale();
+                return;
+            }
+
             int currentIndex = Array.IndexOf(LanguageCycle, CurrentLanguage);
             int nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % LanguageCycle.Length;
             SetLanguage(LanguageCycle[nextIndex]);
@@ -496,6 +557,11 @@ namespace Markyu.FortStack
         {
             Initialize();
 
+            if (UnityLocalizationBridge.TryGetString(key, out string localized))
+            {
+                return localized;
+            }
+
             if (TextEntries.TryGetValue(key, out LocalizedTextEntry entry))
             {
                 return entry.GetText(CurrentLanguage);
@@ -503,6 +569,35 @@ namespace Markyu.FortStack
 
             Debug.LogWarning($"GameLocalization: Missing key '{key}'.");
             return key;
+        }
+
+        public static string GetOptional(string key, string fallback)
+        {
+            Initialize();
+
+            if (UnityLocalizationBridge.TryGetString(key, out string localized))
+            {
+                return localized;
+            }
+
+            if (TextEntries.TryGetValue(key, out LocalizedTextEntry entry))
+            {
+                return entry.GetText(CurrentLanguage);
+            }
+
+            return fallback;
+        }
+
+        public static bool TryGetLegacyText(string key, GameLanguage language, out string text)
+        {
+            if (TextEntries.TryGetValue(key, out LocalizedTextEntry entry))
+            {
+                text = entry.GetText(language);
+                return true;
+            }
+
+            text = null;
+            return false;
         }
 
         public static string Format(string key, params object[] args)
@@ -564,8 +659,49 @@ namespace Markyu.FortStack
             return false;
         }
 
+        private static void SubscribeToUnityLocalization()
+        {
+            if (isSubscribedToUnityLocalization)
+                return;
+
+            UnityLocalizationBridge.LocaleChanged += HandleUnityLocaleChanged;
+            isSubscribedToUnityLocalization = true;
+        }
+
+        private static void HandleUnityLocaleChanged()
+        {
+            SyncCurrentLanguageFromUnity(savePreference: true, notify: true);
+        }
+
+        private static void SyncCurrentLanguageFromUnity(bool savePreference, bool notify)
+        {
+            string localeCode = UnityLocalizationBridge.CurrentLocaleCode;
+            if (!TryGetLanguageFromCode(localeCode, out GameLanguage language))
+            {
+                language = DefaultLanguage;
+            }
+
+            bool changed = CurrentLanguage != language;
+            CurrentLanguage = language;
+
+            if (savePreference)
+            {
+                SaveLanguagePreference(language);
+            }
+
+            if (notify && changed)
+            {
+                LanguageChanged?.Invoke(language);
+            }
+            else if (notify && !changed)
+            {
+                LanguageChanged?.Invoke(language);
+            }
+        }
+
         private static void SaveLanguagePreference(GameLanguage language)
         {
+            PlayerPrefs.SetString(GameIdentity.LocaleCodePlayerPrefsKey, GetLocaleCode(language));
             PlayerPrefs.SetInt(GameIdentity.LanguagePlayerPrefsKey, (int)language);
             PlayerPrefs.Save();
         }

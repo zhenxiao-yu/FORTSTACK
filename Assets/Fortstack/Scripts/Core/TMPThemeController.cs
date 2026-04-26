@@ -34,6 +34,7 @@ namespace Markyu.FortStack
 
             instance = this;
 
+            UnityLocalizationBridge.Initialize();
             GameLocalization.Initialize();
             SceneManager.sceneLoaded += HandleSceneLoaded;
             GameLocalization.LanguageChanged += HandleLanguageChanged;

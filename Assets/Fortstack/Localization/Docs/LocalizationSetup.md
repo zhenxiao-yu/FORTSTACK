@@ -1,75 +1,66 @@
 # Localization Setup
 
-## Scan Summary
+Unity Localization is now the main localization system for Fortstack/Last Kernel. The existing custom `GameLocalization` API remains as a compatibility bridge until all scenes, prefabs, and gameplay strings are fully verified against Unity String Tables.
 
-- Unity version: 6000.4.3f1.
-- Render pipeline: URP 17.4.0 is present in the manifest and active through quality settings.
-- `Packages/manifest.json` is valid JSON and did not previously contain `com.unity.localization`.
-- `Packages/packages-lock.json` is valid JSON and had no stale localization entry.
-- TextMesh Pro assets exist under `Assets/TextMesh Pro`, and project UI code already uses `TextMeshProUGUI` and `TMP_Text`.
-- Runtime code lives under `Assets/Fortstack` with namespace `Markyu.FortStack`.
-- Existing localization system found:
-  - `Assets/Fortstack/Scripts/Core/GameLocalization.cs`
-  - `Assets/Fortstack/Scripts/UI/LocalizedUIBehaviour.cs`
-  - `Assets/Fortstack/Scripts/Core/TMPThemeController.cs`
-  - `Assets/Fortstack/Scripts/UI/GameOptionsUI.cs`
-- Existing language selection is saved through `PlayerPrefs` using `GameIdentity.LanguagePlayerPrefsKey`.
-- Scenes found: `Assets/Fortstack/Scenes/Main.unity`, `Title.unity`, and `Island.unity`.
-- Menu/UI prefabs found under `Assets/Fortstack/Prefabs/UI`.
-- `Library/PackageCache` had no `.tmp*` or `com.unity.localization@*` folders at scan time.
-- `Library/PackageManager` was absent at scan time.
-- The project is on drive `H:` labeled `X9 Pro`, formatted as exFAT. External/exFAT project drives are more prone to Unity Package Manager rename/lock problems than an internal NTFS workspace.
+## Package And Settings
 
-## Strategy
+- Package: `com.unity.localization` `1.5.11`.
+- Resolved package cache: `Library/PackageCache/com.unity.localization@2baf2a27280b`.
+- Active settings asset path: `Assets/Fortstack/Localization/Localization Settings.asset`.
+- Default string table: `GameText`.
+- Project locale and fallback locale: English (`en`).
 
-Chosen strategy: B + C.
+Supported locales:
 
-- B because `com.unity.localization` was not installed, so the package dependency was added to the manifest.
-- C because the project already has an active custom localization system. The existing system was extended instead of replaced.
-- No scene or prefab references were edited. Unity package import and String Table asset creation should happen after Package Manager resolves successfully.
+- `en` - English
+- `zh-Hans` - Simplified Chinese
+- `zh-Hant` - Traditional Chinese
+- `ja` - Japanese
+- `ko` - Korean
+- `fr` - French
+- `de` - German
+- `es` - Spanish
 
-## Package Repair
+## Asset Layout
 
-`com.unity.localization` was added as:
+Localization assets belong under:
 
-```json
-"com.unity.localization": "1.5.11"
+```text
+Assets/Fortstack/Localization/
+Assets/Fortstack/Localization/Locales/
+Assets/Fortstack/Localization/StringTables/
+Assets/Fortstack/Localization/AssetTables/
+Assets/Fortstack/Localization/Docs/
 ```
 
-Unity's package registry reports `1.5.11` as the latest `com.unity.localization` version, and its package metadata lists a minimum Unity version of `2019.4`. Unity 6 documentation uses the Localization 1.5 package line, so this is appropriate for Unity 6000.4.3f1.
+The `AssetTables` folder is reserved for future localized sprites, audio, and font assets. Current work uses the `GameText` String Table Collection.
 
-`packages-lock.json` was left untouched because it had no localization entry. Unity should regenerate the lock entry when it resolves packages.
+## Rebuild Workflow
 
-No cache folders were deleted because none of the allowed broken localization/temp cache folders existed at scan time.
+Use the menu item:
 
-## Existing Runtime Integration
+```text
+Last Kernel > Localization > Rebuild GameText Tables
+```
 
-The existing `GameLocalization` flow remains the runtime source of truth for current UI:
+The rebuild utility:
 
-- `LocalizedUIBehaviour` subscribes to `GameLocalization.LanguageChanged`.
-- `GameOptionsUI` uses the existing language button.
-- `TMPThemeController` refreshes TextMesh Pro text and fallback fonts.
-- Language preference still uses `PlayerPrefs` through `GameIdentity.LanguagePlayerPrefsKey`.
+- Creates missing folders.
+- Creates or activates the Unity Localization settings asset.
+- Creates the eight target Locale assets.
+- Creates or updates the `GameText` String Table Collection.
+- Imports `GameText_Localization_Source.csv`.
+- Adds legacy `GameLocalization` keys for compatibility.
+- Adds safe asset-backed keys for cards, packs, recipes, quests, encounters, enemies, and night waves.
+- Exports the merged table back to the CSV.
 
-`GameLocalization` now supports these locale codes:
+Batch equivalent:
 
-- `en`
-- `zh-Hans`
-- `zh-Hant`
-- `ja`
-- `ko`
-- `fr`
-- `de`
-- `es`
+```powershell
+E:\Unity\6000.4.3f1\Editor\Unity.exe -batchmode -quit -projectPath E:\FORTSTACK -executeMethod Markyu.FortStack.Localization.EditorTools.LocalizationAssetBuilder.RebuildGameTextTablesBatch
+```
 
-It also exposes:
-
-- `AvailableLanguages`
-- `SetLanguageByCode(string localeCode)`
-- `TryGetLanguageFromCode(string localeCode, out GameLanguage language)`
-- `GetLocaleCode(GameLanguage language)`
-
-Existing two-language entries still work. Entries without a native translation for a newly added language fall back to English, except the starter keys in `GameText_Localization_Source.csv`, which include placeholders for all target languages.
+Only run one Unity instance for the project while rebuilding. Batch mode cannot open the project if the Unity Editor already has it open.
 
 ## CSV Source
 
@@ -85,71 +76,98 @@ Columns:
 key,en,zh-Hans,zh-Hant,ja,ko,fr,de,es,notes
 ```
 
-Use this CSV as the reviewable source for future Unity String Table import or manual migration into `GameLocalization`.
-
-All non-English translations are placeholders and need native review before the Steam demo.
-
-## Key Naming
-
-Use lowercase dot-separated keys:
-
-```text
-category.item
-category.subcategory.item
-```
-
-Examples:
+Add a key by adding a row to the CSV, then run the rebuild menu item. Keep keys lowercase and dot-separated:
 
 ```text
 ui.play
 menu.start_run
 combat.core_under_attack
 tooltip.defense_grid
+card.scrap.name
+card.scrap.description
 ```
 
-Keep terminology consistent:
+English is the source copy. Non-English strings currently include placeholder translations and source-copy fallbacks, so all player-facing copy needs native review before release.
 
-- Core: Core / 核心 / 核心 / コア / 코어
-- Scrap: Scrap / 废料 / 廢料 / スクラップ / 고철
-- Morale: Morale / 士气 / 士氣 / 士気 / 사기
-- Energy: Energy / 能量 / 能量 / エネルギー / 에너지
+## Runtime Binding
 
-## Adding A Language
+Preferred binding for new TextMeshPro UI:
 
-1. Add a value to `GameLanguage`.
-2. Add locale-code aliases in `LanguageByCode`.
-3. Add the language to `LanguageCycle`.
-4. Add culture mapping in `CurrentCulture`.
-5. Add a display-name key in `TextEntries`.
-6. Add a CSV column and fill translations.
-7. If using Unity String Tables, add a matching Locale in Project Settings > Localization.
+- Add Unity's `LocalizeStringEvent` to the object with `TextMeshProUGUI`.
+- Set the table to `GameText`.
+- Pick the table entry key.
 
-## Adding String Keys
+Existing scenes and prefabs can keep using `LocalizedUIBehaviour` for now. It still exposes the same serialized fields, but it initializes the Unity Localization bridge and refreshes on `GameLocalization.LanguageChanged`.
 
-1. Add the key to the CSV.
-2. Add English copy first and keep it concise.
-3. Add placeholder translations for other target languages.
-4. Mark placeholder rows in `notes`.
-5. Add the key to `GameLocalization` if runtime code needs it before Unity String Tables are wired.
-6. Use `GameLocalization.Get(key)` or `GameLocalization.Format(key, args)` from existing UI/gameplay code.
+Code paths should use:
 
-## Unity Editor Verification
+```csharp
+new LocalizedString("GameText", "ui.play")
+```
 
-1. Open Unity Hub as Administrator.
-2. Open `H:\Game\FORTSTACK`.
-3. Wait for Package Manager to resolve.
-4. Check Window > Package Manager > Localization.
-5. Open Project Settings > Localization.
-6. Create or confirm Locales for `en`, `zh-Hans`, `zh-Hant`, `ja`, `ko`, `fr`, `de`, and `es`.
-7. Create/import a String Table named `GameText` from the CSV if you want Unity String Tables now.
-8. Keep the current `GameLocalization` runtime path until String Table coverage is complete.
-9. Connect the existing options/settings language button to any future Unity Localization bridge only after the package imports cleanly.
-10. Test language switching in Play Mode.
+or the compatibility API:
 
-## Steam Demo Workflow
+```csharp
+GameLocalization.Get("ui.play")
+GameLocalization.Format("day.current", dayNumber)
+```
 
-- Keep English as the editorial source.
-- Run native review for all non-English languages.
-- Migrate high-risk UI first: title menu, options menu, pause menu, combat warnings, and failure/victory text.
-- Confirm fonts cover Simplified Chinese, Traditional Chinese, Japanese, and Korean.
-- Test every supported language at 1280x720 and Steam Deck-like resolutions.
+`GameLocalization.Get` now checks Unity's `GameText` table first and falls back to the legacy dictionary if a key is still missing from Unity Localization.
+
+## Language Selection
+
+`UnityLocalizationBridge` is the runtime bridge to `LocalizationSettings`.
+
+- Available languages come from `LocalizationSettings.AvailableLocales`.
+- Locale switches use locale codes such as `en` or `zh-Hans`.
+- The selected locale code is saved in `PlayerPrefs` as `LastKernel.LocaleCode`.
+- Old integer language preferences remain supported through `LastKernel.Language` and `FortStack.Language`.
+- Missing or invalid saved locales fall back to English.
+- Changing locale clears cached strings, updates `LocalizationSettings.SelectedLocale`, and triggers visible UI refresh through the existing `GameLocalization.LanguageChanged` path.
+
+`GameOptionsUI` still calls the legacy-facing language API, but that API now delegates to Unity Localization when settings are available.
+
+## Legacy System
+
+Do not delete these yet:
+
+- `GameLocalization`
+- `LocalizedUIBehaviour`
+- `GameOptionsUI`
+- `TMPThemeController`
+
+`GameLocalization` is intentionally still present because many scripts call `GameLocalization.Get(...)`, `GameLocalization.Format(...)`, or subscribe to `GameLocalization.LanguageChanged`. It should be removed only after all direct callers are migrated to Unity `LocalizedString`/`LocalizeStringEvent` and play mode tests pass in every supported locale.
+
+## Font Fallback
+
+The project already includes `TMP_NotoSansSC_Fallback` in TextMesh Pro settings, backed by:
+
+```text
+Assets/Fortstack/Fonts/NatoSans/Source/NotoSansSC-Regular.ttf
+```
+
+This is a useful Simplified Chinese fallback, but it should not be treated as final coverage for Traditional Chinese, Japanese, or Korean.
+
+If approved CJK fonts are added later:
+
+1. Place source font files under `Assets/Fortstack/Fonts/<FontName>/Source/`.
+2. Create TMP font assets under `Assets/Fortstack/Fonts/<FontName>/TMP/`.
+3. Add those TMP font assets to `Project Settings > TextMesh Pro > Settings > Fallback Font Assets`.
+4. Also add them to the default UI font asset fallback list if that font is used directly by UI prefabs.
+5. Test all CJK locales in title, options, HUD, card tooltip, quest, and combat UI.
+
+Do not download or include external font files without approval.
+
+## Validation Checklist
+
+- `Packages/manifest.json` contains `com.unity.localization`.
+- `Packages/packages-lock.json` resolves `com.unity.localization`.
+- Project Settings > Localization has an active settings asset.
+- All eight Locale assets exist and are listed in Available Locales.
+- `GameText` exists under `StringTables`.
+- `GameText_Localization_Source.csv` imports without duplicate keys.
+- Existing `LocalizedUIBehaviour` labels update after switching locale.
+- `GameOptionsUI` changes `LocalizationSettings.SelectedLocale` immediately.
+- Direct `GameLocalization.Get(...)` callers still work through the bridge/fallback.
+- TextMesh Pro has usable fallback fonts for CJK glyphs.
+- C# compiles in Unity.

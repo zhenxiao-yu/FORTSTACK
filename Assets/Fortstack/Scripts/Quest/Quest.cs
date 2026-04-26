@@ -66,8 +66,13 @@ namespace Markyu.FortStack
 
         // Info
         public string Id => id;
-        public string Title => title;
-        public string Description => description;
+        public string Title => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "quest", "title"),
+            title);
+
+        public string Description => GameLocalization.GetOptional(
+            LocalizationKeyBuilder.ForAsset(this, "quest", "description"),
+            description);
 
         // Requirements
         public QuestType Type => type;
