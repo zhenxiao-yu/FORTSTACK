@@ -98,6 +98,13 @@ namespace Markyu.FortStack
             InitAudioMixerVolumes();
         }
 
+        private void OnDestroy()
+        {
+            // Stop any in-progress BGM / SFX coroutines so PauseBGM doesn't
+            // attempt to restore mixer volume after the object is gone.
+            StopAllCoroutines();
+        }
+
         /// <summary>
         /// Initializes the volume levels of the Sound Effects (SFX) and Background Music (BGM)
         /// mixer groups by loading the saved decibel values from PlayerPrefs.

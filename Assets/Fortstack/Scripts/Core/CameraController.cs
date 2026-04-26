@@ -31,14 +31,17 @@ namespace Markyu.FortStack
         [SerializeField, Tooltip("Maximum allowed zoom-out distance from the ground.")]
         private float maxDistance = 20f;
 
+        [Header("Fallback Movement Bounds")]
+        [SerializeField, Tooltip("Default minimum X/Z pan boundary used when no Board is present (e.g. Title scene). Overridden at runtime by Board.WorldBounds.")]
+        private Vector2 clampMin = new Vector2(-10f, -5f);
+
+        [SerializeField, Tooltip("Default maximum X/Z pan boundary used when no Board is present (e.g. Title scene). Overridden at runtime by Board.WorldBounds.")]
+        private Vector2 clampMax = new Vector2(10f, 5f);
+
         private bool isDragging;
         private Vector3 dragOrigin;
         private Vector3 targetPos;
         private Vector3 velocity;
-
-        // Movement Clamps
-        private Vector2 clampMin = new Vector2(-10, -5);
-        private Vector2 clampMax = new Vector2(10, 5);
 
         private void Awake()
         {
