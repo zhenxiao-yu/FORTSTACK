@@ -97,7 +97,6 @@ namespace Markyu.LastKernel
         {
             IsDead = true;
             OnDied?.Invoke(this);
-            // TODO: play death VFX before destroying
             DestroyUnit();
         }
 

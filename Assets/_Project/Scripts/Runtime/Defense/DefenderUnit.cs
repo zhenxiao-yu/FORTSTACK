@@ -104,7 +104,6 @@ namespace Markyu.LastKernel
             target.TakeDamage(Data.AttackDamage);
 
             // Brief scale punch as cheap attack feedback (no DOTween dependency here)
-            // TODO: replace with proper VFX when art is ready
             StartCoroutine(AttackPunchRoutine());
         }
 

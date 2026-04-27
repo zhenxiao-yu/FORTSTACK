@@ -46,11 +46,8 @@ namespace Markyu.LastKernel
                 return;
             }
 
-            // Apply scrap to run state
-            // TODO: wire to the economy system (RunStateManager / CardManager currency)
-            Debug.Log($"[Reward] +{reward.ScrapAmount} scrap");
-
-            // TODO: if reward.RewardPack != null, spawn a PackInstance on the board
+            // Apply scrap to run state — wire to RunStateManager / CardManager currency when economy is implemented.
+            // If reward.RewardPack != null, spawn a PackInstance on the board.
 
             OnRewardsReady?.Invoke(reward);
         }

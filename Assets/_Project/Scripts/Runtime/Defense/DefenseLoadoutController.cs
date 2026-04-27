@@ -4,10 +4,9 @@
 //   a) A clean seam that NightBattlefieldController calls (via ResolveLoadout)
 //   b) A fall-through to defenderOverrides for playtesting without card setup
 //
-// TODO (card integration):
-//   • Read CardInstance components that have been assigned to defense slots during day.
-//   • Look up DefenderData via CardDefinition.DefenderDataOverride or a mapping table.
-//   • Return the resolved array in ResolveLoadout().
+// Future integration: read CardInstances assigned to defense slots during the day phase,
+// look up DefenderData via CardDefinition.DefenderDataOverride or a mapping table,
+// and return the resolved array from ResolveLoadout().
 
 using UnityEngine;
 
@@ -30,8 +29,7 @@ namespace Markyu.LastKernel
         /// </summary>
         public DefenderData[] ResolveLoadout(int slotCount)
         {
-            // TODO: query the day-phase card system for prepared defender cards.
-            // For now, use the manually assigned override array.
+            // Card integration not yet active — fall through to manual overrides.
             var result = new DefenderData[slotCount];
 
             if (defenderOverrides == null) return result;
