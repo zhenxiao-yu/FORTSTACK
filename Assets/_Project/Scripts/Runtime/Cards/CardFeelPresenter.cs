@@ -67,6 +67,10 @@ namespace Markyu.LastKernel
         private bool _isHovered;
         private bool _initialized;
 
+        // True while any card is being dragged. Prevents other cards from activating
+        // hover effects (tilt, glow, lift) that would visually conflict with the drag.
+        public static bool IsDraggingAny { get; private set; }
+
         public bool IsInitialized => _initialized;
 
         /// <summary>
@@ -160,6 +164,7 @@ namespace Markyu.LastKernel
 
         private void OnDisable()
         {
+            IsDraggingAny = false;
             RestoreSortOrder();
 
             if (_currentHoverLift > 0.0001f)
@@ -174,13 +179,12 @@ namespace Markyu.LastKernel
 
         public void OnPointerEnter(PointerEventData _)
         {
-            if (!_initialized || _profile == null || _card.IsBeingDragged)
+            if (!_initialized || _profile == null || _card.IsBeingDragged || IsDraggingAny)
             {
                 return;
             }
 
             _isHovered = true;
-            ElevateSortOrder();
             ScaleTo(_profile.HoverScale, _profile.HoverScaleDuration, _profile.HoverScaleEase);
             PulseFlash(_profile.HoverFlashAmount, _profile.FlashReturnDuration);
             PlayYawPunch(_profile.HoverPunchAngle, _profile.HoverPunchDuration);
@@ -194,7 +198,6 @@ namespace Markyu.LastKernel
             }
 
             _isHovered = false;
-            RestoreSortOrder();
             ScaleTo(1f, _profile.HoverScaleDuration, _profile.HoverScaleEase);
         }
 
@@ -207,7 +210,8 @@ namespace Markyu.LastKernel
 
             _lastPosition = transform.position;
             _isHovered = false;
-            RestoreSortOrder();
+            IsDraggingAny = true;
+            ElevateSortOrder();
             _rotationTween?.Kill();
             _punchYaw = 0f;
 
@@ -231,6 +235,8 @@ namespace Markyu.LastKernel
                 return;
             }
 
+            IsDraggingAny = false;
+            RestoreSortOrder();
             float restScale = _isHovered ? _profile.HoverScale : 1f;
 
             KillScaleTween();
@@ -581,12 +587,17 @@ namespace Markyu.LastKernel
                 _savedSortingOrders[i] = _allRenderers[i].sortingOrder;
         }
 
-        // Elevates every renderer on this card by +100 sort order so the hovered card's
-        // transparent layers (TMP text, alpha-tested borders) draw over those on all
-        // neighbors regardless of camera-space depth.
+        // Elevates every renderer on this card by +100 sort order while dragging so the
+        // dragged card's transparent layers (TMP text, alpha-tested borders) draw over all
+        // neighboring cards regardless of camera-space depth.
+        // Always re-snapshots the CURRENT sort orders first — the stack system may have
+        // changed them since Initialize(), and stale saved values would cause body/TMP
+        // to land at the same elevated order and fight in the depth buffer.
         private void ElevateSortOrder()
         {
             if (_allRenderers == null) return;
+            for (int i = 0; i < _allRenderers.Length; i++)
+                _savedSortingOrders[i] = _allRenderers[i].sortingOrder;
             for (int i = 0; i < _allRenderers.Length; i++)
                 _allRenderers[i].sortingOrder = _savedSortingOrders[i] + 100;
         }
@@ -621,6 +632,7 @@ namespace Markyu.LastKernel
             _currentGlow = 0f;
             _currentHoverLift = 0f;
             _currentTilt = Vector2.zero;
+            IsDraggingAny = false;
             RestoreSortOrder();
             transform.rotation = Quaternion.identity;
             ApplyMaterialFeedback();

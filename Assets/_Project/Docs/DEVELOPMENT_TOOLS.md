@@ -20,7 +20,7 @@ Runs a full structural audit of the project and logs all issues to the Unity Con
 | Recipes | IDs unique, has inputs, has output, craftingDuration > 0 |
 | Packs | Has slots, slot cards not null, buyPrice > 0 |
 | Quests | IDs unique, title and description not empty, targetAmount > 0 |
-| Prefabs | Missing scripts, missing object references, CardInstance prefab has CardController / Collider / CardFeelPresenter / VisualRoot |
+| Prefabs | Missing scripts, missing object references, CardInstance prefab has CardController / Collider / CardFeelPresenter |
 | Scenes | Boot/MainMenu/Game are in Build Settings; sandbox scenes are not in Build Settings; Boot scene has no unexpected root objects |
 | Localization | English and Chinese locales exist; no duplicate keys; no empty English translations; all cards/recipes/quests/packs have localization key entries |
 | Audio | AudioManager prefab exists and has component; mixer groups assigned; no null SFX clips; no duplicate AudioId entries; all AudioId enum values registered |
@@ -52,6 +52,28 @@ Applies a conservative set of non-destructive fixes. It never deletes, renames, 
 ### What it does NOT do
 
 It does not auto-fix every validator warning. Items requiring judgement (art selection, recipe balance, localization content) must be fixed manually.
+
+---
+
+## Fix All Card Prefabs
+
+**Menu:** `Tools/LAST KERNEL/Fix All Card Prefabs`
+
+**File:** `Assets/_Project/Scripts/Editor/QuickFixTools.cs`
+
+Batch-processes every prefab under `Assets/_Project/Prefabs/Cards/` that has a `CardInstance` component. Does not require manual selection.
+
+### Components added
+
+- `CardController` — if missing
+- `CardFeelPresenter` — if missing
+- `CardFeelProfile` assigned to `CardSettings` — if missing and exactly one profile exists in the project
+
+### Limits
+
+- Does not modify gameplay data, art references, or material assignments
+- Skips prefabs that already have all required components (safe to run multiple times)
+- Skips CardFeelProfile assignment if zero or more than one profile exists (logs a warning)
 
 ---
 

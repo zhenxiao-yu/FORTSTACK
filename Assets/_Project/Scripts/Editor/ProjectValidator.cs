@@ -180,9 +180,13 @@ namespace Markyu.LastKernel
                     }
                 }
 
-                // Output
+                // Output — TravelRecipe, ResearchRecipe, and ExplorationRecipe resolve their
+                // output through custom Execute() logic, not from resultingCard.
                 SerializedProperty output = so.FindProperty("resultingCard");
-                if (output == null || output.objectReferenceValue == null)
+                if ((output == null || output.objectReferenceValue == null)
+                    && recipe is not TravelRecipe
+                    && recipe is not ResearchRecipe
+                    && recipe is not ExplorationRecipe)
                     summary.Error($"RecipeDefinition '{path}' has no resulting card (output).");
 
                 // Duration
@@ -293,12 +297,6 @@ namespace Markyu.LastKernel
 
             if (root.GetComponent<CardFeelPresenter>() == null)
                 summary.Warning($"Card prefab '{path}' has CardInstance but no CardFeelPresenter.");
-
-            bool hasVisualRoot = root.transform.Cast<Transform>().Any(t =>
-                t.name.Equals("VisualRoot", StringComparison.OrdinalIgnoreCase) ||
-                t.name.Equals("Visual", StringComparison.OrdinalIgnoreCase));
-            if (!hasVisualRoot)
-                summary.Warning($"Card prefab '{path}' has no child named 'VisualRoot' or 'Visual'.");
         }
 
         private static void ValidateMissingScripts(GameObject root, string path, ValidationSummary summary)

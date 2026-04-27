@@ -21,45 +21,46 @@ MonoBehaviour:
   pickupPunchDuration: 0.13
   pickupPunchVibrato: 6
   dragHoldScale: 1.03
-  dragTiltMax: 7
+  dragTiltMax: 6
   dragTiltStrength: 2.5
   dragTiltSmoothing: 10
   mouseTiltEnabled: 1
-  mouseTiltAmount: 18
+  mouseTiltAmount: 8
   mouseTiltSmoothing: 20
   autoTiltEnabled: 1
-  autoTiltAmount: 1.2
-  autoTiltFrequency: 0.8
+  autoTiltAmount: 0.06
+  autoTiltFrequency: 0.242
   dropSquishScale: 0.94
   dropSquishDuration: 0.065
   dropSettleDuration: 0.11
   dropSettleEase: 27
   dropSettleOvershoot: 0.65
-  spawnStartScale: 0
+  spawnStartScale: 0.5
   spawnDuration: 0.17
   spawnEase: 27
-  spawnOvershoot: 1.05
+  spawnOvershoot: 0.75
   mergePunchAmount: 0.08
   mergePunchDuration: 0.17
   mergePunchVibrato: 5
-  hoverFlashAmount: 0.08
+  hoverFlashAmount: 0.137
   pickupFlashAmount: 0.16
   mergeFlashAmount: 0.18
   damageFlashAmount: 0.65
   flashReturnDuration: 0.18
-  overlayParallaxAmount: 0.055
-  idleOverlayDriftAmount: 0.012
+  hoverLiftAmount: 0.1313
+  overlayParallaxAmount: 0
+  idleOverlayDriftAmount: 0
   idleOverlayDriftFrequency: 0.7
   hoverBrightnessBoost: 0.08
   dragBrightnessBoost: 0.14
   hoverSaturationBoost: 0.05
   idleHueShiftAmount: 0.01
   idleHueShiftFrequency: 0.45
-  glowColor: {r: 0.52, g: 0.85, b: 1, a: 1}
+  glowColor: {r: 0.99371064, g: 0.56042695, b: 0.5406035, a: 1}
   hoverGlowIntensity: 0.12
   dragGlowIntensity: 0.18
   damagePunchAngle: 12
   damagePunchDuration: 0.2
   snapDuration: 0.13
-  snapEase: 27
-  snapOvershoot: 0.55
+  snapEase: 25
+  snapOvershoot: 0.5

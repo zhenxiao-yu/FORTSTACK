@@ -136,5 +136,116 @@ namespace Markyu.LastKernel
             }
             return fixed_;
         }
+
+        // ─── Batch: All Card Prefabs ─────────────────────────────────────────
+
+        /// <summary>
+        /// Processes every prefab under Assets/_Project/Prefabs/Cards/ that has a
+        /// CardInstance component. Adds CardController and CardFeelPresenter if either
+        /// is missing. Also assigns the default CardFeelProfile to any CardSettings
+        /// asset that is missing one (when exactly one profile exists in the project).
+        /// Safe to run multiple times — skips objects that already have the component.
+        /// </summary>
+        [MenuItem("Tools/LAST KERNEL/Fix All Card Prefabs")]
+        public static void FixAllCardPrefabs()
+        {
+            Debug.Log("=== QuickFixTools: Fix All Card Prefabs ===");
+            int componentFixes = 0;
+            int settingsFixes = 0;
+
+            componentFixes += FixComponentsOnAllCardPrefabs();
+            settingsFixes += AssignFeelProfileToAllCardSettings();
+
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
+
+            Debug.Log($"=== QuickFixTools: Done — {componentFixes} component fix(es), {settingsFixes} settings fix(es) ===");
+        }
+
+        private static int FixComponentsOnAllCardPrefabs()
+        {
+            const string cardPrefabsRoot = "Assets/_Project/Prefabs/Cards";
+            int fixes = 0;
+
+            foreach (string guid in AssetDatabase.FindAssets("t:Prefab", new[] { cardPrefabsRoot }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                GameObject prefab = null;
+                try
+                {
+                    prefab = PrefabUtility.LoadPrefabContents(path);
+                    if (prefab.GetComponent<CardInstance>() == null) continue;
+
+                    bool changed = false;
+
+                    if (prefab.GetComponent<CardController>() == null)
+                    {
+                        prefab.AddComponent<CardController>();
+                        Debug.Log($"[QuickFix] Added CardController → '{path}'");
+                        changed = true;
+                        fixes++;
+                    }
+
+                    if (prefab.GetComponent<CardFeelPresenter>() == null)
+                    {
+                        prefab.AddComponent<CardFeelPresenter>();
+                        Debug.Log($"[QuickFix] Added CardFeelPresenter → '{path}'");
+                        changed = true;
+                        fixes++;
+                    }
+
+                    if (changed)
+                        PrefabUtility.SaveAsPrefabAsset(prefab, path);
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogWarning($"[QuickFix] Skipped '{path}': {ex.Message}");
+                }
+                finally
+                {
+                    if (prefab != null) PrefabUtility.UnloadPrefabContents(prefab);
+                }
+            }
+
+            return fixes;
+        }
+
+        private static int AssignFeelProfileToAllCardSettings()
+        {
+            string[] profileGuids = AssetDatabase.FindAssets("t:CardFeelProfile", new[] { "Assets/_Project" });
+            if (profileGuids.Length == 0)
+            {
+                Debug.LogWarning("[QuickFix] No CardFeelProfile found — skipping feel profile assignment.");
+                return 0;
+            }
+            if (profileGuids.Length > 1)
+            {
+                Debug.LogWarning($"[QuickFix] {profileGuids.Length} CardFeelProfiles found — cannot auto-assign (ambiguous). Assign manually.");
+                return 0;
+            }
+
+            string profilePath = AssetDatabase.GUIDToAssetPath(profileGuids[0]);
+            ScriptableObject profile = AssetDatabase.LoadAssetAtPath<ScriptableObject>(profilePath);
+
+            int fixes = 0;
+            foreach (string guid in AssetDatabase.FindAssets("t:CardSettings", new[] { "Assets/_Project" }))
+            {
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+                CardSettings settings = AssetDatabase.LoadAssetAtPath<CardSettings>(path);
+                if (settings == null) continue;
+
+                var so = new SerializedObject(settings);
+                SerializedProperty prop = so.FindProperty("feelProfile");
+                if (prop == null || prop.objectReferenceValue != null) continue;
+
+                prop.objectReferenceValue = profile;
+                so.ApplyModifiedProperties();
+                EditorUtility.SetDirty(settings);
+                Debug.Log($"[QuickFix] Assigned CardFeelProfile → '{path}'");
+                fixes++;
+            }
+
+            return fixes;
+        }
     }
 }

@@ -120,6 +120,12 @@ namespace Markyu.LastKernel
         {
             Vector3 mousePos = GetMouseWorldPosition() + _dragOffset;
             mousePos.y = _card.Settings.DragHeight;
+            // StackStep.z is negative (more-negative Z = closer to camera).
+            // Without this offset, moving the cursor even slightly toward positive Z
+            // lets stationary stack cards (which hold their more-negative Z) win the
+            // depth test and occlude the dragged card. Shifting one step forward
+            // keeps the dragged card in front regardless of cursor direction.
+            mousePos.z += _card.Settings.StackStep.z;
             Vector3 finalPos = Board.Instance.ClampToBounds(mousePos, _card.Stack);
 
             _card.Stack?.SetDragTargetPosition(finalPos);
@@ -137,8 +143,14 @@ namespace Markyu.LastKernel
             TradeManager.Instance?.TurnOffHighlightedZones();
             AudioManager.Instance?.PlaySFX(AudioId.CardDrop);
 
-            Vector3 dropPosition = transform.position.Flatten();
-            float dragDistance = Vector3.Distance(dropPosition, _dragStartPosition);
+            // Use cursor position for drop logic rather than card's physical position.
+            // UpdateDragPosition applies a Z-forward bias (StackStep.z) to the card's
+            // position for depth-buffer correctness during drag, so the physical position
+            // is offset from where the user intended to drop.
+            Vector3 cursorWorldPos = GetMouseWorldPosition();
+            cursorWorldPos.y = 0f;
+            Vector3 dropPosition = cursorWorldPos;
+            float dragDistance = Vector3.Distance(dropPosition, _dragStartPosition.Flatten());
 
             if (dragDistance < _card.Settings.ClickThreshold)
             {
