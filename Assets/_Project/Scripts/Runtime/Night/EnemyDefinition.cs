@@ -16,6 +16,15 @@ namespace Markyu.LastKernel
         [SerializeField, Range(0f, 100f)] private float critChance = 5f;
         [SerializeField, Range(100f, 300f)] private float critMultiplier = 150f;
         [SerializeField] private Texture2D artTexture;
+        [SerializeField] private Sprite sprite;
+
+        [Header("Defense Lane")]
+        [SerializeField, Min(0.1f), Tooltip("World-units per second this enemy moves toward the base.")]
+        private float moveSpeed = 2f;
+        [SerializeField, Min(1), Tooltip("Damage dealt to the base core when this enemy reaches it.")]
+        private int damageToBase = 1;
+        [SerializeField, Min(0), Tooltip("Scrap/currency reward when this enemy is killed.")]
+        private int rewardAmount = 1;
 
         public string DisplayName => GameLocalization.GetOptional(
             LocalizationKeyBuilder.ForAsset(this, "night.enemy", "name"),
@@ -29,6 +38,10 @@ namespace Markyu.LastKernel
         public float CritChance => critChance;
         public float CritMultiplier => critMultiplier;
         public Texture2D ArtTexture => artTexture;
+        public Sprite Sprite => sprite;
+        public float MoveSpeed => moveSpeed;
+        public int DamageToBase => damageToBase;
+        public int RewardAmount => rewardAmount;
 
         public static EnemyDefinition CreateRuntime(
             string name, int hp, int atk, int def,
