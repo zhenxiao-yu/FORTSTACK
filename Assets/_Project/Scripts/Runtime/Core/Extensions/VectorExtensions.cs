@@ -12,6 +12,12 @@ namespace Markyu.LastKernel
         {
             return new Vector3(vector.x, 0f, vector.z);
         }
+
+        /// <summary>Returns a copy of the vector with one or more components replaced.</summary>
+        public static Vector3 With(this Vector3 v, float? x = null, float? y = null, float? z = null)
+        {
+            return new Vector3(x ?? v.x, y ?? v.y, z ?? v.z);
+        }
     }
 }
 

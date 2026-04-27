@@ -84,6 +84,15 @@ namespace Markyu.LastKernel
             _card.IsBeingDragged = true;
             _dragStartPosition = GetMouseWorldPosition();
 
+            // Guard: a card spawned without a registered stack (e.g. from the dev spawner
+            // before CardManager is aware of it) has a null Stack. Create a single-card
+            // stack on the fly so the drag can proceed safely.
+            if (_card.Stack == null)
+            {
+                _card.Stack = new CardStack(_card, transform.position);
+                CardManager.Instance?.RegisterStack(_card.Stack);
+            }
+
             var oldStack = _card.Stack;
             var newStack = oldStack.SplitAt(_card);
 
