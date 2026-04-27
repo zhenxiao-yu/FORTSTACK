@@ -21,6 +21,7 @@ namespace Markyu.LastKernel
             fixes += AssignDefaultFeelProfileToSelectedCards();
             fixes += AddFeelPresenterToSelectedCards();
             fixes += AddCardControllerToSelectedCards();
+            fixes += AddRenderOrderControllerToSelectedCards();
 
             Debug.Log($"=== QuickFixTools: Done — {fixes} fix(es) applied ===");
         }
@@ -137,6 +138,24 @@ namespace Markyu.LastKernel
             return fixed_;
         }
 
+        // ─── CardRenderOrderController ───────────────────────────────────────
+
+        private static int AddRenderOrderControllerToSelectedCards()
+        {
+            int fixed_ = 0;
+            foreach (GameObject go in Selection.gameObjects)
+            {
+                if (go.GetComponent<CardInstance>() == null) continue;
+                if (go.GetComponent<CardRenderOrderController>() != null) continue;
+
+                go.AddComponent<CardRenderOrderController>();
+                EditorUtility.SetDirty(go);
+                Debug.Log($"[QuickFix] Added CardRenderOrderController to '{go.name}'.");
+                fixed_++;
+            }
+            return fixed_;
+        }
+
         // ─── Batch: All Card Prefabs ─────────────────────────────────────────
 
         /// <summary>
@@ -190,6 +209,14 @@ namespace Markyu.LastKernel
                     {
                         prefab.AddComponent<CardFeelPresenter>();
                         Debug.Log($"[QuickFix] Added CardFeelPresenter → '{path}'");
+                        changed = true;
+                        fixes++;
+                    }
+
+                    if (prefab.GetComponent<CardRenderOrderController>() == null)
+                    {
+                        prefab.AddComponent<CardRenderOrderController>();
+                        Debug.Log($"[QuickFix] Added CardRenderOrderController → '{path}'");
                         changed = true;
                         fixes++;
                     }
