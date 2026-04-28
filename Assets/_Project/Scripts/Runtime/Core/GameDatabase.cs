@@ -76,14 +76,16 @@ namespace Markyu.LastKernel
         [Button("Validate All Game Data", ButtonSizes.Medium), GUIColor(0.4f, 0.8f, 1f)]
         public void ValidateAll()
         {
-            ProjectValidator.ValidateAllGameData();
+            // Invoke via menu path so GameDatabase (Runtime assembly) doesn't need to
+            // reference ProjectValidator (Editor assembly).
+            EditorApplication.ExecuteMenuItem("Tools/LAST KERNEL/Validate All Game Data");
         }
 
         [TitleGroup("Tools")]
         [Button("Detect Duplicate IDs", ButtonSizes.Medium), GUIColor(1f, 0.85f, 0.4f)]
         public void CheckDuplicates()
         {
-            ProjectValidator.DetectDuplicateIds();
+            EditorApplication.ExecuteMenuItem("Tools/LAST KERNEL/Detect Duplicate IDs");
         }
 #endif
 
