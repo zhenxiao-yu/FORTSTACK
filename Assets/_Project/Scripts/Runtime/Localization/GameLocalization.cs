@@ -136,6 +136,7 @@ namespace Markyu.LastKernel
             ["title.loadHeader"] = new("读取存档", "Load Saves"),
             ["title.gameplayHeader"] = new("生存偏好设置", "Game Setup"),
             ["title.clearSaves"] = new("[清除全部存档]", "[Delete All Saves]"),
+            ["title.noSaves"]    = new("暂无存档", "No saved games"),
 
             ["pause.header"] = new("已暂停", "Paused"),
             ["pause.resume"] = new("继续游戏", "Resume"),
@@ -279,7 +280,8 @@ namespace Markyu.LastKernel
                 "这会把全部图形与音频参数恢复为默认值，且无法撤销。",
                 "This resets all graphics and audio settings to their defaults and cannot be undone."),
 
-            ["gameplay.dayDuration"] = new("白昼时长：{0} 秒", "Day Length: {0}s"),
+            ["gameplay.dayDuration"]       = new("白昼时长：{0} 秒", "Day Length: {0}s"),
+            ["gameplay.friendlyModeLabel"] = new("友好模式", "Friendly Mode"),
             ["gameplay.friendlyOn"] = new(
                 "友好模式：开启\n<size=23>（敌对目标不会出现）",
                 "Friendly Mode: On\n<size=23>(Hostile targets will not appear)"),

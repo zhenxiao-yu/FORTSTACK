@@ -12,10 +12,10 @@
   <Project Path="Lofelt.NiceVibrations.Demo.csproj" />
   <Project Path="TGS_PackageImporter.csproj" />
   <Project Path="Lofelt.NiceVibrations.csproj" />
+  <Project Path="_Project.UIToolkit.csproj" />
   <Project Path="Sirenix.OdinInspector.Modules.Unity.Addressables.csproj" />
   <Project Path="Febucci.TextAnimatorForUnity.TMP.Runtime.csproj" />
   <Project Path="Lofelt.NiceVibrations.Editor.csproj" />
-  <Project Path="_Project.UIToolkit.csproj" />
   <Project Path="Febucci.TextAnimatorForUnity.Input.Runtime.csproj" />
   <Project Path="VFolders.csproj" />
   <Project Path="_Project.Tests.PlayMode.csproj" />

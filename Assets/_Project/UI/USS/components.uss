@@ -134,7 +134,6 @@
     padding-bottom: var(--lk-padding-small);
     min-height: var(--lk-touch-min);
     -unity-text-align: middle-center;
-    cursor: link;
     transition-property: border-color, color, background-color;
     transition-duration: var(--lk-transition-fast);
     transition-timing-function: linear;
@@ -183,25 +182,33 @@
     color: var(--lk-warning);
 }
 
-/* Text-only — matches the current TextButton (underline on hover in C#) */
+/* Text-only nav button — left-border accent slides in on hover */
 .lk-button--text {
     border-width: 0;
+    border-left-width: 3px;
+    border-left-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
     color: var(--lk-text);
-    padding-left: 0;
+    padding-left: var(--lk-padding-small);
     padding-right: 0;
+    min-width: 180px;
+    font-size: var(--lk-font-size-lg);
     -unity-text-align: middle-left;
+    transition-property: color, border-left-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
 }
 
 .lk-button--text:hover {
     color: var(--lk-accent);
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
+    border-left-color: var(--lk-accent);
 }
 
 .lk-button--text:active {
     color: var(--lk-text-header);
     background-color: rgba(0, 0, 0, 0);
+    border-left-color: var(--lk-accent-dim);
 }
 
 /* Icon-only square button */
@@ -217,7 +224,6 @@
     border-color: var(--lk-disabled);
     color: var(--lk-disabled);
     background-color: rgba(0, 0, 0, 0);
-    cursor: arrow;
     opacity: 0.55;
     transition-duration: 0ms;
 }
@@ -237,6 +243,29 @@
     color: var(--lk-text);
     font-size: var(--lk-font-size-md);
     white-space: normal;
+}
+
+/* Logo icon — sprite slot above logo text, hidden until assigned in C# */
+.lk-logo-icon {
+    display: none;
+    width: 72px;
+    height: 72px;
+    -unity-background-scale-mode: scale-to-fit;
+    margin-bottom: var(--lk-gap-small);
+    flex-shrink: 0;
+}
+
+.lk-logo-icon--visible {
+    display: flex;
+}
+
+/* Game logo — title screen only */
+.lk-label--logo {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-logo);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    white-space: nowrap;
 }
 
 /* Screen / section title */
@@ -458,7 +487,6 @@
     background-color: var(--lk-panel-overlay);
     border-bottom-color: var(--lk-border-dim);
     border-bottom-width: 1px;
-    cursor: link;
     transition-property: color;
     transition-duration: var(--lk-transition-fast);
     transition-timing-function: linear;
@@ -483,7 +511,6 @@
     padding-right: var(--lk-padding-medium);
     border-bottom-color: var(--lk-border-dim);
     border-bottom-width: 1px;
-    cursor: link;
     transition-property: background-color;
     transition-duration: var(--lk-transition-fast);
     transition-timing-function: linear;
@@ -508,7 +535,9 @@
     color: var(--lk-text-dim);
 }
 
-.lk-list__item--new .lk-list__item-label::after {
+/* .lk-list__item--new: add a danger-colored child VisualElement from C# to mark new items.
+   USS ::after is not supported — pseudo-elements must be real child elements in UI Toolkit. */
+.lk-list__item--new .lk-list__item-label {
     color: var(--lk-danger);
 }
 
@@ -558,7 +587,6 @@ Toggle {
     flex-direction: row;
     align-items: center;
     min-height: var(--lk-touch-min);
-    cursor: link;
 }
 
 .unity-toggle__label {

@@ -42,18 +42,27 @@ namespace Markyu.LastKernel
         protected virtual void Awake()
         {
             Document = GetComponent<UIDocument>();
-            Root     = Document.rootVisualElement;
+        }
 
+        // UIDocument.rootVisualElement is only ready after UIDocument.OnEnable() runs.
+        // Start() is the first safe point to query it (all Awake + OnEnable have completed).
+        protected virtual void Start()
+        {
+            Root = Document.rootVisualElement;
             OnBind();
 
             if (rootController != null && !string.IsNullOrEmpty(screenId))
                 rootController.RegisterScreen(screenId, this);
+
+            OnLocalizationRefresh();
         }
 
         protected virtual void OnEnable()
         {
             GameLocalization.LanguageChanged += HandleLanguageChanged;
-            OnLocalizationRefresh();
+            // OnLocalizationRefresh is deferred to Start() on first run.
+            // On subsequent enable/disable cycles Root is already bound, so refresh immediately.
+            if (Root != null) OnLocalizationRefresh();
         }
 
         protected virtual void OnDisable()
