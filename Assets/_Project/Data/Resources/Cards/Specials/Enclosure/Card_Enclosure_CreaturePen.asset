@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: Card_Enclosure_CreaturePen
   m_EditorClassIdentifier: 
   id: 081c365703974818b221f0e5f47404a9
-  displayName: 'Containment Pen'
-  description: 'A fenced holding zone for dangerous finds. It keeps problems measurable.'
+  displayName: Containment Pen
+  description: A fenced holding zone for dangerous finds. It keeps problems measurable.
   artTexture: {fileID: 2800000, guid: 4ac7197d170ad0b4495d2cc8efb0b927, type: 3}
   category: 6
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 5
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15

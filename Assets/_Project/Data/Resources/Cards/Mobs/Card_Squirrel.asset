@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Card_Squirrel
   m_EditorClassIdentifier: 
   id: fa3ad55715804a598282d4a74a9a1c39
-  displayName: 'Scrap Hound'
-  description: 'A twitching scavenger animal packed with bad chrome and sharper teeth.'
+  displayName: Scrap Hound
+  description: A twitching scavenger animal packed with bad chrome and sharper teeth.
   artTexture: {fileID: 2800000, guid: 28033e1bade2e2545b486e583088eb54, type: 3}
   category: 9
   faction: 2
+  combatType: 0
   loot:
   - Card: {fileID: 11400000, guid: 49a058e7baba5da45b6e267a0d563cc1, type: 2}
     Weight: 70
@@ -28,9 +29,11 @@ MonoBehaviour:
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 0
   sellPrice: 1
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 5

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card_AppleTree
   m_EditorClassIdentifier: 
   id: e03a91bf3fbd481c8b6b469f4aeb2f08
-  displayName: 'Hydro Orchard'
-  description: 'A compact grow rack for synth fruit. Fragile, valuable, bright under bad lights.'
+  displayName: Hydro Orchard
+  description: A compact grow rack for synth fruit. Fragile, valuable, bright under
+    bad lights.
   artTexture: {fileID: 2800000, guid: 3bf0c0456afd2144e9b318cf9456663f, type: 3}
   category: 1
   faction: 0
@@ -23,6 +24,8 @@ MonoBehaviour:
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 2
   hasDurability: 1

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Card_ClayPit
   m_EditorClassIdentifier: 
   id: cfd8d1f88b9e4a4db02fcaeb7bb3a864
-  displayName: 'Slurry Sump'
-  description: 'A flooded service pit thick with ceramic binder and old runoff.'
+  displayName: Slurry Sump
+  description: A flooded service pit thick with ceramic binder and old runoff.
   artTexture: {fileID: 2800000, guid: 3ef7db91a568d4740a060bde424bf805, type: 3}
   category: 1
   faction: 0
@@ -23,6 +23,8 @@ MonoBehaviour:
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 0
   hasDurability: 1

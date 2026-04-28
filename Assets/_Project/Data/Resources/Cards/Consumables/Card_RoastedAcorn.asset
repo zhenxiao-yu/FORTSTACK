@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: Card_RoastedAcorn
   m_EditorClassIdentifier: 
   id: 266e7c2f3b8f4d52916ecd33ac1f4804
-  displayName: 'Toasted Volt Nut'
-  description: 'A toasted energy seed with a sharp chemical bite.'
+  displayName: Toasted Volt Nut
+  description: A toasted energy seed with a sharp chemical bite.
   artTexture: {fileID: 2800000, guid: 83bcf27f648468f4598f0c22e510ed79, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 1
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 1
   maxHealth: 15

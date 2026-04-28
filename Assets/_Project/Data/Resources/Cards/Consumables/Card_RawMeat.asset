@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: Card_RawMeat
   m_EditorClassIdentifier: 
   id: 052e5d11bccf480297d51931e13e51d6
-  displayName: 'Printed Protein'
-  description: 'Fresh tissue from a cheap vat printer. Cook before morale notices.'
+  displayName: Printed Protein
+  description: Fresh tissue from a cheap vat printer. Cook before morale notices.
   artTexture: {fileID: 2800000, guid: 70466bf3549141645b55fb5834c98000, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 3
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15

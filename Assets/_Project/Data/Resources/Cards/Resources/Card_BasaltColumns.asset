@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card_BasaltColumns
   m_EditorClassIdentifier: 
   id: 7eed52b26492496982e73eeae7685900
-  displayName: 'Server Spine'
-  description: 'A column of dead server stone and ceramic buslines. Break it open for circuit salvage.'
+  displayName: Server Spine
+  description: A column of dead server stone and ceramic buslines. Break it open
+    for circuit salvage.
   artTexture: {fileID: 2800000, guid: e73e11ce7a790504eabcb6f65130fc46, type: 3}
   category: 1
   faction: 0
@@ -23,6 +24,8 @@ MonoBehaviour:
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 1
   hasDurability: 1

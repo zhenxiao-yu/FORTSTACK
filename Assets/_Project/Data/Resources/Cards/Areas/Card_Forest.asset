@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card_Forest
   m_EditorClassIdentifier: 
   id: 286a68ab3cb1468b9f50829ac068ca23
-  displayName: 'Relay Graveyard'
-  description: 'A maze of fallen masts and live wire. Signals still move through it in bad shapes.'
+  displayName: Relay Graveyard
+  description: A maze of fallen masts and live wire. Signals still move through it
+    in bad shapes.
   artTexture: {fileID: 2800000, guid: 9e509f27d7edaf242a5fd0f4311d673f, type: 3}
   category: 10
   faction: 0
@@ -49,6 +50,8 @@ MonoBehaviour:
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 5
   hasDurability: 0

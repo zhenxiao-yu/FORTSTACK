@@ -13,17 +13,22 @@ MonoBehaviour:
   m_Name: Card_Research_Library
   m_EditorClassIdentifier: 
   id: be227bbf964143ae9994c6c6447223e5
-  displayName: 'Kernel Archive'
-  description: 'A secured archive node for new blueprints. Knowledge survives when power does.'
+  displayName: Kernel Archive
+  description: A secured archive node for new blueprints. Knowledge survives when
+    power does.
   artTexture: {fileID: 2800000, guid: 3c41a3958d5cf444d805024885d13d71, type: 3}
   category: 6
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 5
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15
@@ -37,6 +42,3 @@ MonoBehaviour:
   equipmentSlot: 0
   statModifiers: []
   classChangeResult: {fileID: 0}
-  sourcePacks:
-  - {fileID: 11400000, guid: 698b3b4edf76314489a111931de35a35, type: 2}
-  - {fileID: 11400000, guid: 1359a9c5afb900e4a9fc3072a0f643c9, type: 2}

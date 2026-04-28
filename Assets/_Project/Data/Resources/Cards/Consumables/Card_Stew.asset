@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: Card_Stew
   m_EditorClassIdentifier: 
   id: f1ab35e09bff4fc0b4c90f18dbc0608e
-  displayName: 'Reactor Stew'
-  description: 'Dense communal food cooked beside waste heat. Slow, heavy, sustaining.'
+  displayName: Reactor Stew
+  description: Dense communal food cooked beside waste heat. Slow, heavy, sustaining.
   artTexture: {fileID: 2800000, guid: f94476029d7df9f4fb060fc25de414ee, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 10
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 10
   maxHealth: 15

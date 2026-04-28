@@ -347,6 +347,14 @@ namespace Markyu.LastKernel
 
             ["quest.progress"] = new("进度：{0} / {1}", "Progress: {0} / {1}"),
 
+            ["quest.group.新手引导"] = new("新手引导", "Beginner's Guide"),
+            ["quest.group.异界升格"] = new("异界升格", "Otherworldly Ascension"),
+            ["quest.group.战斗训练"] = new("战斗训练", "Combat Training"),
+            ["quest.group.殖民进阶"] = new("殖民进阶", "Settlement Advancement"),
+            ["quest.group.后勤炊事"] = new("后勤炊事", "Logistics & Supplies"),
+            ["quest.group.区域探索"] = new("区域探索", "Area Exploration"),
+            ["quest.group.海岛基础"] = new("海岛基础", "Island Basics"),
+
             ["recipe.blueprint"] = new("蓝图：{0}", "Blueprint: {0}"),
             ["recipe.unknown"] = new("蓝图：未知", "Blueprint: Unknown"),
             ["recipe.category.misc"] = new("杂项", "Misc"),

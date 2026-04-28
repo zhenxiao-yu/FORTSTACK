@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Card_Cow
   m_EditorClassIdentifier: 
   id: 2621db9f8f1e47a1bf96bfbe51486f88
-  displayName: 'Nutrient Synth'
-  description: 'A bulky nutrient machine dressed in animal logic. Useful until it wanders.'
+  displayName: Nutrient Synth
+  description: A bulky nutrient machine dressed in animal logic. Useful until it
+    wanders.
   artTexture: {fileID: 2800000, guid: 76cfac3c6d430ea4ea3e4ef9dbdf0fc2, type: 3}
   category: 9
   faction: 2
@@ -26,11 +27,11 @@ MonoBehaviour:
     Weight: 40
   - Card: {fileID: 11400000, guid: 1455f43f28288ef4d8645265eac4cc5f, type: 2}
     Weight: 10
-  produceCard: {fileID: 11400000, guid: c91a5c6773f466941a0d4ae2ff3cf4a2, type: 2}
-  produceInterval: 60
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 11400000, guid: c91a5c6773f466941a0d4ae2ff3cf4a2, type: 2}
+  produceInterval: 60
   isSellable: 0
   sellPrice: 1
   hasDurability: 0

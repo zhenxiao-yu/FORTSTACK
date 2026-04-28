@@ -13,17 +13,21 @@ MonoBehaviour:
   m_Name: Card_SacrificialAltar
   m_EditorClassIdentifier: 
   id: 1d06006d35cd40d08dc7e1469b94881e
-  displayName: 'Blacksite Conduit'
-  description: 'A forbidden relay that trades flesh, data, and power for access.'
+  displayName: Blacksite Conduit
+  description: A forbidden relay that trades flesh, data, and power for access.
   artTexture: {fileID: 2800000, guid: 7e0ec43f4c7ab3c40b655af708176271, type: 3}
   category: 11
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 5
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15

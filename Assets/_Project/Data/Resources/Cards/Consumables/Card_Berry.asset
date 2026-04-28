@@ -13,18 +13,31 @@ MonoBehaviour:
   m_Name: Card_Berry
   m_EditorClassIdentifier: 
   id: febdef2ec5ee43a4b7e7a7fe72aeb937
-  displayName: 'Ration Pack'
-  description: 'Sealed calories from a supply cache. Basic fuel for another shift.'
+  displayName: Ration Pack
+  description: Sealed calories from a supply cache. Basic fuel for another shift.
   artTexture: {fileID: 2800000, guid: 34ffcacdbfced144fa264afe16b9af3f, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
+  isAggressive: 0
+  aggroRadius: 5
+  attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 1
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 1
   maxHealth: 15
   attack: 2
   defense: 1
   attackSpeed: 1
+  accuracy: 95
+  dodge: 5
+  criticalChance: 5
+  criticalMultiplier: 150
+  equipmentSlot: 0
+  statModifiers: []
+  classChangeResult: {fileID: 0}

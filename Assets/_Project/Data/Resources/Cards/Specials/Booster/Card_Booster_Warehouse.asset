@@ -13,17 +13,22 @@ MonoBehaviour:
   m_Name: Card_Booster_Warehouse
   m_EditorClassIdentifier: 
   id: 8c47d9879c1d48d6874a5b2f38198f23
-  displayName: 'Cargo Depot'
-  description: 'A storage hub that expands board capacity. More space means more mistakes you can survive.'
+  displayName: Cargo Depot
+  description: A storage hub that expands board capacity. More space means more mistakes
+    you can survive.
   artTexture: {fileID: 2800000, guid: 96a941cbc991f2f4688a35a784ed09a9, type: 3}
   category: 6
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 5
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15

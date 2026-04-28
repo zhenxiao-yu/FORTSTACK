@@ -13,17 +13,21 @@ MonoBehaviour:
   m_Name: Card_GoldenKey
   m_EditorClassIdentifier: 
   id: 32184f3ce4c4425aa0ccac01fc35d733
-  displayName: 'Root Keycard'
-  description: 'A privileged access card for sealed systems and old authority.'
+  displayName: Root Keycard
+  description: A privileged access card for sealed systems and old authority.
   artTexture: {fileID: 2800000, guid: 753e3fa9c399be74a9a6d5c786f33886, type: 3}
   category: 11
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 3
+  hasDurability: 0
   uses: 1
   nutrition: 0
   maxHealth: 15
