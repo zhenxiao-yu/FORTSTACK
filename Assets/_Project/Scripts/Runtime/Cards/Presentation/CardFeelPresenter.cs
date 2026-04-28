@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -15,8 +16,8 @@ namespace Markyu.LastKernel
         private static readonly int HueShiftId       = Shader.PropertyToID("_HueShift");
         private static readonly int EmissionColorId  = Shader.PropertyToID("_EmissionColor");
 
-        [Header("Visual Root")]
-        [SerializeField] private Transform visualRoot;
+        [BoxGroup("References")]
+        [Required, SerializeField] private Transform visualRoot;
 
         private CardInstance              _card;
         private CardFeelProfile           _profile;
