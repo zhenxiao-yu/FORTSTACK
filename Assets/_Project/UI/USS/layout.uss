@@ -1,0 +1,138 @@
+/*
+ * layout.uss — Layout utility classes for LAST KERNEL
+ *
+ * Atomic positioning, flex, padding, and sizing helpers.
+ * No colors, no component logic. Add class names to UXML, not C#.
+ */
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Positioning
+ * ════════════════════════════════════════════════════════════════════════ */
+
+/* Full-screen absolute layer — base for all screens and overlays */
+.lk-screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+}
+
+/* Semi-transparent overlay — sits above game world, below modals */
+.lk-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Fixed HUD strips — hug screen edges */
+.lk-hud-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.lk-hud-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Right-side drawer panel */
+.lk-sidebar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Left-side drawer panel */
+.lk-sidebar-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Flex direction
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-row    { flex-direction: row;    }
+.lk-column { flex-direction: column; }
+.lk-wrap   { flex-wrap: wrap;        }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Alignment
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-center          { align-items: center; justify-content: center; }
+.lk-align-start     { align-items: flex-start;  }
+.lk-align-center    { align-items: center;       }
+.lk-align-end       { align-items: flex-end;     }
+.lk-align-stretch   { align-items: stretch;      }
+.lk-justify-start   { justify-content: flex-start;   }
+.lk-justify-center  { justify-content: center;       }
+.lk-justify-end     { justify-content: flex-end;     }
+.lk-justify-between { justify-content: space-between; }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Sizing
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-grow       { flex-grow: 1;   }
+.lk-no-shrink  { flex-shrink: 0; }
+.lk-full-width { width: 100%;    }
+.lk-full-height{ height: 100%;   }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Padding
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-pad-sm   { padding: var(--lk-padding-small);  }
+.lk-pad-md   { padding: var(--lk-padding-medium); }
+.lk-pad-lg   { padding: var(--lk-padding-large);  }
+
+.lk-pad-h-sm {
+    padding-left:  var(--lk-padding-small);
+    padding-right: var(--lk-padding-small);
+}
+.lk-pad-h-md {
+    padding-left:  var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+}
+.lk-pad-v-sm {
+    padding-top:    var(--lk-padding-small);
+    padding-bottom: var(--lk-padding-small);
+}
+.lk-pad-v-md {
+    padding-top:    var(--lk-padding-medium);
+    padding-bottom: var(--lk-padding-medium);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Margin / gap (use margin-bottom on children for consistent stacking)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-mt-sm { margin-top:    var(--lk-gap-small);  }
+.lk-mt-md { margin-top:    var(--lk-gap-medium); }
+.lk-mt-lg { margin-top:    var(--lk-gap-large);  }
+.lk-mb-sm { margin-bottom: var(--lk-gap-small);  }
+.lk-mb-md { margin-bottom: var(--lk-gap-medium); }
+.lk-mb-lg { margin-bottom: var(--lk-gap-large);  }
+.lk-ml-sm { margin-left:   var(--lk-gap-small);  }
+.lk-ml-md { margin-left:   var(--lk-gap-medium); }
+.lk-mr-sm { margin-right:  var(--lk-gap-small);  }
+.lk-mr-md { margin-right:  var(--lk-gap-medium); }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Overflow / scroll
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-clip   { overflow: hidden; }
+.lk-scroll { overflow: scroll; }

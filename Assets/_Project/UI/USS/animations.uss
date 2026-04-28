@@ -1,0 +1,138 @@
+/*
+ * animations.uss — Animation and transition utilities for LAST KERNEL
+ *
+ * Rules (ART_DIRECTION.md):
+ *   - Short, snappy — no slow fades, no bounce, no spring physics
+ *   - Pixel crispness — tweens must not sub-pixel blur; use integer positions
+ *   - Component-specific transitions live in components.uss (inline with each component)
+ *   - This file contains: visibility utilities, screen-level transitions,
+ *     DOTween anchor classes (at-rest states only), and generic fade/scale helpers
+ */
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Visibility
+ * ════════════════════════════════════════════════════════════════════════ */
+
+/* Hard hide — removes from layout. Used by UIToolkitScreenController for sub-panels. */
+.lk-hidden {
+    display: none;
+}
+
+/* Soft hide — keeps space, blocks no input. Use for opacity-fade sequences. */
+.lk-invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Visible baseline (pair with .lk-invisible when fading in via C#) */
+.lk-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Fade utilities
+ * Apply .lk-fade-in or .lk-fade-out via C# to trigger a CSS transition.
+ * The transition is defined on the element, not on a pseudo-class,
+ * so it fires whenever the property value changes.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-fade {
+    transition-property: opacity;
+    transition-duration: var(--lk-transition-normal);
+    transition-timing-function: ease-out;
+}
+
+/* Add .lk-fade + .lk-fade-in (opacity: 1) and remove .lk-fade-out (opacity: 0) */
+.lk-fade-in  { opacity: 1; }
+.lk-fade-out { opacity: 0; }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Screen transitions
+ * Apply these classes to .lk-screen elements for consistent enter/exit.
+ * DOTween in Phase 8 will drive translate/opacity; these are at-rest states.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+/* Default resting state — fully visible, no offset */
+.lk-screen-enter {
+    opacity: 1;
+    translate: 0 0;
+}
+
+/* Exit state — used as the DOTween target in Phase 8 */
+.lk-screen-exit {
+    opacity: 0;
+    translate: 0 -8px;
+}
+
+/* Slide-in from right (for sub-panel drawers) */
+.lk-slide-in-right {
+    translate: 0 0;
+    opacity: 1;
+}
+
+.lk-slide-out-right {
+    translate: 100% 0;
+    opacity: 0;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Hover / press scale feedback
+ * Added and removed via C# pointer callbacks — not CSS :hover/:active —
+ * so they also work on touch where :hover does not fire.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-scale-hover {
+    scale: 1.04 1.04;
+    transition-property: scale;
+    transition-duration: var(--lk-transition-instant);
+    transition-timing-function: linear;
+}
+
+.lk-scale-press {
+    scale: 0.96 0.96;
+    transition-property: scale;
+    transition-duration: var(--lk-transition-instant);
+    transition-timing-function: linear;
+}
+
+.lk-scale-normal {
+    scale: 1 1;
+    transition-property: scale;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Toast entry anchor classes
+ * DOTween in Phase 8 animates from .lk-toast--entering to .lk-toast--visible.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-toast--entering {
+    opacity: 0;
+    translate: 0 16px;
+}
+
+.lk-toast--visible {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.lk-toast--exiting {
+    opacity: 0;
+    translate: 0 -8px;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Panel open / close anchor classes  (DOTween Phase 8)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-panel-closed {
+    opacity: 0;
+    scale: 0.97 0.97;
+}
+
+.lk-panel-open {
+    opacity: 1;
+    scale: 1 1;
+}

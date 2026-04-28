@@ -1,0 +1,117 @@
+/*
+ * theme.uss — Master theme variables for LAST KERNEL
+ *
+ * Source of truth for all visual tokens.
+ * Never hardcode color, spacing, or size values elsewhere — always var(--lk-*).
+ * Visual identity: ART_DIRECTION.md — dark cyberpunk bunker terminal.
+ *
+ * Load order: theme.uss → layout.uss → components.uss → animations.uss
+ */
+
+:root {
+
+    /* ── Backgrounds ──────────────────────────────────────────────────────
+     * Dark navy/charcoal — "underground command terminal, server core"     */
+    --lk-bg:                 rgb(10, 12, 22);      /* Scene / screen fill   */
+    --lk-panel:              rgb(18, 24, 40);      /* Panel / card surface  */
+    --lk-panel-overlay:      rgb(8, 10, 18);       /* Inset / deep surface  */
+    --lk-overlay-bg:         rgba(4, 6, 14, 0.88); /* Modal backdrop        */
+    --lk-hud-bg:             rgba(10, 12, 22, 0.9);/* HUD strips            */
+
+    /* ── Primary accent — cyan terminal glow ─────────────────────────────*/
+    --lk-accent:             rgb(0, 220, 255);
+    --lk-accent-dim:         rgb(0, 140, 170);
+    --lk-accent-faint:       rgba(0, 220, 255, 0.08);
+
+    /* ── Secondary accent — muted magenta ────────────────────────────────*/
+    --lk-accent-secondary:   rgb(160, 50, 145);
+    --lk-accent-secondary-dim: rgba(160, 50, 145, 0.18);
+
+    /* ── Text ─────────────────────────────────────────────────────────────*/
+    --lk-text:               rgb(195, 210, 222);   /* Body / default        */
+    --lk-text-dim:           rgb(105, 125, 145);   /* Muted / secondary     */
+    --lk-text-header:        rgb(235, 245, 255);   /* Titles / emphasis     */
+
+    /* ── Status ───────────────────────────────────────────────────────────*/
+    --lk-warning:            rgb(255, 160, 40);    /* Amber — threat / HP   */
+    --lk-danger:             rgb(215, 55, 35);     /* Red-orange — defeat   */
+    --lk-success:            rgb(55, 195, 95);     /* Completion / confirm  */
+    --lk-disabled:           rgb(60, 72, 88);      /* Locked / inactive     */
+
+    /* ── Borders ──────────────────────────────────────────────────────────*/
+    --lk-border:             rgb(0, 175, 205);     /* Active / accent edge  */
+    --lk-border-dim:         rgb(25, 42, 60);      /* Passive / structural  */
+    --lk-border-width:       1px;
+
+    /* ── Shape — pixel art: hard corners only ─────────────────────────────*/
+    --lk-radius:             0px;
+
+    /* ── Spacing grid: 8 / 16 / 32 px ────────────────────────────────────*/
+    --lk-padding-small:      8px;
+    --lk-padding-medium:     16px;
+    --lk-padding-large:      32px;
+    --lk-gap-small:          8px;
+    --lk-gap-medium:         16px;
+    --lk-gap-large:          24px;
+
+    /* ── Typography ───────────────────────────────────────────────────────
+     * Sizes target 1920×1080 reference. Scale mode: Scale With Screen Size.
+     * All text must be legible in Simplified Chinese — allocate 30-40% wrap. */
+    --lk-font-size-xs:       10px;   /* Fine print                          */
+    --lk-font-size-sm:       12px;   /* Tooltip / label / secondary         */
+    --lk-font-size-md:       14px;   /* Body / button                       */
+    --lk-font-size-lg:       18px;   /* Sub-header / resource values        */
+    --lk-font-size-xl:       24px;   /* Panel header                        */
+    --lk-font-size-title:    32px;   /* Screen title / main menu header     */
+
+    /* ── Touch targets — min 44 × 44 px (ART_DIRECTION.md) ───────────────*/
+    --lk-touch-min:          44px;
+
+    /* ── Transitions — short, snappy, no bounce (ART_DIRECTION.md) ────────*/
+    --lk-transition-instant: 80ms;
+    --lk-transition-fast:    120ms;
+    --lk-transition-normal:  200ms;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Unity built-in control resets
+ * Strip Unity's default chrome so our theme applies cleanly.
+ * Scoped to this UIDocument only — no editor side-effects.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+Button {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: var(--lk-radius);
+    border-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+    margin: 0;
+}
+
+Label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    padding: 0;
+    margin: 0;
+}
+
+Slider,
+.unity-base-slider {
+    margin: 0;
+    padding: 0;
+}
+
+Toggle {
+    margin: 0;
+}
+
+ScrollView,
+.unity-scroll-view {
+    padding: 0;
+    margin: 0;
+}
+
+TextField,
+.unity-text-field {
+    margin: 0;
+    border-radius: var(--lk-radius);
+}

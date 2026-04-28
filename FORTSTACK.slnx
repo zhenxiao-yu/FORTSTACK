@@ -19,6 +19,7 @@
   <Project Path="VFolders.csproj" />
   <Project Path="_Project.Tests.PlayMode.csproj" />
   <Project Path="Febucci.Attributes.Runtime.csproj" />
+  <Project Path="_Project.UIToolkit.csproj" />
   <Project Path="SingularityGroup.HotReload.Runtime.Public.csproj" />
   <Project Path="Febucci.TextAnimatorForUnity.UITk.Runtime.csproj" />
   <Project Path="Sirenix.OdinInspector.Modules.UnityMathematics.csproj" />

@@ -1,0 +1,720 @@
+/*
+ * components.uss — Full component library for LAST KERNEL
+ *
+ * Class convention: .lk-<component>[__<part>][--<modifier>]
+ * Every transition is defined inline with its component (not split to animations.uss).
+ * No hardcoded colors — always var(--lk-*).
+ * Pixel-art rules: border-radius always 0, no gradients, integer sizes.
+ */
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Screen root
+ * Full-screen background layer. Apply to the UXML root VisualElement.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-screen-bg {
+    background-color: var(--lk-bg);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Panel
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-panel {
+    background-color: var(--lk-panel);
+    border-color: var(--lk-border-dim);
+    border-width: 1px;
+    border-radius: 0;
+    padding: var(--lk-padding-medium);
+    flex-direction: column;
+}
+
+/* Accent border — active, selected, or primary panel */
+.lk-panel--accent {
+    border-color: var(--lk-border);
+}
+
+/* Deep inset surface — secondary panels inside a panel */
+.lk-panel--inset {
+    background-color: var(--lk-panel-overlay);
+    border-color: var(--lk-border-dim);
+}
+
+/* Panel header row — title + optional close button */
+.lk-panel__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-color: var(--lk-border-dim);
+    border-bottom-width: 1px;
+    padding-bottom: var(--lk-gap-small);
+    margin-bottom: var(--lk-gap-medium);
+}
+
+.lk-panel__title {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-xl);
+    -unity-font-style: bold;
+}
+
+.lk-panel__footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top-color: var(--lk-border-dim);
+    border-top-width: 1px;
+    padding-top: var(--lk-gap-medium);
+    margin-top: var(--lk-gap-medium);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Modal
+ * Overlay backdrop + centred dialog.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-modal-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--lk-overlay-bg);
+    align-items: center;
+    justify-content: center;
+}
+
+.lk-modal {
+    background-color: var(--lk-panel);
+    border-color: var(--lk-border);
+    border-width: 1px;
+    border-radius: 0;
+    padding: var(--lk-padding-large);
+    min-width: 360px;
+    max-width: 580px;
+    flex-direction: column;
+}
+
+.lk-modal__title {
+    color: var(--lk-text-header);
+    font-size: var(--lk-font-size-xl);
+    -unity-font-style: bold;
+    margin-bottom: var(--lk-gap-medium);
+}
+
+.lk-modal__body {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    white-space: normal;
+    margin-bottom: var(--lk-padding-large);
+}
+
+.lk-modal__actions {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.lk-modal__actions .lk-button {
+    margin-left: var(--lk-gap-small);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Button
+ * Outlined by default. Variants via modifier classes.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-button {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--lk-border-dim);
+    border-width: 1px;
+    border-radius: 0;
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+    padding-top: var(--lk-padding-small);
+    padding-bottom: var(--lk-padding-small);
+    min-height: var(--lk-touch-min);
+    -unity-text-align: middle-center;
+    cursor: link;
+    transition-property: border-color, color, background-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.lk-button:hover {
+    border-color: var(--lk-border);
+    color: var(--lk-text-header);
+    background-color: var(--lk-accent-faint);
+}
+
+.lk-button:active {
+    border-color: var(--lk-accent);
+    color: var(--lk-accent);
+    background-color: rgba(0, 140, 170, 0.2);
+}
+
+/* Primary — filled accent, main call-to-action */
+.lk-button--primary {
+    background-color: var(--lk-accent-dim);
+    border-color: var(--lk-accent);
+    color: var(--lk-bg);
+    -unity-font-style: bold;
+}
+
+.lk-button--primary:hover {
+    background-color: var(--lk-accent);
+    border-color: var(--lk-accent);
+    color: var(--lk-bg);
+}
+
+.lk-button--primary:active {
+    background-color: var(--lk-border);
+    color: var(--lk-bg);
+}
+
+/* Danger — destructive action */
+.lk-button--danger {
+    border-color: rgba(215, 55, 35, 0.5);
+    color: var(--lk-danger);
+}
+
+.lk-button--danger:hover {
+    border-color: var(--lk-danger);
+    background-color: rgba(215, 55, 35, 0.12);
+    color: var(--lk-warning);
+}
+
+/* Text-only — matches the current TextButton (underline on hover in C#) */
+.lk-button--text {
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--lk-text);
+    padding-left: 0;
+    padding-right: 0;
+    -unity-text-align: middle-left;
+}
+
+.lk-button--text:hover {
+    color: var(--lk-accent);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.lk-button--text:active {
+    color: var(--lk-text-header);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Icon-only square button */
+.lk-button--icon {
+    min-width: var(--lk-touch-min);
+    min-height: var(--lk-touch-min);
+    padding: var(--lk-padding-small);
+    -unity-text-align: middle-center;
+}
+
+/* Disabled state — apply in addition to any variant */
+.lk-button--disabled {
+    border-color: var(--lk-disabled);
+    color: var(--lk-disabled);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: arrow;
+    opacity: 0.55;
+    transition-duration: 0ms;
+}
+
+.lk-button--disabled:hover,
+.lk-button--disabled:active {
+    border-color: var(--lk-disabled);
+    color: var(--lk-disabled);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Labels
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    white-space: normal;
+}
+
+/* Screen / section title */
+.lk-label--title {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-title);
+    -unity-font-style: bold;
+    white-space: nowrap;
+}
+
+/* Panel or section header */
+.lk-label--header {
+    color: var(--lk-text-header);
+    font-size: var(--lk-font-size-xl);
+    -unity-font-style: bold;
+}
+
+/* Sub-section / category header */
+.lk-label--subheader {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-lg);
+}
+
+/* Body copy — default */
+.lk-label--body {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    white-space: normal;
+}
+
+/* Secondary / muted */
+.lk-label--dim {
+    color: var(--lk-text-dim);
+    font-size: var(--lk-font-size-sm);
+}
+
+/* High-contrast numeric value (HUD counters, costs) */
+.lk-label--value {
+    color: var(--lk-text-header);
+    font-size: var(--lk-font-size-lg);
+    -unity-font-style: bold;
+    -unity-text-align: middle-right;
+    white-space: nowrap;
+}
+
+/* Status variants — swap in via C# when threshold crossed */
+.lk-label--accent  { color: var(--lk-accent);   }
+.lk-label--warning { color: var(--lk-warning);  }
+.lk-label--danger  { color: var(--lk-danger);   }
+.lk-label--success { color: var(--lk-success);  }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Divider
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-divider {
+    height: 1px;
+    background-color: var(--lk-border-dim);
+    flex-shrink: 0;
+    margin-top: var(--lk-gap-small);
+    margin-bottom: var(--lk-gap-small);
+}
+
+.lk-divider--accent {
+    background-color: var(--lk-border);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Progress bar
+ * A VisualElement (.lk-progress-bar) containing a child (.lk-progress-bar__fill).
+ * Set fill width from C# as a percentage or absolute value.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-progress-bar {
+    height: 8px;
+    background-color: var(--lk-border-dim);
+    border-color: var(--lk-border-dim);
+    border-width: 1px;
+    border-radius: 0;
+    overflow: hidden;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.lk-progress-bar__fill {
+    height: 100%;
+    background-color: var(--lk-accent);
+    flex-shrink: 0;
+    transition-property: width;
+    transition-duration: var(--lk-transition-normal);
+    transition-timing-function: linear;
+}
+
+.lk-progress-bar__fill--warning { background-color: var(--lk-warning); }
+.lk-progress-bar__fill--danger  { background-color: var(--lk-danger);  }
+
+/* Thicker variant for base HP bar in NightHUD */
+.lk-progress-bar--thick {
+    height: 14px;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Resource counter  (icon + value label pair used in CardStatsUI / HUD)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-resource-counter {
+    flex-direction: row;
+    align-items: center;
+    min-height: var(--lk-touch-min);
+    padding-left: var(--lk-padding-small);
+    padding-right: var(--lk-padding-small);
+}
+
+.lk-resource-counter__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+    flex-shrink: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.lk-resource-counter__value {
+    color: var(--lk-text-header);
+    font-size: var(--lk-font-size-md);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    min-width: 40px;
+    white-space: nowrap;
+}
+
+.lk-resource-counter--warning .lk-resource-counter__value { color: var(--lk-warning); }
+.lk-resource-counter--danger  .lk-resource-counter__value { color: var(--lk-danger);  }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * HUD strip  (DayHUD / NightHUD outer containers)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-hud-strip {
+    flex-direction: row;
+    align-items: center;
+    min-height: 48px;
+    background-color: var(--lk-hud-bg);
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+}
+
+.lk-hud-strip--top {
+    border-bottom-color: var(--lk-border-dim);
+    border-bottom-width: 1px;
+}
+
+.lk-hud-strip--bottom {
+    border-top-color: var(--lk-border-dim);
+    border-top-width: 1px;
+}
+
+/* Night-phase urgency tint */
+.lk-hud-strip--night {
+    background-color: rgba(18, 8, 8, 0.92);
+    border-bottom-color: rgba(215, 55, 35, 0.4);
+}
+
+/* Phase label (DAY / NIGHT) */
+.lk-phase-label {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-lg);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.lk-phase-label--night   { color: var(--lk-accent-secondary); }
+.lk-phase-label--danger  { color: var(--lk-danger); }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Info panel  (InfoPanel.cs — priority-queued context display)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-info-panel {
+    background-color: var(--lk-panel-overlay);
+    border-color: var(--lk-border-dim);
+    border-width: 1px;
+    border-radius: 0;
+    padding: var(--lk-padding-medium);
+    flex-direction: column;
+}
+
+.lk-info-panel__header {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-md);
+    -unity-font-style: bold;
+    margin-bottom: var(--lk-gap-small);
+    white-space: nowrap;
+}
+
+.lk-info-panel__body {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-sm);
+    white-space: normal;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * List  (QuestsView / RecipesView / SavedGamesUI)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-list {
+    flex-direction: column;
+}
+
+.lk-list__header {
+    flex-direction: row;
+    align-items: center;
+    min-height: var(--lk-touch-min);
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+    padding-top: var(--lk-padding-small);
+    padding-bottom: var(--lk-padding-small);
+    background-color: var(--lk-panel-overlay);
+    border-bottom-color: var(--lk-border-dim);
+    border-bottom-width: 1px;
+    cursor: link;
+    transition-property: color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.lk-list__header-label {
+    color: var(--lk-accent);
+    font-size: var(--lk-font-size-md);
+    -unity-font-style: bold;
+    flex-grow: 1;
+}
+
+.lk-list__header:hover .lk-list__header-label {
+    color: var(--lk-text-header);
+}
+
+.lk-list__item {
+    flex-direction: row;
+    align-items: center;
+    min-height: var(--lk-touch-min);
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+    border-bottom-color: var(--lk-border-dim);
+    border-bottom-width: 1px;
+    cursor: link;
+    transition-property: background-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.lk-list__item-label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    flex-grow: 1;
+    white-space: normal;
+}
+
+.lk-list__item:hover {
+    background-color: var(--lk-accent-faint);
+}
+
+.lk-list__item:hover .lk-list__item-label {
+    color: var(--lk-text-header);
+}
+
+.lk-list__item--completed .lk-list__item-label {
+    color: var(--lk-text-dim);
+}
+
+.lk-list__item--new .lk-list__item-label::after {
+    color: var(--lk-danger);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Unity Slider  (GameOptionsUI volume controls)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.unity-base-slider--horizontal {
+    min-height: var(--lk-touch-min);
+    align-items: center;
+}
+
+.unity-base-slider__drag-container {
+    height: 6px;
+    background-color: var(--lk-border-dim);
+    border-width: 1px;
+    border-color: var(--lk-border-dim);
+    border-radius: 0;
+    flex-grow: 1;
+}
+
+.unity-base-slider__tracker {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+.unity-base-slider__dragger {
+    width: 10px;
+    height: 22px;
+    top: -8px;
+    background-color: var(--lk-accent);
+    border-width: 0;
+    border-radius: 0;
+    transition-property: background-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.unity-base-slider__dragger:hover  { background-color: var(--lk-text-header); }
+.unity-base-slider__dragger:active { background-color: var(--lk-accent); }
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Unity Toggle  (GameplayPrefsUI friendly mode)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+Toggle {
+    flex-direction: row;
+    align-items: center;
+    min-height: var(--lk-touch-min);
+    cursor: link;
+}
+
+.unity-toggle__label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    margin-left: var(--lk-padding-small);
+    flex-grow: 1;
+}
+
+.unity-toggle__input {
+    width: 18px;
+    height: 18px;
+    border-width: 1px;
+    border-color: var(--lk-border-dim);
+    border-radius: 0;
+    background-color: var(--lk-panel-overlay);
+    flex-shrink: 0;
+    transition-property: border-color, background-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.unity-toggle__checkmark {
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+Toggle:hover .unity-toggle__input {
+    border-color: var(--lk-border);
+}
+
+Toggle:checked .unity-toggle__input {
+    border-color: var(--lk-accent);
+    background-color: var(--lk-accent-dim);
+}
+
+Toggle:checked .unity-toggle__checkmark {
+    background-color: var(--lk-accent);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Unity ScrollView  (QuestsView / RecipesView / SavedGamesUI)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.unity-scroll-view__content-viewport {
+    flex-grow: 1;
+}
+
+.unity-scroll-view__content-container {
+    flex-direction: column;
+}
+
+/* Vertical scrollbar track */
+.unity-scroller--vertical {
+    width: 6px;
+    background-color: var(--lk-border-dim);
+    border-width: 0;
+}
+
+.unity-scroller--vertical .unity-base-slider__drag-container {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0;
+}
+
+.unity-scroller--vertical .unity-base-slider__dragger {
+    width: 4px;
+    min-height: 24px;
+    background-color: var(--lk-border);
+    border-radius: 0;
+    border-width: 0;
+    left: 1px;
+    transition-property: background-color;
+    transition-duration: var(--lk-transition-fast);
+    transition-timing-function: linear;
+}
+
+.unity-scroller--vertical .unity-base-slider__dragger:hover {
+    background-color: var(--lk-accent);
+}
+
+/* Hide scroll arrow buttons */
+.unity-scroller__low-button,
+.unity-scroller__high-button {
+    display: none;
+}
+
+/* Horizontal scrollbar — hidden by default in most of our layouts */
+.unity-scroller--horizontal {
+    display: none;
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Save slot  (SavedGamesUI)
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-save-slot {
+    flex-direction: row;
+    align-items: center;
+    min-height: 56px;
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+    border-bottom-color: var(--lk-border-dim);
+    border-bottom-width: 1px;
+}
+
+.lk-save-slot__label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-sm);
+    flex-grow: 1;
+    white-space: normal;
+}
+
+.lk-save-slot__actions {
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: var(--lk-gap-medium);
+}
+
+/* ════════════════════════════════════════════════════════════════════════
+ * Toast / notification
+ * At-rest state. Entry animation driven by DOTween in Phase 8.
+ * ════════════════════════════════════════════════════════════════════════ */
+
+.lk-toast {
+    background-color: var(--lk-panel);
+    border-color: var(--lk-border);
+    border-width: 1px;
+    border-radius: 0;
+    padding: var(--lk-padding-small);
+    padding-left: var(--lk-padding-medium);
+    padding-right: var(--lk-padding-medium);
+    min-height: var(--lk-touch-min);
+    flex-direction: row;
+    align-items: center;
+    max-width: 380px;
+}
+
+.lk-toast__label {
+    color: var(--lk-text);
+    font-size: var(--lk-font-size-md);
+    flex-grow: 1;
+    white-space: normal;
+}
+
+.lk-toast--warning {
+    border-color: var(--lk-warning);
+}
+
+.lk-toast--warning .lk-toast__label {
+    color: var(--lk-warning);
+}
+
+.lk-toast--danger {
+    border-color: var(--lk-danger);
+}
