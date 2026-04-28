@@ -46,9 +46,22 @@ namespace Markyu.LastKernel
 
         private bool _isHovered;
         private bool _initialized;
+        // Fix C-5: track ownership so only the instance that set IsDraggingAny clears it.
+        // Without this, any card being destroyed/disabled (e.g. mid-drag loot drops)
+        // would unconditionally clear the flag, breaking hover suppression on other cards.
+        private bool _ownsIsDraggingAny;
 
         public static bool IsDraggingAny { get; private set; }
         public bool IsInitialized => _initialized;
+
+        private void ClearDraggingOwnership()
+        {
+            if (_ownsIsDraggingAny)
+            {
+                IsDraggingAny      = false;
+                _ownsIsDraggingAny = false;
+            }
+        }
 
         public static CardFeelPresenter EnsureOn(GameObject owner)
         {
@@ -105,7 +118,7 @@ namespace Markyu.LastKernel
 
         private void OnDisable()
         {
-            IsDraggingAny = false;
+            ClearDraggingOwnership();
             _isHovered    = false;
 
             _renderOrder?.SetHovered(false);
@@ -145,8 +158,9 @@ namespace Markyu.LastKernel
         {
             if (!_initialized || _profile == null) return;
 
-            _isHovered    = false;
-            IsDraggingAny = true;
+            _isHovered         = false;
+            IsDraggingAny      = true;
+            _ownsIsDraggingAny = true;
 
             KillScaleTween();
             PulseFlash(_profile.PickupFlashAmount, _profile.FlashReturnDuration);
@@ -165,7 +179,7 @@ namespace Markyu.LastKernel
         {
             if (!_initialized || _profile == null) return;
 
-            IsDraggingAny = false;
+            ClearDraggingOwnership();
 
             float restScale = _isHovered ? _profile.HoverScale : 1f;
 
@@ -410,7 +424,7 @@ namespace Markyu.LastKernel
 
             _flashAmount  = 0f;
             _currentGlow  = 0f;
-            IsDraggingAny = false;
+            ClearDraggingOwnership();
 
             _renderOrder?.SetHovered(false);
             _renderOrder?.SetMerging(false);

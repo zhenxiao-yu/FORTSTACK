@@ -87,6 +87,7 @@ namespace Markyu.LastKernel
         private Tween _hurtTween;
 
         private Highlight _highlight;
+        private MaterialPropertyBlock _artPropBlock;
 
         private bool _isHovered;
 
@@ -561,20 +562,13 @@ namespace Markyu.LastKernel
                 return;
             }
 
-            var sequence = DOTween.Sequence();
-
-            if (_renderer != null && _renderer.material.HasProperty("_FlashAmount"))
-            {
-                sequence.Join(_renderer.material
-                    .DOFloat(1f, "_FlashAmount", 0.1f)
-                    .SetDelay(0.05f)
-                    .SetLoops(2, LoopType.Yoyo));
-            }
-
-            sequence.Join(transform
-                .DOPunchRotation(new Vector3(0, 15, 0), 0.25f, vibrato: 25));
-
-            _hurtTween = sequence.SetUpdate(true);
+            // Fix C-4: the original fallback used _renderer.material (creates an instance,
+            // conflicts with MaterialPropertyBlock) and DOPunchRotation on the root transform
+            // (collider stays axis-aligned while mesh tilts, causing overlap desync).
+            // CardFeelPresenter.EnsureOn() in Initialize() makes this branch dead code for
+            // any card that went through Initialize(). Log and bail rather than run broken effects.
+            Debug.LogWarning($"CardInstance: TakeDamage visual fallback on '{name}' — FeelPresenter is missing. Skipping damage effects.", this);
+            _hurtTween = null;
         }
 
         /// <summary>
@@ -700,7 +694,12 @@ namespace Markyu.LastKernel
         {
             if (_renderer != null && texture != null)
             {
-                _renderer.material.SetTexture("_OverlayTex", texture);
+                // Fix C-2: use MaterialPropertyBlock to avoid creating a material instance,
+                // which would conflict with CardFeelPresenter's sharedMaterial baseline.
+                if (_artPropBlock == null) _artPropBlock = new MaterialPropertyBlock();
+                _renderer.GetPropertyBlock(_artPropBlock);
+                _artPropBlock.SetTexture("_OverlayTex", texture);
+                _renderer.SetPropertyBlock(_artPropBlock);
             }
 
             View?.SetArt(texture);
