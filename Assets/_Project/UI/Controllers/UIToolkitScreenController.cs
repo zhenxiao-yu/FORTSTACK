@@ -31,6 +31,12 @@ namespace Markyu.LastKernel
 
         public bool IsVisible => Document != null && Document.enabled;
 
+        /// <summary>
+        /// Label → localization-key registry. Call Localizer.Bind/BindFormat in OnBind().
+        /// RefreshAll() is called automatically on language change and after Show().
+        /// </summary>
+        protected LKLocalizedBinder Localizer { get; } = new LKLocalizedBinder();
+
         // ── Lifecycle ──────────────────────────────────────────────────────────
 
         protected virtual void Awake()
@@ -89,7 +95,9 @@ namespace Markyu.LastKernel
 
         /// <summary>
         /// Update all visible localized labels. Called on language change and after Show().
+        /// Base implementation calls Localizer.RefreshAll(); subclasses should call base
+        /// before updating any additional dynamic labels.
         /// </summary>
-        public virtual void OnLocalizationRefresh() { }
+        public virtual void OnLocalizationRefresh() => Localizer.RefreshAll();
     }
 }

@@ -226,6 +226,12 @@ namespace Markyu.LastKernel
             ["night.laneDefenders"] = new("防守者", "DEFENDERS"),
             ["night.laneEnemies"] = new("敌人", "ENEMIES"),
             ["night.laneDead"] = new("倒下", "DEAD"),
+            ["night.waveLabel"] = new("第 {0} 波", "Wave {0}"),
+            ["night.enemyCount"] = new("敌方：{0}", "Enemies: {0}"),
+            ["night.speedNormal"] = new("正常", "Normal"),
+            ["night.speedFast"] = new("快速", "Fast"),
+            ["night.scrapReward"] = new("回收废料：{0}", "Scrap salvaged: {0}"),
+            ["defeat.message"] = new("地堡已失守。", "The bunker has fallen."),
 
             ["stat.maxHealth"] = new("最大生命值", "Max Health"),
             ["stat.attack"] = new("攻击", "Attack"),
