@@ -134,6 +134,7 @@ namespace Markyu.LastKernel
             EquipperComponent = GetComponent<CardEquipper>();
             EquipmentComponent = GetComponent<CardEquipment>();
             FeelPresenter = CardFeelPresenter.EnsureOn(gameObject);
+            CardLongPressHandler.EnsureOn(gameObject);
             View = GetComponent<CardView>();
 
             gameObject.name = $"{(definition is PackDefinition ? "Pack" : "Card")}_{definition.DisplayName}";
@@ -221,6 +222,18 @@ namespace Markyu.LastKernel
         #endregion
 
         #region Information & Visuals
+
+        /// <summary>
+        /// Pushes this card's info into the InfoPanel as a hover entry.
+        /// Called by CardLongPressHandler so touch players can inspect without hover.
+        /// </summary>
+        public void ShowInspectInfo() => InfoPanel.Instance?.RegisterHover(GetInfo());
+
+        /// <summary>
+        /// Clears the hover info entry that was pushed by ShowInspectInfo.
+        /// </summary>
+        public void HideInspectInfo() => InfoPanel.Instance?.UnregisterHover();
+
         private (string, string) GetInfo()
         {
             (string header, string body) info = ("", "");
