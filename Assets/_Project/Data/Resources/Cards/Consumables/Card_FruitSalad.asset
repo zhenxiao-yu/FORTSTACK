@@ -13,18 +13,22 @@ MonoBehaviour:
   m_Name: Card_FruitSalad
   m_EditorClassIdentifier: 
   id: d955f6ee6b48432b8c05888720bb2674
-  displayName: 'Mixed Rations'
-  description: 'A compact meal assembled from clean produce. Efficient and easy to stack.'
+  displayName: Mixed Rations
+  description: A compact meal assembled from clean produce. Efficient and easy to
+    stack.
   artTexture: {fileID: 2800000, guid: 6aa39be48a414ee47b136089a2cec267, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 4
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 3
   maxHealth: 15

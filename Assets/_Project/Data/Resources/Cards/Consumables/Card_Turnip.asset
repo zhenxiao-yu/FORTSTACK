@@ -13,18 +13,21 @@ MonoBehaviour:
   m_Name: Card_Turnip
   m_EditorClassIdentifier: 
   id: caec36282b544f539454bb11f5ba52b4
-  displayName: 'Root Ration'
-  description: 'A mineral-rich root crop from low-power hydroponics.'
+  displayName: Root Ration
+  description: A mineral-rich root crop from low-power hydroponics.
   artTexture: {fileID: 2800000, guid: a163d1c69cf89be418e0100a7eb0136d, type: 3}
   category: 3
   faction: 0
+  combatType: 0
   loot: []
   isAggressive: 0
   aggroRadius: 5
   attackRadius: 1.5
+  produceCard: {fileID: 0}
+  produceInterval: 10
   isSellable: 1
   sellPrice: 2
-  isInfinite: 0
+  hasDurability: 0
   uses: 1
   nutrition: 2
   maxHealth: 15
