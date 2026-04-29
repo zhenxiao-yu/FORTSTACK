@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Project/UI/USS/theme.uss?fileID=7433441132597879392&amp;guid=b2cc30a98936cb64aafb91e99f96d041&amp;type=3#theme" />
+    <Style src="project://database/Assets/_Project/UI/USS/layout.uss?fileID=7433441132597879392&amp;guid=2d1296df433b4ca4da7b5d8fbac2f945&amp;type=3#layout" />
+    <Style src="project://database/Assets/_Project/UI/USS/components.uss?fileID=7433441132597879392&amp;guid=af360b202d942224e987282a996f8e79&amp;type=3#components" />
+    <Style src="project://database/Assets/_Project/UI/USS/animations.uss?fileID=7433441132597879392&amp;guid=0edd5f8ede39041408ab237ba41967d6&amp;type=3#animations" />
+
+    <!-- Day strip: phase, day N, time bar, pace, spacer, food, gold, cards, Start Night -->
+    <ui:VisualElement name="hud-day" class="lk-hud-top lk-hud-strip lk-hud-strip--top">
+        <ui:Label name="lbl-phase" class="lk-phase-label" />
+        <ui:Label name="lbl-day" class="lk-label lk-label--value" style="margin-left: 12px;" />
+        <ui:VisualElement class="lk-progress-bar" style="width: 80px; margin-left: 8px; flex-shrink: 0;">
+            <ui:VisualElement name="fill-time" class="lk-progress-bar__fill" />
+        </ui:VisualElement>
+        <ui:Button name="btn-pace" class="lk-button lk-button--icon" style="margin-left: 6px; min-width: 40px;" />
+        <ui:VisualElement class="lk-grow" />
+        <ui:Label name="lbl-nutrition" class="lk-label lk-label--dim" style="margin-right: 16px;" />
+        <ui:Label name="lbl-currency" class="lk-label lk-label--dim" style="margin-right: 16px;" />
+        <ui:Label name="lbl-cards" class="lk-label lk-label--dim" style="margin-right: 24px;" />
+        <ui:Button name="btn-start-night" class="lk-button" />
+    </ui:VisualElement>
+
+    <!-- Night strip: phase, wave, HP text + bar, enemies, spacer, speed -->
+    <ui:VisualElement name="hud-night" class="lk-hud-top lk-hud-strip lk-hud-strip--top lk-hud-strip--night lk-hidden">
+        <ui:Label name="lbl-night-phase" class="lk-phase-label lk-phase-label--night" />
+        <ui:Label name="lbl-wave" class="lk-label lk-label--value" style="margin-left: 16px;" />
+
+        <ui:VisualElement class="lk-row lk-align-center" style="margin-left: 24px;">
+            <ui:Label name="lbl-base-hp" class="lk-label lk-label--dim" />
+            <ui:VisualElement class="lk-progress-bar" style="width: 120px; margin-left: 8px; flex-shrink: 0;">
+                <ui:VisualElement name="fill-base-hp" class="lk-progress-bar__fill" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label name="lbl-enemies" class="lk-label lk-label--dim" style="margin-left: 24px;" />
+
+        <ui:VisualElement class="lk-grow" />
+
+        <ui:Button name="btn-speed" class="lk-button lk-button--icon" />
+    </ui:VisualElement>
+
+</ui:UXML>

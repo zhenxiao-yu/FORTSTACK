@@ -15,22 +15,24 @@ namespace Markyu.LastKernel
     {
         private void OnEnable()
         {
-            UIEventBus.OnStartNewGame          += HandleStartNewGame;
-            UIEventBus.OnLoadGame              += HandleLoadGame;
-            UIEventBus.OnDeleteGame            += HandleDeleteGame;
-            UIEventBus.OnClearAllSaves         += HandleClearAllSaves;
+            UIEventBus.OnStartNewGame           += HandleStartNewGame;
+            UIEventBus.OnLoadGame               += HandleLoadGame;
+            UIEventBus.OnDeleteGame             += HandleDeleteGame;
+            UIEventBus.OnClearAllSaves          += HandleClearAllSaves;
             UIEventBus.OnLanguageCycleRequested += HandleLanguageCycle;
             UIEventBus.OnSettingsResetRequested += HandleSettingsReset;
+            UIEventBus.OnStartNightRequested    += HandleStartNight;
         }
 
         private void OnDisable()
         {
-            UIEventBus.OnStartNewGame          -= HandleStartNewGame;
-            UIEventBus.OnLoadGame              -= HandleLoadGame;
-            UIEventBus.OnDeleteGame            -= HandleDeleteGame;
-            UIEventBus.OnClearAllSaves         -= HandleClearAllSaves;
+            UIEventBus.OnStartNewGame           -= HandleStartNewGame;
+            UIEventBus.OnLoadGame               -= HandleLoadGame;
+            UIEventBus.OnDeleteGame             -= HandleDeleteGame;
+            UIEventBus.OnClearAllSaves          -= HandleClearAllSaves;
             UIEventBus.OnLanguageCycleRequested -= HandleLanguageCycle;
             UIEventBus.OnSettingsResetRequested -= HandleSettingsReset;
+            UIEventBus.OnStartNightRequested    -= HandleStartNight;
         }
 
         private static void HandleStartNewGame(GameplayPrefs prefs)
@@ -70,6 +72,11 @@ namespace Markyu.LastKernel
             GameLocalization.SetLanguageByCode(localeCode, force: true);
             GraphicsManager.Instance?.InitGraphicsSettings();
             AudioManager.Instance?.InitAudioMixerVolumes();
+        }
+
+        private static void HandleStartNight()
+        {
+            DefensePhaseController.Instance?.StartNight();
         }
     }
 }
